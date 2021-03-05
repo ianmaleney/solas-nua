@@ -74,3 +74,11 @@ button:not(:disabled):active {
 button:focus {
   border-color: #666;
 }
+
+@media print {
+  #app-header,
+  .text-options,
+  #audioPlayer {
+    display: none !important;
+  }
+}

@@ -21,7 +21,7 @@
 <Router {url}>
   <Blobs />
   <div class="overlay" />
-  <header>
+  <header id="app-header">
     <a href="/" class="title-link">View Source</a>
     <nav class="header-menu">
       <a href="/"><em>Index</em></a>
@@ -41,6 +41,8 @@
   </main>
 </Router>
 
+<footer />
+
 <style>
   :global(:root) {
     --serif: le-monde-livre-classic-byol, Cambria, Cochin, Georgia, Times,
@@ -49,6 +51,8 @@
   }
   :global(body) {
     font-family: var(--serif);
+    max-width: 100vw;
+    overflow-x: hidden;
   }
   .overlay {
     height: 100vh;
@@ -89,5 +93,15 @@
     position: relative;
     z-index: 10;
     margin: 15vh 0;
+    min-height: 100vh;
+  }
+
+  footer {
+    min-height: 320px;
+    width: 100vw;
+    margin-left: -8px;
+    background-color: #4f4950;
+    z-index: 25;
+    position: relative;
   }
 </style>
