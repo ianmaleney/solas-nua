@@ -12,6 +12,7 @@
   import Electric from "./routes/pieces/Electric.svelte";
 
   export let url;
+  export let themeColour = "#e4d4c5";
 
   onMount(() => {
     navigate(window.location.pathname, { replace: true });
@@ -20,7 +21,7 @@
 
 <Router {url}>
   <Blobs />
-  <div class="overlay" />
+  <div class="overlay" style="background-color: {themeColour};" />
   <header id="app-header">
     <a href="/" class="title-link">View Source</a>
     <nav class="header-menu">
@@ -41,9 +42,29 @@
   </main>
 </Router>
 
-<footer />
+<footer>
+  <div class="footer-item">
+    <p>
+      View Source is a unique online publication, curated by Fallow Media and
+      commissioned by Solas Nua, celebrating contemporary Irish literature at
+      its most adventurous.
+    </p>
+  </div>
+  <div class="footer-item">
+    <img
+      class="footer-logo"
+      src="/assets/images/solas-nua-logo.png"
+      alt="Solas Nua Logo"
+    />
+    <img
+      class="footer-logo"
+      src="/assets/images/fallow-logo.png"
+      alt="Fallow Media Logo"
+    />
+  </div>
+</footer>
 
-<style>
+<style lang="scss">
   :global(:root) {
     --serif: le-monde-livre-classic-byol, Cambria, Cochin, Georgia, Times,
       "Times New Roman", serif;
@@ -60,7 +81,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #e4d4c5;
+    // background-color: #e4d4c5;
     pointer-events: none;
   }
 
@@ -103,5 +124,24 @@
     background-color: #4f4950;
     z-index: 25;
     position: relative;
+    .footer-item {
+      display: flex;
+      justify-content: center;
+      padding: 2rem 0;
+    }
+    .footer-logo {
+      max-height: 80px;
+      max-width: 80px;
+      object-fit: contain;
+      mix-blend-mode: overlay;
+      filter: saturate(0);
+    }
+    p {
+      color: rgb(207, 207, 207);
+      max-width: 480px;
+      text-align: center;
+      line-height: 1.45;
+      font-family: var(--serif);
+    }
   }
 </style>

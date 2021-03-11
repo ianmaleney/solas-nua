@@ -418,7 +418,7 @@
   </p>
 </div>
 
-<style>
+<style lang="scss">
   :global(.text) {
     max-width: 740px;
     margin: 0 auto;
@@ -426,6 +426,12 @@
     line-height: 1.5;
     padding: 0 2vw 40vh;
     font-family: var(--body);
+  }
+  :global(.text.wide) {
+    max-width: 1280px;
+    @media (max-width: 960px) {
+      font-size: 1.1rem;
+    }
   }
   :global(blockquote) {
     font-size: 1.15rem;
