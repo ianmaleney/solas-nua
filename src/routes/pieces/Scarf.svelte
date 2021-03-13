@@ -1,7 +1,19 @@
 <script>
   import { blur } from "svelte/transition";
   import { linear } from "svelte/easing";
+  import AudioPlayer from "../../components/AudioPlayer.svelte";
+  import ArticleHeader from "../../components/ArticleHeader.svelte";
+
+  let audioActive = false;
 </script>
+
+<ArticleHeader title="A Scarf" author="Doireann Ní Ghríofa" bind:audioActive />
+
+<AudioPlayer
+  src="/assets/audio/electric.mp3"
+  active={audioActive}
+  credits={"Read by Vicky Langan."}
+/>
 
 <div
   class="text"

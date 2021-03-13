@@ -5306,64 +5306,88 @@ var app = (function () {
     const file$a = "src/routes/pieces/OnlyJust.svelte";
 
     function create_fragment$c(ctx) {
+    	let div;
     	let iframe;
     	let iframe_src_value;
-    	let iframe_intro;
-    	let iframe_outro;
     	let t0;
     	let header;
     	let h1;
     	let t2;
-    	let h2;
-    	let t3;
-    	let em;
-    	let t5;
+    	let p0;
+    	let t4;
+    	let p1;
+    	let t6;
+    	let p2;
+    	let t8;
+    	let p3;
     	let header_intro;
     	let header_outro;
     	let current;
 
     	const block = {
     		c: function create() {
+    			div = element("div");
     			iframe = element("iframe");
     			t0 = space();
     			header = element("header");
     			h1 = element("h1");
-    			h1.textContent = "I Know, But Only Just";
+    			h1.textContent = "Πανδώρα";
     			t2 = space();
-    			h2 = element("h2");
-    			t3 = text("Ruby Wallis ");
-    			em = element("em");
-    			em.textContent = "&";
-    			t5 = text(" Claire-Louise Bennett");
-    			if (iframe.src !== (iframe_src_value = "https://player.vimeo.com/video/522269305?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479")) attr_dev(iframe, "src", iframe_src_value);
-    			attr_dev(iframe, "width", "1380");
-    			attr_dev(iframe, "height", "600");
+    			p0 = element("p");
+    			p0.textContent = "ꬱ";
+    			t4 = space();
+    			p1 = element("p");
+    			p1.textContent = "Ruby & Claire-Louise";
+    			t6 = space();
+    			p2 = element("p");
+    			p2.textContent = "Ͼ Ϸ ϧ Ϣ Ϙ Φ Ϯ ω ͽ π α Ж Ђ Ќ Ϗ Ϩ Ϭ Д Ϫ";
+    			t8 = space();
+    			p3 = element("p");
+    			p3.textContent = "Chloe Phil Sarah Mary Louise Róisín Suzanne Ruth Áine Jessamyn Alice Mary\n    Michal Karole Kate Sarah Anne Vicky Deborah";
+    			if (iframe.src !== (iframe_src_value = "https://player.vimeo.com/video/523137788?autoplay=1&color=8a8a8a&title=0&byline=0&portrait=0&quality=4k")) attr_dev(iframe, "src", iframe_src_value);
+    			set_style(iframe, "position", "absolute");
+    			set_style(iframe, "top", "0");
+    			set_style(iframe, "left", "0");
+    			set_style(iframe, "width", "100%");
+    			set_style(iframe, "height", "100%");
     			attr_dev(iframe, "frameborder", "0");
-    			attr_dev(iframe, "allow", "autoplay; fullscreen; picture-in-picture");
+    			attr_dev(iframe, "allow", "autoplay quality='4k'; fullscreen; picture-in-picture");
     			iframe.allowFullscreen = true;
     			attr_dev(iframe, "title", "00 Assembly_2");
-    			add_location(iframe, file$a, 5, 0, 106);
-    			attr_dev(h1, "class", "svelte-1sgtfdo");
-    			add_location(h1, file$a, 21, 2, 695);
-    			add_location(em, file$a, 22, 18, 744);
-    			attr_dev(h2, "class", "svelte-1sgtfdo");
-    			add_location(h2, file$a, 22, 2, 728);
-    			attr_dev(header, "class", "svelte-1sgtfdo");
-    			add_location(header, file$a, 17, 0, 544);
+    			add_location(iframe, file$a, 6, 2, 162);
+    			set_style(div, "padding", "66.67% 0 0 0");
+    			set_style(div, "position", "relative");
+    			add_location(div, file$a, 5, 0, 106);
+    			attr_dev(h1, "class", "svelte-1cp42pz");
+    			add_location(h1, file$a, 20, 2, 647);
+    			attr_dev(p0, "class", "svelte-1cp42pz");
+    			add_location(p0, file$a, 21, 2, 666);
+    			attr_dev(p1, "class", "svelte-1cp42pz");
+    			add_location(p1, file$a, 22, 2, 677);
+    			attr_dev(p2, "class", "svelte-1cp42pz");
+    			add_location(p2, file$a, 23, 2, 711);
+    			attr_dev(p3, "class", "svelte-1cp42pz");
+    			add_location(p3, file$a, 25, 2, 759);
+    			attr_dev(header, "class", "svelte-1cp42pz");
+    			add_location(header, file$a, 16, 0, 496);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, iframe, anchor);
+    			insert_dev(target, div, anchor);
+    			append_dev(div, iframe);
     			insert_dev(target, t0, anchor);
     			insert_dev(target, header, anchor);
     			append_dev(header, h1);
     			append_dev(header, t2);
-    			append_dev(header, h2);
-    			append_dev(h2, t3);
-    			append_dev(h2, em);
-    			append_dev(h2, t5);
+    			append_dev(header, p0);
+    			append_dev(header, t4);
+    			append_dev(header, p1);
+    			append_dev(header, t6);
+    			append_dev(header, p2);
+    			append_dev(header, t8);
+    			append_dev(header, p3);
     			current = true;
     		},
     		p: function update(new_ctx, [dirty]) {
@@ -5371,19 +5395,6 @@ var app = (function () {
     		},
     		i: function intro(local) {
     			if (current) return;
-
-    			add_render_callback(() => {
-    				if (iframe_outro) iframe_outro.end(1);
-
-    				if (!iframe_intro) iframe_intro = create_in_transition(iframe, blur, {
-    					delay: 100,
-    					duration: 800,
-    					amount: 10,
-    					easing: identity
-    				});
-
-    				iframe_intro.start();
-    			});
 
     			add_render_callback(() => {
     				if (header_outro) header_outro.end(1);
@@ -5401,15 +5412,6 @@ var app = (function () {
     			current = true;
     		},
     		o: function outro(local) {
-    			if (iframe_intro) iframe_intro.invalidate();
-
-    			iframe_outro = create_out_transition(iframe, blur, {
-    				delay: 0,
-    				duration: 600,
-    				amount: 10,
-    				easing: identity
-    			});
-
     			if (header_intro) header_intro.invalidate();
 
     			header_outro = create_out_transition(header, blur, {
@@ -5422,8 +5424,7 @@ var app = (function () {
     			current = false;
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(iframe);
-    			if (detaching && iframe_outro) iframe_outro.end();
+    			if (detaching) detach_dev(div);
     			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(header);
     			if (detaching && header_outro) header_outro.end();
@@ -5472,1005 +5473,94 @@ var app = (function () {
     const file$b = "src/routes/pieces/Scarf.svelte";
 
     function create_fragment$d(ctx) {
-    	let div;
-    	let p0;
-    	let t1;
-    	let p1;
-    	let t3;
-    	let p2;
-    	let t5;
-    	let p3;
-    	let t7;
-    	let p4;
-    	let t8;
-    	let em0;
-    	let t10;
-    	let em1;
-    	let t12;
-    	let em2;
-    	let t14;
-    	let em3;
-    	let t16;
-    	let t17;
-    	let blockquote0;
-    	let t19;
-    	let p5;
-    	let t21;
-    	let p6;
-    	let t23;
-    	let p7;
-    	let t25;
-    	let p8;
-    	let t27;
-    	let p9;
-    	let t29;
-    	let p10;
-    	let t31;
-    	let p11;
-    	let t33;
-    	let p12;
-    	let t35;
-    	let blockquote1;
-    	let t37;
-    	let p13;
-    	let t39;
-    	let p14;
-    	let t41;
-    	let blockquote2;
-    	let t43;
-    	let p15;
-    	let t45;
-    	let p16;
-    	let t47;
-    	let p17;
-    	let t49;
-    	let p18;
-    	let t51;
-    	let p19;
-    	let t53;
-    	let p20;
-    	let t55;
-    	let p21;
-    	let t57;
-    	let p22;
-    	let t59;
-    	let p23;
-    	let t61;
-    	let p24;
-    	let t63;
-    	let p25;
-    	let t65;
-    	let p26;
-    	let t67;
-    	let p27;
-    	let t69;
-    	let p28;
-    	let t71;
-    	let p29;
-    	let t73;
-    	let p30;
-    	let t75;
-    	let p31;
-    	let t77;
-    	let p32;
-    	let t79;
-    	let p33;
-    	let div_intro;
-    	let div_outro;
-    	let current;
-
-    	const block = {
-    		c: function create() {
-    			div = element("div");
-    			p0 = element("p");
-    			p0.textContent = "Last year, during long-delayed works on our home, our family struggled to\n    find anywhere to rent. My husband’s father agreed to lend us the\n    twenty-five-year-old campervan he had recently purchased. For an uncertain\n    number of months its three beds, chemical toilet, two-ring gas hob,\n    child-sized sink and mini-fridge would accommodate the six of us.";
-    			t1 = space();
-    			p1 = element("p");
-    			p1.textContent = "We did our best to adapt. I took to loitering in the schoolyard long after\n    everyone else had left, so the children could play and shout and run. My\n    husband hauled our ancient washing machine onto a table in the garage and\n    improvised a rickety slide from old gutters and twine, rollercoastering suds\n    out to the drain. The van’s side window, slightly ajar, became our\n    letterbox; we thanked the postman through mouthfuls of cereal. I grew used\n    to fetching water from the fresh-water pipe that lay in the gravel outside,\n    but not to the stiff valve that always sprayed my shins, nor to the grit\n    that inevitably found its way into my coffee. It’s only for a few months, we\n    said, as the six of us showered in a local gym. Any time a cheap Airbnb\n    became available within a ninety-minute drive, we hurried to its heaters,\n    oven dinners and hot water – but such occasions were rare, and winter was\n    approaching.";
-    			t3 = space();
-    			p2 = element("p");
-    			p2.textContent = "It grew cold. Storm clouds gathered; the van flinched from the gales. I\n    flinched too. No matter how long I bent over that small sink, scrubbing,\n    always scrubbing, our belongings felt grimy. If two of us stood upright at\n    once, the van felt intolerably crowded. I didn’t scream, but I often wanted\n    to. When I dug out our box of hats and gloves, I held the familiar darkness\n    of my favourite scarf to my face, inhaling deeply. It smelled like home. I\n    began to wear it all the time, taking it off only while I slept.";
-    			t5 = space();
-    			p3 = element("p");
-    			p3.textContent = "An invitation to spend the Halloween midterm at a friend’s empty cottage in\n    Mayo seemed too good to be true: a week of warm beds would be luxurious, not\n    to mention a dishwasher. There was something else, too: a half-remembered\n    family myth from Mayo. Stray threads began to come back to me as we drove\n    the tunnel deep under the Shannon. My young great-grandfather on the run;\n    soldiers surrounding a church while he was at mass; and his escape disguised\n    as a woman.";
-    			t7 = space();
-    			p4 = element("p");
-    			t8 = text("In Clare we paused for lunch at my parents’ home. While the children\n    squabbled over pizza, I poked through bookshelves until I found what I was\n    looking for. The first folder had been compiled by my grandfather and\n    incorporated reminiscences of his own youth, a vast family tree, and\n    recollections of his father, Pádhraic Ó Gabhláin. Pádhraic was the subject\n    of the second folder too, a college project submitted by my mother as part\n    of her teacher training. This included an appendix of photocopied sources:\n    handwritten letters, old maps, obituaries, and copies of articles from the ");
-    			em0 = element("em");
-    			em0.textContent = "Freeman’s Journal";
-    			t10 = text(", ");
-    			em1 = element("em");
-    			em1.textContent = "An Claidheamh Solais";
-    			t12 = text(", the ");
-    			em2 = element("em");
-    			em2.textContent = "Western People";
-    			t14 = text(", and the\n    ");
-    			em3 = element("em");
-    			em3.textContent = "Irish Independent";
-    			t16 = text(". Having little time before we had to get back on\n    the road, I flicked through the obituaries until I found a trace of the\n    story I sought, documented in newsprint by his friend Aodh Ó Nualláin. The\n    obituary described events that had occurred one Sunday at Aghamore church in\n    east Mayo during the War of Independence, when ‘a company of military\n    arrived and surrounded the church’. Pádhraic – a member of what was\n    initially known as the Irish Volunteers and later as the IRA –");
-    			t17 = space();
-    			blockquote0 = element("blockquote");
-    			blockquote0.textContent = "by dressing as a woman and walking out of the church with as much dignity as\n    possible among the women members of the congregation. Apparently there was\n    some delay in getting the proper fit in clothes and shoes, but the celebrant\n    of the mass, the late Reverend Father Garvey, was a staunch Republican, and\n    many in the congregation noticed that on that particular Sunday the prayers\n    after mass were unusually long.";
-    			t19 = space();
-    			p5 = element("p");
-    			p5.textContent = "I wanted to know more, but it was nearly time to leave. I made a quick run\n    to the copy-shop and then hurried the folders back to the shelf.";
-    			t21 = space();
-    			p6 = element("p");
-    			p6.textContent = "As we drove onwards to Mayo, I held my photocopies close. It was dark by the\n    time we found our way to the cottage, unpacked, and put the children to bed.\n    I poured a glass of wine, opened the documents, and began at the beginning.";
-    			t23 = space();
-    			p7 = element("p");
-    			p7.textContent = "Born in 1892, Pádhraic left primary schooling to work on local farms and\n    bogs, travelling alongside his neighbours to labour seasonally in England.\n    This cluster of families had worked side by side for generations – the\n    Bolands, Greallys, Spellmans, and Forkans had been neighbours since\n    pre-Famine times, my grandfather wrote, their names marked on landlord’s\n    maps ‘of linen in Indian ink and watercolour with lists of tenants and\n    holdings’. He and his best friend Hugh Nolan (who, decades later, would sign\n    his obituary as Aodh Ó Nualláin) were sometimes overheard chatting about\n    characters from Dickens in terms so familiar that passers-by presumed they\n    were speaking of locals. Together, they started a pamphlet that was posted\n    from house to house, with each recipient filling an empty page with a new\n    story.";
-    			t25 = space();
-    			p8 = element("p");
-    			p8.textContent = "The 1911 census noted that Pádhraic’s parents spoke both Irish and English,\n    whereas he and his siblings spoke English only. There, he was documented\n    under the name he grew up with: Patrick Forkan. Shortly thereafter, in his\n    early twenties, he and some friends were chatting by the roadside when a\n    passing teacher greeted the group casually in Irish. My great grandfather\n    felt such shame at his inability to reply that he began to attend Irish\n    classes. He quickly took to the language. Such was the demand among young\n    people wishing to do likewise at that time that anyone who had gained a\n    minimal fluency in Irish was asked to volunteer to instruct new students. In\n    those slapdash classrooms he found his vocation; and henceforth he always\n    used the Irish form of his name. Teaching was to become what Ó Nualláin’s\n    obituary described as ‘the pleasure of his life’. Beyond those classes, his\n    days were spent in farmwork, reading, and writing.";
-    			t27 = space();
-    			p9 = element("p");
-    			p9.textContent = "By April 1917 Pádhraic was secretary of a local branch of Conradh na Gaeilge\n    and had established a company of the Irish Volunteers in Crossard.\n    Photographed at the Sinn Féin ardfheis with neat tie, crisp collar, and hair\n    swept to the side, he smiled with earnest eyes. He did not know what was to\n    come. No one did. I found that my own grasp of what was to come was lacking\n    too, so I turned to the internet to fill the gaps in my knowledge of the War\n    of Independence. By 1920, I read, attacks on the constabulary were growing\n    so common all over the country that supplementary forces were deployed. So\n    many of the Black and Tans and Auxiliaries arriving in Ballyhaunis had\n    fought in the First World War that the area in which they were billeted was\n    nicknamed ‘The Dardanelles’. Incidents of cruelty, drunken violence and\n    torture were soon reported across Mayo. In response, local resistance groups\n    grew, companies of the Irish Volunteers proliferated, and both ambushes and\n    retaliatory acts of violence intensified.";
-    			t29 = space();
-    			p10 = element("p");
-    			p10.textContent = "Ó Nualláin noted that Pádhraic took a very active part in the organisation\n    of the Ballyhaunis Battalion, a fact that was apparently noticed by the\n    Occupation Forces of the area, for from early in the troubled times he\n    seemed to have attracted their particular attention. From documents captured\n    by the Dublin brigade and forwarded to the local volunteers it became clear\n    that he was a marked man, and he was obliged to go ‘on the run’ and remain\n    constantly on the alert.";
-    			t31 = space();
-    			p11 = element("p");
-    			p11.textContent = "The next morning, I cleared the children’s breakfast bowls from the table\n    and searched groggily through the online archives of the Bureau of Military\n    History, hoping to find Pádhraic’s story recounted in his own words; but it\n    seems he did not provide testimony to the Bureau. I did find his name in\n    documentation from the Military Service Pensions Collection, dated 1935, in\n    which those who fought in Mayo battalions were listed retrospectively. His\n    name is among those recalled by Captain Seán Carney, who listed him as\n    Patrick Forkan of the 2nd Western Division, I Brigade (South Mayo), 5th\n    Battalion, B Company. Many of the surnames my grandfather had noted on local\n    pre-Famine maps were also listed in this company, suggesting that he was\n    among friends and neighbours.";
-    			t33 = space();
-    			p12 = element("p");
-    			p12.textContent = "In the absence of a description in my great-grandfather’s own words, I\n    sought out accounts by the others. Ernie O’Malley’s oral history of the War\n    of Independence in Mayo was available online, and there I read how Johnny\n    Greally – a man who was born, grew up, lived, and fought by Pádhraic’s side\n    – described the day their commanding officer, Seán Corcoran, was murdered:";
-    			t35 = space();
-    			blockquote1 = element("blockquote");
-    			blockquote1.textContent = "We heard that Curley’s house was to be burned, and we went to get rifles to\n    defend it. Seán and Maurice Mullins were supposed to call at this house, but\n    when he was coming over Seán ran into a patrol of Tans. His revolver jammed\n    at the first shot and he was shot dead, and Maurice, who was unarmed, was\n    beaten almost to death. They beat him there and they threw him in on top of\n    the dead Seán Corcoran in the turf house of the Barracks.";
-    			t37 = space();
-    			p13 = element("p");
-    			p13.textContent = "Later that day, a sniper shot one of the Black and Tans in retaliation. As\n    vengeance, the Black and Tans murdered a local man named Michael Coen,\n    mutilating his corpse: ‘they cut off his private parts and pinned them on\n    his breast, and they cut the flesh of his legs and arms. They cut off his\n    ears and left him out on the road. They were night and day in that area in\n    Crossard townland, searching, for they must have had information. [...] The\n    people stiffened their resistance.’";
-    			t39 = space();
-    			p14 = element("p");
-    			p14.textContent = "I do not know what part, if any, Pádhraic played in the events of that day,\n    but Greally’s account allowed me a glimpse of the environment in which he\n    was engaged. Pádhraic was one of many who survived by stealth in those\n    years, hurrying from safe-house to safe-house. His continued evasion of the\n    Black and Tans became a source of local bafflement. Ó Nualláin writes:";
-    			t41 = space();
-    			blockquote2 = element("blockquote");
-    			blockquote2.textContent = "In spite of the special enemy attention he took part in all the activities\n    of the area and was never captured, although his many hairbreadth escapes\n    made him almost a legendary figure in his native district. On one occasion\n    when visiting his own home he was suddenly told that a large force of police\n    and military were surrounding the house. He slipped out, however, and\n    although the enemy opened fire, his knowledge of the country enabled him to\n    escape.";
-    			t43 = space();
-    			p15 = element("p");
-    			p15.textContent = "Greally explained to Ernie O’Malley that their small group ‘had no arms save\n    shotguns. There were a couple of rifles but you couldn’t be sure of them. We\n    fired off ammunition from Seán Corcoran’s rifles, but only an odd round went\n    off. We had very few short arms.’ The best resource at their disposal was\n    the goodwill offered by neighbours, whether through shelter or sustenance.";
-    			t45 = space();
-    			p16 = element("p");
-    			p16.textContent = "Within a month of Corcoran and Coen’s deaths, I read, the men found\n    themselves in peril again, having been traced to a remote area of bogland.\n    Greally described how the Black and Tans had information that we would be in\n    the bog, the six of us, myself and Paddy Boland, the company O/C, Pádhraic\n    Forkan, a Gaelic teacher, Austin Kenny and Jim Kilkelly. They wanted these\n    six of us. We were in a neighbour’s house where we used to stay, when Paddy\n    Mullins, the Brigadier, sent over bombs with me. The Master sent word to us\n    by a young lad, who came across the fields, and we had just time to get out.\n    They, the soldiers, fired shots, and they went into the house again, and\n    they bayoneted poor Paddy Boland who was an only son. They bursted the\n    bayonet in him and they almost cut his nose off with a bayonet also.";
-    			t47 = space();
-    			p17 = element("p");
-    			p17.textContent = "The neighbour in whose house they had sheltered was my\n    great-great-grandmother: Pádhraic would marry her daughter. I remembered her\n    from a section of my grandfather’s reminiscences I’d read the night before,\n    a memorable passage that skipped from amusement to dread within a single\n    paragraph: My grandmother looked like a grandmother. She was fat and\n    comfortable and dressed in black. [...] She said very little about ‘the\n    troubles’. The only thing I remember was her account of the day when Paddy\n    Boland was shot. ‘The boys’ had run from her house as the troops approached\n    and scattered across the bog. Paddy Boland was shot dead a few hundred yards\n    from the house. She watched from a window as his body was carried on an\n    improvised stretcher covered in a blanket. It was only when she could see\n    the boots that she knew it was not one of her own sons.";
-    			t49 = space();
-    			p18 = element("p");
-    			p18.textContent = "The date of Pádhraic’s escape from Aghamore church is not recorded in any\n    document I have seen; all we know for sure is that it must have happened\n    during the year and a half between the arrival of the Black and Tans in\n    Ireland, at the beginning of 1920, and the truce that was agreed in the\n    summer of 1921.";
-    			t51 = space();
-    			p19 = element("p");
-    			p19.textContent = "After the truce, and the treaty, and the split in the republican movement,\n    Pádhraic couldn’t bring himself to participate in the civil war that com\n    menced in the summer of 1922. Another obituary, by C. Caimbhéal, noted that\n    ‘He was a respecter of valour and worth in any who had shown faith in their\n    cause. I recall his yearly buying of poppies from an ex-army captain on\n    Armistice Day. He was no bigot.’ He married. He wrote. He worked. His\n    children were born. He returned to his beloved books. He secured a job at\n    Ballyhaunis Vocational School, and filled his summers with further teaching\n    at Coláiste Chonnacht, in the heartlands of Conamara. He loved to read, to\n    write, to teach, and to laugh.";
-    			t53 = space();
-    			p20 = element("p");
-    			p20.textContent = "My grandfather noted that ‘a straightforward description of my father’s\n    subsequent career might make him sound like a worthy, earnest and dull\n    character. This is as far from the truth as could be. One of the most\n    obvious things about him was his sense of humour – wild, anarchical humour\n    in his youth; warm and witty in his later years and never fully subdued by\n    old age.’ Reading this line, I wished that I could have heard him laugh.\n    When Pádhraic died in 1965, his coffin was draped in the tricolour, and his\n    surviv- ing comrades, Johnny Greally among them, formed a guard of honour. A\n    passionate graveside oration was delivered by John P. Jordan. Of this\n    funeral, C. Caimbhéal wrote: ‘There were no tears on any face for it was the\n    honouring of a warrior, and none weep when a soldier sleeps when his fight\n    is over.’";
-    			t55 = space();
-    			p21 = element("p");
-    			p21.textContent = "After closing the folders and all the tabs on my phone, I couldn’t stop\n    thinking about what I’d read. I woke that night thinking of how the young\n    Pádhraic had sent his little pamphlets from house to house, always including\n    empty pages in which recipients could add a new story. So far, his son and\n    granddaughter and several obituarists had filled pages with their writings\n    on his life; perhaps I could add a page, too. ‘Cloch le carn’ is the phrase\n    used for the traditional act of adding one’s own stone to a cairn made in\n    memory of another. Rather than a cairn, however, I found myself thinking of\n    the story as a beloved scarf, a garment whose stitches I had already begun\n    to unpick into a soft mass of unravelled facts. As a girl, the story of his\n    escape from Aghamore church had seemed a neatly woven tale of adventure,\n    prudently tailored to a child’s ears: no torn flesh, no torture, no terror.\n    Now that the dark red of Greally’s voice had seeped in, however, there could\n    be no erasing it. I wondered what other threads might add themselves as I\n    set upon knitting my own telling of it.";
-    			t57 = space();
-    			p22 = element("p");
-    			p22.textContent = "It was this curiosity that led me to bring the whole family to the church at\n    Aghamore the following day. We are not a family of mass-goers, and I can’t\n    recall how I sold them on this road trip. As soon as we parked, I hurried\n    ahead, certain that I wouldn’t have much time before the kids lost patience,\n    before pausing in the porch, suddenly nervous. I would be alone, if only for\n    the length of time it took my husband to wrestle coats and hats onto our\n    children. A residual whiff of sanctity haunted the air. My breath was short\n    and growing shorter – I had wound my scarf too well, I realized, tucking a\n    finger between fabric and throat until it gave a little. I drank a deep\n    lungful and watched my breath hurry away, a small fog, or a ghost: glimpsed,\n    then gone. I pushed the door and stepped into the story.";
-    			t59 = space();
-    			p23 = element("p");
-    			p23.textContent = "The church was empty. I moved quickly up the aisle, snapshotting details on\n    my phone as I went: a statue, an altar cloth, a dent worn into the floor by\n    many decades of footfall. Outside, clouds broke and blew; when shards of\n    sunlight met stained-glass eyes, I wondered whether those glassy faces had\n    felt alive to my great-grandfather, too. Above my head, the intricately\n    crafted timber roof was neat as a ribcage. All his life, Pádhraic returned\n    to pray here, surrounding himself with the same people, all standing and\n    kneeling in uni- son, their voices murmuring a warm chorus around his.\n    Together and alone, they aged. Theirs were the eyes that met his in worship,\n    on feast days, at funerals and baptisms, on the day he escaped from the\n    Crown forces, and on his wedding day.";
-    			t61 = space();
-    			p24 = element("p");
-    			p24.textContent = "My children flung open the door and galloped toward me, raucous as ever,\n    with coats flapping open, hats and scarves forgotten, shouldering into each\n    other, giggling and squabbling, their cheeks already reddened by cold. I\n    rolled my eyes at my husband – it is a running joke between us that while I\n    mollycoddle the children with mittens and vests and thermal underwear, he\n    believes that a little cold will toughen them. Sitting in the pew with a\n    child on each knee and another in each elbow, I began to adjust the story\n    for their ears; but soon they were whingeing for the car. The only one who\n    insisted on staying was the boy who always stays by my side when I lead my\n    family on such jaunts, the child who at seven is skinny and bold and bright\n    and always fights to hold my hand. I continued to photograph the little\n    details that surrounded us, and that had once surrounded Pádhraic: the\n    dinged brass of the altar bells, the dark lustre of the confessional box,\n    the altar that had never figured in my imaginings until its inscription\n    loomed before me. Sanctus, Sanctus, Sanctus: a male figure was carved there,\n    each fold of his gown whittled from cold stone. Holy, Holy.";
-    			t63 = space();
-    			p25 = element("p");
-    			p25.textContent = "Only when my son whispered ‘I’m cold, Mám,’ did I notice that his coat had\n    been forgotten altogether. I was glad of the warmth my body had pressed into\n    the weft of my scarf as I wound it into a pullover of sorts, criss- crossing\n    its endings into his waistband: snug. I pressed my lips to his forehead and\n    on we went with my hand in his, or his in mine. When he asked what we were\n    looking for, I couldn’t answer because I didn’t know, beyond the sense that\n    he and I had entered the story, and now we had to find our way towards some\n    sort of an ending. Perhaps the gesture of leaving a lit- tle flame in our\n    wake might do it? No, all the wicks were unlit, and I could see no matches.";
-    			t65 = space();
-    			p26 = element("p");
-    			p26.textContent = "My son shrugged and asked me to finish telling the story, and I did, and was\n    surprised on approaching the ending to find myself saying, ‘and if it\n    weren’t for that moment, would we be here today, you and me?’";
-    			t67 = space();
-    			p27 = element("p");
-    			p27.textContent = "I was smiling as I turned towards the door, until my son broke away to dash\n    a giddy circuit of the room, hee-hawing the chorus of ‘Old Town Road’ and\n    cackling over his shoulder. From the porch I called to him in exasperation,\n    then called again, my voice growing colder now, cold and cranky. While I\n    waited, I lined up one last photo of the aisle, the door ajar to show its\n    neat symmetry of empty pews; but just as I got the framing right, my son\n    hurtled through the shot, blurring past me and sprinting out towards the\n    car. Little trespasser. I arranged the photo again, and then turned to catch\n    up with him. The door of the church thumped heavily behind us.";
-    			t69 = space();
-    			p28 = element("p");
-    			p28.textContent = "In the car, my husband was thumbing his phone and the children were munching\n    chocolate biscuits. I felt satisfied as I clicked my seatbelt – seeing this\n    place felt like some small achievement to show for our cold months away from\n    home. But back in the cottage, I couldn’t sleep for incessant fid- geting:\n    the story wouldn’t rest. If I couldn’t hear the story of this escape in\n    Pádhraic’s own voice, then maybe there was a way to hear it in the voice of\n    one who had stood by him. My mother had once heard a man on the radio\n    describe how, long ago, his grandmother had disguised a man at mass to save\n    him from the Black and Tans. She had made a note of the man’s name. Tadhg\n    Mac Dhonnagáin was a publisher of Irish-language books, and I knew him a\n    little from Twitter. He lived in Conamara, only an hour and a half or so\n    away. I found his email address. I told him that I wanted to know how this\n    story had been told in his childhood.";
-    			t71 = space();
-    			p29 = element("p");
-    			p29.textContent = "In the Buillín Blasta café in An Spidéal, Tadhg described his grandmother,\n    Annie Kenny: a bright young woman who had been awarded a teacher-train- ing\n    scholarship in Belfast, but still travelled home at weekends to lead the\n    church choir. The story he had inherited began there, with a young woman\n    leading a chorus of voices, called to a sudden act of courage, then hurrying\n    to save a life. It was a tale he had treasured as a child, Tadhg said, and\n    he told it beautifully: Annie’s quick thinking, her gathering of garments,\n    her supervision of the disguise, her palms rubbing distemper from the walls\n    to press on Pádhraic’s cheeks. His favourite part of all, he said, was the\n    importance placed on one detail: the height of the women chosen to escort\n    him to safety. Those women: they were tall.";
-    			t73 = space();
-    			p30 = element("p");
-    			p30.textContent = "I thanked Tadhg for his time, wound myself back into my scarf and rummaged\n    my car keys from my handbag. Driving back to Mayo, between mountains and\n    bogs, over stone bridges and boreens, I pictured Annie on the church\n    mezzanine, her hair braided and pinned high, her face among the crowd in the\n    choir, alive and afraid. A wild, fearful whisper was flying through the\n    church below. She watched as one person whispered in dread to the next: they\n    were surrounded. The soldiers were outside with their guns.";
-    			t75 = space();
-    			p31 = element("p");
-    			p31.textContent = "When the whisper reached Pádhraic’s ear, I imagine that he sat in silence a\n    moment, assessing his predicament and that of the people around him. There\n    were elderly people present, women, and children. If he surrendered, might\n    others be spared?";
-    			t77 = space();
-    			p32 = element("p");
-    			p32.textContent = "The priest, knowing these soldiers as brutally violent and unpredictable,\n    bought time by lengthening the prayers. Annie hurried down from the choir\n    and gathered garments: a dark shawl here, a skirt there, perhaps a blouse.\n    Pádhraic was urged to his feet and dressed. Palms were pressed to damp\n    walls, and then to the shadow of his stubble. A black shawl was drawn over\n    the crest of his skull, quick as a shadow. The priest drew the prayers to\n    their end. The two tallest women stood by him, arm in arm, their trio folded\n    within the close crowd. Elbows trembled. Down the aisle they all went, out\n    the door, past the soldiers. Eyes lowered. Jaws tight. No flinching. A\n    procession of bodies leaving the church gates and walking steadily away:\n    almost an ordinary sight. On this Sunday, everyone leaves alive. The End.";
-    			t79 = space();
-    			p33 = element("p");
-    			p33.textContent = "Exhilarated and weary from driving, I fell into bed early, but my heart\n    raced, and my toes twitched: too much coffee. Eventually I fumbled my phone\n    from where it was charging on the floor and swiped idly through pho- tos of\n    our trip: playgrounds, mountains, the gift of a barmbrack, Harry Clarke\n    windows in Ballinrobe, a little dog called Marcie. I came to the penultimate\n    photo I’d taken in the church, the one that had vexed me when my son flung\n    himself through it. I zoomed in by fingertip. There was the aisle, along\n    which a male shadow hurried. By the next photo the aisle was empty. How\n    brief, his presence: glimpsed, then gone. When I swiped back, though, he\n    reappeared, wrapped again in a borrowed shawl, folded into the fabric of\n    that inherited story – too big and too dark – in which we all find ourselves\n    bound by those who came before us.";
-    			add_location(p0, file$b, 10, 2, 269);
-    			add_location(p1, file$b, 17, 2, 650);
-    			add_location(p2, file$b, 32, 2, 1615);
-    			add_location(p3, file$b, 41, 2, 2168);
-    			add_location(em0, file$b, 58, 79, 3296);
-    			add_location(em1, file$b, 60, 7, 3336);
-    			add_location(em2, file$b, 60, 42, 3371);
-    			add_location(em3, file$b, 61, 4, 3408);
-    			add_location(p4, file$b, 50, 2, 2673);
-    			add_location(blockquote0, file$b, 69, 2, 3945);
-    			add_location(p5, file$b, 77, 2, 4413);
-    			add_location(p6, file$b, 81, 2, 4574);
-    			add_location(p7, file$b, 86, 2, 4829);
-    			add_location(p8, file$b, 100, 2, 5705);
-    			add_location(p9, file$b, 115, 2, 6714);
-    			add_location(p10, file$b, 131, 2, 7799);
-    			add_location(p11, file$b, 140, 2, 8314);
-    			add_location(p12, file$b, 153, 2, 9146);
-    			add_location(blockquote1, file$b, 160, 2, 9553);
-    			add_location(p13, file$b, 168, 2, 10048);
-    			add_location(p14, file$b, 177, 2, 10570);
-    			add_location(blockquote2, file$b, 184, 2, 10975);
-    			add_location(p15, file$b, 193, 2, 11489);
-    			add_location(p16, file$b, 200, 2, 11903);
-    			add_location(p17, file$b, 213, 2, 12773);
-    			add_location(p18, file$b, 227, 2, 13687);
-    			add_location(p19, file$b, 234, 2, 14028);
-    			add_location(p20, file$b, 246, 2, 14782);
-    			add_location(p21, file$b, 260, 2, 15666);
-    			add_location(p22, file$b, 277, 2, 16830);
-    			add_location(p23, file$b, 290, 2, 17697);
-    			add_location(p24, file$b, 303, 2, 18533);
-    			add_location(p25, file$b, 321, 2, 19782);
-    			add_location(p26, file$b, 332, 2, 20514);
-    			add_location(p27, file$b, 337, 2, 20748);
-    			add_location(p28, file$b, 348, 2, 21456);
-    			add_location(p29, file$b, 363, 2, 22455);
-    			add_location(p30, file$b, 376, 2, 23309);
-    			add_location(p31, file$b, 385, 2, 23853);
-    			add_location(p32, file$b, 391, 2, 24127);
-    			add_location(p33, file$b, 404, 2, 24998);
-    			attr_dev(div, "class", "text");
-    			add_location(div, file$b, 5, 0, 106);
-    		},
-    		l: function claim(nodes) {
-    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, div, anchor);
-    			append_dev(div, p0);
-    			append_dev(div, t1);
-    			append_dev(div, p1);
-    			append_dev(div, t3);
-    			append_dev(div, p2);
-    			append_dev(div, t5);
-    			append_dev(div, p3);
-    			append_dev(div, t7);
-    			append_dev(div, p4);
-    			append_dev(p4, t8);
-    			append_dev(p4, em0);
-    			append_dev(p4, t10);
-    			append_dev(p4, em1);
-    			append_dev(p4, t12);
-    			append_dev(p4, em2);
-    			append_dev(p4, t14);
-    			append_dev(p4, em3);
-    			append_dev(p4, t16);
-    			append_dev(div, t17);
-    			append_dev(div, blockquote0);
-    			append_dev(div, t19);
-    			append_dev(div, p5);
-    			append_dev(div, t21);
-    			append_dev(div, p6);
-    			append_dev(div, t23);
-    			append_dev(div, p7);
-    			append_dev(div, t25);
-    			append_dev(div, p8);
-    			append_dev(div, t27);
-    			append_dev(div, p9);
-    			append_dev(div, t29);
-    			append_dev(div, p10);
-    			append_dev(div, t31);
-    			append_dev(div, p11);
-    			append_dev(div, t33);
-    			append_dev(div, p12);
-    			append_dev(div, t35);
-    			append_dev(div, blockquote1);
-    			append_dev(div, t37);
-    			append_dev(div, p13);
-    			append_dev(div, t39);
-    			append_dev(div, p14);
-    			append_dev(div, t41);
-    			append_dev(div, blockquote2);
-    			append_dev(div, t43);
-    			append_dev(div, p15);
-    			append_dev(div, t45);
-    			append_dev(div, p16);
-    			append_dev(div, t47);
-    			append_dev(div, p17);
-    			append_dev(div, t49);
-    			append_dev(div, p18);
-    			append_dev(div, t51);
-    			append_dev(div, p19);
-    			append_dev(div, t53);
-    			append_dev(div, p20);
-    			append_dev(div, t55);
-    			append_dev(div, p21);
-    			append_dev(div, t57);
-    			append_dev(div, p22);
-    			append_dev(div, t59);
-    			append_dev(div, p23);
-    			append_dev(div, t61);
-    			append_dev(div, p24);
-    			append_dev(div, t63);
-    			append_dev(div, p25);
-    			append_dev(div, t65);
-    			append_dev(div, p26);
-    			append_dev(div, t67);
-    			append_dev(div, p27);
-    			append_dev(div, t69);
-    			append_dev(div, p28);
-    			append_dev(div, t71);
-    			append_dev(div, p29);
-    			append_dev(div, t73);
-    			append_dev(div, p30);
-    			append_dev(div, t75);
-    			append_dev(div, p31);
-    			append_dev(div, t77);
-    			append_dev(div, p32);
-    			append_dev(div, t79);
-    			append_dev(div, p33);
-    			current = true;
-    		},
-    		p: function update(new_ctx, [dirty]) {
-    			ctx = new_ctx;
-    		},
-    		i: function intro(local) {
-    			if (current) return;
-
-    			add_render_callback(() => {
-    				if (div_outro) div_outro.end(1);
-
-    				if (!div_intro) div_intro = create_in_transition(div, blur, {
-    					delay: 100,
-    					duration: 800,
-    					amount: 10,
-    					easing: identity
-    				});
-
-    				div_intro.start();
-    			});
-
-    			current = true;
-    		},
-    		o: function outro(local) {
-    			if (div_intro) div_intro.invalidate();
-
-    			div_outro = create_out_transition(div, blur, {
-    				delay: 0,
-    				duration: 600,
-    				amount: 10,
-    				easing: identity
-    			});
-
-    			current = false;
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div);
-    			if (detaching && div_outro) div_outro.end();
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_fragment$d.name,
-    		type: "component",
-    		source: "",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    function instance$d($$self, $$props, $$invalidate) {
-    	let { $$slots: slots = {}, $$scope } = $$props;
-    	validate_slots("Scarf", slots, []);
-    	const writable_props = [];
-
-    	Object.keys($$props).forEach(key => {
-    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Scarf> was created with unknown prop '${key}'`);
-    	});
-
-    	$$self.$capture_state = () => ({ blur, linear: identity });
-    	return [];
-    }
-
-    class Scarf extends SvelteComponentDev {
-    	constructor(options) {
-    		super(options);
-    		init(this, options, instance$d, create_fragment$d, safe_not_equal, {});
-
-    		dispatch_dev("SvelteRegisterComponent", {
-    			component: this,
-    			tagName: "Scarf",
-    			options,
-    			id: create_fragment$d.name
-    		});
-    	}
-    }
-
-    /* src/routes/pieces/SaintSisters.svelte generated by Svelte v3.32.3 */
-    const file$c = "src/routes/pieces/SaintSisters.svelte";
-
-    function create_fragment$e(ctx) {
-    	let div;
-    	let p0;
-    	let t1;
-    	let p1;
-    	let t3;
-    	let p2;
-    	let t5;
-    	let p3;
-    	let t7;
-    	let p4;
-    	let t9;
-    	let p5;
-    	let t11;
-    	let p6;
-    	let t13;
-    	let p7;
-    	let t15;
-    	let p8;
-    	let t17;
-    	let p9;
-    	let t19;
-    	let p10;
-    	let t21;
-    	let p11;
-    	let t23;
-    	let p12;
-    	let t25;
-    	let p13;
-    	let t27;
-    	let p14;
-    	let t29;
-    	let p15;
-    	let t31;
-    	let p16;
-    	let t33;
-    	let p17;
-    	let t35;
-    	let p18;
-    	let t37;
-    	let p19;
-    	let t39;
-    	let p20;
-    	let t41;
-    	let p21;
-    	let t43;
-    	let p22;
-    	let t45;
-    	let p23;
-    	let t47;
-    	let p24;
-    	let t49;
-    	let p25;
-    	let t51;
-    	let p26;
-    	let t53;
-    	let p27;
-    	let t55;
-    	let p28;
-    	let t57;
-    	let p29;
-    	let div_intro;
-    	let div_outro;
-    	let current;
-
-    	const block = {
-    		c: function create() {
-    			div = element("div");
-    			p0 = element("p");
-    			p0.textContent = "1. When your sister goes missing you are twenty-seven years old. She had\n    just turned thirty. One day she was there, the next day she was Gone. It was\n    three days before anyone realized; it happened on a Friday and she had just\n    moved to Wicklow Town. She was after nabbing a tidy number as the local\n    orthodontist, wearing tidy white scrubs and sorting people’s teeth into tidy\n    white rows. You usually rang her every evening, but she had been a bit of a\n    downer lately, what with the new town, new job, no friends. A manageable\n    downer though. Run of the mill stuff. No alarm bells. But you were tired,\n    and reluctant to take on her woes. Somewhere deep in the pit of your stomach\n    you know this is your fault. Your calls were the talisman that kept the Gone\n    at bay.";
-    			t1 = space();
-    			p1 = element("p");
-    			p1.textContent = "2. The worst thing is that everyone around you expects life to go on, and\n    they expect you to go on too, so you do. Not because you think it’s right or\n    because you want to, but because you accede to their beliefs and are loath\n    to cause discomfort.";
-    			t3 = space();
-    			p2 = element("p");
-    			p2.textContent = "3. Actuary /ˈaktʃʊ(ə)ri/ noun An actuary is someone that analyses data and\n    works with statistics, using mathematical skill to assess or predict the\n    probability of an uncertain future event.";
-    			t5 = space();
-    			p3 = element("p");
-    			p3.textContent = "4. You’re the middle sister. You were three years younger than Becca; you\n    are three years older than Niamh. You never quite clicked with Niamh beyond\n    the dutiful clicking that comes with unavoidably shared genes and\n    reluctantly shared jeans. Niamh isn’t doing well. She’s a tightly coiled\n    spring over an open flame. She has a scalding tongue on her, ready to snap\n    at any stage. Her targetless anger floods out like waves of acid, burning\n    friends and family alike. On some level you know that she’s pushing out what\n    you’re turning in. She calls you Bean Uí Robot with a sneer on her lips. How\n    can you tell her that you’ve run out of responses? That you are sick of\n    receiving condolences for something that is not a death, not an ending.\n    Something that just goes on and on, forever and ever without end amen.";
-    			t7 = space();
-    			p4 = element("p");
-    			p4.textContent = "5. MISSING PERSON REBECCA DALY 30 years old, medium build. Last seen on 25\n    November 2016. Wearing a navy coat with decorative patterns on the hem and\n    brown boots. If you have seen this woman or know of her whereabouts, please\n    contact Wicklow Garda Station – 0404 60140";
-    			t9 = space();
-    			p5 = element("p");
-    			p5.textContent = "6. The Gardaí show you the CCTV footage, hoping you’ll have some insight\n    into Becca’s body language. You sit in the station and lean hungrily towards\n    the screen, watching the final minutes of your sister’s existence. The\n    camera is positioned over the Bank of Ireland, down the street from the\n    Mariner. The quality is poor, the picture in black and white. You watch\n    Becca walk out of the pub. Her face is an inscrutable blob of pixels. She’s\n    wearing her good blue coat, the one you described to the Gardaí and showed\n    them on the Zara website. The one they will later call navy in the official\n    missing person release. The coat is a dark shade of grey on the screen, but\n    it remains distinctive due to its decoration: a city silhouette airbrushed\n    on the hem. You know that coat, you know those boots. You know that\n    underneath she’s wearing her green dress and black tights. Her go-to\n    going-out outfit when she wasn’t going out out. The Gardaí won’t let you put\n    that on the posters. They’re apologetic, but they can only go on established\n    facts. You watch Becca walk down the street. You watch her turn the corner\n    and disappear. The tape continues for another twelve seconds. Twelve seconds\n    of total absence. Then the loop starts again and there is your sister,\n    walking out of the Mariner. You want to ask for a copy, but you stop\n    yourself. You know even then that nothing good can come from having it. It\n    would be nothing more than owning the final seconds of a grainy ghost\n    composed in monochrome. ‘Thirty can be a tough year for some women,’ the\n    Garda comments, and you think can it?";
-    			t11 = space();
-    			p6 = element("p");
-    			p6.textContent = "7. There’s no such thing as a Missing Person’s Mass but there’s a Mass said,\n    nonetheless. When the priest says we’ll kneel now, everyone kneels. When the\n    priest says we’ll bow our heads now, everyone bows. The priest keeps saying\n    we’ll do this now and does none of it himself. The Eucharist is given out\n    and it sits dry and hard on your tongue. This is the anno domini of your\n    life, nothing will be the same after this.";
-    			t13 = space();
-    			p7 = element("p");
-    			p7.textContent = "8. There’s no reason to believe she went to the sea, but you believe she\n    went to the sea.";
-    			t15 = space();
-    			p8 = element("p");
-    			p8.textContent = "9. The official search lasts two months. That’s all it takes to write your\n    sister off from reality. Becca was always the neat one, the tidy one.\n    Whatever force made her Gone has respected that core aspect of her\n    personality. There is no body. There are no leads. From the outside it looks\n    as though she has been sliced from reality. Perhaps by a sharp scalpel, the\n    kind she boasted her prowess with when describing her more surgical\n    procedures. That’s how it looks, but that’s not the truth of it. The truth\n    is that her disappearance has left a messy, open wound. A torn hole in the\n    quintessential fabric of existence. Ragged edges and pumping blood. Your\n    family must learn to exist around this wound because you know it’s not the\n    kind that will heal. It’s the kind that stays open. Stays raw.";
-    			t17 = space();
-    			p9 = element("p");
-    			p9.textContent = "10. Saint Anthony looks, Saint Anthony finds, Saint Anthony places in front\n    of my eyes.";
-    			t19 = space();
-    			p10 = element("p");
-    			p10.textContent = "11. You studied to be an actuary and then realized about fifteen minutes\n    after qualifying that you fucking hated it. You work in a call centre these\n    days while trying to figure out what to do with your life. Your parents used\n    to give you a hard time about it. Not anymore. Not since they learned that\n    there are darker outcomes for daughters than unrealized potential. They are\n    so much older now, older than they were. More timid, as though they think\n    that pushing you would disrupt the delicate balance of whatever force\n    protects you from being Gone. They’re more affectionate. They call you\n    ‘pet’. Your lips press into a thin smile at each saccharine sentiment, as\n    though you’re making sure it doesn’t get into your mouth. The rotting\n    honey-juice of their guilt-sodden tenderness.";
-    			t21 = space();
-    			p11 = element("p");
-    			p11.textContent = "12. Eight months later, on the first night you go out out, your friend’s\n    boyfriend rants about how much he hates his job. You sit with the group and\n    listen, your finger drawing tight little lines on the condensation of your\n    glass. It’s boring, he says. My boss is a gobshite, he says. I swear to god,\n    one more week and I’ll off myself, he says. There’s a brief susurration of\n    laughter before it fades into awkward silence, people’s eyes sliding to you.\n    You smile to cut the tension and continue to stockpile reasons why your\n    sister couldn’t have killed herself. You hate that you’re doing it. The\n    existence of the mental list you have curated seems to give weight to the\n    other side of the argument, the idea that there is a debate to be rebutted.\n    But you can’t stop, and though you never write it down, it is always a\n    single thought away, added to as appropriate. You begin to dream of the sea.\n    The crashing, roiling sea. Becca is down there somewhere and but for the\n    violence of the waves blocking her attempts to surface, she could come back.\n    You spend entire nights following winding paths down to the seashore, ready\n    to dive in and save her. You never make it. You always wake just as you\n    reach the crest of the sand dunes, the sound of the sea crashing in your\n    ears. The dreams don’t stop, so you start avoiding sleep. Instead you lie in\n    the dark and go through your list, running a mental finger down the smudged\n    and tattered page, worn from constant rehashing. You lie there, listening to\n    the sound of your boyfriend breathing. Your boyfriend who has no open wounds\n    in his life and keeps putting his hands over yours, trying to close it with\n    his clumsy fingers. Like he doesn’t know that some things just need to\n    fucking bleed.";
-    			t23 = space();
-    			p12 = element("p");
-    			p12.textContent = "13. Say someone was in Wicklow Town on a Friday night, and they had a drink\n    at the Mariner. Say they were homesick and lonely and missing Dublin. Say\n    they wanted to leave. Say they wanted to go somewhere alone. Say they wanted\n    to go to the sea. First, they’d walk out of the bar, pulling their good blue\n    coat around their shoulders. They’d take a second to look down the dark\n    street, stained with autumnal spatterings of rain. Then they’d turn off to\n    the right, walking alone in the dark. Past the garishly painted Toymaster,\n    and past the Bank of Ireland. They’d turn right again, out of the scope of\n    the bank’s security cameras. They’d turn what’s locally known as the Long\n    Corner, onto a road with farther spaced streetlamps, puddles of darkness\n    gathering at set spaces. They’d walk on, past rows of houses predominantly\n    painted in shades of blue. They’d pass the Bridge Tavern, then cross the\n    River Vartry. They’d walk to the bit of town less preoccupied with looking\n    twee for tourists, its houses a more functional spackled brown. They’d walk\n    until they got to the low ones, the bungalows built in deference to sea\n    gales and salty winds. A six-minute walk and there they’d be. At the\n    endless, endless sea.";
-    			t25 = space();
-    			p13 = element("p");
-    			p13.textContent = "14. When calculating the risks posed to a missing person, actuaries used to\n    use the classification method. Part One of the risk matrix dealt with\n    personal circumstances. It included factors like age, environment,\n    drug/alcohol dependency and isolation. Part Two examined the circumstances\n    of the disappearance. It included things like ‘out of character behaviour’\n    or ‘inclement weather conditions’. Each of these was awarded a single score\n    and could then be judged on a scale. This method is no longer used. It was\n    too easy to weigh circumstances heavier than they warranted. Too easy to\n    become embroiled into the personal details. Every case became a high-risk\n    case. Every case became important. The classification method was deemed\n    inefficient and abandoned.";
-    			t27 = space();
-    			p14 = element("p");
-    			p14.textContent = "15. The Irish Times Tuesday 20 November 2018, 18:28 Gardaí issue Rebecca\n    Daly appeal two years after disappearance Supt Derek O’Mahoney calls for\n    those with information to come forward Gardaí have issued a new appeal for\n    information in relation to missing woman Rebecca Daly as her family prepares\n    to mark the second anniversary of her disappearance. Ms Daly (30) vanished\n    from the streets of Wicklow Town in the late hours of 25 November 2016. Her\n    disappearance from a relatively small town so close to Christmas was the\n    subject of a high-profile search and publicity campaign, but no trace was\n    ever found. A Bank of Ireland CCTV camera on Main Street, Wicklow recorded\n    her passing by at 11.20pm heading towards Bridge Street. Supt Derek\n    O’Mahoney is appealing for anybody with information to contact the Garda\n    Confidential line 1800 666 111 or any Garda Station. Ms Daly is described as\n    5ft 6ins, of medium build with blonde shoulder-length hair and brown eyes.";
-    			t29 = space();
-    			p15 = element("p");
-    			p15.textContent = "16. Your boyfriend doesn’t leave, because imagine leaving. Leaving his\n    girlfriend with the missing sister. His girlfriend who has grown distant and\n    cold and still, like a lake frozen over in winter. That’s the only reason he\n    doesn’t leave and you know it. When it hits the two year mark you push him\n    out instead, and still manage to make him feel like it’s his fault. Grand,\n    you say. Fine. Fuck off with yourself. Your social circle is neatly halved.\n    You feel better for it.";
-    			t31 = space();
-    			p16 = element("p");
-    			p16.textContent = "17. Niamh rings you one evening, while you’re examining your new\n    conditioner. You’re trying to go all natural, and you can’t remember whether\n    parabens are allowed. You answer the phone without thinking, and it’s only\n    after the pleasantries that you remember Niamh never calls. ‘I have to do a\n    Form 12 for Revenue,’ she says. ‘They sent me a letter.’ There’s something\n    about the way she says it that makes you hesitate, and that beat of silence\n    is enough to damage whatever was hanging in the balance. ‘Yeah, it’s fine,\n    never mind. I’ll ask Dad.’ Her voice sounds thick, her throat sounds raw,\n    and before you can say anything else, she hangs up. You feel bad for a\n    minute, but then the feeling fades. It is unfortunate that Niamh has lost\n    the sister who took care of her, but in fairness, so have you.";
-    			t33 = space();
-    			p17 = element("p");
-    			p17.textContent = "18. In most fatal accident cases that make it to the High Court, an actuary\n    is brought in as an expert witness, to tally up the total loss to the\n    survivors. The losses incurred by the financial dependents of the deceased\n    are quantified under the following headings: • Loss of financial dependency\n    since the accident; • Loss of future financial dependency prior to\n    retirement; • Loss of future financial dependency after retirement; • Loss\n    of services provided by the deceased; • Accelerated value of deductible\n    assets passing on death. The actuary sits down with a calculator. They tot\n    up the total financial loss accumulated as a result of a person being taken\n    before their time. ‘Before their time,’ as though it’s possible to know when\n    that time is. Maybe there’s another kind of actuary. A tall figure draped in\n    seaweed and stinking of fish. A dark shadow who rises from the depths to\n    skulk the streets at night. Who watches us and records the tally marks that\n    the years carve into our bones. An actuary who, through some strange\n    arithmetic, decides when it is time.";
-    			t35 = space();
-    			p18 = element("p");
-    			p18.textContent = "19. Becca had thick hair, chopped at an elegant length that circled her\n    neck. When she was working, she tied it back in a neat ponytail. It was\n    efficient hair, knowledgeable hair. Your hair is wild and thin and prone to\n    over-enthusiastic impressionist shapes. No matter how tight you tie it back\n    there are always escaping strands, tiny tendrils coiling and cajoling you\n    back to dreamland. One day, as you sit at your computer, fighting the\n    flailing strands into a bejewelled hairclip, a question occurs to you. Are\n    you the eldest sister now? Is that how it works? You wonder about your\n    parents. You wonder if your parents pause when they meet new people, if they\n    are asked about their children. You wonder if they say they have three\n    daughters or two. You get sick in the toilet at work. You swallow two\n    Panadol, willow-bark bitterness coating your tongue. Someone suggests you go\n    home early. You refuse. After all, it’s over two years since your sister\n    disappeared. You throw out the hairclip. Garish, shiny tat.";
-    			t37 = space();
-    			p19 = element("p");
-    			p19.textContent = "20. A Mental List of Reasons Why Your Sister Couldn’t Have Killed Herself a.\n    She was thinking about getting a cat. b. She just bought, like, three\n    succulents. c. One week before she died, she bought the Sunday Riley Good\n    Genes Lactic Acid Treatment on the internet for £85.00, not including\n    shipping and when the pound to euro exchange rate was bad, so there’s no way\n    that would have been let go to waste. d. She was talking about taking up\n    guitar. e. It was too close to Christmas, she loved Christmas. f. When you\n    went to her apartment, after it was clear that this was serious, it was\n    clear that she was Gone, and you were enveloped in the scent of her,\n    surrounded by her things, you started picking through her drawers looking\n    for clues, and you opened her fridge and you looked inside and there was\n    half a cheesecake, and if you were going to kill yourself you would have\n    eaten the whole cheesecake and you and your sister are quite alike in\n    impulses and general temperament, or so you are told. g. She wouldn’t do\n    that. h. She just wouldn’t do that. i. She wouldn’t do that to you.";
-    			t39 = space();
-    			p20 = element("p");
-    			p20.textContent = "21. One day, nearly three years later, you’re in the Penneys on Mary Street\n    and you’re not thinking about Becca at all. You meet an old neighbour of\n    your parents’, a woman whose sun-exposed skin reminds you of the last time\n    your father cooked duck – all puckered, oily, uneven brown. She’s been\n    living in Spain the last seven years, she says. Moved there when she\n    retired, just back to visit family. She asks you how your Mammy is. She asks\n    you how Niamh is getting on. She asks you how Becca is doing. The moment\n    when a drowning person takes an involuntary breath under water is known as\n    the ‘break point’. For a moment you think that this is it. This is the point\n    at which you break. Her mouth is still moving, but all you can hear is\n    muffled ringing, all you can feel is the rush of cold water against your\n    skin as you drown. You want to slap her for reminding you and you want to\n    slap her for being here and you want to slap her for not knowing. How can\n    she not know? But then you remember that life goes on. That the gaping\n    ragged hole only exists in your world. Even though it feels hateful to her\n    memory, you don’t want to talk about your missing sister here, while you’re\n    holding a jumpsuit reduced to €5 that’s a size too small but could be\n    aspirational. You don’t feel like you owe this woman enough to do that to\n    yourself, and so you dodge the question, change the subject. You move on.";
-    			t41 = space();
-    			p21 = element("p");
-    			p21.textContent = "22. The Life Table is a table created by actuarial science which shows, for\n    each age, what the probability is that a person of that age will die before\n    their next birthday.";
-    			t43 = space();
-    			p22 = element("p");
-    			p22.textContent = "23. Listen. Here is your secret: You still call Becca. You call Becca all\n    the fucking time. Her phone rang, the first couple of days during the\n    search. Then it stopped ringing and started going straight to voicemail.\n    It’s been three years and you can still remember the exact moment, the\n    electric shock that raced down your spine, the crashing wave of relief when\n    you heard her voice, thinking she’s okay, she’s okay before you realized.\n    You still ring her, listening to the careless trip of her words as she tells\n    you that You’ve reached Becca Daly. I can’t get to the phone right now but\n    leave a message and I’ll get back to you as soon as I can! It’s like a\n    promise, so you do. You ring her, you listen to her voice, and you leave her\n    a message. She’ll get back to you as soon as she can.";
-    			t45 = space();
-    			p23 = element("p");
-    			p23.textContent = "24. The year you turn thirty is not a good year. Will this be the year that\n    you go missing? Snatched from the footpath, in the shadow between two\n    streetlights. Leaving no trace, leaving the world to go on without you after\n    the appropriate two months of searching and handwringing. That’s nonsense.\n    You won’t let it colour your decision making. It does anyway. You cancel\n    plans, curb the extent of your social presence, fail to renew subscriptions.\n    You’re due new glasses, and you put off the optometrist appointment because\n    you won’t need them when you’re Gone. You drink more. You’re alone more. The\n    strange tumour of a thought pertaining to your birthday, the idea that it\n    will fatefully and unavoidably be your last, comes with a righteous\n    indignation that tastes like tin. It comes with the idea that you are safe\n    until then. No dark shadow would dare snatch you up. Not yet. Not before\n    your time.";
-    			t47 = space();
-    			p24 = element("p");
-    			p24.textContent = "25. ‘Finally the Immaculate Virgin, preserved free from all stain of\n    original sin, when the course of her earthly life was finished, was taken up\n    body and soul into heavenly glory, and exalted by the Lord as Queen over all\n    things, so that she might be the more fully conformed to her Son, the Lord\n    of lords and conqueror of sin and death.’ The Bodily Assumption of Mary,\n    Catechism of the Catholic Church, 966";
-    			t49 = space();
-    			p25 = element("p");
-    			p25.textContent = "26. You agree to have your birthday party in Annascaul, your father’s\n    childhood town. Your parents are looking for a distraction; they want to\n    make it about family. You’re relieved to give the few friends you have left\n    an excuse not to attend. The festivities are held in Patcheen’s Pub, its\n    stone walls bedecked with balloons. Streamers hang between black and white\n    photos, over the glass case housing a taxidermy hare. There’s a buffet of\n    cocktail sausages and eggy sandwiches. Aunts and uncles and second cousins\n    all drink and laugh and dance furiously to the over-enthusiastic DJ who\n    keeps asking Are we all having a good tyyyyyme? You’re there to smile and\n    chat and slip away unnoticed around midnight. You’re not there to fight with\n    Niamh, but that’s what ends up happening. You watch her mouth as she screams\n    at you, tequila salt still clinging to her lips. She’s very drunk. You can’t\n    remember what the instigating incident was, the only thing you remember is\n    that she spat the words ‘She’s dead, not you’ so you slapped her. Hard. You\n    push past the inward rush of relatives and manage to slam your way into the\n    ladies. You pull a stall door closed and lock it, shaking hands pulling your\n    mobile from your purse. Hardly thinking, moving by muscle memory, your thumb\n    flicks open Contacts and taps Becca’s name. You make sure it’s ringing, and\n    then lift the phone to your ear. ‘Hello?’ Your heart might shatter your\n    ribs. ‘Becca?’ ‘No, sorry.’ A man’s voice. ‘Wrong number.’ The number is the\n    same. It’s been given away. You want your phone to shatter into a thousand\n    pieces. When you fuck it to the floor, you want it obliterated. Instead it\n    hits the tile with a sound like snapping plastic. It lands face up and you\n    see that the screen is now a mass of ugly jagged pieces. You know that’s\n    what you are. Splintered pieces of glass trying to stay together. When you\n    return to the party, they tell you that Niamh left. They tell you they can’t\n    find her. They tell you that your sister is Gone.";
-    			t51 = space();
-    			p26 = element("p");
-    			p26.textContent = "27. ‘Oh my fuck. Are these all Niamh’s? Is this her MED1 paperwork? Becca!’\n    You’re going through the piles of papers on Becca’s desk in her living room.\n    She’s moving out of Dublin in three weeks, and her apartment is messier than\n    you’ve ever seen it. Higgledy piggledy, boxes and clothes on every surface.\n    ’Jesus Christ. You always do her forms for her, would you not just leave her\n    at it?’ ‘Ah but she gets fierce stressed.’ Becca is in her room getting\n    changed. Her voice carries over the low thump of music from the Bluetooth\n    speakers on the couch. ‘She’ll keep getting stressed if she’s allowed avoid\n    them,’ you snort, tossing the forms back on the table. ‘It’s just paperwork,\n    for fuck’s sake.’ ‘Come here, how do I look?’ Becca comes out. She’s going\n    out out, all red dress and dangly earrings. ‘Fuck me, does he know he’s\n    getting the ride?’ ‘It’s my goodbye tour of Dublin, I’d say he knows all\n    right.’ You shriek with laughter and throw a pillow at her. ‘A goodbye tour\n    means visiting the fucking landmarks, not doing a round on every fella\n    you’ve shifted in Coppers!’ Becca takes a drink of red wine from her glass\n    and is left with two curled lines coming up from her bottom lip, giving her\n    grin a devilish cast. A month ago, she went blonde. Objectively, it suits\n    her, but you still prefer her dark. ‘Sure, I’m thirty now. I have to engage\n    in a bit of debauchery before moving to the backarse of nowhere. Drowning in\n    the boredom of adulthood.’ ‘Lovely.’ You rub the sides of your mouth with\n    your forefinger and thumb, flagging the wine marks. She takes the hint and\n    wipes, peering in the mirror to ensure her face is unmarred. Then she pulls\n    her phone from her bag. ‘Fuck. My taxi is here. Can you lock up on your way\n    out?’ ‘Yeah, no bother. Enjoy yourself!’ ‘Say a prayer to St. Jude!’ She’s\n    halfway out the door, coat pulled on, dangly earrings brushing her fragrant,\n    powdered cheeks. ‘Patron saint of lost causes!’ you both chorus, and you’re\n    laughing as she closes the door behind her.";
-    			t53 = space();
-    			p27 = element("p");
-    			p27.textContent = "28. You can taste bile and saltwater in your mouth as your car bumps and\n    dips along the narrow rural roads. You shouldn’t be driving; you’ve had\n    three glasses of wine. Maybe more, by the way it’s creeping up the back of\n    your throat. You’ve developed the habit of counting seconds in sets of\n    twelve when the world gets overwhelming. Over and over. You’re counting now,\n    as you drive a little too fast and take turns a little too hard. You have no\n    idea where Niamh has gone but you drive to the sea, feeling like you’re\n    dreaming, feeling like this is the end of all the dreams. This is where it\n    ends, and you will either be Gone by morning (before your time) or nothing\n    will happen at all. No other options. Because it was meant to be you. It was\n    meant to be you, and you will not do this again. You will not lose the other\n    half of your heart.";
-    			t55 = space();
-    			p28 = element("p");
-    			p28.textContent = "29. Saint Anthony looks, Saint Anthony finds, Saint Anthony places in front\n    of my eyes.";
-    			t57 = space();
-    			p29 = element("p");
-    			p29.textContent = "30. The car that your sister shouldn’t have driven is parked at an angle on\n    Inch Beach. The door is open, the headlights are on. Niamh isn’t inside, but\n    you spot her silhouette in the distance, illuminated by the beams. She may\n    be the youngest, but she’s also the tallest. When she was a teenager\n    learning to walk in heels, you watched her long coltish legs wobble as they\n    picked out safe paths. She’s going to the sea. Niamh doesn’t hear your\n    engine over the sound of the waves, doesn’t turn as you stumble from the\n    car. You are far, far behind her, so you have to run and run and run as she\n    walks, slow and with purpose. The sound of the crashing water is loud enough\n    that she doesn’t hear your bare feet thudding on the sand until the last\n    second – you don’t remember taking off your heels – half-turning to you as\n    your bodies collide and her hair is in your mouth and the filmy material of\n    her dress (an out out outfit) is gripped in your fist as you knock her to\n    the ground, you hold her down, and you keep her Here. ‘Let me go!’ she\n    screams, thrashing beneath you, voice ragged and wet and broken. There’s\n    sand on her lips. The words come from her throat in a drawn out, jagged\n    wail. A child’s cry of pure misery. ‘Let me go!’ You don’t let her go. The\n    sound of the waves is a smooth, repeating rumble. Nothing like the sharp\n    fractured crashes of your dreams. You hold your sister. You are thirty years\n    old.";
-    			add_location(p0, file$c, 10, 2, 269);
-    			add_location(p1, file$c, 23, 2, 1086);
-    			add_location(p2, file$c, 29, 2, 1362);
-    			add_location(p3, file$c, 34, 2, 1577);
-    			add_location(p4, file$c, 47, 2, 2441);
-    			add_location(p5, file$c, 53, 2, 2739);
-    			add_location(p6, file$c, 77, 2, 4422);
-    			add_location(p7, file$c, 85, 2, 4879);
-    			add_location(p8, file$c, 89, 2, 4990);
-    			add_location(p9, file$c, 102, 2, 5841);
-    			add_location(p10, file$c, 106, 2, 5950);
-    			add_location(p11, file$c, 119, 2, 6789);
-    			add_location(p12, file$c, 145, 2, 8633);
-    			add_location(p13, file$c, 164, 2, 9924);
-    			add_location(p14, file$c, 177, 2, 10741);
-    			add_location(p15, file$c, 192, 2, 11770);
-    			add_location(p16, file$c, 201, 2, 12286);
-    			add_location(p17, file$c, 214, 2, 13144);
-    			add_location(p18, file$c, 231, 2, 14288);
-    			add_location(p19, file$c, 247, 2, 15371);
-    			add_location(p20, file$c, 264, 2, 16532);
-    			add_location(p21, file$c, 285, 2, 18019);
-    			add_location(p22, file$c, 290, 2, 18217);
-    			add_location(p23, file$c, 303, 2, 19066);
-    			add_location(p24, file$c, 318, 2, 20033);
-    			add_location(p25, file$c, 326, 2, 20479);
-    			add_location(p26, file$c, 355, 2, 22599);
-    			add_location(p27, file$c, 384, 2, 24720);
-    			add_location(p28, file$c, 398, 2, 25622);
-    			add_location(p29, file$c, 402, 2, 25731);
-    			attr_dev(div, "class", "text");
-    			add_location(div, file$c, 5, 0, 106);
-    		},
-    		l: function claim(nodes) {
-    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, div, anchor);
-    			append_dev(div, p0);
-    			append_dev(div, t1);
-    			append_dev(div, p1);
-    			append_dev(div, t3);
-    			append_dev(div, p2);
-    			append_dev(div, t5);
-    			append_dev(div, p3);
-    			append_dev(div, t7);
-    			append_dev(div, p4);
-    			append_dev(div, t9);
-    			append_dev(div, p5);
-    			append_dev(div, t11);
-    			append_dev(div, p6);
-    			append_dev(div, t13);
-    			append_dev(div, p7);
-    			append_dev(div, t15);
-    			append_dev(div, p8);
-    			append_dev(div, t17);
-    			append_dev(div, p9);
-    			append_dev(div, t19);
-    			append_dev(div, p10);
-    			append_dev(div, t21);
-    			append_dev(div, p11);
-    			append_dev(div, t23);
-    			append_dev(div, p12);
-    			append_dev(div, t25);
-    			append_dev(div, p13);
-    			append_dev(div, t27);
-    			append_dev(div, p14);
-    			append_dev(div, t29);
-    			append_dev(div, p15);
-    			append_dev(div, t31);
-    			append_dev(div, p16);
-    			append_dev(div, t33);
-    			append_dev(div, p17);
-    			append_dev(div, t35);
-    			append_dev(div, p18);
-    			append_dev(div, t37);
-    			append_dev(div, p19);
-    			append_dev(div, t39);
-    			append_dev(div, p20);
-    			append_dev(div, t41);
-    			append_dev(div, p21);
-    			append_dev(div, t43);
-    			append_dev(div, p22);
-    			append_dev(div, t45);
-    			append_dev(div, p23);
-    			append_dev(div, t47);
-    			append_dev(div, p24);
-    			append_dev(div, t49);
-    			append_dev(div, p25);
-    			append_dev(div, t51);
-    			append_dev(div, p26);
-    			append_dev(div, t53);
-    			append_dev(div, p27);
-    			append_dev(div, t55);
-    			append_dev(div, p28);
-    			append_dev(div, t57);
-    			append_dev(div, p29);
-    			current = true;
-    		},
-    		p: function update(new_ctx, [dirty]) {
-    			ctx = new_ctx;
-    		},
-    		i: function intro(local) {
-    			if (current) return;
-
-    			add_render_callback(() => {
-    				if (div_outro) div_outro.end(1);
-
-    				if (!div_intro) div_intro = create_in_transition(div, blur, {
-    					delay: 100,
-    					duration: 800,
-    					amount: 10,
-    					easing: identity
-    				});
-
-    				div_intro.start();
-    			});
-
-    			current = true;
-    		},
-    		o: function outro(local) {
-    			if (div_intro) div_intro.invalidate();
-
-    			div_outro = create_out_transition(div, blur, {
-    				delay: 0,
-    				duration: 600,
-    				amount: 10,
-    				easing: identity
-    			});
-
-    			current = false;
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div);
-    			if (detaching && div_outro) div_outro.end();
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_fragment$e.name,
-    		type: "component",
-    		source: "",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    function instance$e($$self, $$props, $$invalidate) {
-    	let { $$slots: slots = {}, $$scope } = $$props;
-    	validate_slots("SaintSisters", slots, []);
-    	const writable_props = [];
-
-    	Object.keys($$props).forEach(key => {
-    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<SaintSisters> was created with unknown prop '${key}'`);
-    	});
-
-    	$$self.$capture_state = () => ({ blur, linear: identity });
-    	return [];
-    }
-
-    class SaintSisters extends SvelteComponentDev {
-    	constructor(options) {
-    		super(options);
-    		init(this, options, instance$e, create_fragment$e, safe_not_equal, {});
-
-    		dispatch_dev("SvelteRegisterComponent", {
-    			component: this,
-    			tagName: "SaintSisters",
-    			options,
-    			id: create_fragment$e.name
-    		});
-    	}
-    }
-
-    /* src/routes/pieces/Electric.svelte generated by Svelte v3.32.3 */
-    const file$d = "src/routes/pieces/Electric.svelte";
-
-    function create_fragment$f(ctx) {
     	let articleheader;
     	let updating_audioActive;
     	let t0;
     	let audioplayer;
     	let t1;
     	let div;
-    	let span0;
+    	let p0;
     	let t3;
-    	let span1;
+    	let p1;
     	let t5;
-    	let span2;
+    	let p2;
     	let t7;
-    	let span3;
+    	let p3;
     	let t9;
-    	let span4;
-    	let t11;
-    	let span5;
-    	let t13;
-    	let span6;
-    	let t15;
-    	let span7;
-    	let t17;
-    	let span8;
+    	let p4;
+    	let t10;
+    	let em0;
+    	let t12;
+    	let em1;
+    	let t14;
+    	let em2;
+    	let t16;
+    	let em3;
+    	let t18;
     	let t19;
-    	let span9;
+    	let blockquote0;
     	let t21;
-    	let span10;
+    	let p5;
     	let t23;
-    	let span11;
+    	let p6;
     	let t25;
-    	let span12;
+    	let p7;
     	let t27;
-    	let span13;
+    	let p8;
     	let t29;
-    	let span14;
+    	let p9;
     	let t31;
-    	let span15;
+    	let p10;
     	let t33;
-    	let span16;
+    	let p11;
     	let t35;
-    	let span17;
+    	let p12;
     	let t37;
-    	let span18;
+    	let blockquote1;
     	let t39;
-    	let span19;
+    	let p13;
     	let t41;
-    	let span20;
+    	let p14;
     	let t43;
-    	let span21;
+    	let blockquote2;
     	let t45;
-    	let span22;
+    	let p15;
     	let t47;
-    	let span23;
+    	let p16;
     	let t49;
-    	let span24;
+    	let p17;
     	let t51;
-    	let span25;
+    	let p18;
     	let t53;
-    	let span26;
+    	let p19;
     	let t55;
-    	let span27;
+    	let p20;
     	let t57;
-    	let span28;
+    	let p21;
     	let t59;
-    	let span29;
+    	let p22;
     	let t61;
-    	let span30;
+    	let p23;
     	let t63;
-    	let span31;
+    	let p24;
     	let t65;
-    	let span32;
+    	let p25;
     	let t67;
-    	let span33;
+    	let p26;
     	let t69;
-    	let span34;
+    	let p27;
     	let t71;
-    	let span35;
+    	let p28;
     	let t73;
-    	let span36;
+    	let p29;
     	let t75;
-    	let span37;
+    	let p30;
     	let t77;
-    	let span38;
+    	let p31;
     	let t79;
-    	let span39;
+    	let p32;
     	let t81;
-    	let span40;
-    	let t83;
-    	let span41;
-    	let t85;
-    	let span42;
-    	let t87;
-    	let span43;
-    	let t89;
-    	let span44;
-    	let t91;
-    	let span45;
-    	let t93;
-    	let span46;
-    	let t95;
-    	let span47;
-    	let t97;
-    	let span48;
-    	let t99;
-    	let span49;
-    	let t101;
-    	let span50;
-    	let t103;
-    	let span51;
-    	let t105;
-    	let span52;
-    	let t107;
-    	let span53;
-    	let t109;
-    	let span54;
-    	let t111;
-    	let span55;
-    	let t113;
-    	let span56;
-    	let t115;
-    	let span57;
-    	let t117;
-    	let span58;
-    	let t119;
-    	let span59;
-    	let t121;
-    	let span60;
-    	let t123;
-    	let span61;
-    	let t125;
-    	let span62;
-    	let t127;
-    	let span63;
-    	let t129;
-    	let span64;
-    	let t131;
-    	let span65;
-    	let t133;
-    	let span66;
-    	let t135;
-    	let span67;
-    	let t137;
-    	let span68;
-    	let t139;
-    	let span69;
-    	let t141;
-    	let span70;
-    	let t143;
-    	let span71;
-    	let t145;
-    	let span72;
-    	let t147;
-    	let span73;
-    	let t149;
-    	let span74;
-    	let t151;
-    	let span75;
-    	let t153;
-    	let span76;
-    	let t155;
-    	let span77;
-    	let t157;
-    	let span78;
-    	let t159;
-    	let span79;
-    	let t161;
-    	let span80;
-    	let t163;
-    	let span81;
-    	let t165;
-    	let span82;
-    	let t167;
-    	let span83;
-    	let t169;
-    	let span84;
-    	let t171;
-    	let span85;
-    	let t173;
-    	let span86;
-    	let t175;
-    	let span87;
-    	let t177;
-    	let span88;
-    	let t179;
-    	let span89;
-    	let t181;
-    	let span90;
-    	let t183;
-    	let span91;
-    	let t185;
-    	let span92;
-    	let t187;
-    	let span93;
-    	let t189;
-    	let span94;
-    	let t191;
-    	let span95;
-    	let t193;
-    	let span96;
-    	let t195;
-    	let span97;
-    	let t197;
-    	let span98;
-    	let t199;
-    	let span99;
-    	let t201;
-    	let span100;
-    	let t203;
-    	let span101;
-    	let t205;
-    	let span102;
-    	let t207;
-    	let span103;
-    	let t209;
-    	let span104;
-    	let t211;
-    	let span105;
-    	let t213;
-    	let span106;
-    	let t215;
-    	let span107;
-    	let t217;
-    	let span108;
-    	let t219;
-    	let span109;
-    	let t221;
-    	let span110;
-    	let t223;
-    	let span111;
-    	let t225;
-    	let span112;
-    	let t227;
-    	let span113;
-    	let t229;
-    	let span114;
-    	let t231;
-    	let span115;
+    	let p33;
     	let div_intro;
     	let div_outro;
     	let current;
@@ -6480,8 +5570,8 @@ var app = (function () {
     	}
 
     	let articleheader_props = {
-    		title: "Getting The Electric",
-    		author: "Louise Hegarty"
+    		title: "A Scarf",
+    		author: "Doireann Ní Ghríofa"
     	};
 
     	if (/*audioActive*/ ctx[0] !== void 0) {
@@ -6499,7 +5589,7 @@ var app = (function () {
     			props: {
     				src: "/assets/audio/electric.mp3",
     				active: /*audioActive*/ ctx[0],
-    				credits: "Composed and performed by Maija Sofia."
+    				credits: "Read by Vicky Langan."
     			},
     			$$inline: true
     		});
@@ -6511,587 +5601,171 @@ var app = (function () {
     			create_component(audioplayer.$$.fragment);
     			t1 = space();
     			div = element("div");
-    			span0 = element("span");
-    			span0.textContent = "‘Before getting the electric, we had no running water, no refrigeration, no\n    machine for washing. We were bound to daylight hours. Electricity meant\n    parish hall dances and colour and fun. It was a release from the drudgery.\n    It meant we could finally see ourselves.’";
+    			p0 = element("p");
+    			p0.textContent = "Last year, during long-delayed works on our home, our family struggled to\n    find anywhere to rent. My husband’s father agreed to lend us the\n    twenty-five-year-old campervan he had recently purchased. For an uncertain\n    number of months its three beds, chemical toilet, two-ring gas hob,\n    child-sized sink and mini-fridge would accommodate the six of us.";
     			t3 = space();
-    			span1 = element("span");
-    			span1.textContent = "The first induction coil was invented in 1836 by Nicholas Callan, a priest\n    and scientist from Louth. This early form of transformer contributed greatly\n    to the widespread distribution of electricity throughout the world.";
+    			p1 = element("p");
+    			p1.textContent = "We did our best to adapt. I took to loitering in the schoolyard long after\n    everyone else had left, so the children could play and shout and run. My\n    husband hauled our ancient washing machine onto a table in the garage and\n    improvised a rickety slide from old gutters and twine, rollercoastering suds\n    out to the drain. The van’s side window, slightly ajar, became our\n    letterbox; we thanked the postman through mouthfuls of cereal. I grew used\n    to fetching water from the fresh-water pipe that lay in the gravel outside,\n    but not to the stiff valve that always sprayed my shins, nor to the grit\n    that inevitably found its way into my coffee. It’s only for a few months, we\n    said, as the six of us showered in a local gym. Any time a cheap Airbnb\n    became available within a ninety-minute drive, we hurried to its heaters,\n    oven dinners and hot water – but such occasions were rare, and winter was\n    approaching.";
     			t5 = space();
-    			span2 = element("span");
-    			span2.textContent = "The advantages of electricity to the agricultural industry and the\n    day-to-day lives of farmers would be undeniably immense. It would lead to an\n    improvement in hygiene and safety standards, the simplifying of many daily\n    tasks and a rise in efficiency, which would result in greater profits. It\n    would also make rural Ireland an attractive site for new industries. It is\n    imperative therefore that such a scheme begins without further delay. -\n    'Electricity in Rural Ireland' by A. Byrne published in Muintir na Tíre\n    (Issue 22, March 1929, p.8)";
+    			p2 = element("p");
+    			p2.textContent = "It grew cold. Storm clouds gathered; the van flinched from the gales. I\n    flinched too. No matter how long I bent over that small sink, scrubbing,\n    always scrubbing, our belongings felt grimy. If two of us stood upright at\n    once, the van felt intolerably crowded. I didn’t scream, but I often wanted\n    to. When I dug out our box of hats and gloves, I held the familiar darkness\n    of my favourite scarf to my face, inhaling deeply. It smelled like home. I\n    began to wear it all the time, taking it off only while I slept.";
     			t7 = space();
-    			span3 = element("span");
-    			span3.textContent = "Thomas McLaughlin (1896 - 1971) was born in Drogheda. After studying in UCD\n    and UCG, McLaughlin moved to Berlin in 1922 to work for the German\n    electrical engineering company Siemens-Schuckert. He returned to Ireland in\n    December 1923 where he became one of the key figures in the Shannon\n    hydroelectric scheme. He later became the executive director of the EBS.";
+    			p3 = element("p");
+    			p3.textContent = "An invitation to spend the Halloween midterm at a friend’s empty cottage in\n    Mayo seemed too good to be true: a week of warm beds would be luxurious, not\n    to mention a dishwasher. There was something else, too: a half-remembered\n    family myth from Mayo. Stray threads began to come back to me as we drove\n    the tunnel deep under the Shannon. My young great-grandfather on the run;\n    soldiers surrounding a church while he was at mass; and his escape disguised\n    as a woman.";
     			t9 = space();
-    			span4 = element("span");
-    			span4.textContent = "In Cavan there was a great fire, Judge McCarthy was sent to inquire, It\n    would be a shame, if the nuns were to blame, So it had to be caused by a\n    wire. - Flann O’Brien & Tom O’Higgins";
-    			t11 = space();
-    			span5 = element("span");
-    			span5.textContent = "In our country, electrification is more than merely producing light or\n    power. It is bringing light into darkness… we are going to put into the\n    homes of our people in rural areas a light which will light up their minds\n    as well as their homes. If we do that, we will have brought a new atmosphere\n    and a new outlook to many of these people. - James Larkin Jnr, TD, speaking\n    during the Second Stage debate on the Electricity Supply (Amendment) Bill,\n    1944";
-    			t13 = space();
-    			span6 = element("span");
-    			span6.textContent = "The Rural Area Organiser was an important figure in developing the\n    relationship between the ESB and local people. The job involved encouraging\n    householders to sign up to the scheme as well as advising on the purchase of\n    electrical appliances.";
-    			t15 = space();
-    			span7 = element("span");
-    			span7.textContent = "AN ACT TO MAKE PROVISION FOR THE FORMATION AND REGISTRATION OF A COMPANY\n    HAVING FOR ITS PRINCIPAL OBJECTS THE ACQUISITION, ERECTION, AND OPERATION OF\n    SUGAR FACTORIES IN SAORSTÁT ÉIREANN, AND TO PROVIDE FOR THE ACQUISITION BY\n    THE MINISTER FOR FINANCE OF SHARE CAPITAL OF SUCH COMPANY, FOR THE GIVING OF\n    GUARANTEES BY THE STATE IN RELATION TO DEBENTURES ISSUED BY SUCH COMPANY,\n    FOR THE COMPULSORY ACQUISITION OF LAND AND THE CONSTRUCTION, MAINTENANCE,\n    AND OPERATION OF TRANSPORT WORKS BY SUCH COMPANY, AND FOR OTHER MATTERS\n    CONNECTED WITH THE MATTERS AFORESAID. [23rd August, 1933.]";
-    			t17 = space();
-    			span8 = element("span");
-    			span8.textContent = "Once upon a time there was a man and a woman who lived with their two\n    children—a girl and a boy—on a small farm. Beside their house was a fairy\n    fort. The woman was pregnant with a child and late one night she gave birth\n    to a little boy. They warned the two older children never to leave the\n    window to the bedroom open in case a fairy entered and took the baby, who\n    was vulnerable… - The Changeling transcribed by a member of our volunteer\n    transcription project, duchas.ie";
+    			p4 = element("p");
+    			t10 = text("In Clare we paused for lunch at my parents’ home. While the children\n    squabbled over pizza, I poked through bookshelves until I found what I was\n    looking for. The first folder had been compiled by my grandfather and\n    incorporated reminiscences of his own youth, a vast family tree, and\n    recollections of his father, Pádhraic Ó Gabhláin. Pádhraic was the subject\n    of the second folder too, a college project submitted by my mother as part\n    of her teacher training. This included an appendix of photocopied sources:\n    handwritten letters, old maps, obituaries, and copies of articles from the ");
+    			em0 = element("em");
+    			em0.textContent = "Freeman’s Journal";
+    			t12 = text(", ");
+    			em1 = element("em");
+    			em1.textContent = "An Claidheamh Solais";
+    			t14 = text(", the ");
+    			em2 = element("em");
+    			em2.textContent = "Western People";
+    			t16 = text(", and the\n    ");
+    			em3 = element("em");
+    			em3.textContent = "Irish Independent";
+    			t18 = text(". Having little time before we had to get back on\n    the road, I flicked through the obituaries until I found a trace of the\n    story I sought, documented in newsprint by his friend Aodh Ó Nualláin. The\n    obituary described events that had occurred one Sunday at Aghamore church in\n    east Mayo during the War of Independence, when ‘a company of military\n    arrived and surrounded the church’. Pádhraic – a member of what was\n    initially known as the Irish Volunteers and later as the IRA –");
     			t19 = space();
-    			span9 = element("span");
-    			span9.textContent = "… I hope to see the day that when a girl gets a proposal from a farmer she\n    will inquire not so much about the number of cows, but rather concerning the\n    electrical appliances that she will require before she gives her consent,\n    including not merely electric light but a water heater, an electric clothes\n    boiler, a vacuum cleaner and even a refrigerator. - Minister Seán Lemass\n    speaking during the Second Stage debate on the Electricity Supply\n    (Amendment) Bill, 1944";
+    			blockquote0 = element("blockquote");
+    			blockquote0.textContent = "by dressing as a woman and walking out of the church with as much dignity as\n    possible among the women members of the congregation. Apparently there was\n    some delay in getting the proper fit in clothes and shoes, but the celebrant\n    of the mass, the late Reverend Father Garvey, was a staunch Republican, and\n    many in the congregation noticed that on that particular Sunday the prayers\n    after mass were unusually long.";
     			t21 = space();
-    			span10 = element("span");
-    			span10.textContent = "Customs-Free Airport Act, 1947 2.—(1) The Minister, with the concurrence of\n    the Minister for Finance, may by order declare that, on and after a\n    specified date, the land enclosed within the limits defined by the order\n    shall be the Customs-free airport for the purposes of this Act. (2) The\n    Minister, with the concurrence of the Minister for Finance, may from time to\n    time by order amend the order under subsection (1) of this section by\n    varying the limits of the airport. (3) The airport shall comprise only land\n    which for the time being belongs to the State.";
+    			p5 = element("p");
+    			p5.textContent = "I wanted to know more, but it was nearly time to leave. I made a quick run\n    to the copy-shop and then hurried the folders back to the shelf.";
     			t23 = space();
-    			span11 = element("span");
-    			span11.textContent = "What does rural electrification mean to you? How can you get it to your\n    house and farmyard?";
+    			p6 = element("p");
+    			p6.textContent = "As we drove onwards to Mayo, I held my photocopies close. It was dark by the\n    time we found our way to the cottage, unpacked, and put the children to bed.\n    I poured a glass of wine, opened the documents, and began at the beginning.";
     			t25 = space();
-    			span12 = element("span");
-    			span12.textContent = "The switching on ceremony was an important part of the process and\n    generally featured a dance, a dinner and speeches from local politicians,\n    members of the clergy and representatives of the ESB. - Switching on: A\n    History of Rural Electrification in Ireland by John Swanzy (Mweelrea Press,\n    2016)";
+    			p7 = element("p");
+    			p7.textContent = "Born in 1892, Pádhraic left primary schooling to work on local farms and\n    bogs, travelling alongside his neighbours to labour seasonally in England.\n    This cluster of families had worked side by side for generations – the\n    Bolands, Greallys, Spellmans, and Forkans had been neighbours since\n    pre-Famine times, my grandfather wrote, their names marked on landlord’s\n    maps ‘of linen in Indian ink and watercolour with lists of tenants and\n    holdings’. He and his best friend Hugh Nolan (who, decades later, would sign\n    his obituary as Aodh Ó Nualláin) were sometimes overheard chatting about\n    characters from Dickens in terms so familiar that passers-by presumed they\n    were speaking of locals. Together, they started a pamphlet that was posted\n    from house to house, with each recipient filling an empty page with a new\n    story.";
     			t27 = space();
-    			span13 = element("span");
-    			span13.textContent = "Virginia O’Brien (1898 - 1988) was the longest serving chairwoman of the\n    Irish Countrywomen’s Association. During her lifetime she witnessed\n    significant changes in the lives of rural Irish people: the advent of\n    independence, the rural electrification scheme and membership of the EEC.\n    She was married to Frank O’Brien until his death and they had five children\n    together.";
+    			p8 = element("p");
+    			p8.textContent = "The 1911 census noted that Pádhraic’s parents spoke both Irish and English,\n    whereas he and his siblings spoke English only. There, he was documented\n    under the name he grew up with: Patrick Forkan. Shortly thereafter, in his\n    early twenties, he and some friends were chatting by the roadside when a\n    passing teacher greeted the group casually in Irish. My great grandfather\n    felt such shame at his inability to reply that he began to attend Irish\n    classes. He quickly took to the language. Such was the demand among young\n    people wishing to do likewise at that time that anyone who had gained a\n    minimal fluency in Irish was asked to volunteer to instruct new students. In\n    those slapdash classrooms he found his vocation; and henceforth he always\n    used the Irish form of his name. Teaching was to become what Ó Nualláin’s\n    obituary described as ‘the pleasure of his life’. Beyond those classes, his\n    days were spent in farmwork, reading, and writing.";
     			t29 = space();
-    			span14 = element("span");
-    			span14.textContent = "This is the tenth issue of the staff magazine and we are now well into the\n    swing of things. We have completed at least one area in each county with\n    some counties already having completed two or three. Before the end of this\n    year we will be adding another five construction crews to the ten already\n    working in the field. Shortly, we will also be increasing the number and\n    variety of appliances available in our showroom - Editor’s Letter, REO News\n    (vol. 10, September 1948, p1)";
+    			p9 = element("p");
+    			p9.textContent = "By April 1917 Pádhraic was secretary of a local branch of Conradh na Gaeilge\n    and had established a company of the Irish Volunteers in Crossard.\n    Photographed at the Sinn Féin ardfheis with neat tie, crisp collar, and hair\n    swept to the side, he smiled with earnest eyes. He did not know what was to\n    come. No one did. I found that my own grasp of what was to come was lacking\n    too, so I turned to the internet to fill the gaps in my knowledge of the War\n    of Independence. By 1920, I read, attacks on the constabulary were growing\n    so common all over the country that supplementary forces were deployed. So\n    many of the Black and Tans and Auxiliaries arriving in Ballyhaunis had\n    fought in the First World War that the area in which they were billeted was\n    nicknamed ‘The Dardanelles’. Incidents of cruelty, drunken violence and\n    torture were soon reported across Mayo. In response, local resistance groups\n    grew, companies of the Irish Volunteers proliferated, and both ambushes and\n    retaliatory acts of violence intensified.";
     			t31 = space();
-    			span15 = element("span");
-    			span15.textContent = "A backslider was a householder who had initially signed up for the\n    electricity scheme but who changed their minds once crews arrived.";
+    			p10 = element("p");
+    			p10.textContent = "Ó Nualláin noted that Pádhraic took a very active part in the organisation\n    of the Ballyhaunis Battalion, a fact that was apparently noticed by the\n    Occupation Forces of the area, for from early in the troubled times he\n    seemed to have attracted their particular attention. From documents captured\n    by the Dublin brigade and forwarded to the local volunteers it became clear\n    that he was a marked man, and he was obliged to go ‘on the run’ and remain\n    constantly on the alert.";
     			t33 = space();
-    			span16 = element("span");
-    			span16.textContent = "THE REPUBLIC OF IRELAND ACT, 1948 AN ACT TO REPEAL THE EXECUTIVE AUTHORITY\n    (EXTERNAL RELATIONS) ACT 1936, TO DECLARE THAT THE DESCRIPTION F THE STATE\n    SHALL BE THE REPUBLIC OF IRELAND, AND TO ENABLE THE PRESIDENT TO EXERCISE\n    THE EXECUTIVE POWER OR ANY EXECUTIVE FUNCTION OF THE STATE IN OR IN\n    CONNECTION WITH ITS EXTERNAL RELATIONS. [21ST DECEMBER, 1948] BE IT ENACTED\n    BY THE OIREACHTAS AS FOLLOWS:—";
+    			p11 = element("p");
+    			p11.textContent = "The next morning, I cleared the children’s breakfast bowls from the table\n    and searched groggily through the online archives of the Bureau of Military\n    History, hoping to find Pádhraic’s story recounted in his own words; but it\n    seems he did not provide testimony to the Bureau. I did find his name in\n    documentation from the Military Service Pensions Collection, dated 1935, in\n    which those who fought in Mayo battalions were listed retrospectively. His\n    name is among those recalled by Captain Seán Carney, who listed him as\n    Patrick Forkan of the 2nd Western Division, I Brigade (South Mayo), 5th\n    Battalion, B Company. Many of the surnames my grandfather had noted on local\n    pre-Famine maps were also listed in this company, suggesting that he was\n    among friends and neighbours.";
     			t35 = space();
-    			span17 = element("span");
-    			span17.textContent = "Each area was canvassed in order to assess interest and need and to promote\n    the benefits of electricity. A majority needed to sign up to the scheme in\n    order for it to proceed. Showrooms were opened so that electrical appliances\n    could be demonstrated to the public. Routes were surveyed, budgets were\n    drawn up and then the erection of electricity poles began. - Swanzy, ibid.";
+    			p12 = element("p");
+    			p12.textContent = "In the absence of a description in my great-grandfather’s own words, I\n    sought out accounts by the others. Ernie O’Malley’s oral history of the War\n    of Independence in Mayo was available online, and there I read how Johnny\n    Greally – a man who was born, grew up, lived, and fought by Pádhraic’s side\n    – described the day their commanding officer, Seán Corcoran, was murdered:";
     			t37 = space();
-    			span18 = element("span");
-    			span18.textContent = "The key-note of Electric Water- Heating is simplicity. There is no\n    complicated ritual of turning handles at the psychological moment – you just\n    turn the hot water tap.";
+    			blockquote1 = element("blockquote");
+    			blockquote1.textContent = "We heard that Curley’s house was to be burned, and we went to get rifles to\n    defend it. Seán and Maurice Mullins were supposed to call at this house, but\n    when he was coming over Seán ran into a patrol of Tans. His revolver jammed\n    at the first shot and he was shot dead, and Maurice, who was unarmed, was\n    beaten almost to death. They beat him there and they threw him in on top of\n    the dead Seán Corcoran in the turf house of the Barracks.";
     			t39 = space();
-    			span19 = element("span");
-    			span19.textContent = "‘They were young men. They looked like my grandsons. But they did the job\n    well. There was a lot of interest from everyone and we would all go out to\n    watch them erect poles and string cables. My wife would bring them cups of\n    tea and slices of warm brown bread.’";
+    			p13 = element("p");
+    			p13.textContent = "Later that day, a sniper shot one of the Black and Tans in retaliation. As\n    vengeance, the Black and Tans murdered a local man named Michael Coen,\n    mutilating his corpse: ‘they cut off his private parts and pinned them on\n    his breast, and they cut the flesh of his legs and arms. They cut off his\n    ears and left him out on the road. They were night and day in that area in\n    Crossard townland, searching, for they must have had information. [...] The\n    people stiffened their resistance.’";
     			t41 = space();
-    			span20 = element("span");
-    			span20.textContent = "You will want a light on in every room. Place it so as to give the best\n    light where you need it most. In some cases you might want two or more\n    lights. Make sure that your staircase light can be switched on or off from\n    either the foot of the stairs or the landing.";
+    			p14 = element("p");
+    			p14.textContent = "I do not know what part, if any, Pádhraic played in the events of that day,\n    but Greally’s account allowed me a glimpse of the environment in which he\n    was engaged. Pádhraic was one of many who survived by stealth in those\n    years, hurrying from safe-house to safe-house. His continued evasion of the\n    Black and Tans became a source of local bafflement. Ó Nualláin writes:";
     			t43 = space();
-    			span21 = element("span");
-    			span21.textContent = "The switching on ceremony will take place from 8 o’clock on Tuesday night\n    the 14th of October in the parish hall. There will be a blessing from Father\n    Aherne and opening speeches from Mrs O’Brien of the ICA and Mr Geary of the\n    ESB. The switching on will happen at half past nine sharp. Following this\n    there will be a dance with music provided by the West Coast Showband. PUBLIC\n    NOTICE";
+    			blockquote2 = element("blockquote");
+    			blockquote2.textContent = "In spite of the special enemy attention he took part in all the activities\n    of the area and was never captured, although his many hairbreadth escapes\n    made him almost a legendary figure in his native district. On one occasion\n    when visiting his own home he was suddenly told that a large force of police\n    and military were surrounding the house. He slipped out, however, and\n    although the enemy opened fire, his knowledge of the country enabled him to\n    escape.";
     			t45 = space();
-    			span22 = element("span");
-    			span22.textContent = "Transcript of recording made as part of a local history project: Once it\n    was dark and the speeches were over, we put out the paraffin lights and\n    candles and the local priest switched on the big metal switch and then\n    everything was bright. Myself and Davey ran out into the street and all the\n    streetlights were on and we could run around in the dark. And we could see\n    the lights all over, up the hills and far away. The fields twinkled. When we\n    came back, we sneaked a small bit of porter and danced and got shouted at\n    because we trampled on the marigolds.";
+    			p15 = element("p");
+    			p15.textContent = "Greally explained to Ernie O’Malley that their small group ‘had no arms save\n    shotguns. There were a couple of rifles but you couldn’t be sure of them. We\n    fired off ammunition from Seán Corcoran’s rifles, but only an odd round went\n    off. We had very few short arms.’ The best resource at their disposal was\n    the goodwill offered by neighbours, whether through shelter or sustenance.";
     			t47 = space();
-    			span23 = element("span");
-    			span23.textContent = "Supply will be given to whole areas. An ‘area’ should be about 25 sq.\n    miles. A parish or creamery district might conveniently form the basis of\n    such an area.";
+    			p16 = element("p");
+    			p16.textContent = "Within a month of Corcoran and Coen’s deaths, I read, the men found\n    themselves in peril again, having been traced to a remote area of bogland.\n    Greally described how the Black and Tans had information that we would be in\n    the bog, the six of us, myself and Paddy Boland, the company O/C, Pádhraic\n    Forkan, a Gaelic teacher, Austin Kenny and Jim Kilkelly. They wanted these\n    six of us. We were in a neighbour’s house where we used to stay, when Paddy\n    Mullins, the Brigadier, sent over bombs with me. The Master sent word to us\n    by a young lad, who came across the fields, and we had just time to get out.\n    They, the soldiers, fired shots, and they went into the house again, and\n    they bayoneted poor Paddy Boland who was an only son. They bursted the\n    bayonet in him and they almost cut his nose off with a bayonet also.";
     			t49 = space();
-    			span24 = element("span");
-    			span24.textContent = "Statement of evidence of Garda ________ of An Garda Síochána made on the\n    16th October 1948. I hereby declare this statement is true to the best of my\n    knowledge and belief and I make it knowing that if it is tendered in\n    evidence I will be liable to prosecution if I state in it anything which I\n    know to be false or do not believe to be true. I was called to a house at\n    ______ at 12:05am on the 15th of October 1948. I spoke with a man there who\n    I know to be ___________ who resides at the residence with his wife,\n    _______, his three children and his mother-in-law. He informed me that his\n    infant child had gone missing from the house. He and his wife had been at\n    the parish hall and had returned to the house at approximately 11:20pm. He\n    says that his mother-in-law was in the house with the children while they\n    were out and that she was asleep in the back kitchen when they returned.\n    They went upstairs to check on the children and found that the youngest\n    ______ was missing. They searched the house, but he could not be found. His\n    wife then left the premises to see if he had maybe wandered into the street\n    and he followed her. The child is 2 years old and was wearing blue and white\n    pyjamas when he went to bed. He has light brown hair and blue eyes. This\n    statement has been read over by me and is correct.";
+    			p17 = element("p");
+    			p17.textContent = "The neighbour in whose house they had sheltered was my\n    great-great-grandmother: Pádhraic would marry her daughter. I remembered her\n    from a section of my grandfather’s reminiscences I’d read the night before,\n    a memorable passage that skipped from amusement to dread within a single\n    paragraph: My grandmother looked like a grandmother. She was fat and\n    comfortable and dressed in black. [...] She said very little about ‘the\n    troubles’. The only thing I remember was her account of the day when Paddy\n    Boland was shot. ‘The boys’ had run from her house as the troops approached\n    and scattered across the bog. Paddy Boland was shot dead a few hundred yards\n    from the house. She watched from a window as his body was carried on an\n    improvised stretcher covered in a blanket. It was only when she could see\n    the boots that she knew it was not one of her own sons.";
     			t51 = space();
-    			span25 = element("span");
-    			span25.textContent = "The entire village came out to search in laneways and ditches and\n    neighbours’ gardens and fields and graveyards. But nothing. And no-one had\n    seen anything of course because everyone had been at the switching on\n    ceremony. There was no sign of anyone having gained entry to the house. The\n    old woman downstairs never woke. The other children remained asleep in their\n    beds. It was as if the child had just disappeared into thin air. - The\n    Village in the Dark by JB Duane (New Editions, 1995)";
+    			p18 = element("p");
+    			p18.textContent = "The date of Pádhraic’s escape from Aghamore church is not recorded in any\n    document I have seen; all we know for sure is that it must have happened\n    during the year and a half between the arrival of the Black and Tans in\n    Ireland, at the beginning of 1920, and the truce that was agreed in the\n    summer of 1921.";
     			t53 = space();
-    			span26 = element("span");
-    			span26.textContent = "The weather has been difficult in recent weeks for crews working in the\n    West and Northwest, which has meant that we are slightly behind schedule.\n    More workers will be sent to help these crews catch up. - Editor’s Letter,\n    REO News (vol 12, November 1948, p.1)";
+    			p19 = element("p");
+    			p19.textContent = "After the truce, and the treaty, and the split in the republican movement,\n    Pádhraic couldn’t bring himself to participate in the civil war that com\n    menced in the summer of 1922. Another obituary, by C. Caimbhéal, noted that\n    ‘He was a respecter of valour and worth in any who had shown faith in their\n    cause. I recall his yearly buying of poppies from an ex-army captain on\n    Armistice Day. He was no bigot.’ He married. He wrote. He worked. His\n    children were born. He returned to his beloved books. He secured a job at\n    Ballyhaunis Vocational School, and filled his summers with further teaching\n    at Coláiste Chonnacht, in the heartlands of Conamara. He loved to read, to\n    write, to teach, and to laugh.";
     			t55 = space();
-    			span27 = element("span");
-    			span27.textContent = "HOLY HOUR TO PRAY FOR VOCATIONS on the 24th of October from 3 o’clock to 4\n    o’clock. All are welcome—prayer followed by tea and biscuits. ANNUAL\n    COLLECTION FOR CHARITY at all Masses during November. SPECIAL MASS to be\n    held this Sunday for the _____ family. Prayers will be said for the safe\n    return of their young boy.";
+    			p20 = element("p");
+    			p20.textContent = "My grandfather noted that ‘a straightforward description of my father’s\n    subsequent career might make him sound like a worthy, earnest and dull\n    character. This is as far from the truth as could be. One of the most\n    obvious things about him was his sense of humour – wild, anarchical humour\n    in his youth; warm and witty in his later years and never fully subdued by\n    old age.’ Reading this line, I wished that I could have heard him laugh.\n    When Pádhraic died in 1965, his coffin was draped in the tricolour, and his\n    surviv- ing comrades, Johnny Greally among them, formed a guard of honour. A\n    passionate graveside oration was delivered by John P. Jordan. Of this\n    funeral, C. Caimbhéal wrote: ‘There were no tears on any face for it was the\n    honouring of a warrior, and none weep when a soldier sleeps when his fight\n    is over.’";
     			t57 = space();
-    			span28 = element("span");
-    			span28.textContent = "‘Apparently she left the front door unlocked and her mother asleep\n    downstairs. The older children didn’t even wake up. Someone snuck in and\n    took the baby. And I feel terrible for them. I do. But they were very\n    careless. Leaving the children like that to go out drinking and dancing.’";
+    			p21 = element("p");
+    			p21.textContent = "After closing the folders and all the tabs on my phone, I couldn’t stop\n    thinking about what I’d read. I woke that night thinking of how the young\n    Pádhraic had sent his little pamphlets from house to house, always including\n    empty pages in which recipients could add a new story. So far, his son and\n    granddaughter and several obituarists had filled pages with their writings\n    on his life; perhaps I could add a page, too. ‘Cloch le carn’ is the phrase\n    used for the traditional act of adding one’s own stone to a cairn made in\n    memory of another. Rather than a cairn, however, I found myself thinking of\n    the story as a beloved scarf, a garment whose stitches I had already begun\n    to unpick into a soft mass of unravelled facts. As a girl, the story of his\n    escape from Aghamore church had seemed a neatly woven tale of adventure,\n    prudently tailored to a child’s ears: no torn flesh, no torture, no terror.\n    Now that the dark red of Greally’s voice had seeped in, however, there could\n    be no erasing it. I wondered what other threads might add themselves as I\n    set upon knitting my own telling of it.";
     			t59 = space();
-    			span29 = element("span");
-    			span29.textContent = "Statement of _______ of _______, ______ taken on the 15th of October 1948\n    at _________ by Garda ________. We, my wife _______ and I, saw ______\n    running through the street. We were on our way back from the switching on\n    ceremony. I had consumed three drinks and my wife one. We were taking our\n    time. We were admiring the new streetlights. Then we heard a woman screaming\n    and crying and my wife said, ‘is that ______?’ She knows her from the ICA.\n    And the woman was knocking on doors and was very distressed. We started to\n    walk over to her and then her husband appeared and caught up with her and\n    held her. We went to check that things were okay but obviously they weren’t.\n    I went back to the parish hall to alert Garda ________ and he accompanied me\n    back to the street. This statement has been read over by me is correct.";
+    			p22 = element("p");
+    			p22.textContent = "It was this curiosity that led me to bring the whole family to the church at\n    Aghamore the following day. We are not a family of mass-goers, and I can’t\n    recall how I sold them on this road trip. As soon as we parked, I hurried\n    ahead, certain that I wouldn’t have much time before the kids lost patience,\n    before pausing in the porch, suddenly nervous. I would be alone, if only for\n    the length of time it took my husband to wrestle coats and hats onto our\n    children. A residual whiff of sanctity haunted the air. My breath was short\n    and growing shorter – I had wound my scarf too well, I realized, tucking a\n    finger between fabric and throat until it gave a little. I drank a deep\n    lungful and watched my breath hurry away, a small fog, or a ghost: glimpsed,\n    then gone. I pushed the door and stepped into the story.";
     			t61 = space();
-    			span30 = element("span");
-    			span30.textContent = "Statement of __________ of ___________. I hereby declare this statement is\n    true to the best of my knowledge and belief and I make it knowing that if it\n    is tendered in evidence I will be liable to prosecution if I state in it\n    anything which I know to be false or do not believe to be true. I noticed a\n    man in the village in the days before the disappearance of the young boy. I\n    didn’t recognise him, which is unusual because we all know each other around\n    here. He was about 5’10” with long dark hair. He was wearing a brown jacket\n    and dark coloured pants. He didn’t seem to have washed in a couple of days.";
+    			p23 = element("p");
+    			p23.textContent = "The church was empty. I moved quickly up the aisle, snapshotting details on\n    my phone as I went: a statue, an altar cloth, a dent worn into the floor by\n    many decades of footfall. Outside, clouds broke and blew; when shards of\n    sunlight met stained-glass eyes, I wondered whether those glassy faces had\n    felt alive to my great-grandfather, too. Above my head, the intricately\n    crafted timber roof was neat as a ribcage. All his life, Pádhraic returned\n    to pray here, surrounding himself with the same people, all standing and\n    kneeling in uni- son, their voices murmuring a warm chorus around his.\n    Together and alone, they aged. Theirs were the eyes that met his in worship,\n    on feast days, at funerals and baptisms, on the day he escaped from the\n    Crown forces, and on his wedding day.";
     			t63 = space();
-    			span31 = element("span");
-    			span31.textContent = "Some people may think of electricity in the home as a luxury to provide\n    comfort in various ways. This is to some extent true, but no housewife will\n    need much propaganda to convince her that its labour-saving value in the\n    domestic sphere is unchallengeable. An electric kettle will boil 12 pints of\n    water for 1d. If you compare this with any other method of boiling water you\n    will find that it is considerably cheaper and it is just as quick as any\n    other method.";
+    			p24 = element("p");
+    			p24.textContent = "My children flung open the door and galloped toward me, raucous as ever,\n    with coats flapping open, hats and scarves forgotten, shouldering into each\n    other, giggling and squabbling, their cheeks already reddened by cold. I\n    rolled my eyes at my husband – it is a running joke between us that while I\n    mollycoddle the children with mittens and vests and thermal underwear, he\n    believes that a little cold will toughen them. Sitting in the pew with a\n    child on each knee and another in each elbow, I began to adjust the story\n    for their ears; but soon they were whingeing for the car. The only one who\n    insisted on staying was the boy who always stays by my side when I lead my\n    family on such jaunts, the child who at seven is skinny and bold and bright\n    and always fights to hold my hand. I continued to photograph the little\n    details that surrounded us, and that had once surrounded Pádhraic: the\n    dinged brass of the altar bells, the dark lustre of the confessional box,\n    the altar that had never figured in my imaginings until its inscription\n    loomed before me. Sanctus, Sanctus, Sanctus: a male figure was carved there,\n    each fold of his gown whittled from cold stone. Holy, Holy.";
     			t65 = space();
-    			span32 = element("span");
-    			span32.textContent = "Transcript of recording made as part of a local history project: … And then\n    another little boy was snatched. God love us and save us. I remember praying\n    for his parents every night. They were good people. Myself and Máire joined\n    the search and we hoped that we would find something—a clue, some hope—but\n    of course we didn’t. The village was very glum. ‘Most of these cases… you\n    should look at a member of the family. That elderly woman, I never see her\n    out and about. She stays inside always. I wonder if something…’";
+    			p25 = element("p");
+    			p25.textContent = "Only when my son whispered ‘I’m cold, Mám,’ did I notice that his coat had\n    been forgotten altogether. I was glad of the warmth my body had pressed into\n    the weft of my scarf as I wound it into a pullover of sorts, criss- crossing\n    its endings into his waistband: snug. I pressed my lips to his forehead and\n    on we went with my hand in his, or his in mine. When he asked what we were\n    looking for, I couldn’t answer because I didn’t know, beyond the sense that\n    he and I had entered the story, and now we had to find our way towards some\n    sort of an ending. Perhaps the gesture of leaving a lit- tle flame in our\n    wake might do it? No, all the wicks were unlit, and I could see no matches.";
     			t67 = space();
-    			span33 = element("span");
-    			span33.textContent = "DATE MISSING: SUNDAY 5TH DECEMBER 1948 18-MONTH-OLD BOY: SEÁN HAIR COLOUR :\n    BLONDE EYE COLOUR: LIGHT BLUE LAST SEEN AT 11 O’CLOCK SUNDAY MORNING IN THE\n    FRONT GARDEN OF HIS HOME DRESSED IN CREAM TOP AND BOTTOMS PLEASE ALERT THE\n    GARDAÍ IF YOU HAVE ANY INFORMATION";
+    			p26 = element("p");
+    			p26.textContent = "My son shrugged and asked me to finish telling the story, and I did, and was\n    surprised on approaching the ending to find myself saying, ‘and if it\n    weren’t for that moment, would we be here today, you and me?’";
     			t69 = space();
-    			span34 = element("span");
-    			span34.textContent = "Gardaí are investigating whether there is any connection between the\n    abductions of two infant children from the same area. No-one has yet been\n    arrested in relation to the disappearances, but the Gardaí have started\n    re-interviewing people in the locality. They are specifically looking to\n    speak to anyone who was on New Road on the morning of the 5th of December. -\n    ‘Gardaí investigate link in missing child cases’ An Iar-Nuacht (7th December\n    1948)";
+    			p27 = element("p");
+    			p27.textContent = "I was smiling as I turned towards the door, until my son broke away to dash\n    a giddy circuit of the room, hee-hawing the chorus of ‘Old Town Road’ and\n    cackling over his shoulder. From the porch I called to him in exasperation,\n    then called again, my voice growing colder now, cold and cranky. While I\n    waited, I lined up one last photo of the aisle, the door ajar to show its\n    neat symmetry of empty pews; but just as I got the framing right, my son\n    hurtled through the shot, blurring past me and sprinting out towards the\n    car. Little trespasser. I arranged the photo again, and then turned to catch\n    up with him. The door of the church thumped heavily behind us.";
     			t71 = space();
-    			span35 = element("span");
-    			span35.textContent = "APPEAL FOR INFORMATION - MISSING PERSON A Garda source has informed An\n    Iar-Nuacht that they have ruled out the involvement of any ESB workers or\n    electricians in the recent disappearance of a two-year-old boy. It had been\n    reported that the Gardaí were eager to speak to anyone who had been in the\n    boy’s home in the days prior to his abduction but these men have now been\n    officially discounted as suspects. - ‘No connection between ESB and missing\n    child’ An Iar-Nuacht (20th October 1948)";
+    			p28 = element("p");
+    			p28.textContent = "In the car, my husband was thumbing his phone and the children were munching\n    chocolate biscuits. I felt satisfied as I clicked my seatbelt – seeing this\n    place felt like some small achievement to show for our cold months away from\n    home. But back in the cottage, I couldn’t sleep for incessant fid- geting:\n    the story wouldn’t rest. If I couldn’t hear the story of this escape in\n    Pádhraic’s own voice, then maybe there was a way to hear it in the voice of\n    one who had stood by him. My mother had once heard a man on the radio\n    describe how, long ago, his grandmother had disguised a man at mass to save\n    him from the Black and Tans. She had made a note of the man’s name. Tadhg\n    Mac Dhonnagáin was a publisher of Irish-language books, and I knew him a\n    little from Twitter. He lived in Conamara, only an hour and a half or so\n    away. I found his email address. I told him that I wanted to know how this\n    story had been told in his childhood.";
     			t73 = space();
-    			span36 = element("span");
-    			span36.textContent = "‘I don’t think that little boy ever left that house’";
+    			p29 = element("p");
+    			p29.textContent = "In the Buillín Blasta café in An Spidéal, Tadhg described his grandmother,\n    Annie Kenny: a bright young woman who had been awarded a teacher-train- ing\n    scholarship in Belfast, but still travelled home at weekends to lead the\n    church choir. The story he had inherited began there, with a young woman\n    leading a chorus of voices, called to a sudden act of courage, then hurrying\n    to save a life. It was a tale he had treasured as a child, Tadhg said, and\n    he told it beautifully: Annie’s quick thinking, her gathering of garments,\n    her supervision of the disguise, her palms rubbing distemper from the walls\n    to press on Pádhraic’s cheeks. His favourite part of all, he said, was the\n    importance placed on one detail: the height of the women chosen to escort\n    him to safety. Those women: they were tall.";
     			t75 = space();
-    			span37 = element("span");
-    			span37.textContent = "Statement of ________ of _______. I hereby declare this statement is true\n    to the best of my knowledge and belief and I make it knowing that if it is\n    tendered in evidence I will be liable to prosecution if I state in it\n    anything which I know to be false or do not believe to be true. ________\n    admitted to me that he had taken the boy one night in ________ pub. He\n    laughed about it. We had consumed three pints between";
+    			p30 = element("p");
+    			p30.textContent = "I thanked Tadhg for his time, wound myself back into my scarf and rummaged\n    my car keys from my handbag. Driving back to Mayo, between mountains and\n    bogs, over stone bridges and boreens, I pictured Annie on the church\n    mezzanine, her hair braided and pinned high, her face among the crowd in the\n    choir, alive and afraid. A wild, fearful whisper was flying through the\n    church below. She watched as one person whispered in dread to the next: they\n    were surrounded. The soldiers were outside with their guns.";
     			t77 = space();
-    			span38 = element("span");
-    			span38.textContent = "Everybody here today has been deeply affected by the disappearance of the\n    poor boy who was baptised in this very church. We will pray for his parents\n    and for his siblings and for his wider family. We pray also for friends and\n    neighbours, for the Gardaí and the volunteers who have been searching\n    tirelessly to bring Seán back home. - Homily of parish priest";
+    			p31 = element("p");
+    			p31.textContent = "When the whisper reached Pádhraic’s ear, I imagine that he sat in silence a\n    moment, assessing his predicament and that of the people around him. There\n    were elderly people present, women, and children. If he surrendered, might\n    others be spared?";
     			t79 = space();
-    			span39 = element("span");
-    			span39.textContent = "After the disappearance of the second boy, the Gardaí came under increasing\n    pressure to make an arrest. After interviewing and fingerprinting the adult\n    population of the village they set their sights on the more likely of\n    suspects: a labourer or drifter. They sought out men who had been known to\n    be working or travelling through the area and tried to connect any of them\n    to the two disappearances. - Missing: Ireland’s Vanished Children by Sorcha\n    Cahalane (W&A Publishing, 2001)";
+    			p32 = element("p");
+    			p32.textContent = "The priest, knowing these soldiers as brutally violent and unpredictable,\n    bought time by lengthening the prayers. Annie hurried down from the choir\n    and gathered garments: a dark shawl here, a skirt there, perhaps a blouse.\n    Pádhraic was urged to his feet and dressed. Palms were pressed to damp\n    walls, and then to the shadow of his stubble. A black shawl was drawn over\n    the crest of his skull, quick as a shadow. The priest drew the prayers to\n    their end. The two tallest women stood by him, arm in arm, their trio folded\n    within the close crowd. Elbows trembled. Down the aisle they all went, out\n    the door, past the soldiers. Eyes lowered. Jaws tight. No flinching. A\n    procession of bodies leaving the church gates and walking steadily away:\n    almost an ordinary sight. On this Sunday, everyone leaves alive. The End.";
     			t81 = space();
-    			span40 = element("span");
-    			span40.textContent = "LITIR UM THOGHCHÁIN An bhfuil tú cráite le polaiteoirí élite? Stop ag\n    vótáil do FG, FF, Clann na Poblachta, LAB. Tabhair do vóta don iarrthóir\n    neachspléach. Tabhair do vóta don iarrathóir fíor-Ghaelach. • Geallaim díobh\n    32-contae Éire aontaithe. Áit a bhfuil COSC ar an teanga Béarla. • Bac ar\n    fhrithchléireachas. • Táim réidh chun troid ar leith na daoine. • Bac ar\n    cistiú poiblí na páirtí politíochta. • Bac ar an gCummanachas. • Tá sé\n    soiléir san am atá inniú ann nach bhfuil meas againn ar saol an duine. Tá sé\n    tabhachtach ansan go bhfuil ionadaí againn a bhfuil sásta troid ar son\n    cearta daoine ó bhreith go bás nádúrtha. Tabhair do Vóta Uimh. 1 do Séan F\n    Verrity.";
-    			t83 = space();
-    			span41 = element("span");
-    			span41.textContent = "Statement of ________ of ________ . I hereby declare this statement is true\n    to the best of my knowledge and belief and I make it knowing that if it is\n    tendered in evidence I will be liable to prosecution if I state in it\n    anything which I know to be false or do not believe to be true. I was woken\n    up one night just before the second child was taken—I think it was Monday—by\n    the sound of a car outside. I am a light sleeper. My wife didn’t wake. I\n    went to the window. I didn’t recognise the car. It just stopped in the\n    middle of the road with the engine running. No-one got in or out and then\n    after about five minutes it just drove off.";
-    			t85 = space();
-    			span42 = element("span");
-    			span42.textContent = "Extract from Garda report dated the 20th of December 1948: The man said\n    that he was at home with his wife on the night in question. They live in\n    _________. He says that he may have come through the village before, but he\n    couldn’t remember. He says that he earns money doing odd jobs for people and\n    travels about a lot.";
-    			t87 = space();
-    			span43 = element("span");
-    			span43.textContent = "… for Paraic, electricity means he can check on his animals early in the\n    mornings or in the dark winter evenings with ease. He reckons he will\n    increase his profits by at least 15% this year due to the increase in work\n    he is able to… - Extract from radio documentary on the rural electrification\n    scheme (October 1952)";
-    			t89 = space();
-    			span44 = element("span");
-    			span44.textContent = "‘My mother saved up her egg money to buy a brand new oven. We had a nice\n    smart girl come to the house to demonstrate it for my mother. She made some\n    brown bread to make sure the oven was working. She had a lovely dress on,\n    and her hair was back from her face and I still think of it now every time I\n    smell brown bread baking.’";
-    			t91 = space();
-    			span45 = element("span");
-    			span45.textContent = "I liked the cooker the best and I liked looking in all the cupboards. I\n    liked how shiny and new everything was. They let us plug in some of the\n    appliances to see how they worked. - Extract from an essay written by a\n    schoolchild for a competition run by the ICA";
-    			t93 = space();
-    			span46 = element("span");
-    			span46.textContent = "2 SMALL BOYS MISSING AND yET NOTHING IS DONE THEIR aRE ThINGS THE\n    GOVERNMENT DON’T WANT U TO NO. THeIR ARe MONSTERS IN THE ELICTRICS THEir\n    TAKING ARE CHILDREN. We NEED TO PRTECT ARE FaMILies WE are BECOMIGN sick and\n    tired ARE CHILDREN ARE SICK BECAUSE O THEM lord GOD HeLP US ALL";
-    			t95 = space();
-    			span47 = element("span");
-    			span47.textContent = "We have been thinking a lot lately about the real real-life affect our work\n    has on people’s day-to-day lives. We have seen it already: housewives who\n    now have more time for their hobbies, farmers who have increased production.\n    And we also like to believe that we have improved the quality of people’s\n    lives outside the realm of work… - Editor’s Letter, REO News (vol 16, March\n    1949, p.1)";
-    			t97 = space();
-    			span48 = element("span");
-    			span48.textContent = "The middle-aged labourer who was arrested in connection with the recent\n    disappearances of small children has been released without charge. Since\n    October of last year two infants have been abducted from areas in the west\n    of the country. No other arrests have been made. - ‘Man released without\n    charge in baby-napping cases’ An Iar Nuacht (30th March 1949)";
-    			t99 = space();
-    			span49 = element("span");
-    			span49.textContent = "One socket in every room is now regarded as essential for convenient living\n    - with two or three in some locations.";
-    			t101 = space();
-    			span50 = element("span");
-    			span50.textContent = "The initial connection between the disappearances and the introduction of\n    electricity was unwittingly made by An Garda Síochána themselves. In the\n    days before the first abduction two electricians had been in the boy’s house\n    installing appliances. Gardaí interviewed these two men but they both had\n    alibis for the night in question. They were completely ruled out as suspects\n    but that tinge of doubt around the ESB never fully left the minds of some\n    villagers. - Duane, ibid.";
-    			t103 = space();
-    			span51 = element("span");
-    			span51.textContent = "COMHAIRLE CHONTAE MINUTES OF JUNE MONTHLY MEETING OF COUNTY COUNCIL HELD IN\n    ÁRAS AN CHONTAE, ON 10TH APRIL 1949 AT 2.00 P.M.";
-    			t105 = space();
-    			span52 = element("span");
-    			span52.textContent = "PRESENT MINISTER O’REILLY, CLLR O’DONOVAN, CLLR Ó MEALÓID, CLLR HIGGINS,\n    CLLR SINCLAIR, CLLR LYNCH, CLLR HACKETT, CLLR McGRATH, CLLR MULLANE, CLLR\n    TWOMEY, CLLR SCANLAN, CLLR PHILPOTT, CLLR FRANKS, CLLR Ó BRAONÁIN AND\n    REPRESENTATIVES OF THE ESB APOLOGIES Cllr Mullins, Cllr O’Brien, Cllr Hynes,\n    Cllr O’Sullivan CONFIRMATION OF MINUTES Minister O’Reilly spoke about the\n    need for calm heads. He expressed regret and concern for the families of the\n    missing boys. He introduced Mr Geary of the ESB to speak directly about the\n    safety of electricity in homes. Mr. F Higgins circulated information to the\n    members on the proposed budget. NOTICES OF MOTION To approve the draft deed\n    of mortgage to provide a loan for the completion of O’Mahony Park.";
-    			t107 = space();
-    			span53 = element("span");
-    			span53.textContent = "Advice to parents: • Make sure that your doors and windows are locked and\n    bolted • Do not allow your children out after dark or to play on their own •\n    All children need to be supervised on their way to and from school • Please\n    alert the Gardaí to any suspicious activity";
-    			t109 = space();
-    			span54 = element("span");
-    			span54.textContent = "Extract from Garda report dated the 14th of April 1949: The woman believed\n    that the child was not hers. She said that he had been swapped with another\n    child. She wanted us to take the boy into care and to issue a missing\n    persons report for her own child. She seemed to be under the impression that\n    something —‘a fairy’—had got into the house through the electricity cables\n    and had taken her child and swapped him for ‘a changeling’.";
-    			t111 = space();
-    			span55 = element("span");
-    			span55.textContent = "This morning, the head of the ESB was being asked to clarify comments he\n    reportedly made at a private luncheon over the weekend in which he described\n    those who refused electricity as ‘backwards’ and ‘idiots’. - Radio Éireann\n    (8th May 1949)";
-    			t113 = space();
-    			span56 = element("span");
-    			span56.textContent = "A group of men arrived at ESB headquarters in Athy yesterday morning to\n    deliver a letter on behalf of the village of D_____. The area has recently\n    suffered a number of unsolved abductions of children and these men believe\n    that the ESB have a case to answer. Some local villagers have linked the\n    disappearances to the recent switching on of electricity in the area. The\n    ESB had no comment to make. - Translation from Raidió na Gael broadcast\n    (17th April 1949)";
-    			t115 = space();
-    			span57 = element("span");
-    			span57.textContent = "I would like to bring the Minister’s attention to the very worrying case of\n    two missing children in _ ____. I have been speaking to local people there\n    in recent weeks who say they feel they have been forgotten about. There now\n    appears to be only three fulltime Gardaí working on the case. There has been\n    little to no reassurance from the authorities. It seems to me that the\n    Government has abandoned the people of _____. Will there be any justice? Can\n    the Minister tell me what he is planning to do? - Oral Questions in the Dáil\n    (18th April 1949)";
-    			t117 = space();
-    			span58 = element("span");
-    			span58.textContent = "EXTRACT FROM REPORT BY HEALTH BOARD INTO OUTBREAK OF CERTAIN SYMPTOMS IN\n    ______, JANUARY - MAY 1949: We have compiled a list of people who have\n    reported to their General Practitioner any symptoms that did not have an\n    obvious cause. These symptoms include headaches, vomiting, stomach cramps,\n    tingling, numbness, burning and chest pain. The following list is a sample:\n    • A 45-year-old woman who reported sudden occasions of vomiting and\n    experiencing headaches after using her electric cooker. • A teenage girl who\n    described having stomach cramps, headaches and nausea, which were not\n    alleviated by any pain-relieving medication or anti-inflammatories. • A\n    21-year-old man who had experienced tingling in his extremities and weakness\n    in his upper arms which got better when he was outdoors. • A 52-year-old man\n    who was found outside his home tearing his clothes off because he said that\n    there were wires in them. • A 10-year-old boy who had a high fever and\n    numbness in the extremities. • Two sisters aged 18 and 20 who complained of\n    debilitating pain in their left upper abdomen with no obvious reason for\n    said pain. • A 60-year-old woman who stated that her neighbours were playing\n    tricks on her using electricity. • A woman in her mid-forties who said she\n    was ‘full of electricity’ and who was kept up at night by the sound of men\n    digging in her cellar and laying electric wires.";
-    			t119 = space();
-    			span59 = element("span");
-    			span59.textContent = "Ó Murchú, Paraic suddenly on 23rd of April 1949. Much loved by his wife\n    Rose. Cremation Saturday. No Flowers.";
-    			t121 = space();
-    			span60 = element("span");
-    			span60.textContent = "The three-year-old girl who was declared missing early this morning has\n    been found and returned home to her parents safe and sound. It seems that\n    the child wandered off while shopping with her family and… - Translation\n    from Raidió na Gael broadcast (20th April 1949)";
-    			t123 = space();
-    			span61 = element("span");
-    			span61.textContent = "You would barely recognise the village now we are so suspicious and\n    untrusting. I find myself crossing the road to avoid people. I keep my head\n    down to avoid making eye contact. We do not know our neighbours anymore like\n    we should. I want to be more open, but we all have that lingering doubt in\n    our minds. The Guards are telling us that it is most likely a drifter, an\n    outsider but it could still be one of us. One of us could have kidnapped\n    these children and done… Oh, I can’t bear thinking about it. What would\n    anyone want with those poor boys? Couldn’t they have just left us alone? And\n    the Guards have no leads, no suspects. For a while, we had several Gardaí\n    stationed here. We would see them on their beat and they would give us\n    comfort, but now we see them less and less. They are slowly forgetting us.\n    They want to forget us. This is a crime that will never be solved, and they\n    want rid of it. - Extract from letter dated 18th April 1949, found in the\n    apartment of the late Ms Julia O’Keeffe of New York City";
-    			t125 = space();
-    			span62 = element("span");
-    			span62.textContent = "Electricity is the safest form of power available for both domestic and\n    commercial use. Electricity poles and cables are organised and installed by\n    highly trained workers and the wiring of your house and farm can only be\n    done by a trained electrician. Rest assured, you and your family are safe\n    with electricity in the home. If you still have doubts, please visit our\n    showroom where we will demonstrate various electrical appliances and give\n    advice on what is best for you and your home.";
-    			t127 = space();
-    			span63 = element("span");
-    			span63.textContent = "Two thousand people marched yesterday to bring national attention to what\n    they believe is the mishandling of an investigation by the Gardaí into the\n    disappearance of two infant children in the same area over a six-month\n    period. The protesters are demanding an inquiry into the alleged mishandling\n    of the matter by authorities. - ‘Protesters Demand Answers’, The Irish Times\n    (29th April 1949)";
-    			t129 = space();
-    			span64 = element("span");
-    			span64.textContent = "Electric Water-Heating is peculiarly suitable for use in doctor’s and\n    dentist’s surgeries owing to the ease of economy of installation, the\n    simplicity and cleanliness of operation, and the complete absence of fumes\n    and odours";
-    			t131 = space();
-    			span65 = element("span");
-    			span65.textContent = "Virginia O’Brien, Chairperson of the Irish Countrywomen’s Association, has\n    urged people to continue to support rural electrification. She was speaking\n    at an event last weekend regarding recent protests against the scheme,\n    following links between the introduction of electricity and the\n    disappearances of two young children. People have also been complaining of\n    health issues relating to electricity in their homes. She informed the\n    audience that the Gardaí and local health officials had completely ruled out\n    any such connections and that people who perpetuated these falsehoods were\n    doing damage to the local community. - ‘No link says ICA Chair’ An\n    Iar-Nuacht (30th April 1949)";
-    			t133 = space();
-    			span66 = element("span");
-    			span66.textContent = "INFORMATION LEAFLET FROM THE ESB: A mass hysteria is a collective\n    obsessional behaviour where a group of people spontaneously manifest similar\n    hysterical symptoms.";
-    			t135 = space();
-    			span67 = element("span");
-    			span67.textContent = "IT WILL NEVER STOP THEY WILL CONTINU TO RUIN FAMILYS WE NEED TOO TAKE BACK\n    CONTROL NO-ONE WILL HELP US WE AR ON ARE OWN";
-    			t137 = space();
-    			span68 = element("span");
-    			span68.textContent = "‘I have not been able to sleep through the night since they put in the\n    electrics. It’s doing something to my brain. I feel groggy and tired all\n    day. My wife feels nauseous. She has had weakness in her limbs. She’s so\n    weak some days she can’t get out of bed. The doctor says he can do nothing\n    for her.’";
-    			t139 = space();
-    			span69 = element("span");
-    			span69.textContent = "‘It’s clear that we’re not being told all the facts. Now I know there’s\n    been talk of monsters. I’m an educated man. I don’t believe in monsters. But\n    I can’t help but see a connection between these cables in our houses and the\n    disappearances of our children. There is something. There is something\n    affecting our children. Why aren’t the ESB answering our questions?’";
-    			t141 = space();
-    			span70 = element("span");
-    			span70.textContent = "Transcript of interview with Minister O’Reilly on Radio Éireann, 3rd May\n    1949: Q: … Minister O’Reilly, these crimes have occurred in your own\n    constituency. are An Garda Síochána doing enough? A: Firstly, I want to say\n    that I completely understand the frustrations and the worry people are\n    feeling as regards these cases. I want to assure everyone that the Gardaí\n    are doing the best they can to get these two children back to their parents.\n    I’m a parent myself and… Q: But I mean realistically, and I don’t really\n    want to say this, but realistically what are the chances of the boys being\n    returned to their families safely? A: I’m not going to get into that kind of\n    talk. We need to think of the parents —some of whom will be listening to\n    this. We need to think of them and how we can support them… Q: But Minister,\n    one arrest has been made and that man was subsequently released. No other\n    suspects. This man has now died, and it seems now that the trail has run\n    cold. Will we ever get an answer?";
-    			t143 = space();
-    			span71 = element("span");
-    			span71.textContent = "Gardaí say that further investigations are needed to establish whether a\n    man found in a ditch at the side of the road died from injuries due to a\n    hit-and-run. A post-mortem was carried out on Monday by the State\n    Pathologist, but the results have not yet been released. Gardaí are looking\n    for any witnesses who may have been travelling on the Old Road between the\n    hours of 5:30am and 6:30am on the 23rd of April to come forward. - Radio\n    Éireann (14th July 1949)";
-    			t145 = space();
-    			span72 = element("span");
-    			span72.textContent = "‘I’m a farmer. I can see the benefits of electricity to my life, but I\n    don’t believe it is worth putting my young family at risk. Until we have\n    found out what has happened, all electricity to the village should be\n    switched off.’";
-    			t147 = space();
-    			span73 = element("span");
-    			span73.textContent = "‘The important thing is to remain calm.’";
-    			t149 = space();
-    			span74 = element("span");
-    			span74.textContent = "First the lights went off. This happened suddenly one evening a couple of\n    days after a rowdy meeting in the local hall. No kettles were boiled, and\n    all electrical farming equipment was stopped. Candles and matches and\n    paraffin lamps were passed around. Nobody outside of the village really\n    noticed anything was amiss until the electricity poles and cables started\n    crashing down. Men were sent out to replace or repair the poles, but they\n    would just be torn down once more. The poles were cut down and used for\n    firewood. Ovens and dishwashers were hauled out of houses and dumped in\n    front of the ESB showroom. Door-to-door collections were made to collect\n    lightbulbs… - Duane, ibid.";
-    			t151 = space();
-    			span75 = element("span");
-    			span75.textContent = "Transcript of recording made as part of a local history project: … and\n    things got very scary. The streetlights were smashed. My father ripped the\n    cables from the house and removed the hoover and cooker. My parents didn’t\n    want any hassle.";
-    			t153 = space();
-    			span76 = element("span");
-    			span76.textContent = "… from the nuns in Italy who believed they were cats and the dancing manias\n    of the 12th century to the small village in rural Ireland that refused\n    electricity for fears of ‘monsters in the cables’… - A Brief History of\n    Madness, by Madeleine Heffernan (Tigh Uí Dhrisceoil, 1987)";
-    			t155 = space();
-    			span77 = element("span");
-    			span77.textContent = "‘We had a glimpse of what life could be like. It was fleeting. I tell my\n    grandchildren about it, but they don’t believe it.’";
-    			t157 = space();
-    			span78 = element("span");
-    			span78.textContent = "The washing machine is situated directly adjoining the sink so that the\n    wringing may be carried out without wetting the floor.";
-    			t159 = space();
-    			span79 = element("span");
-    			span79.textContent = "They hold aloft their candles and gas lamps—symbols of their revolt against\n    what they believe is the scourge of electricity. Some have called them\n    Luddites; others have mocked them for their supposedly backwards ways but\n    none of that has stopped them. They have remained steadfast in their belief.\n    They are strong in their principles in a way that very few people are these\n    days and I have to say I respect them for that. - ‘An Irishman’s Diary’ The\n    Irish Times (1st August 1949)";
-    			t161 = space();
-    			span80 = element("span");
-    			span80.textContent = "There were reports of at least two households who refused to stop using\n    electricity. They enjoyed the benefits that came with it and they did not\n    want to return to harder times. Local opinion of them was hostile. The\n    thought that they would be willing to put their children at risk for the\n    sake of convenience was too much for their neighbours. These families were\n    forced out of their homes, and effectively hounded out of the village. -\n    Duane, ibid.";
-    			t163 = space();
-    			span81 = element("span");
-    			span81.textContent = "The electric cooker has been proved to be the cheapest method of preparing\n    meals. It is quick too because of the speed-o-matic plates which are fitted\n    to every new cooker.";
-    			t165 = space();
-    			span82 = element("span");
-    			span82.textContent = "Two men have been arrested on suspicion of setting fire to an ESB showroom\n    just outside of ______. The men were protesting the introduction of\n    electricity in the area. Gardaí are looking for witnesses to the incident. -\n    Radio Éireann (20th July 1949)";
-    			t167 = space();
-    			span83 = element("span");
-    			span83.textContent = "And because he was a man, he tried to fix her: he bought her things, he\n    listened, he yelled at her, he brought her to a doctor. He tried to change\n    himself, tried to make himself into something new. But nothing seemed to\n    work. He could never make her whole again and so he decided that instead he\n    would create a life for them together: he found a cottage by the beach and\n    placed her there. He cooked for her, he held her, he loved her, he married\n    her. He kept others away. He made their lives together as small as they\n    could be. They were each other’s secret. They were cocooned. Then came a\n    brief flickering moment of joy: a baby came, and her belly grew. And she was\n    happy, and he marvelled at how happy she was until the blood came and took\n    the baby away. - Extract from This Gathering Light by Angela Czochara (2006)";
-    			t169 = space();
-    			span84 = element("span");
-    			span84.textContent = "MEMORANDUM FOR: ATTENTION OF THE MINISTER SUBJECT: RURAL ELECTRIFICATION\n    DATE:10th SEPTEMBER 1949";
-    			t171 = space();
-    			span85 = element("span");
-    			span85.textContent = "Across the country parishes lit up. The lives of farmers and rural\n    housewives improved dramatically in a short space of time. No longer did\n    water have to be drawn from a well and carried by cart. No longer was\n    cooking restricted to an open fire. By 1965, 80% of rural households were\n    connected to the electricity supply. - Swanzy, ibid.";
-    			t173 = space();
-    			span86 = element("span");
-    			span86.textContent = "I live with my mammy and daddy, my two sisters, and a dog called Rusty. I\n    have been in this new school for three months and I like it a lot and I have\n    made lots of friends. I do miss my old friends and my old school and the\n    rocky place where we would go and play. But here my room is bright and there\n    aren’t monsters and my mammy and daddy are happy. I liked my old home a lot\n    but then things were scary, and we had to come here. Everything is nice\n    here. - Essay by a child that formed part of an exhibition in the National\n    Museum of Country Life (March – October 2016)";
-    			t175 = space();
-    			span87 = element("span");
-    			span87.textContent = "Local party members advise against the forced introduction of electricity\n    in the village of _____ in County ____. The presence of the army will only\n    exacerbate an already tense situation. A representative from the ESB has\n    also expressed concern for the wellbeing of their employees if they are\n    forced to work in the area. As you know there have been reports of ESB\n    workers being attacked, work gear being stolen, and a display shop being set\n    on fire.";
-    			t177 = space();
-    			span88 = element("span");
-    			span88.textContent = "In loving memory of ____ who has been missing from his home since 14th\n    October 1948. Mammy and Daddy think about you every day.";
-    			t179 = space();
-    			span89 = element("span");
-    			span89.textContent = "Transcript of recording made as part of a local history project: … I would\n    tell Mammy I was going to stay with Máire and she would tell her mam that\n    she was staying with me and then we would go and stay with Davey’s cousin.\n    Davey was someone I knew from the village. His cousin lived in ______ and\n    she had a record player and we listened to jazz records that her sister in\n    America sent her. And we would dance in her living room and her mother made\n    us a roast chicken dinner.";
-    			t181 = space();
-    			span90 = element("span");
-    			span90.textContent = "With the switching on of electricity in the Black Valley, Co. Kerry in June\n    1976, the whole of the island was finally electrified. Except of course for\n    one village which refused to be dragged into the 20th century. It remains\n    the only area in the country without electricity to this day. - Swanzy,\n    ibid.";
-    			t183 = space();
-    			span91 = element("span");
-    			span91.textContent = "The Numbers The Electricity Supply Board was established on 11 August 1927.\n    1 million poles, 100,000 transformers and 75,000 miles of line 300,000 homes\n    connected. By 1946 the number of consumers had reached 240,000 using 380\n    million units per annum.";
-    			t185 = space();
-    			span92 = element("span");
-    			span92.textContent = "For decades the village of ______ has been ridiculed for its refusal to be\n    welcomed into the 20th—not to mention 21st—century. However, the truth is\n    altogether more worrying as the team from Prime Time Investigates uncovered\n    Monday night on RTÉ One. The programme provided a rare insight into a people\n    who have effectively closed themselves off from the outside world. We are\n    first introduced to Mary, a pleasant woman in her late sixties who sees\n    nothing wrong with the hard work involved in washing, cleaning and cooking\n    without electricity. She says she was raised to work hard, and she sees no\n    problem with it. We subsequently join local men at a pub where they sing\n    songs and tell stories and create their own entertainment. They speak in an\n    odd, old-fashioned dialect that marks them out as different. It is a quaint\n    kind of life and one that looks appealingly nostalgic until we meet Neasa.\n    Neasa grew up in the village and was subject to physical abuse at the hands\n    of her family. She escaped when she was 18 and has never returned. For her\n    it is not just about the electricity, she explains, the darkness is a form\n    of control. The village does not allow strangers to stay long and they do\n    not respect the authority of the Gardaí or the State. A place where no light\n    shines will always be ripe for abuse… ‘An Dorchadas/The Darkness’, The Irish\n    Times (15th December 2009)";
-    			t187 = space();
-    			span93 = element("span");
-    			span93.textContent = "It has been now over 30 years since two small boys vanished from their\n    homes in ______. A recently formed community group is staging a rally this\n    lunchtime to commemorate the disappearances. They will lay flowers at the\n    locations the boys were last seen —a bedroom, a front garden, a\n    pavement—before continuing on to the local Garda station. The Gardaí have\n    responded to concerns by launching a renewed appeal for information. The\n    Garda Superintendent in charge of the investigation said that the passage of\n    time might have made some people more willing to come forward with\n    information. He reassured people that they will be treated respectfully and\n    discreetly. Anyone with information is asked to contact the Garda\n    Confidential Line. - ‘30th anniversary of disappearances’ The Irish Examiner\n    (October 1979)";
-    			t189 = space();
-    			span94 = element("span");
-    			span94.textContent = "Proper lighting in the home or workshop is the best guarantee of continued\n    good eyesight for adults and children.";
-    			t191 = space();
-    			span95 = element("span");
-    			span95.textContent = "The expectation in official circles was that over time old superstitions\n    would fade away, the older generation would die off and electricity would be\n    reintroduced without incident. And yet the village remains in complete\n    darkness to this very day. Partly this is to do with geography— it is\n    situated in an isolated rural area—and partly it is due to a lack of\n    financial support from the government. When the local population started to\n    rip out poles and cables, the ESB were sent to restore the light, but their\n    workers were attacked and abused. On the completion of the rural\n    electrification scheme, the government refused further State funding for the\n    area unless the locals agreed to allow electricity back in their homes. They\n    declined and the stalemate has continued ever since. - Duane, ibid.";
-    			t193 = space();
-    			span96 = element("span");
-    			span96.textContent = "The initial amusement and subsequent alarm of some public servants in\n    relation to a village in the West which had turned against the rural\n    electrification scheme has been revealed in the latest batch of state\n    documents released under the 30-year rule. Memos from the Department of\n    Rural Affairs reveal the dismissive attitude of civil servants towards the\n    area. The village had suffered several child abductions which were\n    attributed to the recently installed electricity cables. The villagers\n    become increasingly suspicious resulting in the tearing down of the\n    electricity infrastructure. Their belief was that there were ‘monsters’ in\n    the electricity lines. - ‘State papers: a round-up’ The Irish Examiner (27th\n    December 1978)";
-    			t195 = space();
-    			span97 = element("span");
-    			span97.textContent = "‘I would do my homework in the evening by lamplight. At school we had dry\n    toilets that were only flushed once a day.’";
-    			t197 = space();
-    			span98 = element("span");
-    			span98.textContent = "This is the last ever issue of the REO News and we hope that you have\n    gained some insight and support from what we have published. - Editor’s\n    Letter, REO News (vol. 168, November 1961)";
-    			t199 = space();
-    			span99 = element("span");
-    			span99.textContent = "Looking for a digital detox holiday on a budget? Then take a look at some\n    of these amazing properties in ______ in Ireland. Step back in time to a\n    simpler era. The entire village has no electricity which means you can have\n    the opportunity to switch off completely. Enjoy your dinner by paraffin\n    lamp, practice mindfulness while you wash clothes by hand, learn how to cook\n    your food over an open fire… - Article in The New York Times Travel Section,\n    (7th June 2012)";
-    			t201 = space();
-    			span100 = element("span");
-    			span100.textContent = "Welcome to Fade Away, the podcast about people who have disappeared without\n    trace. In Season 1, we examined the case of Marcy Wainwright, a woman who\n    one day vanished from her factory job. In Season 2, we focused on the\n    Clement family, who haven’t been seen since Christmas Eve 1865. Now in\n    Season 3, we are looking into the alleged abductions of two children in…\n    Intro to Fade Away, August 2014";
-    			t203 = space();
-    			span101 = element("span");
-    			span101.textContent = "TO: info@fadeawaypodcast.com FROM: ------------------------ RE: PODCAST —\n    INFO DATE: 29 Sept 2015, 13:47 -------------------------------------------\n    Hi, My name is I’ve just come across your podcast and I think I might have\n    some information for you. My grandmother grew up in the village and she was\n    there when the abductions took place. She emigrated to Canada in the 60s.\n    She never spoke about what happened but after she died, we found some notes\n    she had written which may be useful to";
-    			t205 = space();
-    			span102 = element("span");
-    			span102.textContent = "Gardaí have confirmed that they are pursuing several new leads of inquiry\n    following renewed interest in the cases arising out of a true-crime podcast\n    which has… - ‘Podcast leads to new avenues of inquiry’, An Iar Nuacht (23rd\n    November 2015)";
-    			t207 = space();
-    			span103 = element("span");
-    			span103.textContent = "‘This third season has been a real breakthrough for us. We got good numbers\n    and interaction for season one and two but this year things have just gotten\n    crazy,’ says Weeverman. And what does she say to critics who accuse the\n    true-crime podcast genre of unethical behaviour and exploitation. ‘It’s\n    something we are both very aware of. That’s part of the reason we chose\n    crimes that were committed at least a generation ago. We don’t want\n    relatives to be upset and having to read… ’ - Extract from interview with\n    Harriet Gose and Francine Weeverman, Flash Magazine (13th April 2015)";
-    			t209 = space();
-    			span104 = element("span");
-    			span104.textContent = "… one of many who say that this is a cover up. The police missed vital\n    clues while neighbours looked the other way. A lot of coincidences. What was\n    really going on? I would recommend everyone to read Satan in Ireland by JM\n    Henry to learn more about satanic groups that were… - Extract from blog\n    entitled ‘The Disappearances 1948 - 49’";
-    			t211 = space();
-    			span105 = element("span");
-    			span105.textContent = "Discussion thread on Episode 6: What Did the Neighbours Know? C_A_Dupin The\n    problem the cops had was that they believed ‘everyone was at the switching\n    on’ so they never got a proper list of people together. And we all know of\n    course that Mrs Geary didn’t attend because she was feeling unwell and so\n    she went home by herself. And the O’Reillys didn’t attend either—were they\n    going to a wedding the next day or something… Like Dislike Comment Favourite\n    M4Murder But are we seriously suggesting that any of these people were\n    involved in the kidnapping of the first child? What’s the motive here? The\n    first child to me is the key becuase he was upstairs in his own bed. That’s\n    not a ‘by chance’ kidnapping. That was palnned. The switching on was the\n    opportunity they needed. Like Dislike Comment Favourite Hastings What about\n    the witness statement from Francis Byrne? She saw footsteps in her garden\n    but the police never took photos or imprints. Like Dislike Comment Favourite\n    ChndlerR1 [comment deleted] Like Dislike Comment Favourite C_A_Dupin\n    @ChndlerR1 This is a serious thread to discuss matters that arise in the\n    course of the podcast. That’s serious discussion only pertaining to the\n    facts of the case. If you want to speculate wildly there are plenty of other\n    forums for that. Like Dislike Comment Favourite M4Murder @Hastings Yeah, I\n    thought that was interesting too. Like, FB’s garden backed on to the victims\n    so someone could likely have escaped that way. They didn’t dwell on it on\n    the pod though so maybe they know more than they are letting on abot that\n    right now. Like Dislike Comment Favourite TruCrimFan Hi! new to the thread.\n    I’m just wondering what people feel about the parents. Am not talking shit I\n    just am genuinely wondering. It’s kind of like occam’s razor.a lot of the\n    neighbors seem to think that the house was a little dysfuntioncal. Maybe\n    they were abusing the kid or they killed him accidentally or something. The\n    other idnappings were a cover up. Again, please don’;t ban me. I really want\n    to know more. Like Dislike Comment Favourite C_A_Dupin @ TruCrimFan There\n    are threads about the parents. Check out the search bar. Like Dislike\n    Comment Favourite";
-    			t213 = space();
-    			span106 = element("span");
-    			span106.textContent = "Reviewers have often suggested illusions in his music to PJ Harvey, Steely\n    Dan and Captain Beefheart, but all of this was news to the young Sammy\n    Lynch. He had never heard of any of these artists. He grew up in a tiny\n    village in the West of Ireland without electricity and therefore no record\n    players, no radios and no internet. He had grown up with music, of course,\n    but it was all traditional melodies and songs that had been written hundreds\n    of years prior. For his twelfth birthday he asked for a guitar and started\n    immediately to write his own weird little songs. -'Darkness into Light' by\n    Oliver Rapid, PPOPP Magazine (Issue 381)";
-    			t215 = space();
-    			span107 = element("span");
-    			span107.textContent = "… a link in the minds of many people even today between the erection of\n    electricity poles and the disappearance of fairies, banshees, leprechauns.\n    Maybe their homes were indeed disturbed by workers or perhaps this is just a\n    metaphor for… - ‘The Last of the Fairies’ by Sam Beaton Hibernian Monthly\n    (vol 67, 3rd August 1998, p. 22 27)";
-    			t217 = space();
-    			span108 = element("span");
-    			span108.textContent = "The Network Renewal Plan began in the late 1990s to upgrade the electricity\n    supply to reflect the needs of modern Ireland.";
-    			t219 = space();
-    			span109 = element("span");
-    			span109.textContent = "There remains a lot of interest from an anthropological view as well. The\n    village has retained many of the old methods and routines that modernisation\n    has swallowed up in the rest of the country. Old methods of cooking have\n    been preserved and farming practices from a bygone age remain commonplace.\n    Their isolation has preserved the village as if frozen in time. Naw purteen\n    narr honchee - Duane, ibid.";
-    			t221 = space();
-    			span110 = element("span");
-    			span110.textContent = "Tch buteagh y ar maggee Fado al sunee thist giy ar nournagh - Song written\n    in the local dialect";
-    			t223 = space();
-    			span111 = element("span");
-    			span111.textContent = "You Won’t Believe These Places That Have No Electricity - Buzzfeed (March\n    2019)";
-    			t225 = space();
-    			span112 = element("span");
-    			span112.textContent = "The link between ‘screen time’ (short-wavelength, artificial blue light\n    emitted from electronic devices) and sleep disorders has been well\n    established in several studies (Delahunt et al., 2015; Brennan & Jones 2008;\n    Parsons 2016). The comparisons as set out in Graph 1b shows the differences\n    in sleep quality between Group A (control group) and Group B (digital\n    natives) … - Comparative evaluation of the health effects of technology\n    between digital natives and digital naïfs, Goetsmen & Waine (2017)";
-    			t227 = space();
-    			span113 = element("span");
-    			span113.textContent = "On the way out of the village is a memorial to the two children. It is\n    well-kept and is always covered in flowers and teddy bears and mass cards. -\n    Cahalane, ibid.";
-    			t229 = space();
-    			span114 = element("span");
-    			span114.textContent = "Mary Lane (1924 - 2020): Mary Lane worked as the chief archivist for the\n    ESB between 1966 and 1996. She trained initially as a librarian and worked\n    for a time for UCD before joining the ESB as assistant archivist in 1945. On\n    the retirement of her predecessor, she took over the main role.";
-    			t231 = space();
-    			span115 = element("span");
-    			span115.textContent = "John 1:5 And the light shineth in darkness; and the darkness comprehended\n    it not.";
-    			attr_dev(span0, "class", "el-sec svelte-fz3dac");
-    			add_location(span0, file$d, 26, 2, 668);
-    			attr_dev(span1, "class", "el-sec svelte-fz3dac");
-    			add_location(span1, file$d, 32, 2, 983);
-    			attr_dev(span2, "class", "el-sec svelte-fz3dac");
-    			add_location(span2, file$d, 37, 2, 1249);
-    			attr_dev(span3, "class", "el-sec svelte-fz3dac");
-    			add_location(span3, file$d, 47, 2, 1855);
-    			attr_dev(span4, "class", "el-sec svelte-fz3dac");
-    			add_location(span4, file$d, 54, 2, 2269);
-    			attr_dev(span5, "class", "el-sec svelte-fz3dac");
-    			add_location(span5, file$d, 59, 2, 2498);
-    			attr_dev(span6, "class", "el-sec svelte-fz3dac");
-    			add_location(span6, file$d, 68, 2, 3011);
-    			attr_dev(span7, "class", "el-sec svelte-fz3dac");
-    			add_location(span7, file$d, 74, 2, 3304);
-    			attr_dev(span8, "class", "el-sec svelte-fz3dac");
-    			add_location(span8, file$d, 84, 2, 3951);
-    			attr_dev(span9, "class", "el-sec svelte-fz3dac");
-    			add_location(span9, file$d, 93, 2, 4485);
-    			attr_dev(span10, "class", "el-sec svelte-fz3dac");
-    			add_location(span10, file$d, 102, 2, 5011);
-    			attr_dev(span11, "class", "el-sec svelte-fz3dac");
-    			add_location(span11, file$d, 112, 2, 5636);
-    			attr_dev(span12, "class", "el-sec svelte-fz3dac");
-    			add_location(span12, file$d, 116, 2, 5770);
-    			attr_dev(span13, "class", "el-sec svelte-fz3dac");
-    			add_location(span13, file$d, 123, 2, 6119);
-    			attr_dev(span14, "class", "el-sec svelte-fz3dac");
-    			add_location(span14, file$d, 131, 2, 6548);
-    			attr_dev(span15, "class", "el-sec svelte-fz3dac");
-    			add_location(span15, file$d, 140, 2, 7087);
-    			attr_dev(span16, "class", "el-sec svelte-fz3dac");
-    			add_location(span16, file$d, 144, 2, 7263);
-    			attr_dev(span17, "class", "el-sec svelte-fz3dac");
-    			add_location(span17, file$d, 152, 2, 7720);
-    			attr_dev(span18, "class", "el-sec svelte-fz3dac");
-    			add_location(span18, file$d, 159, 2, 8149);
-    			attr_dev(span19, "class", "el-sec svelte-fz3dac");
-    			add_location(span19, file$d, 164, 2, 8363);
-    			attr_dev(span20, "class", "el-sec svelte-fz3dac");
-    			add_location(span20, file$d, 170, 2, 8674);
-    			attr_dev(span21, "class", "el-sec svelte-fz3dac");
-    			add_location(span21, file$d, 176, 2, 8988);
-    			attr_dev(span22, "class", "el-sec svelte-fz3dac");
-    			add_location(span22, file$d, 184, 2, 9431);
-    			attr_dev(span23, "class", "el-sec svelte-fz3dac");
-    			add_location(span23, file$d, 194, 2, 10053);
-    			attr_dev(span24, "class", "el-sec svelte-fz3dac");
-    			add_location(span24, file$d, 199, 2, 10257);
-    			attr_dev(span25, "class", "el-sec svelte-fz3dac");
-    			add_location(span25, file$d, 219, 2, 11672);
-    			attr_dev(span26, "class", "el-sec svelte-fz3dac");
-    			add_location(span26, file$d, 228, 2, 12222);
-    			attr_dev(span27, "class", "el-sec svelte-fz3dac");
-    			add_location(span27, file$d, 234, 2, 12531);
-    			attr_dev(span28, "class", "el-sec svelte-fz3dac");
-    			add_location(span28, file$d, 241, 2, 12902);
-    			attr_dev(span29, "class", "el-sec svelte-fz3dac");
-    			add_location(span29, file$d, 247, 2, 13236);
-    			attr_dev(span30, "class", "el-sec svelte-fz3dac");
-    			add_location(span30, file$d, 260, 2, 14133);
-    			attr_dev(span31, "class", "el-sec svelte-fz3dac");
-    			add_location(span31, file$d, 270, 2, 14805);
-    			attr_dev(span32, "class", "el-sec svelte-fz3dac");
-    			add_location(span32, file$d, 279, 2, 15329);
-    			attr_dev(span33, "class", "el-sec svelte-fz3dac");
-    			add_location(span33, file$d, 288, 2, 15908);
-    			attr_dev(span34, "class", "el-sec svelte-fz3dac");
-    			add_location(span34, file$d, 294, 2, 16220);
-    			attr_dev(span35, "class", "el-sec svelte-fz3dac");
-    			add_location(span35, file$d, 303, 2, 16730);
-    			attr_dev(span36, "class", "el-sec svelte-fz3dac");
-    			add_location(span36, file$d, 312, 2, 17279);
-    			attr_dev(span37, "class", "el-sec svelte-fz3dac");
-    			add_location(span37, file$d, 315, 2, 17370);
-    			attr_dev(span38, "class", "el-sec svelte-fz3dac");
-    			add_location(span38, file$d, 323, 2, 17845);
-    			attr_dev(span39, "class", "el-sec svelte-fz3dac");
-    			add_location(span39, file$d, 330, 2, 18257);
-    			attr_dev(span40, "class", "el-sec svelte-fz3dac");
-    			add_location(span40, file$d, 339, 2, 18799);
-    			attr_dev(span41, "class", "el-sec svelte-fz3dac");
-    			add_location(span41, file$d, 351, 2, 19543);
-    			attr_dev(span42, "class", "el-sec svelte-fz3dac");
-    			add_location(span42, file$d, 362, 2, 20249);
-    			attr_dev(span43, "class", "el-sec svelte-fz3dac");
-    			add_location(span43, file$d, 369, 2, 20622);
-    			attr_dev(span44, "class", "el-sec svelte-fz3dac");
-    			add_location(span44, file$d, 376, 2, 20993);
-    			attr_dev(span45, "class", "el-sec svelte-fz3dac");
-    			add_location(span45, file$d, 383, 2, 21374);
-    			attr_dev(span46, "class", "el-sec svelte-fz3dac");
-    			add_location(span46, file$d, 389, 2, 21685);
-    			attr_dev(span47, "class", "el-sec svelte-fz3dac");
-    			add_location(span47, file$d, 395, 2, 22015);
-    			attr_dev(span48, "class", "el-sec svelte-fz3dac");
-    			add_location(span48, file$d, 403, 2, 22461);
-    			attr_dev(span49, "class", "el-sec svelte-fz3dac");
-    			add_location(span49, file$d, 410, 2, 22870);
-    			attr_dev(span50, "class", "el-sec svelte-fz3dac");
-    			add_location(span50, file$d, 414, 2, 23027);
-    			attr_dev(span51, "class", "el-sec svelte-fz3dac");
-    			add_location(span51, file$d, 423, 2, 23564);
-    			attr_dev(span52, "class", "el-sec svelte-fz3dac");
-    			add_location(span52, file$d, 427, 2, 23731);
-    			attr_dev(span53, "class", "el-sec svelte-fz3dac");
-    			add_location(span53, file$d, 439, 2, 24545);
-    			attr_dev(span54, "class", "el-sec svelte-fz3dac");
-    			add_location(span54, file$d, 445, 2, 24866);
-    			attr_dev(span55, "class", "el-sec svelte-fz3dac");
-    			add_location(span55, file$d, 453, 2, 25357);
-    			attr_dev(span56, "class", "el-sec svelte-fz3dac");
-    			add_location(span56, file$d, 459, 2, 25647);
-    			attr_dev(span57, "class", "el-sec svelte-fz3dac");
-    			add_location(span57, file$d, 468, 2, 26168);
-    			attr_dev(span58, "class", "el-sec svelte-fz3dac");
-    			add_location(span58, file$d, 478, 2, 26781);
-    			attr_dev(span59, "class", "el-sec svelte-fz3dac");
-    			add_location(span59, file$d, 499, 2, 28272);
-    			attr_dev(span60, "class", "el-sec svelte-fz3dac");
-    			add_location(span60, file$d, 503, 2, 28424);
-    			attr_dev(span61, "class", "el-sec svelte-fz3dac");
-    			add_location(span61, file$d, 509, 2, 28741);
-    			attr_dev(span62, "class", "el-sec svelte-fz3dac");
-    			add_location(span62, file$d, 525, 2, 29850);
-    			attr_dev(span63, "class", "el-sec svelte-fz3dac");
-    			add_location(span63, file$d, 534, 2, 30400);
-    			attr_dev(span64, "class", "el-sec svelte-fz3dac");
-    			add_location(span64, file$d, 542, 2, 30850);
-    			attr_dev(span65, "class", "el-sec svelte-fz3dac");
-    			add_location(span65, file$d, 548, 2, 31126);
-    			attr_dev(span66, "class", "el-sec svelte-fz3dac");
-    			add_location(span66, file$d, 560, 2, 31880);
-    			attr_dev(span67, "class", "el-sec svelte-fz3dac");
-    			add_location(span67, file$d, 565, 2, 32090);
-    			attr_dev(span68, "class", "el-sec svelte-fz3dac");
-    			add_location(span68, file$d, 569, 2, 32252);
-    			attr_dev(span69, "class", "el-sec svelte-fz3dac");
-    			add_location(span69, file$d, 576, 2, 32608);
-    			attr_dev(span70, "class", "el-sec svelte-fz3dac");
-    			add_location(span70, file$d, 583, 2, 33028);
-    			attr_dev(span71, "class", "el-sec svelte-fz3dac");
-    			add_location(span71, file$d, 599, 2, 34114);
-    			attr_dev(span72, "class", "el-sec svelte-fz3dac");
-    			add_location(span72, file$d, 608, 2, 34637);
-    			attr_dev(span73, "class", "el-sec svelte-fz3dac");
-    			add_location(span73, file$d, 613, 4, 34914);
-    			attr_dev(span74, "class", "el-sec svelte-fz3dac");
-    			add_location(span74, file$d, 614, 2, 34986);
-    			attr_dev(span75, "class", "el-sec svelte-fz3dac");
-    			add_location(span75, file$d, 626, 2, 35742);
-    			attr_dev(span76, "class", "el-sec svelte-fz3dac");
-    			add_location(span76, file$d, 632, 2, 36030);
-    			attr_dev(span77, "class", "el-sec svelte-fz3dac");
-    			add_location(span77, file$d, 638, 2, 36358);
-    			attr_dev(span78, "class", "el-sec svelte-fz3dac");
-    			add_location(span78, file$d, 642, 2, 36525);
-    			attr_dev(span79, "class", "el-sec svelte-fz3dac");
-    			add_location(span79, file$d, 646, 2, 36694);
-    			attr_dev(span80, "class", "el-sec svelte-fz3dac");
-    			add_location(span80, file$d, 655, 2, 37236);
-    			attr_dev(span81, "class", "el-sec svelte-fz3dac");
-    			add_location(span81, file$d, 664, 2, 37749);
-    			attr_dev(span82, "class", "el-sec svelte-fz3dac");
-    			add_location(span82, file$d, 669, 2, 37967);
-    			attr_dev(span83, "class", "el-sec svelte-fz3dac");
-    			add_location(span83, file$d, 675, 2, 38268);
-    			attr_dev(span84, "class", "el-sec svelte-fz3dac");
-    			add_location(span84, file$d, 688, 2, 39166);
-    			attr_dev(span85, "class", "el-sec svelte-fz3dac");
-    			add_location(span85, file$d, 692, 2, 39306);
-    			attr_dev(span86, "class", "el-sec svelte-fz3dac");
-    			add_location(span86, file$d, 699, 2, 39697);
-    			attr_dev(span87, "class", "el-sec svelte-fz3dac");
-    			add_location(span87, file$d, 709, 2, 40333);
-    			attr_dev(span88, "class", "el-sec svelte-fz3dac");
-    			add_location(span88, file$d, 718, 2, 40846);
-    			attr_dev(span89, "class", "el-sec svelte-fz3dac");
-    			add_location(span89, file$d, 722, 2, 41016);
-    			attr_dev(span90, "class", "el-sec svelte-fz3dac");
-    			add_location(span90, file$d, 731, 2, 41554);
-    			attr_dev(span91, "class", "el-sec svelte-fz3dac");
-    			add_location(span91, file$d, 738, 2, 41912);
-    			attr_dev(span92, "class", "el-sec svelte-fz3dac");
-    			add_location(span92, file$d, 744, 2, 42213);
-    			attr_dev(span93, "class", "el-sec svelte-fz3dac");
-    			add_location(span93, file$d, 765, 2, 43702);
-    			attr_dev(span94, "class", "el-sec svelte-fz3dac");
-    			add_location(span94, file$d, 779, 2, 44593);
-    			attr_dev(span95, "class", "el-sec svelte-fz3dac");
-    			add_location(span95, file$d, 783, 2, 44749);
-    			attr_dev(span96, "class", "el-sec svelte-fz3dac");
-    			add_location(span96, file$d, 796, 2, 45626);
-    			attr_dev(span97, "class", "el-sec svelte-fz3dac");
-    			add_location(span97, file$d, 809, 2, 46433);
-    			attr_dev(span98, "class", "el-sec svelte-fz3dac");
-    			add_location(span98, file$d, 813, 2, 46593);
-    			attr_dev(span99, "class", "el-sec svelte-fz3dac");
-    			add_location(span99, file$d, 818, 2, 46824);
-    			attr_dev(span100, "class", "el-sec svelte-fz3dac");
-    			add_location(span100, file$d, 827, 2, 47351);
-    			attr_dev(span101, "class", "el-sec svelte-fz3dac");
-    			add_location(span101, file$d, 835, 2, 47805);
-    			attr_dev(span102, "class", "el-sec svelte-fz3dac");
-    			add_location(span102, file$d, 844, 2, 48356);
-    			attr_dev(span103, "class", "el-sec svelte-fz3dac");
-    			add_location(span103, file$d, 850, 2, 48647);
-    			attr_dev(span104, "class", "el-sec svelte-fz3dac");
-    			add_location(span104, file$d, 860, 2, 49294);
-    			attr_dev(span105, "class", "el-sec svelte-fz3dac");
-    			add_location(span105, file$d, 867, 2, 49683);
-    			attr_dev(span106, "class", "el-sec svelte-fz3dac");
-    			add_location(span106, file$d, 899, 2, 52017);
-    			attr_dev(span107, "class", "el-sec svelte-fz3dac");
-    			add_location(span107, file$d, 910, 2, 52723);
-    			attr_dev(span108, "class", "el-sec svelte-fz3dac");
-    			add_location(span108, file$d, 917, 2, 53111);
-    			attr_dev(span109, "class", "el-sec svelte-fz3dac");
-    			add_location(span109, file$d, 921, 2, 53276);
-    			attr_dev(span110, "class", "el-sec svelte-fz3dac");
-    			add_location(span110, file$d, 929, 2, 53737);
-    			attr_dev(span111, "class", "el-sec svelte-fz3dac");
-    			add_location(span111, file$d, 933, 2, 53875);
-    			attr_dev(span112, "class", "el-sec svelte-fz3dac");
-    			add_location(span112, file$d, 937, 2, 53997);
-    			attr_dev(span113, "class", "el-sec svelte-fz3dac");
-    			add_location(span113, file$d, 946, 2, 54560);
-    			attr_dev(span114, "class", "el-sec svelte-fz3dac");
-    			add_location(span114, file$d, 951, 2, 54770);
-    			attr_dev(span115, "class", "el-sec svelte-fz3dac");
-    			add_location(span115, file$d, 957, 2, 55109);
-    			attr_dev(div, "class", "text electric-text svelte-fz3dac");
-    			add_location(div, file$d, 21, 0, 491);
+    			p33 = element("p");
+    			p33.textContent = "Exhilarated and weary from driving, I fell into bed early, but my heart\n    raced, and my toes twitched: too much coffee. Eventually I fumbled my phone\n    from where it was charging on the floor and swiped idly through pho- tos of\n    our trip: playgrounds, mountains, the gift of a barmbrack, Harry Clarke\n    windows in Ballinrobe, a little dog called Marcie. I came to the penultimate\n    photo I’d taken in the church, the one that had vexed me when my son flung\n    himself through it. I zoomed in by fingertip. There was the aisle, along\n    which a male shadow hurried. By the next photo the aisle was empty. How\n    brief, his presence: glimpsed, then gone. When I swiped back, though, he\n    reappeared, wrapped again in a borrowed shawl, folded into the fabric of\n    that inherited story – too big and too dark – in which we all find ourselves\n    bound by those who came before us.";
+    			add_location(p0, file$b, 22, 2, 623);
+    			add_location(p1, file$b, 29, 2, 1004);
+    			add_location(p2, file$b, 44, 2, 1969);
+    			add_location(p3, file$b, 53, 2, 2522);
+    			add_location(em0, file$b, 70, 79, 3650);
+    			add_location(em1, file$b, 72, 7, 3690);
+    			add_location(em2, file$b, 72, 42, 3725);
+    			add_location(em3, file$b, 73, 4, 3762);
+    			add_location(p4, file$b, 62, 2, 3027);
+    			add_location(blockquote0, file$b, 81, 2, 4299);
+    			add_location(p5, file$b, 89, 2, 4767);
+    			add_location(p6, file$b, 93, 2, 4928);
+    			add_location(p7, file$b, 98, 2, 5183);
+    			add_location(p8, file$b, 112, 2, 6059);
+    			add_location(p9, file$b, 127, 2, 7068);
+    			add_location(p10, file$b, 143, 2, 8153);
+    			add_location(p11, file$b, 152, 2, 8668);
+    			add_location(p12, file$b, 165, 2, 9500);
+    			add_location(blockquote1, file$b, 172, 2, 9907);
+    			add_location(p13, file$b, 180, 2, 10402);
+    			add_location(p14, file$b, 189, 2, 10924);
+    			add_location(blockquote2, file$b, 196, 2, 11329);
+    			add_location(p15, file$b, 205, 2, 11843);
+    			add_location(p16, file$b, 212, 2, 12257);
+    			add_location(p17, file$b, 225, 2, 13127);
+    			add_location(p18, file$b, 239, 2, 14041);
+    			add_location(p19, file$b, 246, 2, 14382);
+    			add_location(p20, file$b, 258, 2, 15136);
+    			add_location(p21, file$b, 272, 2, 16020);
+    			add_location(p22, file$b, 289, 2, 17184);
+    			add_location(p23, file$b, 302, 2, 18051);
+    			add_location(p24, file$b, 315, 2, 18887);
+    			add_location(p25, file$b, 333, 2, 20136);
+    			add_location(p26, file$b, 344, 2, 20868);
+    			add_location(p27, file$b, 349, 2, 21102);
+    			add_location(p28, file$b, 360, 2, 21810);
+    			add_location(p29, file$b, 375, 2, 22809);
+    			add_location(p30, file$b, 388, 2, 23663);
+    			add_location(p31, file$b, 397, 2, 24207);
+    			add_location(p32, file$b, 403, 2, 24481);
+    			add_location(p33, file$b, 416, 2, 25352);
+    			attr_dev(div, "class", "text");
+    			add_location(div, file$b, 17, 0, 460);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -7102,237 +5776,88 @@ var app = (function () {
     			mount_component(audioplayer, target, anchor);
     			insert_dev(target, t1, anchor);
     			insert_dev(target, div, anchor);
-    			append_dev(div, span0);
+    			append_dev(div, p0);
     			append_dev(div, t3);
-    			append_dev(div, span1);
+    			append_dev(div, p1);
     			append_dev(div, t5);
-    			append_dev(div, span2);
+    			append_dev(div, p2);
     			append_dev(div, t7);
-    			append_dev(div, span3);
+    			append_dev(div, p3);
     			append_dev(div, t9);
-    			append_dev(div, span4);
-    			append_dev(div, t11);
-    			append_dev(div, span5);
-    			append_dev(div, t13);
-    			append_dev(div, span6);
-    			append_dev(div, t15);
-    			append_dev(div, span7);
-    			append_dev(div, t17);
-    			append_dev(div, span8);
+    			append_dev(div, p4);
+    			append_dev(p4, t10);
+    			append_dev(p4, em0);
+    			append_dev(p4, t12);
+    			append_dev(p4, em1);
+    			append_dev(p4, t14);
+    			append_dev(p4, em2);
+    			append_dev(p4, t16);
+    			append_dev(p4, em3);
+    			append_dev(p4, t18);
     			append_dev(div, t19);
-    			append_dev(div, span9);
+    			append_dev(div, blockquote0);
     			append_dev(div, t21);
-    			append_dev(div, span10);
+    			append_dev(div, p5);
     			append_dev(div, t23);
-    			append_dev(div, span11);
+    			append_dev(div, p6);
     			append_dev(div, t25);
-    			append_dev(div, span12);
+    			append_dev(div, p7);
     			append_dev(div, t27);
-    			append_dev(div, span13);
+    			append_dev(div, p8);
     			append_dev(div, t29);
-    			append_dev(div, span14);
+    			append_dev(div, p9);
     			append_dev(div, t31);
-    			append_dev(div, span15);
+    			append_dev(div, p10);
     			append_dev(div, t33);
-    			append_dev(div, span16);
+    			append_dev(div, p11);
     			append_dev(div, t35);
-    			append_dev(div, span17);
+    			append_dev(div, p12);
     			append_dev(div, t37);
-    			append_dev(div, span18);
+    			append_dev(div, blockquote1);
     			append_dev(div, t39);
-    			append_dev(div, span19);
+    			append_dev(div, p13);
     			append_dev(div, t41);
-    			append_dev(div, span20);
+    			append_dev(div, p14);
     			append_dev(div, t43);
-    			append_dev(div, span21);
+    			append_dev(div, blockquote2);
     			append_dev(div, t45);
-    			append_dev(div, span22);
+    			append_dev(div, p15);
     			append_dev(div, t47);
-    			append_dev(div, span23);
+    			append_dev(div, p16);
     			append_dev(div, t49);
-    			append_dev(div, span24);
+    			append_dev(div, p17);
     			append_dev(div, t51);
-    			append_dev(div, span25);
+    			append_dev(div, p18);
     			append_dev(div, t53);
-    			append_dev(div, span26);
+    			append_dev(div, p19);
     			append_dev(div, t55);
-    			append_dev(div, span27);
+    			append_dev(div, p20);
     			append_dev(div, t57);
-    			append_dev(div, span28);
+    			append_dev(div, p21);
     			append_dev(div, t59);
-    			append_dev(div, span29);
+    			append_dev(div, p22);
     			append_dev(div, t61);
-    			append_dev(div, span30);
+    			append_dev(div, p23);
     			append_dev(div, t63);
-    			append_dev(div, span31);
+    			append_dev(div, p24);
     			append_dev(div, t65);
-    			append_dev(div, span32);
+    			append_dev(div, p25);
     			append_dev(div, t67);
-    			append_dev(div, span33);
+    			append_dev(div, p26);
     			append_dev(div, t69);
-    			append_dev(div, span34);
+    			append_dev(div, p27);
     			append_dev(div, t71);
-    			append_dev(div, span35);
+    			append_dev(div, p28);
     			append_dev(div, t73);
-    			append_dev(div, span36);
+    			append_dev(div, p29);
     			append_dev(div, t75);
-    			append_dev(div, span37);
+    			append_dev(div, p30);
     			append_dev(div, t77);
-    			append_dev(div, span38);
+    			append_dev(div, p31);
     			append_dev(div, t79);
-    			append_dev(div, span39);
+    			append_dev(div, p32);
     			append_dev(div, t81);
-    			append_dev(div, span40);
-    			append_dev(div, t83);
-    			append_dev(div, span41);
-    			append_dev(div, t85);
-    			append_dev(div, span42);
-    			append_dev(div, t87);
-    			append_dev(div, span43);
-    			append_dev(div, t89);
-    			append_dev(div, span44);
-    			append_dev(div, t91);
-    			append_dev(div, span45);
-    			append_dev(div, t93);
-    			append_dev(div, span46);
-    			append_dev(div, t95);
-    			append_dev(div, span47);
-    			append_dev(div, t97);
-    			append_dev(div, span48);
-    			append_dev(div, t99);
-    			append_dev(div, span49);
-    			append_dev(div, t101);
-    			append_dev(div, span50);
-    			append_dev(div, t103);
-    			append_dev(div, span51);
-    			append_dev(div, t105);
-    			append_dev(div, span52);
-    			append_dev(div, t107);
-    			append_dev(div, span53);
-    			append_dev(div, t109);
-    			append_dev(div, span54);
-    			append_dev(div, t111);
-    			append_dev(div, span55);
-    			append_dev(div, t113);
-    			append_dev(div, span56);
-    			append_dev(div, t115);
-    			append_dev(div, span57);
-    			append_dev(div, t117);
-    			append_dev(div, span58);
-    			append_dev(div, t119);
-    			append_dev(div, span59);
-    			append_dev(div, t121);
-    			append_dev(div, span60);
-    			append_dev(div, t123);
-    			append_dev(div, span61);
-    			append_dev(div, t125);
-    			append_dev(div, span62);
-    			append_dev(div, t127);
-    			append_dev(div, span63);
-    			append_dev(div, t129);
-    			append_dev(div, span64);
-    			append_dev(div, t131);
-    			append_dev(div, span65);
-    			append_dev(div, t133);
-    			append_dev(div, span66);
-    			append_dev(div, t135);
-    			append_dev(div, span67);
-    			append_dev(div, t137);
-    			append_dev(div, span68);
-    			append_dev(div, t139);
-    			append_dev(div, span69);
-    			append_dev(div, t141);
-    			append_dev(div, span70);
-    			append_dev(div, t143);
-    			append_dev(div, span71);
-    			append_dev(div, t145);
-    			append_dev(div, span72);
-    			append_dev(div, t147);
-    			append_dev(div, span73);
-    			append_dev(div, t149);
-    			append_dev(div, span74);
-    			append_dev(div, t151);
-    			append_dev(div, span75);
-    			append_dev(div, t153);
-    			append_dev(div, span76);
-    			append_dev(div, t155);
-    			append_dev(div, span77);
-    			append_dev(div, t157);
-    			append_dev(div, span78);
-    			append_dev(div, t159);
-    			append_dev(div, span79);
-    			append_dev(div, t161);
-    			append_dev(div, span80);
-    			append_dev(div, t163);
-    			append_dev(div, span81);
-    			append_dev(div, t165);
-    			append_dev(div, span82);
-    			append_dev(div, t167);
-    			append_dev(div, span83);
-    			append_dev(div, t169);
-    			append_dev(div, span84);
-    			append_dev(div, t171);
-    			append_dev(div, span85);
-    			append_dev(div, t173);
-    			append_dev(div, span86);
-    			append_dev(div, t175);
-    			append_dev(div, span87);
-    			append_dev(div, t177);
-    			append_dev(div, span88);
-    			append_dev(div, t179);
-    			append_dev(div, span89);
-    			append_dev(div, t181);
-    			append_dev(div, span90);
-    			append_dev(div, t183);
-    			append_dev(div, span91);
-    			append_dev(div, t185);
-    			append_dev(div, span92);
-    			append_dev(div, t187);
-    			append_dev(div, span93);
-    			append_dev(div, t189);
-    			append_dev(div, span94);
-    			append_dev(div, t191);
-    			append_dev(div, span95);
-    			append_dev(div, t193);
-    			append_dev(div, span96);
-    			append_dev(div, t195);
-    			append_dev(div, span97);
-    			append_dev(div, t197);
-    			append_dev(div, span98);
-    			append_dev(div, t199);
-    			append_dev(div, span99);
-    			append_dev(div, t201);
-    			append_dev(div, span100);
-    			append_dev(div, t203);
-    			append_dev(div, span101);
-    			append_dev(div, t205);
-    			append_dev(div, span102);
-    			append_dev(div, t207);
-    			append_dev(div, span103);
-    			append_dev(div, t209);
-    			append_dev(div, span104);
-    			append_dev(div, t211);
-    			append_dev(div, span105);
-    			append_dev(div, t213);
-    			append_dev(div, span106);
-    			append_dev(div, t215);
-    			append_dev(div, span107);
-    			append_dev(div, t217);
-    			append_dev(div, span108);
-    			append_dev(div, t219);
-    			append_dev(div, span109);
-    			append_dev(div, t221);
-    			append_dev(div, span110);
-    			append_dev(div, t223);
-    			append_dev(div, span111);
-    			append_dev(div, t225);
-    			append_dev(div, span112);
-    			append_dev(div, t227);
-    			append_dev(div, span113);
-    			append_dev(div, t229);
-    			append_dev(div, span114);
-    			append_dev(div, t231);
-    			append_dev(div, span115);
+    			append_dev(div, p33);
     			current = true;
     		},
     		p: function update(new_ctx, [dirty]) {
@@ -7391,6 +5916,1726 @@ var app = (function () {
     			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(div);
     			if (detaching && div_outro) div_outro.end();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$d.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance$d($$self, $$props, $$invalidate) {
+    	let { $$slots: slots = {}, $$scope } = $$props;
+    	validate_slots("Scarf", slots, []);
+    	let audioActive = false;
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Scarf> was created with unknown prop '${key}'`);
+    	});
+
+    	function articleheader_audioActive_binding(value) {
+    		audioActive = value;
+    		$$invalidate(0, audioActive);
+    	}
+
+    	$$self.$capture_state = () => ({
+    		blur,
+    		linear: identity,
+    		AudioPlayer,
+    		ArticleHeader,
+    		audioActive
+    	});
+
+    	$$self.$inject_state = $$props => {
+    		if ("audioActive" in $$props) $$invalidate(0, audioActive = $$props.audioActive);
+    	};
+
+    	if ($$props && "$$inject" in $$props) {
+    		$$self.$inject_state($$props.$$inject);
+    	}
+
+    	return [audioActive, articleheader_audioActive_binding];
+    }
+
+    class Scarf extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$d, create_fragment$d, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Scarf",
+    			options,
+    			id: create_fragment$d.name
+    		});
+    	}
+    }
+
+    /* src/routes/pieces/SaintSisters.svelte generated by Svelte v3.32.3 */
+    const file$c = "src/routes/pieces/SaintSisters.svelte";
+
+    function create_fragment$e(ctx) {
+    	let articleheader;
+    	let updating_audioActive;
+    	let t0;
+    	let audioplayer;
+    	let t1;
+    	let div;
+    	let p0;
+    	let t3;
+    	let p1;
+    	let t5;
+    	let p2;
+    	let t7;
+    	let p3;
+    	let t9;
+    	let p4;
+    	let t11;
+    	let p5;
+    	let t13;
+    	let p6;
+    	let t15;
+    	let p7;
+    	let t17;
+    	let p8;
+    	let t19;
+    	let p9;
+    	let t21;
+    	let p10;
+    	let t23;
+    	let p11;
+    	let t25;
+    	let p12;
+    	let t27;
+    	let p13;
+    	let t29;
+    	let p14;
+    	let t31;
+    	let p15;
+    	let t33;
+    	let p16;
+    	let t35;
+    	let p17;
+    	let t37;
+    	let p18;
+    	let t39;
+    	let p19;
+    	let t41;
+    	let p20;
+    	let t43;
+    	let p21;
+    	let t45;
+    	let p22;
+    	let t47;
+    	let p23;
+    	let t49;
+    	let p24;
+    	let t51;
+    	let p25;
+    	let t53;
+    	let p26;
+    	let t55;
+    	let p27;
+    	let t57;
+    	let p28;
+    	let t59;
+    	let p29;
+    	let div_intro;
+    	let div_outro;
+    	let current;
+
+    	function articleheader_audioActive_binding(value) {
+    		/*articleheader_audioActive_binding*/ ctx[1](value);
+    	}
+
+    	let articleheader_props = {
+    		title: "Saint Sisters & The Sea",
+    		author: "Méabh de Brun"
+    	};
+
+    	if (/*audioActive*/ ctx[0] !== void 0) {
+    		articleheader_props.audioActive = /*audioActive*/ ctx[0];
+    	}
+
+    	articleheader = new ArticleHeader({
+    			props: articleheader_props,
+    			$$inline: true
+    		});
+
+    	binding_callbacks.push(() => bind(articleheader, "audioActive", articleheader_audioActive_binding));
+
+    	audioplayer = new AudioPlayer({
+    			props: {
+    				src: "/assets/audio/saint-sisters.mp3",
+    				active: /*audioActive*/ ctx[0],
+    				credits: "Read by Méabh de Brun."
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			create_component(articleheader.$$.fragment);
+    			t0 = space();
+    			create_component(audioplayer.$$.fragment);
+    			t1 = space();
+    			div = element("div");
+    			p0 = element("p");
+    			p0.textContent = "1. When your sister goes missing you are twenty-seven years old. She had\n    just turned thirty. One day she was there, the next day she was Gone. It was\n    three days before anyone realized; it happened on a Friday and she had just\n    moved to Wicklow Town. She was after nabbing a tidy number as the local\n    orthodontist, wearing tidy white scrubs and sorting people’s teeth into tidy\n    white rows. You usually rang her every evening, but she had been a bit of a\n    downer lately, what with the new town, new job, no friends. A manageable\n    downer though. Run of the mill stuff. No alarm bells. But you were tired,\n    and reluctant to take on her woes. Somewhere deep in the pit of your stomach\n    you know this is your fault. Your calls were the talisman that kept the Gone\n    at bay.";
+    			t3 = space();
+    			p1 = element("p");
+    			p1.textContent = "2. The worst thing is that everyone around you expects life to go on, and\n    they expect you to go on too, so you do. Not because you think it’s right or\n    because you want to, but because you accede to their beliefs and are loath\n    to cause discomfort.";
+    			t5 = space();
+    			p2 = element("p");
+    			p2.textContent = "3. Actuary /ˈaktʃʊ(ə)ri/ noun An actuary is someone that analyses data and\n    works with statistics, using mathematical skill to assess or predict the\n    probability of an uncertain future event.";
+    			t7 = space();
+    			p3 = element("p");
+    			p3.textContent = "4. You’re the middle sister. You were three years younger than Becca; you\n    are three years older than Niamh. You never quite clicked with Niamh beyond\n    the dutiful clicking that comes with unavoidably shared genes and\n    reluctantly shared jeans. Niamh isn’t doing well. She’s a tightly coiled\n    spring over an open flame. She has a scalding tongue on her, ready to snap\n    at any stage. Her targetless anger floods out like waves of acid, burning\n    friends and family alike. On some level you know that she’s pushing out what\n    you’re turning in. She calls you Bean Uí Robot with a sneer on her lips. How\n    can you tell her that you’ve run out of responses? That you are sick of\n    receiving condolences for something that is not a death, not an ending.\n    Something that just goes on and on, forever and ever without end amen.";
+    			t9 = space();
+    			p4 = element("p");
+    			p4.textContent = "5. MISSING PERSON REBECCA DALY 30 years old, medium build. Last seen on 25\n    November 2016. Wearing a navy coat with decorative patterns on the hem and\n    brown boots. If you have seen this woman or know of her whereabouts, please\n    contact Wicklow Garda Station – 0404 60140";
+    			t11 = space();
+    			p5 = element("p");
+    			p5.textContent = "6. The Gardaí show you the CCTV footage, hoping you’ll have some insight\n    into Becca’s body language. You sit in the station and lean hungrily towards\n    the screen, watching the final minutes of your sister’s existence. The\n    camera is positioned over the Bank of Ireland, down the street from the\n    Mariner. The quality is poor, the picture in black and white. You watch\n    Becca walk out of the pub. Her face is an inscrutable blob of pixels. She’s\n    wearing her good blue coat, the one you described to the Gardaí and showed\n    them on the Zara website. The one they will later call navy in the official\n    missing person release. The coat is a dark shade of grey on the screen, but\n    it remains distinctive due to its decoration: a city silhouette airbrushed\n    on the hem. You know that coat, you know those boots. You know that\n    underneath she’s wearing her green dress and black tights. Her go-to\n    going-out outfit when she wasn’t going out out. The Gardaí won’t let you put\n    that on the posters. They’re apologetic, but they can only go on established\n    facts. You watch Becca walk down the street. You watch her turn the corner\n    and disappear. The tape continues for another twelve seconds. Twelve seconds\n    of total absence. Then the loop starts again and there is your sister,\n    walking out of the Mariner. You want to ask for a copy, but you stop\n    yourself. You know even then that nothing good can come from having it. It\n    would be nothing more than owning the final seconds of a grainy ghost\n    composed in monochrome. ‘Thirty can be a tough year for some women,’ the\n    Garda comments, and you think can it?";
+    			t13 = space();
+    			p6 = element("p");
+    			p6.textContent = "7. There’s no such thing as a Missing Person’s Mass but there’s a Mass said,\n    nonetheless. When the priest says we’ll kneel now, everyone kneels. When the\n    priest says we’ll bow our heads now, everyone bows. The priest keeps saying\n    we’ll do this now and does none of it himself. The Eucharist is given out\n    and it sits dry and hard on your tongue. This is the anno domini of your\n    life, nothing will be the same after this.";
+    			t15 = space();
+    			p7 = element("p");
+    			p7.textContent = "8. There’s no reason to believe she went to the sea, but you believe she\n    went to the sea.";
+    			t17 = space();
+    			p8 = element("p");
+    			p8.textContent = "9. The official search lasts two months. That’s all it takes to write your\n    sister off from reality. Becca was always the neat one, the tidy one.\n    Whatever force made her Gone has respected that core aspect of her\n    personality. There is no body. There are no leads. From the outside it looks\n    as though she has been sliced from reality. Perhaps by a sharp scalpel, the\n    kind she boasted her prowess with when describing her more surgical\n    procedures. That’s how it looks, but that’s not the truth of it. The truth\n    is that her disappearance has left a messy, open wound. A torn hole in the\n    quintessential fabric of existence. Ragged edges and pumping blood. Your\n    family must learn to exist around this wound because you know it’s not the\n    kind that will heal. It’s the kind that stays open. Stays raw.";
+    			t19 = space();
+    			p9 = element("p");
+    			p9.textContent = "10. Saint Anthony looks, Saint Anthony finds, Saint Anthony places in front\n    of my eyes.";
+    			t21 = space();
+    			p10 = element("p");
+    			p10.textContent = "11. You studied to be an actuary and then realized about fifteen minutes\n    after qualifying that you fucking hated it. You work in a call centre these\n    days while trying to figure out what to do with your life. Your parents used\n    to give you a hard time about it. Not anymore. Not since they learned that\n    there are darker outcomes for daughters than unrealized potential. They are\n    so much older now, older than they were. More timid, as though they think\n    that pushing you would disrupt the delicate balance of whatever force\n    protects you from being Gone. They’re more affectionate. They call you\n    ‘pet’. Your lips press into a thin smile at each saccharine sentiment, as\n    though you’re making sure it doesn’t get into your mouth. The rotting\n    honey-juice of their guilt-sodden tenderness.";
+    			t23 = space();
+    			p11 = element("p");
+    			p11.textContent = "12. Eight months later, on the first night you go out out, your friend’s\n    boyfriend rants about how much he hates his job. You sit with the group and\n    listen, your finger drawing tight little lines on the condensation of your\n    glass. It’s boring, he says. My boss is a gobshite, he says. I swear to god,\n    one more week and I’ll off myself, he says. There’s a brief susurration of\n    laughter before it fades into awkward silence, people’s eyes sliding to you.\n    You smile to cut the tension and continue to stockpile reasons why your\n    sister couldn’t have killed herself. You hate that you’re doing it. The\n    existence of the mental list you have curated seems to give weight to the\n    other side of the argument, the idea that there is a debate to be rebutted.\n    But you can’t stop, and though you never write it down, it is always a\n    single thought away, added to as appropriate. You begin to dream of the sea.\n    The crashing, roiling sea. Becca is down there somewhere and but for the\n    violence of the waves blocking her attempts to surface, she could come back.\n    You spend entire nights following winding paths down to the seashore, ready\n    to dive in and save her. You never make it. You always wake just as you\n    reach the crest of the sand dunes, the sound of the sea crashing in your\n    ears. The dreams don’t stop, so you start avoiding sleep. Instead you lie in\n    the dark and go through your list, running a mental finger down the smudged\n    and tattered page, worn from constant rehashing. You lie there, listening to\n    the sound of your boyfriend breathing. Your boyfriend who has no open wounds\n    in his life and keeps putting his hands over yours, trying to close it with\n    his clumsy fingers. Like he doesn’t know that some things just need to\n    fucking bleed.";
+    			t25 = space();
+    			p12 = element("p");
+    			p12.textContent = "13. Say someone was in Wicklow Town on a Friday night, and they had a drink\n    at the Mariner. Say they were homesick and lonely and missing Dublin. Say\n    they wanted to leave. Say they wanted to go somewhere alone. Say they wanted\n    to go to the sea. First, they’d walk out of the bar, pulling their good blue\n    coat around their shoulders. They’d take a second to look down the dark\n    street, stained with autumnal spatterings of rain. Then they’d turn off to\n    the right, walking alone in the dark. Past the garishly painted Toymaster,\n    and past the Bank of Ireland. They’d turn right again, out of the scope of\n    the bank’s security cameras. They’d turn what’s locally known as the Long\n    Corner, onto a road with farther spaced streetlamps, puddles of darkness\n    gathering at set spaces. They’d walk on, past rows of houses predominantly\n    painted in shades of blue. They’d pass the Bridge Tavern, then cross the\n    River Vartry. They’d walk to the bit of town less preoccupied with looking\n    twee for tourists, its houses a more functional spackled brown. They’d walk\n    until they got to the low ones, the bungalows built in deference to sea\n    gales and salty winds. A six-minute walk and there they’d be. At the\n    endless, endless sea.";
+    			t27 = space();
+    			p13 = element("p");
+    			p13.textContent = "14. When calculating the risks posed to a missing person, actuaries used to\n    use the classification method. Part One of the risk matrix dealt with\n    personal circumstances. It included factors like age, environment,\n    drug/alcohol dependency and isolation. Part Two examined the circumstances\n    of the disappearance. It included things like ‘out of character behaviour’\n    or ‘inclement weather conditions’. Each of these was awarded a single score\n    and could then be judged on a scale. This method is no longer used. It was\n    too easy to weigh circumstances heavier than they warranted. Too easy to\n    become embroiled into the personal details. Every case became a high-risk\n    case. Every case became important. The classification method was deemed\n    inefficient and abandoned.";
+    			t29 = space();
+    			p14 = element("p");
+    			p14.textContent = "15. The Irish Times Tuesday 20 November 2018, 18:28 Gardaí issue Rebecca\n    Daly appeal two years after disappearance Supt Derek O’Mahoney calls for\n    those with information to come forward Gardaí have issued a new appeal for\n    information in relation to missing woman Rebecca Daly as her family prepares\n    to mark the second anniversary of her disappearance. Ms Daly (30) vanished\n    from the streets of Wicklow Town in the late hours of 25 November 2016. Her\n    disappearance from a relatively small town so close to Christmas was the\n    subject of a high-profile search and publicity campaign, but no trace was\n    ever found. A Bank of Ireland CCTV camera on Main Street, Wicklow recorded\n    her passing by at 11.20pm heading towards Bridge Street. Supt Derek\n    O’Mahoney is appealing for anybody with information to contact the Garda\n    Confidential line 1800 666 111 or any Garda Station. Ms Daly is described as\n    5ft 6ins, of medium build with blonde shoulder-length hair and brown eyes.";
+    			t31 = space();
+    			p15 = element("p");
+    			p15.textContent = "16. Your boyfriend doesn’t leave, because imagine leaving. Leaving his\n    girlfriend with the missing sister. His girlfriend who has grown distant and\n    cold and still, like a lake frozen over in winter. That’s the only reason he\n    doesn’t leave and you know it. When it hits the two year mark you push him\n    out instead, and still manage to make him feel like it’s his fault. Grand,\n    you say. Fine. Fuck off with yourself. Your social circle is neatly halved.\n    You feel better for it.";
+    			t33 = space();
+    			p16 = element("p");
+    			p16.textContent = "17. Niamh rings you one evening, while you’re examining your new\n    conditioner. You’re trying to go all natural, and you can’t remember whether\n    parabens are allowed. You answer the phone without thinking, and it’s only\n    after the pleasantries that you remember Niamh never calls. ‘I have to do a\n    Form 12 for Revenue,’ she says. ‘They sent me a letter.’ There’s something\n    about the way she says it that makes you hesitate, and that beat of silence\n    is enough to damage whatever was hanging in the balance. ‘Yeah, it’s fine,\n    never mind. I’ll ask Dad.’ Her voice sounds thick, her throat sounds raw,\n    and before you can say anything else, she hangs up. You feel bad for a\n    minute, but then the feeling fades. It is unfortunate that Niamh has lost\n    the sister who took care of her, but in fairness, so have you.";
+    			t35 = space();
+    			p17 = element("p");
+    			p17.textContent = "18. In most fatal accident cases that make it to the High Court, an actuary\n    is brought in as an expert witness, to tally up the total loss to the\n    survivors. The losses incurred by the financial dependents of the deceased\n    are quantified under the following headings: • Loss of financial dependency\n    since the accident; • Loss of future financial dependency prior to\n    retirement; • Loss of future financial dependency after retirement; • Loss\n    of services provided by the deceased; • Accelerated value of deductible\n    assets passing on death. The actuary sits down with a calculator. They tot\n    up the total financial loss accumulated as a result of a person being taken\n    before their time. ‘Before their time,’ as though it’s possible to know when\n    that time is. Maybe there’s another kind of actuary. A tall figure draped in\n    seaweed and stinking of fish. A dark shadow who rises from the depths to\n    skulk the streets at night. Who watches us and records the tally marks that\n    the years carve into our bones. An actuary who, through some strange\n    arithmetic, decides when it is time.";
+    			t37 = space();
+    			p18 = element("p");
+    			p18.textContent = "19. Becca had thick hair, chopped at an elegant length that circled her\n    neck. When she was working, she tied it back in a neat ponytail. It was\n    efficient hair, knowledgeable hair. Your hair is wild and thin and prone to\n    over-enthusiastic impressionist shapes. No matter how tight you tie it back\n    there are always escaping strands, tiny tendrils coiling and cajoling you\n    back to dreamland. One day, as you sit at your computer, fighting the\n    flailing strands into a bejewelled hairclip, a question occurs to you. Are\n    you the eldest sister now? Is that how it works? You wonder about your\n    parents. You wonder if your parents pause when they meet new people, if they\n    are asked about their children. You wonder if they say they have three\n    daughters or two. You get sick in the toilet at work. You swallow two\n    Panadol, willow-bark bitterness coating your tongue. Someone suggests you go\n    home early. You refuse. After all, it’s over two years since your sister\n    disappeared. You throw out the hairclip. Garish, shiny tat.";
+    			t39 = space();
+    			p19 = element("p");
+    			p19.textContent = "20. A Mental List of Reasons Why Your Sister Couldn’t Have Killed Herself a.\n    She was thinking about getting a cat. b. She just bought, like, three\n    succulents. c. One week before she died, she bought the Sunday Riley Good\n    Genes Lactic Acid Treatment on the internet for £85.00, not including\n    shipping and when the pound to euro exchange rate was bad, so there’s no way\n    that would have been let go to waste. d. She was talking about taking up\n    guitar. e. It was too close to Christmas, she loved Christmas. f. When you\n    went to her apartment, after it was clear that this was serious, it was\n    clear that she was Gone, and you were enveloped in the scent of her,\n    surrounded by her things, you started picking through her drawers looking\n    for clues, and you opened her fridge and you looked inside and there was\n    half a cheesecake, and if you were going to kill yourself you would have\n    eaten the whole cheesecake and you and your sister are quite alike in\n    impulses and general temperament, or so you are told. g. She wouldn’t do\n    that. h. She just wouldn’t do that. i. She wouldn’t do that to you.";
+    			t41 = space();
+    			p20 = element("p");
+    			p20.textContent = "21. One day, nearly three years later, you’re in the Penneys on Mary Street\n    and you’re not thinking about Becca at all. You meet an old neighbour of\n    your parents’, a woman whose sun-exposed skin reminds you of the last time\n    your father cooked duck – all puckered, oily, uneven brown. She’s been\n    living in Spain the last seven years, she says. Moved there when she\n    retired, just back to visit family. She asks you how your Mammy is. She asks\n    you how Niamh is getting on. She asks you how Becca is doing. The moment\n    when a drowning person takes an involuntary breath under water is known as\n    the ‘break point’. For a moment you think that this is it. This is the point\n    at which you break. Her mouth is still moving, but all you can hear is\n    muffled ringing, all you can feel is the rush of cold water against your\n    skin as you drown. You want to slap her for reminding you and you want to\n    slap her for being here and you want to slap her for not knowing. How can\n    she not know? But then you remember that life goes on. That the gaping\n    ragged hole only exists in your world. Even though it feels hateful to her\n    memory, you don’t want to talk about your missing sister here, while you’re\n    holding a jumpsuit reduced to €5 that’s a size too small but could be\n    aspirational. You don’t feel like you owe this woman enough to do that to\n    yourself, and so you dodge the question, change the subject. You move on.";
+    			t43 = space();
+    			p21 = element("p");
+    			p21.textContent = "22. The Life Table is a table created by actuarial science which shows, for\n    each age, what the probability is that a person of that age will die before\n    their next birthday.";
+    			t45 = space();
+    			p22 = element("p");
+    			p22.textContent = "23. Listen. Here is your secret: You still call Becca. You call Becca all\n    the fucking time. Her phone rang, the first couple of days during the\n    search. Then it stopped ringing and started going straight to voicemail.\n    It’s been three years and you can still remember the exact moment, the\n    electric shock that raced down your spine, the crashing wave of relief when\n    you heard her voice, thinking she’s okay, she’s okay before you realized.\n    You still ring her, listening to the careless trip of her words as she tells\n    you that You’ve reached Becca Daly. I can’t get to the phone right now but\n    leave a message and I’ll get back to you as soon as I can! It’s like a\n    promise, so you do. You ring her, you listen to her voice, and you leave her\n    a message. She’ll get back to you as soon as she can.";
+    			t47 = space();
+    			p23 = element("p");
+    			p23.textContent = "24. The year you turn thirty is not a good year. Will this be the year that\n    you go missing? Snatched from the footpath, in the shadow between two\n    streetlights. Leaving no trace, leaving the world to go on without you after\n    the appropriate two months of searching and handwringing. That’s nonsense.\n    You won’t let it colour your decision making. It does anyway. You cancel\n    plans, curb the extent of your social presence, fail to renew subscriptions.\n    You’re due new glasses, and you put off the optometrist appointment because\n    you won’t need them when you’re Gone. You drink more. You’re alone more. The\n    strange tumour of a thought pertaining to your birthday, the idea that it\n    will fatefully and unavoidably be your last, comes with a righteous\n    indignation that tastes like tin. It comes with the idea that you are safe\n    until then. No dark shadow would dare snatch you up. Not yet. Not before\n    your time.";
+    			t49 = space();
+    			p24 = element("p");
+    			p24.textContent = "25. ‘Finally the Immaculate Virgin, preserved free from all stain of\n    original sin, when the course of her earthly life was finished, was taken up\n    body and soul into heavenly glory, and exalted by the Lord as Queen over all\n    things, so that she might be the more fully conformed to her Son, the Lord\n    of lords and conqueror of sin and death.’ The Bodily Assumption of Mary,\n    Catechism of the Catholic Church, 966";
+    			t51 = space();
+    			p25 = element("p");
+    			p25.textContent = "26. You agree to have your birthday party in Annascaul, your father’s\n    childhood town. Your parents are looking for a distraction; they want to\n    make it about family. You’re relieved to give the few friends you have left\n    an excuse not to attend. The festivities are held in Patcheen’s Pub, its\n    stone walls bedecked with balloons. Streamers hang between black and white\n    photos, over the glass case housing a taxidermy hare. There’s a buffet of\n    cocktail sausages and eggy sandwiches. Aunts and uncles and second cousins\n    all drink and laugh and dance furiously to the over-enthusiastic DJ who\n    keeps asking Are we all having a good tyyyyyme? You’re there to smile and\n    chat and slip away unnoticed around midnight. You’re not there to fight with\n    Niamh, but that’s what ends up happening. You watch her mouth as she screams\n    at you, tequila salt still clinging to her lips. She’s very drunk. You can’t\n    remember what the instigating incident was, the only thing you remember is\n    that she spat the words ‘She’s dead, not you’ so you slapped her. Hard. You\n    push past the inward rush of relatives and manage to slam your way into the\n    ladies. You pull a stall door closed and lock it, shaking hands pulling your\n    mobile from your purse. Hardly thinking, moving by muscle memory, your thumb\n    flicks open Contacts and taps Becca’s name. You make sure it’s ringing, and\n    then lift the phone to your ear. ‘Hello?’ Your heart might shatter your\n    ribs. ‘Becca?’ ‘No, sorry.’ A man’s voice. ‘Wrong number.’ The number is the\n    same. It’s been given away. You want your phone to shatter into a thousand\n    pieces. When you fuck it to the floor, you want it obliterated. Instead it\n    hits the tile with a sound like snapping plastic. It lands face up and you\n    see that the screen is now a mass of ugly jagged pieces. You know that’s\n    what you are. Splintered pieces of glass trying to stay together. When you\n    return to the party, they tell you that Niamh left. They tell you they can’t\n    find her. They tell you that your sister is Gone.";
+    			t53 = space();
+    			p26 = element("p");
+    			p26.textContent = "27. ‘Oh my fuck. Are these all Niamh’s? Is this her MED1 paperwork? Becca!’\n    You’re going through the piles of papers on Becca’s desk in her living room.\n    She’s moving out of Dublin in three weeks, and her apartment is messier than\n    you’ve ever seen it. Higgledy piggledy, boxes and clothes on every surface.\n    ’Jesus Christ. You always do her forms for her, would you not just leave her\n    at it?’ ‘Ah but she gets fierce stressed.’ Becca is in her room getting\n    changed. Her voice carries over the low thump of music from the Bluetooth\n    speakers on the couch. ‘She’ll keep getting stressed if she’s allowed avoid\n    them,’ you snort, tossing the forms back on the table. ‘It’s just paperwork,\n    for fuck’s sake.’ ‘Come here, how do I look?’ Becca comes out. She’s going\n    out out, all red dress and dangly earrings. ‘Fuck me, does he know he’s\n    getting the ride?’ ‘It’s my goodbye tour of Dublin, I’d say he knows all\n    right.’ You shriek with laughter and throw a pillow at her. ‘A goodbye tour\n    means visiting the fucking landmarks, not doing a round on every fella\n    you’ve shifted in Coppers!’ Becca takes a drink of red wine from her glass\n    and is left with two curled lines coming up from her bottom lip, giving her\n    grin a devilish cast. A month ago, she went blonde. Objectively, it suits\n    her, but you still prefer her dark. ‘Sure, I’m thirty now. I have to engage\n    in a bit of debauchery before moving to the backarse of nowhere. Drowning in\n    the boredom of adulthood.’ ‘Lovely.’ You rub the sides of your mouth with\n    your forefinger and thumb, flagging the wine marks. She takes the hint and\n    wipes, peering in the mirror to ensure her face is unmarred. Then she pulls\n    her phone from her bag. ‘Fuck. My taxi is here. Can you lock up on your way\n    out?’ ‘Yeah, no bother. Enjoy yourself!’ ‘Say a prayer to St. Jude!’ She’s\n    halfway out the door, coat pulled on, dangly earrings brushing her fragrant,\n    powdered cheeks. ‘Patron saint of lost causes!’ you both chorus, and you’re\n    laughing as she closes the door behind her.";
+    			t55 = space();
+    			p27 = element("p");
+    			p27.textContent = "28. You can taste bile and saltwater in your mouth as your car bumps and\n    dips along the narrow rural roads. You shouldn’t be driving; you’ve had\n    three glasses of wine. Maybe more, by the way it’s creeping up the back of\n    your throat. You’ve developed the habit of counting seconds in sets of\n    twelve when the world gets overwhelming. Over and over. You’re counting now,\n    as you drive a little too fast and take turns a little too hard. You have no\n    idea where Niamh has gone but you drive to the sea, feeling like you’re\n    dreaming, feeling like this is the end of all the dreams. This is where it\n    ends, and you will either be Gone by morning (before your time) or nothing\n    will happen at all. No other options. Because it was meant to be you. It was\n    meant to be you, and you will not do this again. You will not lose the other\n    half of your heart.";
+    			t57 = space();
+    			p28 = element("p");
+    			p28.textContent = "29. Saint Anthony looks, Saint Anthony finds, Saint Anthony places in front\n    of my eyes.";
+    			t59 = space();
+    			p29 = element("p");
+    			p29.textContent = "30. The car that your sister shouldn’t have driven is parked at an angle on\n    Inch Beach. The door is open, the headlights are on. Niamh isn’t inside, but\n    you spot her silhouette in the distance, illuminated by the beams. She may\n    be the youngest, but she’s also the tallest. When she was a teenager\n    learning to walk in heels, you watched her long coltish legs wobble as they\n    picked out safe paths. She’s going to the sea. Niamh doesn’t hear your\n    engine over the sound of the waves, doesn’t turn as you stumble from the\n    car. You are far, far behind her, so you have to run and run and run as she\n    walks, slow and with purpose. The sound of the crashing water is loud enough\n    that she doesn’t hear your bare feet thudding on the sand until the last\n    second – you don’t remember taking off your heels – half-turning to you as\n    your bodies collide and her hair is in your mouth and the filmy material of\n    her dress (an out out outfit) is gripped in your fist as you knock her to\n    the ground, you hold her down, and you keep her Here. ‘Let me go!’ she\n    screams, thrashing beneath you, voice ragged and wet and broken. There’s\n    sand on her lips. The words come from her throat in a drawn out, jagged\n    wail. A child’s cry of pure misery. ‘Let me go!’ You don’t let her go. The\n    sound of the waves is a smooth, repeating rumble. Nothing like the sharp\n    fractured crashes of your dreams. You hold your sister. You are thirty years\n    old.";
+    			add_location(p0, file$c, 26, 2, 645);
+    			add_location(p1, file$c, 39, 2, 1462);
+    			add_location(p2, file$c, 45, 2, 1738);
+    			add_location(p3, file$c, 50, 2, 1953);
+    			add_location(p4, file$c, 63, 2, 2817);
+    			add_location(p5, file$c, 69, 2, 3115);
+    			add_location(p6, file$c, 93, 2, 4798);
+    			add_location(p7, file$c, 101, 2, 5255);
+    			add_location(p8, file$c, 105, 2, 5366);
+    			add_location(p9, file$c, 118, 2, 6217);
+    			add_location(p10, file$c, 122, 2, 6326);
+    			add_location(p11, file$c, 135, 2, 7165);
+    			add_location(p12, file$c, 161, 2, 9009);
+    			add_location(p13, file$c, 180, 2, 10300);
+    			add_location(p14, file$c, 193, 2, 11117);
+    			add_location(p15, file$c, 208, 2, 12146);
+    			add_location(p16, file$c, 217, 2, 12662);
+    			add_location(p17, file$c, 230, 2, 13520);
+    			add_location(p18, file$c, 247, 2, 14664);
+    			add_location(p19, file$c, 263, 2, 15747);
+    			add_location(p20, file$c, 280, 2, 16908);
+    			add_location(p21, file$c, 301, 2, 18395);
+    			add_location(p22, file$c, 306, 2, 18593);
+    			add_location(p23, file$c, 319, 2, 19442);
+    			add_location(p24, file$c, 334, 2, 20409);
+    			add_location(p25, file$c, 342, 2, 20855);
+    			add_location(p26, file$c, 371, 2, 22975);
+    			add_location(p27, file$c, 400, 2, 25096);
+    			add_location(p28, file$c, 414, 2, 25998);
+    			add_location(p29, file$c, 418, 2, 26107);
+    			attr_dev(div, "class", "text");
+    			add_location(div, file$c, 21, 0, 482);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			mount_component(articleheader, target, anchor);
+    			insert_dev(target, t0, anchor);
+    			mount_component(audioplayer, target, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, div, anchor);
+    			append_dev(div, p0);
+    			append_dev(div, t3);
+    			append_dev(div, p1);
+    			append_dev(div, t5);
+    			append_dev(div, p2);
+    			append_dev(div, t7);
+    			append_dev(div, p3);
+    			append_dev(div, t9);
+    			append_dev(div, p4);
+    			append_dev(div, t11);
+    			append_dev(div, p5);
+    			append_dev(div, t13);
+    			append_dev(div, p6);
+    			append_dev(div, t15);
+    			append_dev(div, p7);
+    			append_dev(div, t17);
+    			append_dev(div, p8);
+    			append_dev(div, t19);
+    			append_dev(div, p9);
+    			append_dev(div, t21);
+    			append_dev(div, p10);
+    			append_dev(div, t23);
+    			append_dev(div, p11);
+    			append_dev(div, t25);
+    			append_dev(div, p12);
+    			append_dev(div, t27);
+    			append_dev(div, p13);
+    			append_dev(div, t29);
+    			append_dev(div, p14);
+    			append_dev(div, t31);
+    			append_dev(div, p15);
+    			append_dev(div, t33);
+    			append_dev(div, p16);
+    			append_dev(div, t35);
+    			append_dev(div, p17);
+    			append_dev(div, t37);
+    			append_dev(div, p18);
+    			append_dev(div, t39);
+    			append_dev(div, p19);
+    			append_dev(div, t41);
+    			append_dev(div, p20);
+    			append_dev(div, t43);
+    			append_dev(div, p21);
+    			append_dev(div, t45);
+    			append_dev(div, p22);
+    			append_dev(div, t47);
+    			append_dev(div, p23);
+    			append_dev(div, t49);
+    			append_dev(div, p24);
+    			append_dev(div, t51);
+    			append_dev(div, p25);
+    			append_dev(div, t53);
+    			append_dev(div, p26);
+    			append_dev(div, t55);
+    			append_dev(div, p27);
+    			append_dev(div, t57);
+    			append_dev(div, p28);
+    			append_dev(div, t59);
+    			append_dev(div, p29);
+    			current = true;
+    		},
+    		p: function update(new_ctx, [dirty]) {
+    			ctx = new_ctx;
+    			const articleheader_changes = {};
+
+    			if (!updating_audioActive && dirty & /*audioActive*/ 1) {
+    				updating_audioActive = true;
+    				articleheader_changes.audioActive = /*audioActive*/ ctx[0];
+    				add_flush_callback(() => updating_audioActive = false);
+    			}
+
+    			articleheader.$set(articleheader_changes);
+    			const audioplayer_changes = {};
+    			if (dirty & /*audioActive*/ 1) audioplayer_changes.active = /*audioActive*/ ctx[0];
+    			audioplayer.$set(audioplayer_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(articleheader.$$.fragment, local);
+    			transition_in(audioplayer.$$.fragment, local);
+
+    			add_render_callback(() => {
+    				if (div_outro) div_outro.end(1);
+
+    				if (!div_intro) div_intro = create_in_transition(div, blur, {
+    					delay: 100,
+    					duration: 800,
+    					amount: 10,
+    					easing: identity
+    				});
+
+    				div_intro.start();
+    			});
+
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(articleheader.$$.fragment, local);
+    			transition_out(audioplayer.$$.fragment, local);
+    			if (div_intro) div_intro.invalidate();
+
+    			div_outro = create_out_transition(div, blur, {
+    				delay: 0,
+    				duration: 600,
+    				amount: 10,
+    				easing: identity
+    			});
+
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_component(articleheader, detaching);
+    			if (detaching) detach_dev(t0);
+    			destroy_component(audioplayer, detaching);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(div);
+    			if (detaching && div_outro) div_outro.end();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$e.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance$e($$self, $$props, $$invalidate) {
+    	let { $$slots: slots = {}, $$scope } = $$props;
+    	validate_slots("SaintSisters", slots, []);
+    	let audioActive = false;
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<SaintSisters> was created with unknown prop '${key}'`);
+    	});
+
+    	function articleheader_audioActive_binding(value) {
+    		audioActive = value;
+    		$$invalidate(0, audioActive);
+    	}
+
+    	$$self.$capture_state = () => ({
+    		blur,
+    		linear: identity,
+    		AudioPlayer,
+    		ArticleHeader,
+    		audioActive
+    	});
+
+    	$$self.$inject_state = $$props => {
+    		if ("audioActive" in $$props) $$invalidate(0, audioActive = $$props.audioActive);
+    	};
+
+    	if ($$props && "$$inject" in $$props) {
+    		$$self.$inject_state($$props.$$inject);
+    	}
+
+    	return [audioActive, articleheader_audioActive_binding];
+    }
+
+    class SaintSisters extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$e, create_fragment$e, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "SaintSisters",
+    			options,
+    			id: create_fragment$e.name
+    		});
+    	}
+    }
+
+    /* src/routes/pieces/Electric.svelte generated by Svelte v3.32.3 */
+    const file$d = "src/routes/pieces/Electric.svelte";
+
+    function create_fragment$f(ctx) {
+    	let articleheader;
+    	let updating_audioActive;
+    	let t0;
+    	let audioplayer;
+    	let t1;
+    	let div1;
+    	let span0;
+    	let t3;
+    	let span1;
+    	let t5;
+    	let p0;
+    	let span2;
+    	let t7;
+    	let div0;
+    	let img;
+    	let img_src_value;
+    	let t8;
+    	let span3;
+    	let t10;
+    	let span4;
+    	let t11;
+    	let br0;
+    	let t12;
+    	let br1;
+    	let t13;
+    	let br2;
+    	let t14;
+    	let br3;
+    	let t15;
+    	let t16;
+    	let span5;
+    	let strong0;
+    	let br4;
+    	let t18;
+    	let t19;
+    	let p1;
+    	let span6;
+    	let strong1;
+    	let br5;
+    	let t21;
+    	let t22;
+    	let span7;
+    	let t24;
+    	let span8;
+    	let t26;
+    	let span9;
+    	let t28;
+    	let span10;
+    	let t30;
+    	let span11;
+    	let t32;
+    	let span12;
+    	let t34;
+    	let span13;
+    	let t36;
+    	let span14;
+    	let t38;
+    	let span15;
+    	let t40;
+    	let span16;
+    	let t42;
+    	let span17;
+    	let t44;
+    	let span18;
+    	let t46;
+    	let span19;
+    	let t48;
+    	let span20;
+    	let t50;
+    	let span21;
+    	let t52;
+    	let span22;
+    	let t54;
+    	let span23;
+    	let t56;
+    	let span24;
+    	let t58;
+    	let span25;
+    	let t60;
+    	let span26;
+    	let t62;
+    	let span27;
+    	let t64;
+    	let span28;
+    	let t66;
+    	let span29;
+    	let t68;
+    	let span30;
+    	let t70;
+    	let span31;
+    	let t72;
+    	let span32;
+    	let t74;
+    	let span33;
+    	let t76;
+    	let span34;
+    	let t78;
+    	let span35;
+    	let t80;
+    	let span36;
+    	let t82;
+    	let span37;
+    	let t84;
+    	let span38;
+    	let t86;
+    	let span39;
+    	let t88;
+    	let span40;
+    	let t90;
+    	let span41;
+    	let t92;
+    	let span42;
+    	let t94;
+    	let span43;
+    	let t96;
+    	let span44;
+    	let t98;
+    	let span45;
+    	let t100;
+    	let span46;
+    	let t102;
+    	let span47;
+    	let t104;
+    	let span48;
+    	let t106;
+    	let span49;
+    	let t108;
+    	let span50;
+    	let t110;
+    	let span51;
+    	let t112;
+    	let span52;
+    	let t114;
+    	let span53;
+    	let t116;
+    	let span54;
+    	let t118;
+    	let span55;
+    	let t120;
+    	let span56;
+    	let t122;
+    	let span57;
+    	let t124;
+    	let span58;
+    	let t126;
+    	let span59;
+    	let t128;
+    	let span60;
+    	let t130;
+    	let span61;
+    	let t132;
+    	let span62;
+    	let t134;
+    	let span63;
+    	let t136;
+    	let span64;
+    	let t138;
+    	let span65;
+    	let t140;
+    	let span66;
+    	let t142;
+    	let span67;
+    	let t144;
+    	let span68;
+    	let t146;
+    	let span69;
+    	let t148;
+    	let span70;
+    	let t150;
+    	let span71;
+    	let t152;
+    	let span72;
+    	let t154;
+    	let span73;
+    	let t156;
+    	let span74;
+    	let t158;
+    	let span75;
+    	let t160;
+    	let span76;
+    	let t162;
+    	let span77;
+    	let t164;
+    	let span78;
+    	let t166;
+    	let span79;
+    	let t168;
+    	let span80;
+    	let t170;
+    	let span81;
+    	let t172;
+    	let span82;
+    	let t174;
+    	let span83;
+    	let t176;
+    	let span84;
+    	let t178;
+    	let span85;
+    	let t180;
+    	let span86;
+    	let t182;
+    	let span87;
+    	let t184;
+    	let span88;
+    	let t186;
+    	let span89;
+    	let t188;
+    	let span90;
+    	let t190;
+    	let span91;
+    	let t192;
+    	let span92;
+    	let t194;
+    	let span93;
+    	let t196;
+    	let span94;
+    	let t198;
+    	let span95;
+    	let t200;
+    	let span96;
+    	let t202;
+    	let span97;
+    	let t204;
+    	let span98;
+    	let t206;
+    	let span99;
+    	let t208;
+    	let span100;
+    	let t210;
+    	let span101;
+    	let t212;
+    	let span102;
+    	let t214;
+    	let span103;
+    	let t216;
+    	let span104;
+    	let t218;
+    	let span105;
+    	let t220;
+    	let span106;
+    	let t222;
+    	let span107;
+    	let t224;
+    	let span108;
+    	let t226;
+    	let span109;
+    	let t228;
+    	let span110;
+    	let t230;
+    	let span111;
+    	let t232;
+    	let span112;
+    	let t234;
+    	let span113;
+    	let t236;
+    	let span114;
+    	let t238;
+    	let span115;
+    	let div1_intro;
+    	let div1_outro;
+    	let current;
+
+    	function articleheader_audioActive_binding(value) {
+    		/*articleheader_audioActive_binding*/ ctx[1](value);
+    	}
+
+    	let articleheader_props = {
+    		title: "Getting The Electric",
+    		author: "Louise Hegarty"
+    	};
+
+    	if (/*audioActive*/ ctx[0] !== void 0) {
+    		articleheader_props.audioActive = /*audioActive*/ ctx[0];
+    	}
+
+    	articleheader = new ArticleHeader({
+    			props: articleheader_props,
+    			$$inline: true
+    		});
+
+    	binding_callbacks.push(() => bind(articleheader, "audioActive", articleheader_audioActive_binding));
+
+    	audioplayer = new AudioPlayer({
+    			props: {
+    				src: "/assets/audio/electric.mp3",
+    				active: /*audioActive*/ ctx[0],
+    				credits: "Composed and performed by Maija Sofia."
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			create_component(articleheader.$$.fragment);
+    			t0 = space();
+    			create_component(audioplayer.$$.fragment);
+    			t1 = space();
+    			div1 = element("div");
+    			span0 = element("span");
+    			span0.textContent = "‘Before getting the electric, we had no running water, no refrigeration, no\n    machine for washing. We were bound to daylight hours. Electricity meant\n    parish hall dances and colour and fun. It was a release from the drudgery.\n    It meant we could finally see ourselves.’";
+    			t3 = space();
+    			span1 = element("span");
+    			span1.textContent = "The first induction coil was invented in 1836 by Nicholas Callan, a priest\n    and scientist from Louth. This early form of transformer contributed greatly\n    to the widespread distribution of electricity throughout the world.";
+    			t5 = space();
+    			p0 = element("p");
+    			span2 = element("span");
+    			span2.textContent = "The advantages of electricity to the agricultural industry and the\n      day-to-day lives of farmers would be undeniably immense. It would lead to\n      an improvement in hygiene and safety standards, the simplifying of many\n      daily tasks and a rise in efficiency, which would result in greater\n      profits. It would also make rural Ireland an attractive site for new\n      industries. It is imperative therefore that such a scheme begins without\n      further delay. - 'Electricity in Rural Ireland' by A. Byrne published in\n      Muintir na Tíre (Issue 22, March 1929, p.8)";
+    			t7 = space();
+    			div0 = element("div");
+    			img = element("img");
+    			t8 = space();
+    			span3 = element("span");
+    			span3.textContent = "Thomas McLaughlin (1896 - 1971) was born in Drogheda. After studying in UCD\n    and UCG, McLaughlin moved to Berlin in 1922 to work for the German\n    electrical engineering company Siemens-Schuckert. He returned to Ireland in\n    December 1923 where he became one of the key figures in the Shannon\n    hydroelectric scheme. He later became the executive director of the EBS.";
+    			t10 = space();
+    			span4 = element("span");
+    			t11 = text("In Cavan there was a great fire,");
+    			br0 = element("br");
+    			t12 = text(" Judge McCarthy was sent to inquire,");
+    			br1 = element("br");
+    			t13 = text("\n    It would be a shame, if the nuns were to blame,");
+    			br2 = element("br");
+    			t14 = text(" So it had to be caused\n    by a wire.");
+    			br3 = element("br");
+    			t15 = text(" — Flann O’Brien & Tom O’Higgins");
+    			t16 = space();
+    			span5 = element("span");
+    			strong0 = element("strong");
+    			strong0.textContent = "In our country, electrification is more than merely producing light or\n      power. It is bringing light into darkness… we are going to put into the\n      homes of our people in rural areas a light which will light up their minds\n      as well as their homes. If we do that, we will have brought a new\n      atmosphere and a new outlook to many of these people.";
+    			br4 = element("br");
+    			t18 = text(" — James Larkin Jnr, TD, speaking during the Second Stage debate on the\n    Electricity Supply (Amendment) Bill, 1944");
+    			t19 = space();
+    			p1 = element("p");
+    			span6 = element("span");
+    			strong1 = element("strong");
+    			strong1.textContent = "Customs-Free Airport Act, 1947";
+    			br5 = element("br");
+    			t21 = text(" 2.—(1) The Minister,\n      with the concurrence of the Minister for Finance, may by order declare that,\n      on and after a specified date, the land enclosed within the limits defined\n      by the order shall be the Customs-free airport for the purposes of this Act.\n      (2) The Minister, with the concurrence of the Minister for Finance, may from\n      time to time by order amend the order under subsection (1) of this section\n      by varying the limits of the airport. (3) The airport shall comprise only land\n      which for the time being belongs to the State.");
+    			t22 = space();
+    			span7 = element("span");
+    			span7.textContent = "The Rural Area Organiser was an important figure in developing the\n    relationship between the ESB and local people. The job involved encouraging\n    householders to sign up to the scheme as well as advising on the purchase of\n    electrical appliances.";
+    			t24 = space();
+    			span8 = element("span");
+    			span8.textContent = "AN ACT TO MAKE PROVISION FOR THE FORMATION AND REGISTRATION OF A COMPANY\n    HAVING FOR ITS PRINCIPAL OBJECTS THE ACQUISITION, ERECTION, AND OPERATION OF\n    SUGAR FACTORIES IN SAORSTÁT ÉIREANN, AND TO PROVIDE FOR THE ACQUISITION BY\n    THE MINISTER FOR FINANCE OF SHARE CAPITAL OF SUCH COMPANY, FOR THE GIVING OF\n    GUARANTEES BY THE STATE IN RELATION TO DEBENTURES ISSUED BY SUCH COMPANY,\n    FOR THE COMPULSORY ACQUISITION OF LAND AND THE CONSTRUCTION, MAINTENANCE,\n    AND OPERATION OF TRANSPORT WORKS BY SUCH COMPANY, AND FOR OTHER MATTERS\n    CONNECTED WITH THE MATTERS AFORESAID. [23rd August, 1933.]";
+    			t26 = space();
+    			span9 = element("span");
+    			span9.textContent = "Once upon a time there was a man and a woman who lived with their two\n    children—a girl and a boy—on a small farm. Beside their house was a fairy\n    fort. The woman was pregnant with a child and late one night she gave birth\n    to a little boy. They warned the two older children never to leave the\n    window to the bedroom open in case a fairy entered and took the baby, who\n    was vulnerable… - The Changeling transcribed by a member of our volunteer\n    transcription project, duchas.ie";
+    			t28 = space();
+    			span10 = element("span");
+    			span10.textContent = "… I hope to see the day that when a girl gets a proposal from a farmer she\n    will inquire not so much about the number of cows, but rather concerning the\n    electrical appliances that she will require before she gives her consent,\n    including not merely electric light but a water heater, an electric clothes\n    boiler, a vacuum cleaner and even a refrigerator. - Minister Seán Lemass\n    speaking during the Second Stage debate on the Electricity Supply\n    (Amendment) Bill, 1944";
+    			t30 = space();
+    			span11 = element("span");
+    			span11.textContent = "What does rural electrification mean to you? How can you get it to your\n    house and farmyard?";
+    			t32 = space();
+    			span12 = element("span");
+    			span12.textContent = "The switching on ceremony was an important part of the process and\n    generally featured a dance, a dinner and speeches from local politicians,\n    members of the clergy and representatives of the ESB. - Switching on: A\n    History of Rural Electrification in Ireland by John Swanzy (Mweelrea Press,\n    2016)";
+    			t34 = space();
+    			span13 = element("span");
+    			span13.textContent = "Virginia O’Brien (1898 - 1988) was the longest serving chairwoman of the\n    Irish Countrywomen’s Association. During her lifetime she witnessed\n    significant changes in the lives of rural Irish people: the advent of\n    independence, the rural electrification scheme and membership of the EEC.\n    She was married to Frank O’Brien until his death and they had five children\n    together.";
+    			t36 = space();
+    			span14 = element("span");
+    			span14.textContent = "This is the tenth issue of the staff magazine and we are now well into the\n    swing of things. We have completed at least one area in each county with\n    some counties already having completed two or three. Before the end of this\n    year we will be adding another five construction crews to the ten already\n    working in the field. Shortly, we will also be increasing the number and\n    variety of appliances available in our showroom - Editor’s Letter, REO News\n    (vol. 10, September 1948, p1)";
+    			t38 = space();
+    			span15 = element("span");
+    			span15.textContent = "A backslider was a householder who had initially signed up for the\n    electricity scheme but who changed their minds once crews arrived.";
+    			t40 = space();
+    			span16 = element("span");
+    			span16.textContent = "THE REPUBLIC OF IRELAND ACT, 1948 AN ACT TO REPEAL THE EXECUTIVE AUTHORITY\n    (EXTERNAL RELATIONS) ACT 1936, TO DECLARE THAT THE DESCRIPTION F THE STATE\n    SHALL BE THE REPUBLIC OF IRELAND, AND TO ENABLE THE PRESIDENT TO EXERCISE\n    THE EXECUTIVE POWER OR ANY EXECUTIVE FUNCTION OF THE STATE IN OR IN\n    CONNECTION WITH ITS EXTERNAL RELATIONS. [21ST DECEMBER, 1948] BE IT ENACTED\n    BY THE OIREACHTAS AS FOLLOWS:—";
+    			t42 = space();
+    			span17 = element("span");
+    			span17.textContent = "Each area was canvassed in order to assess interest and need and to promote\n    the benefits of electricity. A majority needed to sign up to the scheme in\n    order for it to proceed. Showrooms were opened so that electrical appliances\n    could be demonstrated to the public. Routes were surveyed, budgets were\n    drawn up and then the erection of electricity poles began. - Swanzy, ibid.";
+    			t44 = space();
+    			span18 = element("span");
+    			span18.textContent = "The key-note of Electric Water- Heating is simplicity. There is no\n    complicated ritual of turning handles at the psychological moment – you just\n    turn the hot water tap.";
+    			t46 = space();
+    			span19 = element("span");
+    			span19.textContent = "‘They were young men. They looked like my grandsons. But they did the job\n    well. There was a lot of interest from everyone and we would all go out to\n    watch them erect poles and string cables. My wife would bring them cups of\n    tea and slices of warm brown bread.’";
+    			t48 = space();
+    			span20 = element("span");
+    			span20.textContent = "You will want a light on in every room. Place it so as to give the best\n    light where you need it most. In some cases you might want two or more\n    lights. Make sure that your staircase light can be switched on or off from\n    either the foot of the stairs or the landing.";
+    			t50 = space();
+    			span21 = element("span");
+    			span21.textContent = "The switching on ceremony will take place from 8 o’clock on Tuesday night\n    the 14th of October in the parish hall. There will be a blessing from Father\n    Aherne and opening speeches from Mrs O’Brien of the ICA and Mr Geary of the\n    ESB. The switching on will happen at half past nine sharp. Following this\n    there will be a dance with music provided by the West Coast Showband. PUBLIC\n    NOTICE";
+    			t52 = space();
+    			span22 = element("span");
+    			span22.textContent = "Transcript of recording made as part of a local history project: Once it\n    was dark and the speeches were over, we put out the paraffin lights and\n    candles and the local priest switched on the big metal switch and then\n    everything was bright. Myself and Davey ran out into the street and all the\n    streetlights were on and we could run around in the dark. And we could see\n    the lights all over, up the hills and far away. The fields twinkled. When we\n    came back, we sneaked a small bit of porter and danced and got shouted at\n    because we trampled on the marigolds.";
+    			t54 = space();
+    			span23 = element("span");
+    			span23.textContent = "Supply will be given to whole areas. An ‘area’ should be about 25 sq.\n    miles. A parish or creamery district might conveniently form the basis of\n    such an area.";
+    			t56 = space();
+    			span24 = element("span");
+    			span24.textContent = "Statement of evidence of Garda ________ of An Garda Síochána made on the\n    16th October 1948. I hereby declare this statement is true to the best of my\n    knowledge and belief and I make it knowing that if it is tendered in\n    evidence I will be liable to prosecution if I state in it anything which I\n    know to be false or do not believe to be true. I was called to a house at\n    ______ at 12:05am on the 15th of October 1948. I spoke with a man there who\n    I know to be ___________ who resides at the residence with his wife,\n    _______, his three children and his mother-in-law. He informed me that his\n    infant child had gone missing from the house. He and his wife had been at\n    the parish hall and had returned to the house at approximately 11:20pm. He\n    says that his mother-in-law was in the house with the children while they\n    were out and that she was asleep in the back kitchen when they returned.\n    They went upstairs to check on the children and found that the youngest\n    ______ was missing. They searched the house, but he could not be found. His\n    wife then left the premises to see if he had maybe wandered into the street\n    and he followed her. The child is 2 years old and was wearing blue and white\n    pyjamas when he went to bed. He has light brown hair and blue eyes. This\n    statement has been read over by me and is correct.";
+    			t58 = space();
+    			span25 = element("span");
+    			span25.textContent = "The entire village came out to search in laneways and ditches and\n    neighbours’ gardens and fields and graveyards. But nothing. And no-one had\n    seen anything of course because everyone had been at the switching on\n    ceremony. There was no sign of anyone having gained entry to the house. The\n    old woman downstairs never woke. The other children remained asleep in their\n    beds. It was as if the child had just disappeared into thin air. - The\n    Village in the Dark by JB Duane (New Editions, 1995)";
+    			t60 = space();
+    			span26 = element("span");
+    			span26.textContent = "The weather has been difficult in recent weeks for crews working in the\n    West and Northwest, which has meant that we are slightly behind schedule.\n    More workers will be sent to help these crews catch up. - Editor’s Letter,\n    REO News (vol 12, November 1948, p.1)";
+    			t62 = space();
+    			span27 = element("span");
+    			span27.textContent = "HOLY HOUR TO PRAY FOR VOCATIONS on the 24th of October from 3 o’clock to 4\n    o’clock. All are welcome—prayer followed by tea and biscuits. ANNUAL\n    COLLECTION FOR CHARITY at all Masses during November. SPECIAL MASS to be\n    held this Sunday for the _____ family. Prayers will be said for the safe\n    return of their young boy.";
+    			t64 = space();
+    			span28 = element("span");
+    			span28.textContent = "‘Apparently she left the front door unlocked and her mother asleep\n    downstairs. The older children didn’t even wake up. Someone snuck in and\n    took the baby. And I feel terrible for them. I do. But they were very\n    careless. Leaving the children like that to go out drinking and dancing.’";
+    			t66 = space();
+    			span29 = element("span");
+    			span29.textContent = "Statement of _______ of _______, ______ taken on the 15th of October 1948\n    at _________ by Garda ________. We, my wife _______ and I, saw ______\n    running through the street. We were on our way back from the switching on\n    ceremony. I had consumed three drinks and my wife one. We were taking our\n    time. We were admiring the new streetlights. Then we heard a woman screaming\n    and crying and my wife said, ‘is that ______?’ She knows her from the ICA.\n    And the woman was knocking on doors and was very distressed. We started to\n    walk over to her and then her husband appeared and caught up with her and\n    held her. We went to check that things were okay but obviously they weren’t.\n    I went back to the parish hall to alert Garda ________ and he accompanied me\n    back to the street. This statement has been read over by me is correct.";
+    			t68 = space();
+    			span30 = element("span");
+    			span30.textContent = "Statement of __________ of ___________. I hereby declare this statement is\n    true to the best of my knowledge and belief and I make it knowing that if it\n    is tendered in evidence I will be liable to prosecution if I state in it\n    anything which I know to be false or do not believe to be true. I noticed a\n    man in the village in the days before the disappearance of the young boy. I\n    didn’t recognise him, which is unusual because we all know each other around\n    here. He was about 5’10” with long dark hair. He was wearing a brown jacket\n    and dark coloured pants. He didn’t seem to have washed in a couple of days.";
+    			t70 = space();
+    			span31 = element("span");
+    			span31.textContent = "Some people may think of electricity in the home as a luxury to provide\n    comfort in various ways. This is to some extent true, but no housewife will\n    need much propaganda to convince her that its labour-saving value in the\n    domestic sphere is unchallengeable. An electric kettle will boil 12 pints of\n    water for 1d. If you compare this with any other method of boiling water you\n    will find that it is considerably cheaper and it is just as quick as any\n    other method.";
+    			t72 = space();
+    			span32 = element("span");
+    			span32.textContent = "Transcript of recording made as part of a local history project: … And then\n    another little boy was snatched. God love us and save us. I remember praying\n    for his parents every night. They were good people. Myself and Máire joined\n    the search and we hoped that we would find something—a clue, some hope—but\n    of course we didn’t. The village was very glum. ‘Most of these cases… you\n    should look at a member of the family. That elderly woman, I never see her\n    out and about. She stays inside always. I wonder if something…’";
+    			t74 = space();
+    			span33 = element("span");
+    			span33.textContent = "DATE MISSING: SUNDAY 5TH DECEMBER 1948 18-MONTH-OLD BOY: SEÁN HAIR COLOUR :\n    BLONDE EYE COLOUR: LIGHT BLUE LAST SEEN AT 11 O’CLOCK SUNDAY MORNING IN THE\n    FRONT GARDEN OF HIS HOME DRESSED IN CREAM TOP AND BOTTOMS PLEASE ALERT THE\n    GARDAÍ IF YOU HAVE ANY INFORMATION";
+    			t76 = space();
+    			span34 = element("span");
+    			span34.textContent = "Gardaí are investigating whether there is any connection between the\n    abductions of two infant children from the same area. No-one has yet been\n    arrested in relation to the disappearances, but the Gardaí have started\n    re-interviewing people in the locality. They are specifically looking to\n    speak to anyone who was on New Road on the morning of the 5th of December. -\n    ‘Gardaí investigate link in missing child cases’ An Iar-Nuacht (7th December\n    1948)";
+    			t78 = space();
+    			span35 = element("span");
+    			span35.textContent = "APPEAL FOR INFORMATION - MISSING PERSON A Garda source has informed An\n    Iar-Nuacht that they have ruled out the involvement of any ESB workers or\n    electricians in the recent disappearance of a two-year-old boy. It had been\n    reported that the Gardaí were eager to speak to anyone who had been in the\n    boy’s home in the days prior to his abduction but these men have now been\n    officially discounted as suspects. - ‘No connection between ESB and missing\n    child’ An Iar-Nuacht (20th October 1948)";
+    			t80 = space();
+    			span36 = element("span");
+    			span36.textContent = "‘I don’t think that little boy ever left that house’";
+    			t82 = space();
+    			span37 = element("span");
+    			span37.textContent = "Statement of ________ of _______. I hereby declare this statement is true\n    to the best of my knowledge and belief and I make it knowing that if it is\n    tendered in evidence I will be liable to prosecution if I state in it\n    anything which I know to be false or do not believe to be true. ________\n    admitted to me that he had taken the boy one night in ________ pub. He\n    laughed about it. We had consumed three pints between";
+    			t84 = space();
+    			span38 = element("span");
+    			span38.textContent = "Everybody here today has been deeply affected by the disappearance of the\n    poor boy who was baptised in this very church. We will pray for his parents\n    and for his siblings and for his wider family. We pray also for friends and\n    neighbours, for the Gardaí and the volunteers who have been searching\n    tirelessly to bring Seán back home. - Homily of parish priest";
+    			t86 = space();
+    			span39 = element("span");
+    			span39.textContent = "After the disappearance of the second boy, the Gardaí came under increasing\n    pressure to make an arrest. After interviewing and fingerprinting the adult\n    population of the village they set their sights on the more likely of\n    suspects: a labourer or drifter. They sought out men who had been known to\n    be working or travelling through the area and tried to connect any of them\n    to the two disappearances. - Missing: Ireland’s Vanished Children by Sorcha\n    Cahalane (W&A Publishing, 2001)";
+    			t88 = space();
+    			span40 = element("span");
+    			span40.textContent = "LITIR UM THOGHCHÁIN An bhfuil tú cráite le polaiteoirí élite? Stop ag\n    vótáil do FG, FF, Clann na Poblachta, LAB. Tabhair do vóta don iarrthóir\n    neachspléach. Tabhair do vóta don iarrathóir fíor-Ghaelach. • Geallaim díobh\n    32-contae Éire aontaithe. Áit a bhfuil COSC ar an teanga Béarla. • Bac ar\n    fhrithchléireachas. • Táim réidh chun troid ar leith na daoine. • Bac ar\n    cistiú poiblí na páirtí politíochta. • Bac ar an gCummanachas. • Tá sé\n    soiléir san am atá inniú ann nach bhfuil meas againn ar saol an duine. Tá sé\n    tabhachtach ansan go bhfuil ionadaí againn a bhfuil sásta troid ar son\n    cearta daoine ó bhreith go bás nádúrtha. Tabhair do Vóta Uimh. 1 do Séan F\n    Verrity.";
+    			t90 = space();
+    			span41 = element("span");
+    			span41.textContent = "Statement of ________ of ________ . I hereby declare this statement is true\n    to the best of my knowledge and belief and I make it knowing that if it is\n    tendered in evidence I will be liable to prosecution if I state in it\n    anything which I know to be false or do not believe to be true. I was woken\n    up one night just before the second child was taken—I think it was Monday—by\n    the sound of a car outside. I am a light sleeper. My wife didn’t wake. I\n    went to the window. I didn’t recognise the car. It just stopped in the\n    middle of the road with the engine running. No-one got in or out and then\n    after about five minutes it just drove off.";
+    			t92 = space();
+    			span42 = element("span");
+    			span42.textContent = "Extract from Garda report dated the 20th of December 1948: The man said\n    that he was at home with his wife on the night in question. They live in\n    _________. He says that he may have come through the village before, but he\n    couldn’t remember. He says that he earns money doing odd jobs for people and\n    travels about a lot.";
+    			t94 = space();
+    			span43 = element("span");
+    			span43.textContent = "… for Paraic, electricity means he can check on his animals early in the\n    mornings or in the dark winter evenings with ease. He reckons he will\n    increase his profits by at least 15% this year due to the increase in work\n    he is able to… - Extract from radio documentary on the rural electrification\n    scheme (October 1952)";
+    			t96 = space();
+    			span44 = element("span");
+    			span44.textContent = "‘My mother saved up her egg money to buy a brand new oven. We had a nice\n    smart girl come to the house to demonstrate it for my mother. She made some\n    brown bread to make sure the oven was working. She had a lovely dress on,\n    and her hair was back from her face and I still think of it now every time I\n    smell brown bread baking.’";
+    			t98 = space();
+    			span45 = element("span");
+    			span45.textContent = "I liked the cooker the best and I liked looking in all the cupboards. I\n    liked how shiny and new everything was. They let us plug in some of the\n    appliances to see how they worked. - Extract from an essay written by a\n    schoolchild for a competition run by the ICA";
+    			t100 = space();
+    			span46 = element("span");
+    			span46.textContent = "2 SMALL BOYS MISSING AND yET NOTHING IS DONE THEIR aRE ThINGS THE\n    GOVERNMENT DON’T WANT U TO NO. THeIR ARe MONSTERS IN THE ELICTRICS THEir\n    TAKING ARE CHILDREN. We NEED TO PRTECT ARE FaMILies WE are BECOMIGN sick and\n    tired ARE CHILDREN ARE SICK BECAUSE O THEM lord GOD HeLP US ALL";
+    			t102 = space();
+    			span47 = element("span");
+    			span47.textContent = "We have been thinking a lot lately about the real real-life affect our work\n    has on people’s day-to-day lives. We have seen it already: housewives who\n    now have more time for their hobbies, farmers who have increased production.\n    And we also like to believe that we have improved the quality of people’s\n    lives outside the realm of work… - Editor’s Letter, REO News (vol 16, March\n    1949, p.1)";
+    			t104 = space();
+    			span48 = element("span");
+    			span48.textContent = "The middle-aged labourer who was arrested in connection with the recent\n    disappearances of small children has been released without charge. Since\n    October of last year two infants have been abducted from areas in the west\n    of the country. No other arrests have been made. - ‘Man released without\n    charge in baby-napping cases’ An Iar Nuacht (30th March 1949)";
+    			t106 = space();
+    			span49 = element("span");
+    			span49.textContent = "One socket in every room is now regarded as essential for convenient living\n    - with two or three in some locations.";
+    			t108 = space();
+    			span50 = element("span");
+    			span50.textContent = "The initial connection between the disappearances and the introduction of\n    electricity was unwittingly made by An Garda Síochána themselves. In the\n    days before the first abduction two electricians had been in the boy’s house\n    installing appliances. Gardaí interviewed these two men but they both had\n    alibis for the night in question. They were completely ruled out as suspects\n    but that tinge of doubt around the ESB never fully left the minds of some\n    villagers. - Duane, ibid.";
+    			t110 = space();
+    			span51 = element("span");
+    			span51.textContent = "COMHAIRLE CHONTAE MINUTES OF JUNE MONTHLY MEETING OF COUNTY COUNCIL HELD IN\n    ÁRAS AN CHONTAE, ON 10TH APRIL 1949 AT 2.00 P.M.";
+    			t112 = space();
+    			span52 = element("span");
+    			span52.textContent = "PRESENT MINISTER O’REILLY, CLLR O’DONOVAN, CLLR Ó MEALÓID, CLLR HIGGINS,\n    CLLR SINCLAIR, CLLR LYNCH, CLLR HACKETT, CLLR McGRATH, CLLR MULLANE, CLLR\n    TWOMEY, CLLR SCANLAN, CLLR PHILPOTT, CLLR FRANKS, CLLR Ó BRAONÁIN AND\n    REPRESENTATIVES OF THE ESB APOLOGIES Cllr Mullins, Cllr O’Brien, Cllr Hynes,\n    Cllr O’Sullivan CONFIRMATION OF MINUTES Minister O’Reilly spoke about the\n    need for calm heads. He expressed regret and concern for the families of the\n    missing boys. He introduced Mr Geary of the ESB to speak directly about the\n    safety of electricity in homes. Mr. F Higgins circulated information to the\n    members on the proposed budget. NOTICES OF MOTION To approve the draft deed\n    of mortgage to provide a loan for the completion of O’Mahony Park.";
+    			t114 = space();
+    			span53 = element("span");
+    			span53.textContent = "Advice to parents: • Make sure that your doors and windows are locked and\n    bolted • Do not allow your children out after dark or to play on their own •\n    All children need to be supervised on their way to and from school • Please\n    alert the Gardaí to any suspicious activity";
+    			t116 = space();
+    			span54 = element("span");
+    			span54.textContent = "Extract from Garda report dated the 14th of April 1949: The woman believed\n    that the child was not hers. She said that he had been swapped with another\n    child. She wanted us to take the boy into care and to issue a missing\n    persons report for her own child. She seemed to be under the impression that\n    something —‘a fairy’—had got into the house through the electricity cables\n    and had taken her child and swapped him for ‘a changeling’.";
+    			t118 = space();
+    			span55 = element("span");
+    			span55.textContent = "This morning, the head of the ESB was being asked to clarify comments he\n    reportedly made at a private luncheon over the weekend in which he described\n    those who refused electricity as ‘backwards’ and ‘idiots’. - Radio Éireann\n    (8th May 1949)";
+    			t120 = space();
+    			span56 = element("span");
+    			span56.textContent = "A group of men arrived at ESB headquarters in Athy yesterday morning to\n    deliver a letter on behalf of the village of D_____. The area has recently\n    suffered a number of unsolved abductions of children and these men believe\n    that the ESB have a case to answer. Some local villagers have linked the\n    disappearances to the recent switching on of electricity in the area. The\n    ESB had no comment to make. - Translation from Raidió na Gael broadcast\n    (17th April 1949)";
+    			t122 = space();
+    			span57 = element("span");
+    			span57.textContent = "I would like to bring the Minister’s attention to the very worrying case of\n    two missing children in _ ____. I have been speaking to local people there\n    in recent weeks who say they feel they have been forgotten about. There now\n    appears to be only three fulltime Gardaí working on the case. There has been\n    little to no reassurance from the authorities. It seems to me that the\n    Government has abandoned the people of _____. Will there be any justice? Can\n    the Minister tell me what he is planning to do? - Oral Questions in the Dáil\n    (18th April 1949)";
+    			t124 = space();
+    			span58 = element("span");
+    			span58.textContent = "EXTRACT FROM REPORT BY HEALTH BOARD INTO OUTBREAK OF CERTAIN SYMPTOMS IN\n    ______, JANUARY - MAY 1949: We have compiled a list of people who have\n    reported to their General Practitioner any symptoms that did not have an\n    obvious cause. These symptoms include headaches, vomiting, stomach cramps,\n    tingling, numbness, burning and chest pain. The following list is a sample:\n    • A 45-year-old woman who reported sudden occasions of vomiting and\n    experiencing headaches after using her electric cooker. • A teenage girl who\n    described having stomach cramps, headaches and nausea, which were not\n    alleviated by any pain-relieving medication or anti-inflammatories. • A\n    21-year-old man who had experienced tingling in his extremities and weakness\n    in his upper arms which got better when he was outdoors. • A 52-year-old man\n    who was found outside his home tearing his clothes off because he said that\n    there were wires in them. • A 10-year-old boy who had a high fever and\n    numbness in the extremities. • Two sisters aged 18 and 20 who complained of\n    debilitating pain in their left upper abdomen with no obvious reason for\n    said pain. • A 60-year-old woman who stated that her neighbours were playing\n    tricks on her using electricity. • A woman in her mid-forties who said she\n    was ‘full of electricity’ and who was kept up at night by the sound of men\n    digging in her cellar and laying electric wires.";
+    			t126 = space();
+    			span59 = element("span");
+    			span59.textContent = "Ó Murchú, Paraic suddenly on 23rd of April 1949. Much loved by his wife\n    Rose. Cremation Saturday. No Flowers.";
+    			t128 = space();
+    			span60 = element("span");
+    			span60.textContent = "The three-year-old girl who was declared missing early this morning has\n    been found and returned home to her parents safe and sound. It seems that\n    the child wandered off while shopping with her family and… - Translation\n    from Raidió na Gael broadcast (20th April 1949)";
+    			t130 = space();
+    			span61 = element("span");
+    			span61.textContent = "You would barely recognise the village now we are so suspicious and\n    untrusting. I find myself crossing the road to avoid people. I keep my head\n    down to avoid making eye contact. We do not know our neighbours anymore like\n    we should. I want to be more open, but we all have that lingering doubt in\n    our minds. The Guards are telling us that it is most likely a drifter, an\n    outsider but it could still be one of us. One of us could have kidnapped\n    these children and done… Oh, I can’t bear thinking about it. What would\n    anyone want with those poor boys? Couldn’t they have just left us alone? And\n    the Guards have no leads, no suspects. For a while, we had several Gardaí\n    stationed here. We would see them on their beat and they would give us\n    comfort, but now we see them less and less. They are slowly forgetting us.\n    They want to forget us. This is a crime that will never be solved, and they\n    want rid of it. - Extract from letter dated 18th April 1949, found in the\n    apartment of the late Ms Julia O’Keeffe of New York City";
+    			t132 = space();
+    			span62 = element("span");
+    			span62.textContent = "Electricity is the safest form of power available for both domestic and\n    commercial use. Electricity poles and cables are organised and installed by\n    highly trained workers and the wiring of your house and farm can only be\n    done by a trained electrician. Rest assured, you and your family are safe\n    with electricity in the home. If you still have doubts, please visit our\n    showroom where we will demonstrate various electrical appliances and give\n    advice on what is best for you and your home.";
+    			t134 = space();
+    			span63 = element("span");
+    			span63.textContent = "Two thousand people marched yesterday to bring national attention to what\n    they believe is the mishandling of an investigation by the Gardaí into the\n    disappearance of two infant children in the same area over a six-month\n    period. The protesters are demanding an inquiry into the alleged mishandling\n    of the matter by authorities. - ‘Protesters Demand Answers’, The Irish Times\n    (29th April 1949)";
+    			t136 = space();
+    			span64 = element("span");
+    			span64.textContent = "Electric Water-Heating is peculiarly suitable for use in doctor’s and\n    dentist’s surgeries owing to the ease of economy of installation, the\n    simplicity and cleanliness of operation, and the complete absence of fumes\n    and odours";
+    			t138 = space();
+    			span65 = element("span");
+    			span65.textContent = "Virginia O’Brien, Chairperson of the Irish Countrywomen’s Association, has\n    urged people to continue to support rural electrification. She was speaking\n    at an event last weekend regarding recent protests against the scheme,\n    following links between the introduction of electricity and the\n    disappearances of two young children. People have also been complaining of\n    health issues relating to electricity in their homes. She informed the\n    audience that the Gardaí and local health officials had completely ruled out\n    any such connections and that people who perpetuated these falsehoods were\n    doing damage to the local community. - ‘No link says ICA Chair’ An\n    Iar-Nuacht (30th April 1949)";
+    			t140 = space();
+    			span66 = element("span");
+    			span66.textContent = "INFORMATION LEAFLET FROM THE ESB: A mass hysteria is a collective\n    obsessional behaviour where a group of people spontaneously manifest similar\n    hysterical symptoms.";
+    			t142 = space();
+    			span67 = element("span");
+    			span67.textContent = "IT WILL NEVER STOP THEY WILL CONTINU TO RUIN FAMILYS WE NEED TOO TAKE BACK\n    CONTROL NO-ONE WILL HELP US WE AR ON ARE OWN";
+    			t144 = space();
+    			span68 = element("span");
+    			span68.textContent = "‘I have not been able to sleep through the night since they put in the\n    electrics. It’s doing something to my brain. I feel groggy and tired all\n    day. My wife feels nauseous. She has had weakness in her limbs. She’s so\n    weak some days she can’t get out of bed. The doctor says he can do nothing\n    for her.’";
+    			t146 = space();
+    			span69 = element("span");
+    			span69.textContent = "‘It’s clear that we’re not being told all the facts. Now I know there’s\n    been talk of monsters. I’m an educated man. I don’t believe in monsters. But\n    I can’t help but see a connection between these cables in our houses and the\n    disappearances of our children. There is something. There is something\n    affecting our children. Why aren’t the ESB answering our questions?’";
+    			t148 = space();
+    			span70 = element("span");
+    			span70.textContent = "Transcript of interview with Minister O’Reilly on Radio Éireann, 3rd May\n    1949: Q: … Minister O’Reilly, these crimes have occurred in your own\n    constituency. are An Garda Síochána doing enough? A: Firstly, I want to say\n    that I completely understand the frustrations and the worry people are\n    feeling as regards these cases. I want to assure everyone that the Gardaí\n    are doing the best they can to get these two children back to their parents.\n    I’m a parent myself and… Q: But I mean realistically, and I don’t really\n    want to say this, but realistically what are the chances of the boys being\n    returned to their families safely? A: I’m not going to get into that kind of\n    talk. We need to think of the parents —some of whom will be listening to\n    this. We need to think of them and how we can support them… Q: But Minister,\n    one arrest has been made and that man was subsequently released. No other\n    suspects. This man has now died, and it seems now that the trail has run\n    cold. Will we ever get an answer?";
+    			t150 = space();
+    			span71 = element("span");
+    			span71.textContent = "Gardaí say that further investigations are needed to establish whether a\n    man found in a ditch at the side of the road died from injuries due to a\n    hit-and-run. A post-mortem was carried out on Monday by the State\n    Pathologist, but the results have not yet been released. Gardaí are looking\n    for any witnesses who may have been travelling on the Old Road between the\n    hours of 5:30am and 6:30am on the 23rd of April to come forward. - Radio\n    Éireann (14th July 1949)";
+    			t152 = space();
+    			span72 = element("span");
+    			span72.textContent = "‘I’m a farmer. I can see the benefits of electricity to my life, but I\n    don’t believe it is worth putting my young family at risk. Until we have\n    found out what has happened, all electricity to the village should be\n    switched off.’";
+    			t154 = space();
+    			span73 = element("span");
+    			span73.textContent = "‘The important thing is to remain calm.’";
+    			t156 = space();
+    			span74 = element("span");
+    			span74.textContent = "First the lights went off. This happened suddenly one evening a couple of\n    days after a rowdy meeting in the local hall. No kettles were boiled, and\n    all electrical farming equipment was stopped. Candles and matches and\n    paraffin lamps were passed around. Nobody outside of the village really\n    noticed anything was amiss until the electricity poles and cables started\n    crashing down. Men were sent out to replace or repair the poles, but they\n    would just be torn down once more. The poles were cut down and used for\n    firewood. Ovens and dishwashers were hauled out of houses and dumped in\n    front of the ESB showroom. Door-to-door collections were made to collect\n    lightbulbs… - Duane, ibid.";
+    			t158 = space();
+    			span75 = element("span");
+    			span75.textContent = "Transcript of recording made as part of a local history project: … and\n    things got very scary. The streetlights were smashed. My father ripped the\n    cables from the house and removed the hoover and cooker. My parents didn’t\n    want any hassle.";
+    			t160 = space();
+    			span76 = element("span");
+    			span76.textContent = "… from the nuns in Italy who believed they were cats and the dancing manias\n    of the 12th century to the small village in rural Ireland that refused\n    electricity for fears of ‘monsters in the cables’… - A Brief History of\n    Madness, by Madeleine Heffernan (Tigh Uí Dhrisceoil, 1987)";
+    			t162 = space();
+    			span77 = element("span");
+    			span77.textContent = "‘We had a glimpse of what life could be like. It was fleeting. I tell my\n    grandchildren about it, but they don’t believe it.’";
+    			t164 = space();
+    			span78 = element("span");
+    			span78.textContent = "The washing machine is situated directly adjoining the sink so that the\n    wringing may be carried out without wetting the floor.";
+    			t166 = space();
+    			span79 = element("span");
+    			span79.textContent = "They hold aloft their candles and gas lamps—symbols of their revolt against\n    what they believe is the scourge of electricity. Some have called them\n    Luddites; others have mocked them for their supposedly backwards ways but\n    none of that has stopped them. They have remained steadfast in their belief.\n    They are strong in their principles in a way that very few people are these\n    days and I have to say I respect them for that. - ‘An Irishman’s Diary’ The\n    Irish Times (1st August 1949)";
+    			t168 = space();
+    			span80 = element("span");
+    			span80.textContent = "There were reports of at least two households who refused to stop using\n    electricity. They enjoyed the benefits that came with it and they did not\n    want to return to harder times. Local opinion of them was hostile. The\n    thought that they would be willing to put their children at risk for the\n    sake of convenience was too much for their neighbours. These families were\n    forced out of their homes, and effectively hounded out of the village. -\n    Duane, ibid.";
+    			t170 = space();
+    			span81 = element("span");
+    			span81.textContent = "The electric cooker has been proved to be the cheapest method of preparing\n    meals. It is quick too because of the speed-o-matic plates which are fitted\n    to every new cooker.";
+    			t172 = space();
+    			span82 = element("span");
+    			span82.textContent = "Two men have been arrested on suspicion of setting fire to an ESB showroom\n    just outside of ______. The men were protesting the introduction of\n    electricity in the area. Gardaí are looking for witnesses to the incident. -\n    Radio Éireann (20th July 1949)";
+    			t174 = space();
+    			span83 = element("span");
+    			span83.textContent = "And because he was a man, he tried to fix her: he bought her things, he\n    listened, he yelled at her, he brought her to a doctor. He tried to change\n    himself, tried to make himself into something new. But nothing seemed to\n    work. He could never make her whole again and so he decided that instead he\n    would create a life for them together: he found a cottage by the beach and\n    placed her there. He cooked for her, he held her, he loved her, he married\n    her. He kept others away. He made their lives together as small as they\n    could be. They were each other’s secret. They were cocooned. Then came a\n    brief flickering moment of joy: a baby came, and her belly grew. And she was\n    happy, and he marvelled at how happy she was until the blood came and took\n    the baby away. - Extract from This Gathering Light by Angela Czochara (2006)";
+    			t176 = space();
+    			span84 = element("span");
+    			span84.textContent = "MEMORANDUM FOR: ATTENTION OF THE MINISTER SUBJECT: RURAL ELECTRIFICATION\n    DATE:10th SEPTEMBER 1949";
+    			t178 = space();
+    			span85 = element("span");
+    			span85.textContent = "Across the country parishes lit up. The lives of farmers and rural\n    housewives improved dramatically in a short space of time. No longer did\n    water have to be drawn from a well and carried by cart. No longer was\n    cooking restricted to an open fire. By 1965, 80% of rural households were\n    connected to the electricity supply. - Swanzy, ibid.";
+    			t180 = space();
+    			span86 = element("span");
+    			span86.textContent = "I live with my mammy and daddy, my two sisters, and a dog called Rusty. I\n    have been in this new school for three months and I like it a lot and I have\n    made lots of friends. I do miss my old friends and my old school and the\n    rocky place where we would go and play. But here my room is bright and there\n    aren’t monsters and my mammy and daddy are happy. I liked my old home a lot\n    but then things were scary, and we had to come here. Everything is nice\n    here. - Essay by a child that formed part of an exhibition in the National\n    Museum of Country Life (March – October 2016)";
+    			t182 = space();
+    			span87 = element("span");
+    			span87.textContent = "Local party members advise against the forced introduction of electricity\n    in the village of _____ in County ____. The presence of the army will only\n    exacerbate an already tense situation. A representative from the ESB has\n    also expressed concern for the wellbeing of their employees if they are\n    forced to work in the area. As you know there have been reports of ESB\n    workers being attacked, work gear being stolen, and a display shop being set\n    on fire.";
+    			t184 = space();
+    			span88 = element("span");
+    			span88.textContent = "In loving memory of ____ who has been missing from his home since 14th\n    October 1948. Mammy and Daddy think about you every day.";
+    			t186 = space();
+    			span89 = element("span");
+    			span89.textContent = "Transcript of recording made as part of a local history project: … I would\n    tell Mammy I was going to stay with Máire and she would tell her mam that\n    she was staying with me and then we would go and stay with Davey’s cousin.\n    Davey was someone I knew from the village. His cousin lived in ______ and\n    she had a record player and we listened to jazz records that her sister in\n    America sent her. And we would dance in her living room and her mother made\n    us a roast chicken dinner.";
+    			t188 = space();
+    			span90 = element("span");
+    			span90.textContent = "With the switching on of electricity in the Black Valley, Co. Kerry in June\n    1976, the whole of the island was finally electrified. Except of course for\n    one village which refused to be dragged into the 20th century. It remains\n    the only area in the country without electricity to this day. - Swanzy,\n    ibid.";
+    			t190 = space();
+    			span91 = element("span");
+    			span91.textContent = "The Numbers The Electricity Supply Board was established on 11 August 1927.\n    1 million poles, 100,000 transformers and 75,000 miles of line 300,000 homes\n    connected. By 1946 the number of consumers had reached 240,000 using 380\n    million units per annum.";
+    			t192 = space();
+    			span92 = element("span");
+    			span92.textContent = "For decades the village of ______ has been ridiculed for its refusal to be\n    welcomed into the 20th—not to mention 21st—century. However, the truth is\n    altogether more worrying as the team from Prime Time Investigates uncovered\n    Monday night on RTÉ One. The programme provided a rare insight into a people\n    who have effectively closed themselves off from the outside world. We are\n    first introduced to Mary, a pleasant woman in her late sixties who sees\n    nothing wrong with the hard work involved in washing, cleaning and cooking\n    without electricity. She says she was raised to work hard, and she sees no\n    problem with it. We subsequently join local men at a pub where they sing\n    songs and tell stories and create their own entertainment. They speak in an\n    odd, old-fashioned dialect that marks them out as different. It is a quaint\n    kind of life and one that looks appealingly nostalgic until we meet Neasa.\n    Neasa grew up in the village and was subject to physical abuse at the hands\n    of her family. She escaped when she was 18 and has never returned. For her\n    it is not just about the electricity, she explains, the darkness is a form\n    of control. The village does not allow strangers to stay long and they do\n    not respect the authority of the Gardaí or the State. A place where no light\n    shines will always be ripe for abuse… ‘An Dorchadas/The Darkness’, The Irish\n    Times (15th December 2009)";
+    			t194 = space();
+    			span93 = element("span");
+    			span93.textContent = "It has been now over 30 years since two small boys vanished from their\n    homes in ______. A recently formed community group is staging a rally this\n    lunchtime to commemorate the disappearances. They will lay flowers at the\n    locations the boys were last seen —a bedroom, a front garden, a\n    pavement—before continuing on to the local Garda station. The Gardaí have\n    responded to concerns by launching a renewed appeal for information. The\n    Garda Superintendent in charge of the investigation said that the passage of\n    time might have made some people more willing to come forward with\n    information. He reassured people that they will be treated respectfully and\n    discreetly. Anyone with information is asked to contact the Garda\n    Confidential Line. - ‘30th anniversary of disappearances’ The Irish Examiner\n    (October 1979)";
+    			t196 = space();
+    			span94 = element("span");
+    			span94.textContent = "Proper lighting in the home or workshop is the best guarantee of continued\n    good eyesight for adults and children.";
+    			t198 = space();
+    			span95 = element("span");
+    			span95.textContent = "The expectation in official circles was that over time old superstitions\n    would fade away, the older generation would die off and electricity would be\n    reintroduced without incident. And yet the village remains in complete\n    darkness to this very day. Partly this is to do with geography— it is\n    situated in an isolated rural area—and partly it is due to a lack of\n    financial support from the government. When the local population started to\n    rip out poles and cables, the ESB were sent to restore the light, but their\n    workers were attacked and abused. On the completion of the rural\n    electrification scheme, the government refused further State funding for the\n    area unless the locals agreed to allow electricity back in their homes. They\n    declined and the stalemate has continued ever since. - Duane, ibid.";
+    			t200 = space();
+    			span96 = element("span");
+    			span96.textContent = "The initial amusement and subsequent alarm of some public servants in\n    relation to a village in the West which had turned against the rural\n    electrification scheme has been revealed in the latest batch of state\n    documents released under the 30-year rule. Memos from the Department of\n    Rural Affairs reveal the dismissive attitude of civil servants towards the\n    area. The village had suffered several child abductions which were\n    attributed to the recently installed electricity cables. The villagers\n    become increasingly suspicious resulting in the tearing down of the\n    electricity infrastructure. Their belief was that there were ‘monsters’ in\n    the electricity lines. - ‘State papers: a round-up’ The Irish Examiner (27th\n    December 1978)";
+    			t202 = space();
+    			span97 = element("span");
+    			span97.textContent = "‘I would do my homework in the evening by lamplight. At school we had dry\n    toilets that were only flushed once a day.’";
+    			t204 = space();
+    			span98 = element("span");
+    			span98.textContent = "This is the last ever issue of the REO News and we hope that you have\n    gained some insight and support from what we have published. - Editor’s\n    Letter, REO News (vol. 168, November 1961)";
+    			t206 = space();
+    			span99 = element("span");
+    			span99.textContent = "Looking for a digital detox holiday on a budget? Then take a look at some\n    of these amazing properties in ______ in Ireland. Step back in time to a\n    simpler era. The entire village has no electricity which means you can have\n    the opportunity to switch off completely. Enjoy your dinner by paraffin\n    lamp, practice mindfulness while you wash clothes by hand, learn how to cook\n    your food over an open fire… - Article in The New York Times Travel Section,\n    (7th June 2012)";
+    			t208 = space();
+    			span100 = element("span");
+    			span100.textContent = "Welcome to Fade Away, the podcast about people who have disappeared without\n    trace. In Season 1, we examined the case of Marcy Wainwright, a woman who\n    one day vanished from her factory job. In Season 2, we focused on the\n    Clement family, who haven’t been seen since Christmas Eve 1865. Now in\n    Season 3, we are looking into the alleged abductions of two children in…\n    Intro to Fade Away, August 2014";
+    			t210 = space();
+    			span101 = element("span");
+    			span101.textContent = "TO: info@fadeawaypodcast.com FROM: ------------------------ RE: PODCAST —\n    INFO DATE: 29 Sept 2015, 13:47 -------------------------------------------\n    Hi, My name is I’ve just come across your podcast and I think I might have\n    some information for you. My grandmother grew up in the village and she was\n    there when the abductions took place. She emigrated to Canada in the 60s.\n    She never spoke about what happened but after she died, we found some notes\n    she had written which may be useful to";
+    			t212 = space();
+    			span102 = element("span");
+    			span102.textContent = "Gardaí have confirmed that they are pursuing several new leads of inquiry\n    following renewed interest in the cases arising out of a true-crime podcast\n    which has… - ‘Podcast leads to new avenues of inquiry’, An Iar Nuacht (23rd\n    November 2015)";
+    			t214 = space();
+    			span103 = element("span");
+    			span103.textContent = "‘This third season has been a real breakthrough for us. We got good numbers\n    and interaction for season one and two but this year things have just gotten\n    crazy,’ says Weeverman. And what does she say to critics who accuse the\n    true-crime podcast genre of unethical behaviour and exploitation. ‘It’s\n    something we are both very aware of. That’s part of the reason we chose\n    crimes that were committed at least a generation ago. We don’t want\n    relatives to be upset and having to read… ’ - Extract from interview with\n    Harriet Gose and Francine Weeverman, Flash Magazine (13th April 2015)";
+    			t216 = space();
+    			span104 = element("span");
+    			span104.textContent = "… one of many who say that this is a cover up. The police missed vital\n    clues while neighbours looked the other way. A lot of coincidences. What was\n    really going on? I would recommend everyone to read Satan in Ireland by JM\n    Henry to learn more about satanic groups that were… - Extract from blog\n    entitled ‘The Disappearances 1948 - 49’";
+    			t218 = space();
+    			span105 = element("span");
+    			span105.textContent = "Discussion thread on Episode 6: What Did the Neighbours Know? C_A_Dupin The\n    problem the cops had was that they believed ‘everyone was at the switching\n    on’ so they never got a proper list of people together. And we all know of\n    course that Mrs Geary didn’t attend because she was feeling unwell and so\n    she went home by herself. And the O’Reillys didn’t attend either—were they\n    going to a wedding the next day or something… Like Dislike Comment Favourite\n    M4Murder But are we seriously suggesting that any of these people were\n    involved in the kidnapping of the first child? What’s the motive here? The\n    first child to me is the key becuase he was upstairs in his own bed. That’s\n    not a ‘by chance’ kidnapping. That was palnned. The switching on was the\n    opportunity they needed. Like Dislike Comment Favourite Hastings What about\n    the witness statement from Francis Byrne? She saw footsteps in her garden\n    but the police never took photos or imprints. Like Dislike Comment Favourite\n    ChndlerR1 [comment deleted] Like Dislike Comment Favourite C_A_Dupin\n    @ChndlerR1 This is a serious thread to discuss matters that arise in the\n    course of the podcast. That’s serious discussion only pertaining to the\n    facts of the case. If you want to speculate wildly there are plenty of other\n    forums for that. Like Dislike Comment Favourite M4Murder @Hastings Yeah, I\n    thought that was interesting too. Like, FB’s garden backed on to the victims\n    so someone could likely have escaped that way. They didn’t dwell on it on\n    the pod though so maybe they know more than they are letting on abot that\n    right now. Like Dislike Comment Favourite TruCrimFan Hi! new to the thread.\n    I’m just wondering what people feel about the parents. Am not talking shit I\n    just am genuinely wondering. It’s kind of like occam’s razor.a lot of the\n    neighbors seem to think that the house was a little dysfuntioncal. Maybe\n    they were abusing the kid or they killed him accidentally or something. The\n    other idnappings were a cover up. Again, please don’;t ban me. I really want\n    to know more. Like Dislike Comment Favourite C_A_Dupin @ TruCrimFan There\n    are threads about the parents. Check out the search bar. Like Dislike\n    Comment Favourite";
+    			t220 = space();
+    			span106 = element("span");
+    			span106.textContent = "Reviewers have often suggested illusions in his music to PJ Harvey, Steely\n    Dan and Captain Beefheart, but all of this was news to the young Sammy\n    Lynch. He had never heard of any of these artists. He grew up in a tiny\n    village in the West of Ireland without electricity and therefore no record\n    players, no radios and no internet. He had grown up with music, of course,\n    but it was all traditional melodies and songs that had been written hundreds\n    of years prior. For his twelfth birthday he asked for a guitar and started\n    immediately to write his own weird little songs. -'Darkness into Light' by\n    Oliver Rapid, PPOPP Magazine (Issue 381)";
+    			t222 = space();
+    			span107 = element("span");
+    			span107.textContent = "… a link in the minds of many people even today between the erection of\n    electricity poles and the disappearance of fairies, banshees, leprechauns.\n    Maybe their homes were indeed disturbed by workers or perhaps this is just a\n    metaphor for… - ‘The Last of the Fairies’ by Sam Beaton Hibernian Monthly\n    (vol 67, 3rd August 1998, p. 22 27)";
+    			t224 = space();
+    			span108 = element("span");
+    			span108.textContent = "The Network Renewal Plan began in the late 1990s to upgrade the electricity\n    supply to reflect the needs of modern Ireland.";
+    			t226 = space();
+    			span109 = element("span");
+    			span109.textContent = "There remains a lot of interest from an anthropological view as well. The\n    village has retained many of the old methods and routines that modernisation\n    has swallowed up in the rest of the country. Old methods of cooking have\n    been preserved and farming practices from a bygone age remain commonplace.\n    Their isolation has preserved the village as if frozen in time. Naw purteen\n    narr honchee - Duane, ibid.";
+    			t228 = space();
+    			span110 = element("span");
+    			span110.textContent = "Tch buteagh y ar maggee Fado al sunee thist giy ar nournagh - Song written\n    in the local dialect";
+    			t230 = space();
+    			span111 = element("span");
+    			span111.textContent = "You Won’t Believe These Places That Have No Electricity - Buzzfeed (March\n    2019)";
+    			t232 = space();
+    			span112 = element("span");
+    			span112.textContent = "The link between ‘screen time’ (short-wavelength, artificial blue light\n    emitted from electronic devices) and sleep disorders has been well\n    established in several studies (Delahunt et al., 2015; Brennan & Jones 2008;\n    Parsons 2016). The comparisons as set out in Graph 1b shows the differences\n    in sleep quality between Group A (control group) and Group B (digital\n    natives) … - Comparative evaluation of the health effects of technology\n    between digital natives and digital naïfs, Goetsmen & Waine (2017)";
+    			t234 = space();
+    			span113 = element("span");
+    			span113.textContent = "On the way out of the village is a memorial to the two children. It is\n    well-kept and is always covered in flowers and teddy bears and mass cards. -\n    Cahalane, ibid.";
+    			t236 = space();
+    			span114 = element("span");
+    			span114.textContent = "Mary Lane (1924 - 2020): Mary Lane worked as the chief archivist for the\n    ESB between 1966 and 1996. She trained initially as a librarian and worked\n    for a time for UCD before joining the ESB as assistant archivist in 1945. On\n    the retirement of her predecessor, she took over the main role.";
+    			t238 = space();
+    			span115 = element("span");
+    			span115.textContent = "John 1:5 And the light shineth in darkness; and the darkness comprehended\n    it not.";
+    			attr_dev(span0, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span0, file$d, 26, 2, 668);
+    			attr_dev(span1, "class", "el-sec g7 justified svelte-1pm3eq1");
+    			add_location(span1, file$d, 32, 2, 983);
+    			attr_dev(span2, "class", "r90cc svelte-1pm3eq1");
+    			add_location(span2, file$d, 38, 4, 1291);
+    			attr_dev(p0, "class", "el-sec g5 r2 svelte-1pm3eq1");
+    			add_location(p0, file$d, 37, 2, 1262);
+    			if (img.src !== (img_src_value = "/assets/images/gte1.jpg")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "gte1");
+    			attr_dev(img, "class", "grid-image svelte-1pm3eq1");
+    			add_location(img, file$d, 50, 4, 1961);
+    			attr_dev(div0, "class", "img-wrapper el-sec g7 svelte-1pm3eq1");
+    			add_location(div0, file$d, 49, 2, 1921);
+    			attr_dev(span3, "class", "el-sec g7 justified svelte-1pm3eq1");
+    			add_location(span3, file$d, 52, 2, 2040);
+    			add_location(br0, file$d, 60, 37, 2536);
+    			add_location(br1, file$d, 60, 79, 2578);
+    			add_location(br2, file$d, 62, 51, 2640);
+    			add_location(br3, file$d, 63, 14, 2684);
+    			attr_dev(span4, "class", "el-sec g5 centred svelte-1pm3eq1");
+    			add_location(span4, file$d, 59, 2, 2467);
+    			add_location(strong0, file$d, 66, 5, 2761);
+    			add_location(br4, file$d, 72, 5, 3151);
+    			attr_dev(span5, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span5, file$d, 65, 2, 2735);
+    			add_location(strong1, file$d, 77, 7, 3340);
+    			add_location(br5, file$d, 77, 54, 3387);
+    			attr_dev(span6, "class", "r90cc svelte-1pm3eq1");
+    			add_location(span6, file$d, 76, 4, 3313);
+    			attr_dev(p1, "class", "el-sec g7 svelte-1pm3eq1");
+    			add_location(p1, file$d, 75, 2, 3287);
+    			attr_dev(span7, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span7, file$d, 87, 2, 3985);
+    			attr_dev(span8, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span8, file$d, 93, 2, 4278);
+    			attr_dev(span9, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span9, file$d, 103, 2, 4925);
+    			attr_dev(span10, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span10, file$d, 112, 2, 5459);
+    			attr_dev(span11, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span11, file$d, 121, 2, 5985);
+    			attr_dev(span12, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span12, file$d, 125, 2, 6119);
+    			attr_dev(span13, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span13, file$d, 132, 2, 6468);
+    			attr_dev(span14, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span14, file$d, 140, 2, 6897);
+    			attr_dev(span15, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span15, file$d, 149, 2, 7436);
+    			attr_dev(span16, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span16, file$d, 153, 2, 7612);
+    			attr_dev(span17, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span17, file$d, 161, 2, 8069);
+    			attr_dev(span18, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span18, file$d, 168, 2, 8498);
+    			attr_dev(span19, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span19, file$d, 173, 2, 8712);
+    			attr_dev(span20, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span20, file$d, 179, 2, 9023);
+    			attr_dev(span21, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span21, file$d, 185, 2, 9337);
+    			attr_dev(span22, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span22, file$d, 193, 2, 9780);
+    			attr_dev(span23, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span23, file$d, 203, 2, 10402);
+    			attr_dev(span24, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span24, file$d, 208, 2, 10606);
+    			attr_dev(span25, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span25, file$d, 228, 2, 12021);
+    			attr_dev(span26, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span26, file$d, 237, 2, 12571);
+    			attr_dev(span27, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span27, file$d, 243, 2, 12880);
+    			attr_dev(span28, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span28, file$d, 250, 2, 13251);
+    			attr_dev(span29, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span29, file$d, 256, 2, 13585);
+    			attr_dev(span30, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span30, file$d, 269, 2, 14482);
+    			attr_dev(span31, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span31, file$d, 279, 2, 15154);
+    			attr_dev(span32, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span32, file$d, 288, 2, 15678);
+    			attr_dev(span33, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span33, file$d, 297, 2, 16257);
+    			attr_dev(span34, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span34, file$d, 303, 2, 16569);
+    			attr_dev(span35, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span35, file$d, 312, 2, 17079);
+    			attr_dev(span36, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span36, file$d, 321, 2, 17628);
+    			attr_dev(span37, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span37, file$d, 324, 2, 17719);
+    			attr_dev(span38, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span38, file$d, 332, 2, 18194);
+    			attr_dev(span39, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span39, file$d, 339, 2, 18606);
+    			attr_dev(span40, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span40, file$d, 348, 2, 19148);
+    			attr_dev(span41, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span41, file$d, 360, 2, 19892);
+    			attr_dev(span42, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span42, file$d, 371, 2, 20598);
+    			attr_dev(span43, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span43, file$d, 378, 2, 20971);
+    			attr_dev(span44, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span44, file$d, 385, 2, 21342);
+    			attr_dev(span45, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span45, file$d, 392, 2, 21723);
+    			attr_dev(span46, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span46, file$d, 398, 2, 22034);
+    			attr_dev(span47, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span47, file$d, 404, 2, 22364);
+    			attr_dev(span48, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span48, file$d, 412, 2, 22810);
+    			attr_dev(span49, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span49, file$d, 419, 2, 23219);
+    			attr_dev(span50, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span50, file$d, 423, 2, 23376);
+    			attr_dev(span51, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span51, file$d, 432, 2, 23913);
+    			attr_dev(span52, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span52, file$d, 436, 2, 24080);
+    			attr_dev(span53, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span53, file$d, 448, 2, 24894);
+    			attr_dev(span54, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span54, file$d, 454, 2, 25215);
+    			attr_dev(span55, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span55, file$d, 462, 2, 25706);
+    			attr_dev(span56, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span56, file$d, 468, 2, 25996);
+    			attr_dev(span57, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span57, file$d, 477, 2, 26517);
+    			attr_dev(span58, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span58, file$d, 487, 2, 27130);
+    			attr_dev(span59, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span59, file$d, 508, 2, 28621);
+    			attr_dev(span60, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span60, file$d, 512, 2, 28773);
+    			attr_dev(span61, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span61, file$d, 518, 2, 29090);
+    			attr_dev(span62, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span62, file$d, 534, 2, 30199);
+    			attr_dev(span63, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span63, file$d, 543, 2, 30749);
+    			attr_dev(span64, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span64, file$d, 551, 2, 31199);
+    			attr_dev(span65, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span65, file$d, 557, 2, 31475);
+    			attr_dev(span66, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span66, file$d, 569, 2, 32229);
+    			attr_dev(span67, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span67, file$d, 574, 2, 32439);
+    			attr_dev(span68, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span68, file$d, 578, 2, 32601);
+    			attr_dev(span69, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span69, file$d, 585, 2, 32957);
+    			attr_dev(span70, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span70, file$d, 592, 2, 33377);
+    			attr_dev(span71, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span71, file$d, 608, 2, 34463);
+    			attr_dev(span72, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span72, file$d, 617, 2, 34986);
+    			attr_dev(span73, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span73, file$d, 622, 4, 35263);
+    			attr_dev(span74, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span74, file$d, 623, 2, 35335);
+    			attr_dev(span75, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span75, file$d, 635, 2, 36091);
+    			attr_dev(span76, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span76, file$d, 641, 2, 36379);
+    			attr_dev(span77, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span77, file$d, 647, 2, 36707);
+    			attr_dev(span78, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span78, file$d, 651, 2, 36874);
+    			attr_dev(span79, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span79, file$d, 655, 2, 37043);
+    			attr_dev(span80, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span80, file$d, 664, 2, 37585);
+    			attr_dev(span81, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span81, file$d, 673, 2, 38098);
+    			attr_dev(span82, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span82, file$d, 678, 2, 38316);
+    			attr_dev(span83, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span83, file$d, 684, 2, 38617);
+    			attr_dev(span84, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span84, file$d, 697, 2, 39515);
+    			attr_dev(span85, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span85, file$d, 701, 2, 39655);
+    			attr_dev(span86, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span86, file$d, 708, 2, 40046);
+    			attr_dev(span87, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span87, file$d, 718, 2, 40682);
+    			attr_dev(span88, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span88, file$d, 727, 2, 41195);
+    			attr_dev(span89, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span89, file$d, 731, 2, 41365);
+    			attr_dev(span90, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span90, file$d, 740, 2, 41903);
+    			attr_dev(span91, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span91, file$d, 747, 2, 42261);
+    			attr_dev(span92, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span92, file$d, 753, 2, 42562);
+    			attr_dev(span93, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span93, file$d, 774, 2, 44051);
+    			attr_dev(span94, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span94, file$d, 788, 2, 44942);
+    			attr_dev(span95, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span95, file$d, 792, 2, 45098);
+    			attr_dev(span96, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span96, file$d, 805, 2, 45975);
+    			attr_dev(span97, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span97, file$d, 818, 2, 46782);
+    			attr_dev(span98, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span98, file$d, 822, 2, 46942);
+    			attr_dev(span99, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span99, file$d, 827, 2, 47173);
+    			attr_dev(span100, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span100, file$d, 836, 2, 47700);
+    			attr_dev(span101, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span101, file$d, 844, 2, 48154);
+    			attr_dev(span102, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span102, file$d, 853, 2, 48705);
+    			attr_dev(span103, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span103, file$d, 859, 2, 48996);
+    			attr_dev(span104, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span104, file$d, 869, 2, 49643);
+    			attr_dev(span105, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span105, file$d, 876, 2, 50032);
+    			attr_dev(span106, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span106, file$d, 908, 2, 52366);
+    			attr_dev(span107, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span107, file$d, 919, 2, 53072);
+    			attr_dev(span108, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span108, file$d, 926, 2, 53460);
+    			attr_dev(span109, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span109, file$d, 930, 2, 53625);
+    			attr_dev(span110, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span110, file$d, 938, 2, 54086);
+    			attr_dev(span111, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span111, file$d, 942, 2, 54224);
+    			attr_dev(span112, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span112, file$d, 946, 2, 54346);
+    			attr_dev(span113, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span113, file$d, 955, 2, 54909);
+    			attr_dev(span114, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span114, file$d, 960, 2, 55119);
+    			attr_dev(span115, "class", "el-sec svelte-1pm3eq1");
+    			add_location(span115, file$d, 966, 2, 55458);
+    			attr_dev(div1, "class", "text electric-text svelte-1pm3eq1");
+    			add_location(div1, file$d, 21, 0, 491);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			mount_component(articleheader, target, anchor);
+    			insert_dev(target, t0, anchor);
+    			mount_component(audioplayer, target, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, div1, anchor);
+    			append_dev(div1, span0);
+    			append_dev(div1, t3);
+    			append_dev(div1, span1);
+    			append_dev(div1, t5);
+    			append_dev(div1, p0);
+    			append_dev(p0, span2);
+    			append_dev(div1, t7);
+    			append_dev(div1, div0);
+    			append_dev(div0, img);
+    			append_dev(div1, t8);
+    			append_dev(div1, span3);
+    			append_dev(div1, t10);
+    			append_dev(div1, span4);
+    			append_dev(span4, t11);
+    			append_dev(span4, br0);
+    			append_dev(span4, t12);
+    			append_dev(span4, br1);
+    			append_dev(span4, t13);
+    			append_dev(span4, br2);
+    			append_dev(span4, t14);
+    			append_dev(span4, br3);
+    			append_dev(span4, t15);
+    			append_dev(div1, t16);
+    			append_dev(div1, span5);
+    			append_dev(span5, strong0);
+    			append_dev(span5, br4);
+    			append_dev(span5, t18);
+    			append_dev(div1, t19);
+    			append_dev(div1, p1);
+    			append_dev(p1, span6);
+    			append_dev(span6, strong1);
+    			append_dev(span6, br5);
+    			append_dev(span6, t21);
+    			append_dev(div1, t22);
+    			append_dev(div1, span7);
+    			append_dev(div1, t24);
+    			append_dev(div1, span8);
+    			append_dev(div1, t26);
+    			append_dev(div1, span9);
+    			append_dev(div1, t28);
+    			append_dev(div1, span10);
+    			append_dev(div1, t30);
+    			append_dev(div1, span11);
+    			append_dev(div1, t32);
+    			append_dev(div1, span12);
+    			append_dev(div1, t34);
+    			append_dev(div1, span13);
+    			append_dev(div1, t36);
+    			append_dev(div1, span14);
+    			append_dev(div1, t38);
+    			append_dev(div1, span15);
+    			append_dev(div1, t40);
+    			append_dev(div1, span16);
+    			append_dev(div1, t42);
+    			append_dev(div1, span17);
+    			append_dev(div1, t44);
+    			append_dev(div1, span18);
+    			append_dev(div1, t46);
+    			append_dev(div1, span19);
+    			append_dev(div1, t48);
+    			append_dev(div1, span20);
+    			append_dev(div1, t50);
+    			append_dev(div1, span21);
+    			append_dev(div1, t52);
+    			append_dev(div1, span22);
+    			append_dev(div1, t54);
+    			append_dev(div1, span23);
+    			append_dev(div1, t56);
+    			append_dev(div1, span24);
+    			append_dev(div1, t58);
+    			append_dev(div1, span25);
+    			append_dev(div1, t60);
+    			append_dev(div1, span26);
+    			append_dev(div1, t62);
+    			append_dev(div1, span27);
+    			append_dev(div1, t64);
+    			append_dev(div1, span28);
+    			append_dev(div1, t66);
+    			append_dev(div1, span29);
+    			append_dev(div1, t68);
+    			append_dev(div1, span30);
+    			append_dev(div1, t70);
+    			append_dev(div1, span31);
+    			append_dev(div1, t72);
+    			append_dev(div1, span32);
+    			append_dev(div1, t74);
+    			append_dev(div1, span33);
+    			append_dev(div1, t76);
+    			append_dev(div1, span34);
+    			append_dev(div1, t78);
+    			append_dev(div1, span35);
+    			append_dev(div1, t80);
+    			append_dev(div1, span36);
+    			append_dev(div1, t82);
+    			append_dev(div1, span37);
+    			append_dev(div1, t84);
+    			append_dev(div1, span38);
+    			append_dev(div1, t86);
+    			append_dev(div1, span39);
+    			append_dev(div1, t88);
+    			append_dev(div1, span40);
+    			append_dev(div1, t90);
+    			append_dev(div1, span41);
+    			append_dev(div1, t92);
+    			append_dev(div1, span42);
+    			append_dev(div1, t94);
+    			append_dev(div1, span43);
+    			append_dev(div1, t96);
+    			append_dev(div1, span44);
+    			append_dev(div1, t98);
+    			append_dev(div1, span45);
+    			append_dev(div1, t100);
+    			append_dev(div1, span46);
+    			append_dev(div1, t102);
+    			append_dev(div1, span47);
+    			append_dev(div1, t104);
+    			append_dev(div1, span48);
+    			append_dev(div1, t106);
+    			append_dev(div1, span49);
+    			append_dev(div1, t108);
+    			append_dev(div1, span50);
+    			append_dev(div1, t110);
+    			append_dev(div1, span51);
+    			append_dev(div1, t112);
+    			append_dev(div1, span52);
+    			append_dev(div1, t114);
+    			append_dev(div1, span53);
+    			append_dev(div1, t116);
+    			append_dev(div1, span54);
+    			append_dev(div1, t118);
+    			append_dev(div1, span55);
+    			append_dev(div1, t120);
+    			append_dev(div1, span56);
+    			append_dev(div1, t122);
+    			append_dev(div1, span57);
+    			append_dev(div1, t124);
+    			append_dev(div1, span58);
+    			append_dev(div1, t126);
+    			append_dev(div1, span59);
+    			append_dev(div1, t128);
+    			append_dev(div1, span60);
+    			append_dev(div1, t130);
+    			append_dev(div1, span61);
+    			append_dev(div1, t132);
+    			append_dev(div1, span62);
+    			append_dev(div1, t134);
+    			append_dev(div1, span63);
+    			append_dev(div1, t136);
+    			append_dev(div1, span64);
+    			append_dev(div1, t138);
+    			append_dev(div1, span65);
+    			append_dev(div1, t140);
+    			append_dev(div1, span66);
+    			append_dev(div1, t142);
+    			append_dev(div1, span67);
+    			append_dev(div1, t144);
+    			append_dev(div1, span68);
+    			append_dev(div1, t146);
+    			append_dev(div1, span69);
+    			append_dev(div1, t148);
+    			append_dev(div1, span70);
+    			append_dev(div1, t150);
+    			append_dev(div1, span71);
+    			append_dev(div1, t152);
+    			append_dev(div1, span72);
+    			append_dev(div1, t154);
+    			append_dev(div1, span73);
+    			append_dev(div1, t156);
+    			append_dev(div1, span74);
+    			append_dev(div1, t158);
+    			append_dev(div1, span75);
+    			append_dev(div1, t160);
+    			append_dev(div1, span76);
+    			append_dev(div1, t162);
+    			append_dev(div1, span77);
+    			append_dev(div1, t164);
+    			append_dev(div1, span78);
+    			append_dev(div1, t166);
+    			append_dev(div1, span79);
+    			append_dev(div1, t168);
+    			append_dev(div1, span80);
+    			append_dev(div1, t170);
+    			append_dev(div1, span81);
+    			append_dev(div1, t172);
+    			append_dev(div1, span82);
+    			append_dev(div1, t174);
+    			append_dev(div1, span83);
+    			append_dev(div1, t176);
+    			append_dev(div1, span84);
+    			append_dev(div1, t178);
+    			append_dev(div1, span85);
+    			append_dev(div1, t180);
+    			append_dev(div1, span86);
+    			append_dev(div1, t182);
+    			append_dev(div1, span87);
+    			append_dev(div1, t184);
+    			append_dev(div1, span88);
+    			append_dev(div1, t186);
+    			append_dev(div1, span89);
+    			append_dev(div1, t188);
+    			append_dev(div1, span90);
+    			append_dev(div1, t190);
+    			append_dev(div1, span91);
+    			append_dev(div1, t192);
+    			append_dev(div1, span92);
+    			append_dev(div1, t194);
+    			append_dev(div1, span93);
+    			append_dev(div1, t196);
+    			append_dev(div1, span94);
+    			append_dev(div1, t198);
+    			append_dev(div1, span95);
+    			append_dev(div1, t200);
+    			append_dev(div1, span96);
+    			append_dev(div1, t202);
+    			append_dev(div1, span97);
+    			append_dev(div1, t204);
+    			append_dev(div1, span98);
+    			append_dev(div1, t206);
+    			append_dev(div1, span99);
+    			append_dev(div1, t208);
+    			append_dev(div1, span100);
+    			append_dev(div1, t210);
+    			append_dev(div1, span101);
+    			append_dev(div1, t212);
+    			append_dev(div1, span102);
+    			append_dev(div1, t214);
+    			append_dev(div1, span103);
+    			append_dev(div1, t216);
+    			append_dev(div1, span104);
+    			append_dev(div1, t218);
+    			append_dev(div1, span105);
+    			append_dev(div1, t220);
+    			append_dev(div1, span106);
+    			append_dev(div1, t222);
+    			append_dev(div1, span107);
+    			append_dev(div1, t224);
+    			append_dev(div1, span108);
+    			append_dev(div1, t226);
+    			append_dev(div1, span109);
+    			append_dev(div1, t228);
+    			append_dev(div1, span110);
+    			append_dev(div1, t230);
+    			append_dev(div1, span111);
+    			append_dev(div1, t232);
+    			append_dev(div1, span112);
+    			append_dev(div1, t234);
+    			append_dev(div1, span113);
+    			append_dev(div1, t236);
+    			append_dev(div1, span114);
+    			append_dev(div1, t238);
+    			append_dev(div1, span115);
+    			current = true;
+    		},
+    		p: function update(new_ctx, [dirty]) {
+    			ctx = new_ctx;
+    			const articleheader_changes = {};
+
+    			if (!updating_audioActive && dirty & /*audioActive*/ 1) {
+    				updating_audioActive = true;
+    				articleheader_changes.audioActive = /*audioActive*/ ctx[0];
+    				add_flush_callback(() => updating_audioActive = false);
+    			}
+
+    			articleheader.$set(articleheader_changes);
+    			const audioplayer_changes = {};
+    			if (dirty & /*audioActive*/ 1) audioplayer_changes.active = /*audioActive*/ ctx[0];
+    			audioplayer.$set(audioplayer_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(articleheader.$$.fragment, local);
+    			transition_in(audioplayer.$$.fragment, local);
+
+    			add_render_callback(() => {
+    				if (div1_outro) div1_outro.end(1);
+
+    				if (!div1_intro) div1_intro = create_in_transition(div1, blur, {
+    					delay: 100,
+    					duration: 800,
+    					amount: 10,
+    					easing: identity
+    				});
+
+    				div1_intro.start();
+    			});
+
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(articleheader.$$.fragment, local);
+    			transition_out(audioplayer.$$.fragment, local);
+    			if (div1_intro) div1_intro.invalidate();
+
+    			div1_outro = create_out_transition(div1, blur, {
+    				delay: 0,
+    				duration: 600,
+    				amount: 10,
+    				easing: identity
+    			});
+
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_component(articleheader, detaching);
+    			if (detaching) detach_dev(t0);
+    			destroy_component(audioplayer, detaching);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(div1);
+    			if (detaching && div1_outro) div1_outro.end();
     		}
     	};
 

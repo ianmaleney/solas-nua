@@ -30,42 +30,61 @@
     parish hall dances and colour and fun. It was a release from the drudgery.
     It meant we could finally see ourselves.’</span
   >
-  <span class="el-sec"
+  <span class="el-sec g7 justified"
     >The first induction coil was invented in 1836 by Nicholas Callan, a priest
     and scientist from Louth. This early form of transformer contributed greatly
     to the widespread distribution of electricity throughout the world.</span
   >
-  <span class="el-sec"
-    >The advantages of electricity to the agricultural industry and the
-    day-to-day lives of farmers would be undeniably immense. It would lead to an
-    improvement in hygiene and safety standards, the simplifying of many daily
-    tasks and a rise in efficiency, which would result in greater profits. It
-    would also make rural Ireland an attractive site for new industries. It is
-    imperative therefore that such a scheme begins without further delay. -
-    'Electricity in Rural Ireland' by A. Byrne published in Muintir na Tíre
-    (Issue 22, March 1929, p.8)</span
-  >
-  <span class="el-sec"
+  <p class="el-sec g5 r2">
+    <span class="r90cc"
+      >The advantages of electricity to the agricultural industry and the
+      day-to-day lives of farmers would be undeniably immense. It would lead to
+      an improvement in hygiene and safety standards, the simplifying of many
+      daily tasks and a rise in efficiency, which would result in greater
+      profits. It would also make rural Ireland an attractive site for new
+      industries. It is imperative therefore that such a scheme begins without
+      further delay. - 'Electricity in Rural Ireland' by A. Byrne published in
+      Muintir na Tíre (Issue 22, March 1929, p.8)</span
+    >
+  </p>
+  <div class="img-wrapper el-sec g7">
+    <img src="/assets/images/gte1.jpg" alt="gte1" class="grid-image" />
+  </div>
+  <span class="el-sec g7 justified"
     >Thomas McLaughlin (1896 - 1971) was born in Drogheda. After studying in UCD
     and UCG, McLaughlin moved to Berlin in 1922 to work for the German
     electrical engineering company Siemens-Schuckert. He returned to Ireland in
     December 1923 where he became one of the key figures in the Shannon
     hydroelectric scheme. He later became the executive director of the EBS.</span
   >
-  <span class="el-sec"
-    >In Cavan there was a great fire, Judge McCarthy was sent to inquire, It
-    would be a shame, if the nuns were to blame, So it had to be caused by a
-    wire. - Flann O’Brien & Tom O’Higgins</span
+  <span class="el-sec g5 centred"
+    >In Cavan there was a great fire,<br /> Judge McCarthy was sent to inquire,<br
+    />
+    It would be a shame, if the nuns were to blame,<br /> So it had to be caused
+    by a wire.<br /> — Flann O’Brien & Tom O’Higgins</span
   >
   <span class="el-sec"
-    >In our country, electrification is more than merely producing light or
-    power. It is bringing light into darkness… we are going to put into the
-    homes of our people in rural areas a light which will light up their minds
-    as well as their homes. If we do that, we will have brought a new atmosphere
-    and a new outlook to many of these people. - James Larkin Jnr, TD, speaking
-    during the Second Stage debate on the Electricity Supply (Amendment) Bill,
-    1944</span
+    ><strong
+      >In our country, electrification is more than merely producing light or
+      power. It is bringing light into darkness… we are going to put into the
+      homes of our people in rural areas a light which will light up their minds
+      as well as their homes. If we do that, we will have brought a new
+      atmosphere and a new outlook to many of these people.</strong
+    ><br /> — James Larkin Jnr, TD, speaking during the Second Stage debate on the
+    Electricity Supply (Amendment) Bill, 1944</span
   >
+  <p class="el-sec g7">
+    <span class="r90cc"
+      ><strong>Customs-Free Airport Act, 1947</strong><br /> 2.—(1) The Minister,
+      with the concurrence of the Minister for Finance, may by order declare that,
+      on and after a specified date, the land enclosed within the limits defined
+      by the order shall be the Customs-free airport for the purposes of this Act.
+      (2) The Minister, with the concurrence of the Minister for Finance, may from
+      time to time by order amend the order under subsection (1) of this section
+      by varying the limits of the airport. (3) The airport shall comprise only land
+      which for the time being belongs to the State.</span
+    >
+  </p>
   <span class="el-sec"
     >The Rural Area Organiser was an important figure in developing the
     relationship between the ESB and local people. The job involved encouraging
@@ -99,16 +118,6 @@
     boiler, a vacuum cleaner and even a refrigerator. - Minister Seán Lemass
     speaking during the Second Stage debate on the Electricity Supply
     (Amendment) Bill, 1944</span
-  >
-  <span class="el-sec"
-    >Customs-Free Airport Act, 1947 2.—(1) The Minister, with the concurrence of
-    the Minister for Finance, may by order declare that, on and after a
-    specified date, the land enclosed within the limits defined by the order
-    shall be the Customs-free airport for the purposes of this Act. (2) The
-    Minister, with the concurrence of the Minister for Finance, may from time to
-    time by order amend the order under subsection (1) of this section by
-    varying the limits of the airport. (3) The airport shall comprise only land
-    which for the time being belongs to the State.</span
   >
   <span class="el-sec"
     >What does rural electrification mean to you? How can you get it to your
@@ -961,12 +970,69 @@
   >
 </div>
 
+<!-- 
+
+
+list
+table
+forum
+
+ -->
 <style lang="scss">
   .electric-text {
     display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    max-width: 960px;
     .el-sec {
       grid-column: 1 / -1;
-      margin: 20px 0;
+    }
+    .g1 {
+      grid-column: span 1;
+    }
+    .g4 {
+      grid-column: span 4;
+    }
+    .g5 {
+      grid-column: span 5;
+    }
+    .g6 {
+      grid-column: span 6;
+    }
+    .g7 {
+      grid-column: span 7;
+    }
+    .g8 {
+      grid-column: span 8;
+    }
+    .r90cw {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+    }
+    .r90cc {
+      direction: rtl;
+      text-orientation: mixed;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+    }
+    .r180 {
+      transform: rotate(180deg);
+    }
+    .centred {
+      text-align: center;
+    }
+    .justified {
+      text-align: justify;
+    }
+    .bordered {
+      border: 1px solid black;
+    }
+    .grid-image {
+      max-width: 100%;
+      object-fit: contain;
+    }
+    .r2 {
+      grid-row: span 2;
     }
   }
 </style>

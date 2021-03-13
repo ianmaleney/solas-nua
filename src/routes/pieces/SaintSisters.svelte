@@ -1,7 +1,23 @@
 <script>
   import { blur } from "svelte/transition";
   import { linear } from "svelte/easing";
+  import AudioPlayer from "../../components/AudioPlayer.svelte";
+  import ArticleHeader from "../../components/ArticleHeader.svelte";
+
+  let audioActive = false;
 </script>
+
+<ArticleHeader
+  title="Saint Sisters & The Sea"
+  author="Méabh de Brun"
+  bind:audioActive
+/>
+
+<AudioPlayer
+  src="/assets/audio/saint-sisters.mp3"
+  active={audioActive}
+  credits={"Read by Méabh de Brun."}
+/>
 
 <div
   class="text"

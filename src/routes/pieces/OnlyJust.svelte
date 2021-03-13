@@ -3,24 +3,30 @@
   import { linear } from "svelte/easing";
 </script>
 
-<iframe
-  src="https://player.vimeo.com/video/522269305?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-  width="1380"
-  height="600"
-  frameborder="0"
-  allow="autoplay; fullscreen; picture-in-picture"
-  allowfullscreen
-  title="00 Assembly_2"
-  in:blur={{ delay: 100, duration: 800, amount: 10, easing: linear }}
-  out:blur={{ delay: 0, duration: 600, amount: 10, easing: linear }}
-/>
+<div style="padding:66.67% 0 0 0;position:relative;">
+  <iframe
+    src="https://player.vimeo.com/video/523137788?autoplay=1&color=8a8a8a&title=0&byline=0&portrait=0&quality=4k"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+    frameborder="0"
+    allow="autoplay quality='4k'; fullscreen; picture-in-picture"
+    allowfullscreen
+    title="00 Assembly_2"
+  />
+</div>
 
 <header
   in:blur={{ delay: 100, duration: 800, amount: 10, easing: linear }}
   out:blur={{ delay: 0, duration: 600, amount: 10, easing: linear }}
 >
-  <h1>I Know, But Only Just</h1>
-  <h2>Ruby Wallis <em>&</em> Claire-Louise Bennett</h2>
+  <h1>Πανδώρα</h1>
+  <p>ꬱ</p>
+  <p>Ruby &amp; Claire-Louise</p>
+  <p>Ͼ Ϸ ϧ Ϣ Ϙ Φ Ϯ ω ͽ π α Ж Ђ Ќ Ϗ Ϩ Ϭ Д Ϫ</p>
+
+  <p>
+    Chloe Phil Sarah Mary Louise Róisín Suzanne Ruth Áine Jessamyn Alice Mary
+    Michal Karole Kate Sarah Anne Vicky Deborah
+  </p>
 </header>
 
 <style type="text/scss">
@@ -38,11 +44,11 @@
       font-family: var(--serif);
       margin: 1.5rem 0;
     }
-    h2 {
+    p {
       font-family: var(--body);
       font-weight: 300;
       text-align: center;
-      font-size: 2.4rem;
+      font-size: 1.4rem;
     }
   }
 </style>
