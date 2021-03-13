@@ -3,10 +3,9 @@
   import { linear } from "svelte/easing";
 </script>
 
-<div style="padding:66.67% 0 0 0;position:relative;">
+<div class="video-wrapper">
   <iframe
     src="https://player.vimeo.com/video/523137788?autoplay=1&color=8a8a8a&title=0&byline=0&portrait=0&quality=4k"
-    style="position:absolute;top:0;left:0;width:100%;height:100%;"
     frameborder="0"
     allow="autoplay quality='4k'; fullscreen; picture-in-picture"
     allowfullscreen
@@ -30,10 +29,24 @@
 </header>
 
 <style type="text/scss">
+  .video-wrapper {
+    padding: 66.67% 0 0 0;
+    position: relative;
+    margin: 0 auto;
+    max-height: 80vmin;
+    max-width: 80vmax;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
   header {
     display: flex;
     max-width: 740px;
-    margin: 2rem auto;
+    margin: 0 auto;
     flex-direction: column;
     h1 {
       text-align: center;
