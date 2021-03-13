@@ -9,14 +9,14 @@
 
 <ArticleHeader
   title="Saint Sisters & The Sea"
-  author="Méabh de Brun"
+  author="Méabh de Brún"
   bind:audioActive
 />
 
 <AudioPlayer
   src="/assets/audio/saint-sisters.mp3"
   active={audioActive}
-  credits={"Read by Méabh de Brun."}
+  credits={"Read by Méabh de Brún."}
 />
 
 <div

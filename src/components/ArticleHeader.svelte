@@ -1,14 +1,16 @@
 <script>
-  export let audioActive, title, author;
+  export let audioActive, title, author, page;
 </script>
 
 <header>
   <h1>{title}</h1>
   <h2>{author}</h2>
-  <div class="text-options">
-    <button on:click={() => (audioActive = !audioActive)}>Listen</button>
-    <button on:click={() => window.print()}>Print</button>
-  </div>
+  {#if !page}
+    <div class="text-options">
+      <button on:click={() => (audioActive = !audioActive)}>Listen</button>
+      <button on:click={() => window.print()}>Print</button>
+    </div>
+  {/if}
 </header>
 
 <style type="text/scss">

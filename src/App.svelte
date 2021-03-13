@@ -51,16 +51,20 @@
     </p>
   </div>
   <div class="footer-item">
-    <img
-      class="footer-logo"
-      src="/assets/images/solas-nua-logo.png"
-      alt="Solas Nua Logo"
-    />
-    <img
-      class="footer-logo"
-      src="/assets/images/fallow-logo.png"
-      alt="Fallow Media Logo"
-    />
+    <a href="https://solasnua.org">
+      <img
+        class="footer-logo"
+        src="/assets/images/solas-nua-logo.svg"
+        alt="Solas Nua Logo"
+      /></a
+    >
+    <a href="https://fallowmedia.com"
+      ><img
+        class="footer-logo"
+        src="/assets/images/fallow-logo.png"
+        alt="Fallow Media Logo"
+      /></a
+    >
   </div>
 </footer>
 
@@ -128,10 +132,19 @@
       display: flex;
       justify-content: center;
       padding: 2rem 0;
+      a {
+        display: block;
+        height: 80px;
+        width: 80px;
+        margin: 0 20px;
+        &:hover {
+          filter: invert(1);
+        }
+      }
     }
     .footer-logo {
-      max-height: 80px;
-      max-width: 80px;
+      height: 80px;
+      width: 80px;
       object-fit: contain;
       mix-blend-mode: overlay;
       filter: saturate(0);
