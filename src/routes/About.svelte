@@ -2,10 +2,17 @@
   import { blur } from "svelte/transition";
   import { linear } from "svelte/easing";
   import ArticleHeader from "../components/ArticleHeader.svelte";
+  import { onMount } from "svelte";
+
+  import { themeColour } from "../store.js";
+
+  onMount(() => {
+    themeColour.update((theme) => "#e4d4c5");
+  });
 </script>
 
 <ArticleHeader
-  title="Irish Book Day: View Source"
+  title="View Source"
   author="Wednesday March 17 2021: Solas Nua’s Irish Book Day"
   page={true}
 />
@@ -26,8 +33,13 @@
     <em>View Source</em> is a unique online publication, curated by Fallow Media
     and commissioned by Solas Nua for this year’s St. Patrick’s Day, celebrating
     contemporary Irish literature at its most adventurous. Working alongside six
-    cutting-edge literary publications in Ireland today – The Stinging Fly, The
-    Dublin Review, Gorse, Banshee, Winter Papers, and Fallow Media –
+    cutting-edge literary publications in Ireland today –
+    <a href="https://stingingfly.org/">The Stinging Fly</a>,
+    <a href="https://thedublinreview.com/">The Dublin Review</a>,
+    <a href="http://gorse.ie/">Gorse</a>,
+    <a href="https://www.bansheelit.com/">Banshee</a>,
+    <a href="https://winterpapers.com/">Winter Papers</a>, and
+    <a href="https://fallowmedia.com/">Fallow Media</a> –
     <em>View Source</em>
     has invited writers and artists to reimagine stories, poems, and essays first
     made available in print.
@@ -72,3 +84,12 @@
     created in the first place.
   </p>
 </div>
+
+<style lang="scss">
+  a {
+    color: #736b1e;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+</style>

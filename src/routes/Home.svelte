@@ -2,6 +2,14 @@
   import { Link } from "svelte-routing";
   import { blur } from "svelte/transition";
   import { linear } from "svelte/easing";
+
+  import { onMount } from "svelte";
+
+  import { themeColour } from "../store.js";
+
+  onMount(() => {
+    themeColour.update((theme) => "#e4d4c5");
+  });
 </script>
 
 <nav
@@ -51,6 +59,7 @@
   #home-nav {
     max-width: 80vw;
     margin: 0 auto;
+    padding-top: 5vh;
   }
   #toc {
     list-style: none;

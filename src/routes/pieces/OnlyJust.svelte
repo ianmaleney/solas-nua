@@ -1,15 +1,24 @@
 <script>
   import { blur } from "svelte/transition";
   import { linear } from "svelte/easing";
+  import { headerOpacity } from "../../store.js";
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    headerOpacity.update((o) => 0.5);
+  });
 </script>
 
 <div class="video-wrapper">
   <iframe
     src="https://player.vimeo.com/video/523137788?autoplay=1&color=8a8a8a&title=0&byline=0&portrait=0&quality=4k"
     frameborder="0"
-    allow="autoplay quality='4k'; fullscreen; picture-in-picture"
+    allow="fullscreen; picture-in-picture"
+    quality="4k"
     allowfullscreen
     title="00 Assembly_2"
+    width="1920"
+    height="1080"
   />
 </div>
 
@@ -32,10 +41,14 @@
   .video-wrapper {
     padding: 66.67% 0 0 0;
     position: relative;
-    margin: 0 auto;
     max-height: 80vmin;
     max-width: 80vmax;
+    margin: -10vh auto 0;
+    @media (max-width: 720px) {
+      margin-top: 0;
+    }
     iframe {
+      filter: drop-shadow(3px 6px 12px rgba(0, 0, 0, 0.25));
       position: absolute;
       top: 0;
       left: 0;

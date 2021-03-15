@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import { themeColour, headerOpacity } from "./store.js";
   import { Router, Link, Route, navigate } from "svelte-routing";
   import Blobs from "./components/Blobs.svelte";
   import Home from "./routes/Home.svelte";
@@ -12,17 +13,25 @@
   import Electric from "./routes/pieces/Electric.svelte";
 
   export let url;
-  export let themeColour = "#e4d4c5";
 
   onMount(() => {
     navigate(window.location.pathname, { replace: true });
   });
+
+  let bck, hc, ho;
+
+  themeColour.subscribe((v) => (bck = v));
+  headerOpacity.subscribe((o) => (ho = o));
+  themeColour.subscribe(
+    (v) =>
+      (hc = `linear-gradient(180deg, ${v} 60%, rgba(255, 255, 255, 0) 100%)`)
+  );
 </script>
 
 <Router {url}>
   <Blobs />
-  <div class="overlay" style="background-color: {themeColour};" />
-  <header id="app-header">
+  <div class="overlay" style="background-color: {bck};" />
+  <header id="app-header" style="background: {hc}; opacity: {ho}">
     <a href="/" class="title-link">View Source</a>
     <nav class="header-menu">
       <a href="/"><em>Index</em></a>
@@ -87,6 +96,7 @@
     left: 0;
     // background-color: #e4d4c5;
     pointer-events: none;
+    transition: background-color 1s linear;
   }
 
   header {
@@ -100,11 +110,7 @@
     justify-content: space-between;
     align-items: center;
     font-family: var(--serif);
-    background: linear-gradient(
-      180deg,
-      #e4d4c5 60%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    transition: all 1s linear;
   }
   .title-link {
     font-style: italic;
@@ -117,7 +123,7 @@
   main {
     position: relative;
     z-index: 10;
-    margin: 15vh 0;
+    margin: 10vh 0 0;
     min-height: 100vh;
   }
 
@@ -138,7 +144,7 @@
         width: 80px;
         margin: 0 20px;
         &:hover {
-          filter: invert(1);
+          filter: invert(0);
         }
       }
     }
@@ -147,7 +153,7 @@
       width: 80px;
       object-fit: contain;
       mix-blend-mode: overlay;
-      filter: saturate(0);
+      filter: saturate(0) invert(1);
     }
     p {
       color: rgb(207, 207, 207);

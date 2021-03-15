@@ -1,8 +1,13 @@
 <script>
   export let audioActive, title, author, page;
+  import { blur } from "svelte/transition";
+  import { linear } from "svelte/easing";
 </script>
 
-<header>
+<header
+  in:blur={{ delay: 100, duration: 800, amount: 10, easing: linear }}
+  out:blur={{ delay: 0, duration: 600, amount: 10, easing: linear }}
+>
   <h1>{title}</h1>
   <h2>{author}</h2>
   {#if !page}

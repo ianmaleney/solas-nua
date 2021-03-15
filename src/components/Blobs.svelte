@@ -1,5 +1,15 @@
 <script>
   import { onMount } from "svelte";
+  import { blob1, blob2 } from "../store.js";
+
+  let blobColours = {
+    bc1: "",
+    bc2: "",
+  };
+
+  blob1.subscribe((v) => (blobColours.bc1 = v));
+  blob2.subscribe((v) => (blobColours.bc2 = v));
+
   let b1, b2;
 
   // Should really do this with translation, not position.
@@ -8,9 +18,9 @@
     let y = Math.floor(Math.random() * 100);
     el.style.left = `${x}vw`;
     el.style.top = `${y}vh`;
-    setTimeout(() => {
-      move(el);
-    }, 3000);
+    // setTimeout(() => {
+    //   move(el);
+    // }, 3000);
   };
 
   onMount(() => {
@@ -20,8 +30,18 @@
 </script>
 
 <div class="blobs">
-  <div class="blob" id="b1" bind:this={b1} />
-  <div class="blob" id="b2" bind:this={b2} />
+  <div
+    class="blob"
+    id="b1"
+    bind:this={b1}
+    style="background-color: {blobColours.bc1};"
+  />
+  <div
+    class="blob"
+    id="b2"
+    bind:this={b2}
+    style="background-color: {blobColours.bc2};"
+  />
 </div>
 
 <style>
@@ -36,12 +56,10 @@
     transition: all 3s linear;
   }
   #b1 {
-    background-color: #f2cb90;
     top: calc(100vh - 25vw);
     left: 35vw;
   }
   #b2 {
-    background-color: #b9b4ba;
     top: calc(100vh - 35vw);
     left: 75vw;
   }
