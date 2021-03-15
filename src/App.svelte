@@ -11,10 +11,13 @@
   import Scarf from "./routes/pieces/Scarf.svelte";
   import SaintSisters from "./routes/pieces/SaintSisters.svelte";
   import Electric from "./routes/pieces/Electric.svelte";
+  import { move } from "./moveBlob";
 
   export let url;
 
   onMount(() => {
+    let blobs = document.querySelectorAll(".blob");
+    [...blobs].forEach((el) => move(el));
     navigate(window.location.pathname, { replace: true });
   });
 
@@ -110,7 +113,7 @@
     justify-content: space-between;
     align-items: center;
     font-family: var(--serif);
-    transition: all 1s linear;
+    transition: background 1s linear;
   }
   .title-link {
     font-style: italic;

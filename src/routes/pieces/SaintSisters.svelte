@@ -4,6 +4,18 @@
   import AudioPlayer from "../../components/AudioPlayer.svelte";
   import ArticleHeader from "../../components/ArticleHeader.svelte";
 
+  import { onMount } from "svelte";
+
+  import { themeColour, blob1 } from "../../store.js";
+  import { move } from "../../moveBlob";
+
+  onMount(() => {
+    let blobs = document.querySelectorAll(".blob");
+    [...blobs].forEach((el) => move(el));
+    themeColour.update((theme) => "#f8fff1");
+    blob1.update((c) => "#f290a280");
+  });
+
   let audioActive = false;
 </script>
 
@@ -716,7 +728,32 @@
       sharp fractured crashes of your dreams.
     </p>
     <p>You hold your sister. You are thirty years old.</p>
+    <p><br /></p>
+    <p style="text-align: center">&#x2059;</p>
   </section>
+</div>
+
+<div class="credits text">
+  <p>
+    <em>Saint Sisters & The Sea</em>, written by Méabh de Brún, was first
+    published in
+    <em><a href="https://www.bansheelit.com/">Banshee</a></em>.
+  </p>
+  <p>
+    Méabh de Brún is an award-winning actor, playwright and writer. Her short
+    fiction has been published in <em>The Stinging Fly</em>,
+    <em>Banshee Lit</em>, <em>Mysterion Magazine</em>, <em>Giganotosaurus</em>
+    and more. She is a finalist for RTÉ's Francis MacManus Short Story Award and
+    received the DCLI/ACDI Playwriting Award for her play
+    <em>Dead Man's Bells</em>, which picked up eight awards nationally,
+    including her festival award for Best Actor.
+  </p>
+  <p>
+    A recipient of the Tyrone Guthrie bursary and the Valentino Scholarship for
+    Emerging Writers, she currently lives in Kerry, where she is working on her
+    first novel and on anything else that comes to mind.
+  </p>
+  <p><a href="meabhdebrun.org">meabhdebrun.org</a></p>
 </div>
 
 <style lang="scss">
@@ -746,5 +783,11 @@
   .attrib {
     font-style: italic;
     text-align: right;
+  }
+  .credits.text {
+    border-top: none;
+    border-bottom: none;
+    margin-top: 100px;
+    text-align: center;
   }
 </style>

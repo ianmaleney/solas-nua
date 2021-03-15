@@ -4,8 +4,11 @@
   import { onMount } from "svelte";
 
   import { themeColour, headerOpacity, blob1 } from "../../store.js";
+  import { move } from "../../moveBlob";
 
   onMount(() => {
+    let blobs = document.querySelectorAll(".blob");
+    [...blobs].forEach((el) => move(el));
     themeColour.update((theme) => "#fff");
     headerOpacity.update((o) => 0.5);
     blob1.update((c) => "#c16a7cb5");
@@ -177,8 +180,12 @@
 <div class="credits text">
   <p><em>The Conjuring</em>, written by Nidhi Zak/Aria Eipe.</p>
   <p>
-    <em>Dubh Sainglend to Liath Macha, on Cú Chulainn’s Death</em>, written by
-    Michael Dooley.
+    <em>Dubh Sainglend to Liath Macha, on Cú Chulainn’s Death</em>, was written
+    by Michael Dooley. Michael Dooley’s poems have appeared in
+    <em>Poetry Ireland Review</em>, <em>The Stinging Fly</em>, and online at RTE
+    Culture. In 2020, he was shortlisted for The Strokestown International
+    Poetry Competition, The Doolin Poetry Prize, and The Cúirt New Writing
+    Prize. He is a teacher, and lives in Limerick.
   </p>
   <p>
     Video <em>&</em> Images by
@@ -297,7 +304,7 @@
       height: 100%;
     }
   }
-  .credits {
+  :global(.credits.text) {
     margin: 200px auto;
     border-top: 1px solid #4f4950;
     border-bottom: 1px solid #4f4950;

@@ -1,11 +1,13 @@
 <script>
   import { blur } from "svelte/transition";
   import { linear } from "svelte/easing";
-  import { headerOpacity } from "../../store.js";
+  import { headerOpacity, themeColour, blob1 } from "../../store.js";
   import { onMount } from "svelte";
 
   onMount(() => {
-    headerOpacity.update((o) => 0.5);
+    themeColour.update((c) => "#222");
+    headerOpacity.update((o) => 0.9);
+    blob1.update((b) => "rgba(240,240,240,0.4)");
   });
 </script>
 
@@ -25,6 +27,7 @@
 <header
   in:blur={{ delay: 100, duration: 800, amount: 10, easing: linear }}
   out:blur={{ delay: 0, duration: 600, amount: 10, easing: linear }}
+  class="invert"
 >
   <h1>Πανδώρα</h1>
   <p>ꬱ</p>
@@ -36,8 +39,17 @@
     Michal Karole Kate Sarah Anne Vicky Deborah
   </p>
 </header>
+<div class="credits text invert">
+  <p>
+    <em>I Know, But Only Just</em> was first published in
+    <a href="https://winterpapers.com/">Winter Papers</a>.
+  </p>
+</div>
 
 <style type="text/scss">
+  .invert {
+    filter: invert(1);
+  }
   .video-wrapper {
     padding: 66.67% 0 0 0;
     position: relative;

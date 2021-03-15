@@ -51,6 +51,28 @@
 </div>
 
 <style lang="scss">
+  @keyframes playerIn {
+    0% {
+      height: 0;
+      pointer-events: none;
+      transform: translateY(-200px);
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    75% {
+      height: 1;
+      transform: translateY(0);
+      opacity: 0.5;
+    }
+    100% {
+      height: auto;
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
   #audioPlayer {
     border-top: 1px solid #4f4950;
     border-bottom: 1px solid #4f4950;
@@ -59,10 +81,12 @@
     opacity: 0;
     pointer-events: none;
     padding: 1rem 0;
-    transition: all 0.3s ease-in-out;
+    transform: translateY(-200px);
+    transform-origin: top;
+    height: 0;
     &.active {
-      opacity: 1;
-      pointer-events: auto;
+      animation: playerIn 0.6s linear;
+      animation-fill-mode: forwards;
     }
   }
   .controls {

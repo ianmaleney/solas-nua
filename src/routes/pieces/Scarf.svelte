@@ -4,6 +4,22 @@
   import AudioPlayer from "../../components/AudioPlayer.svelte";
   import ArticleHeader from "../../components/ArticleHeader.svelte";
 
+  import { onMount } from "svelte";
+
+  import { themeColour, headerOpacity, blob1, blob2 } from "../../store.js";
+  import { move } from "../../moveBlob";
+
+  onMount(() => {
+    let blobs = document.querySelectorAll(".blob");
+    [...blobs].forEach((el) => move(el));
+    themeColour.update((theme) => "#CED1CE");
+    headerOpacity.update((o) => 0.5);
+    blob1.update((c) => "#936b6766");
+    blob2.update((c) => "#1f38348c");
+  });
+
+  //
+
   let audioActive = false;
 </script>
 
@@ -264,7 +280,7 @@
     in his youth; warm and witty in his later years and never fully subdued by
     old age.’ Reading this line, I wished that I could have heard him laugh.
     When Pádhraic died in 1965, his coffin was draped in the tricolour, and his
-    surviv- ing comrades, Johnny Greally among them, formed a guard of honour. A
+    surviving comrades, Johnny Greally among them, formed a guard of honour. A
     passionate graveside oration was delivered by John P. Jordan. Of this
     funeral, C. Caimbhéal wrote: ‘There were no tears on any face for it was the
     honouring of a warrior, and none weep when a soldier sleeps when his fight
@@ -308,7 +324,7 @@
     felt alive to my great-grandfather, too. Above my head, the intricately
     crafted timber roof was neat as a ribcage. All his life, Pádhraic returned
     to pray here, surrounding himself with the same people, all standing and
-    kneeling in uni- son, their voices murmuring a warm chorus around his.
+    kneeling in unison, their voices murmuring a warm chorus around his.
     Together and alone, they aged. Theirs were the eyes that met his in worship,
     on feast days, at funerals and baptisms, on the day he escaped from the
     Crown forces, and on his wedding day.
@@ -334,13 +350,13 @@
   <p>
     Only when my son whispered ‘I’m cold, Mám,’ did I notice that his coat had
     been forgotten altogether. I was glad of the warmth my body had pressed into
-    the weft of my scarf as I wound it into a pullover of sorts, criss- crossing
+    the weft of my scarf as I wound it into a pullover of sorts, criss-crossing
     its endings into his waistband: snug. I pressed my lips to his forehead and
     on we went with my hand in his, or his in mine. When he asked what we were
     looking for, I couldn’t answer because I didn’t know, beyond the sense that
     he and I had entered the story, and now we had to find our way towards some
-    sort of an ending. Perhaps the gesture of leaving a lit- tle flame in our
-    wake might do it? No, all the wicks were unlit, and I could see no matches.
+    sort of an ending. Perhaps the gesture of leaving a little flame in our wake
+    might do it? No, all the wicks were unlit, and I could see no matches.
   </p>
   <p>
     My son shrugged and asked me to finish telling the story, and I did, and was
@@ -362,8 +378,8 @@
     In the car, my husband was thumbing his phone and the children were munching
     chocolate biscuits. I felt satisfied as I clicked my seatbelt – seeing this
     place felt like some small achievement to show for our cold months away from
-    home. But back in the cottage, I couldn’t sleep for incessant fid- geting:
-    the story wouldn’t rest. If I couldn’t hear the story of this escape in
+    home. But back in the cottage, I couldn’t sleep for incessant fidgeting: the
+    story wouldn’t rest. If I couldn’t hear the story of this escape in
     Pádhraic’s own voice, then maybe there was a way to hear it in the voice of
     one who had stood by him. My mother had once heard a man on the radio
     describe how, long ago, his grandmother had disguised a man at mass to save
@@ -375,7 +391,7 @@
   </p>
   <p>
     In the Buillín Blasta café in An Spidéal, Tadhg described his grandmother,
-    Annie Kenny: a bright young woman who had been awarded a teacher-train- ing
+    Annie Kenny: a bright young woman who had been awarded a teacher-training
     scholarship in Belfast, but still travelled home at weekends to lead the
     church choir. The story he had inherited began there, with a young woman
     leading a chorus of voices, called to a sudden act of courage, then hurrying
@@ -417,7 +433,7 @@
   <p>
     Exhilarated and weary from driving, I fell into bed early, but my heart
     raced, and my toes twitched: too much coffee. Eventually I fumbled my phone
-    from where it was charging on the floor and swiped idly through pho- tos of
+    from where it was charging on the floor and swiped idly through photos of
     our trip: playgrounds, mountains, the gift of a barmbrack, Harry Clarke
     windows in Ballinrobe, a little dog called Marcie. I came to the penultimate
     photo I’d taken in the church, the one that had vexed me when my son flung
@@ -428,6 +444,29 @@
     that inherited story – too big and too dark – in which we all find ourselves
     bound by those who came before us.
   </p>
+  <p><br /></p>
+  <p style="text-align: center">&#x2059;</p>
+</div>
+
+<div class="credits text">
+  <p>
+    <em>A Scarf</em>, written by Doireann Ní Ghríofa, was first published in
+    <em><a href="https://thedublinreview.com/">The Dublin Review</a></em>.
+  </p>
+  <p>
+    Doireann Ní Ghríofa is a poet and essayist. <em>A Ghost in the Throat</em> was
+    awarded Book of the Year at the Irish Book Awards, and described as “glowing”
+    (Anne Enright), “spellbinding” (Joseph O’Connor), “gorgeous” (Lauren Elkin),
+    “captivatingly original”​​ (The Guardian), “sumptuous” (The Sunday Times), and
+    a “masterpiece” (Sunday Business Post).
+  </p>
+  <p>
+    Doireann is also author of six critically-acclaimed books of poetry, each a
+    deepening exploration of birth, death, desire, and domesticity. Awards for
+    her writing include a Lannan Literary Fellowship (USA), the Ostana Prize
+    (Italy), a Seamus Heaney Fellowship (Queen’s University), and the Rooney
+    Prize for Irish Literature, among others.
+  </p>
 </div>
 
 <style lang="scss">
@@ -436,7 +475,7 @@
     margin: 0 auto;
     font-size: 1.35rem;
     line-height: 1.5;
-    padding: 0 2vw 40vh;
+    padding: 0 2vw;
     font-family: var(--body);
   }
   :global(.text.wide) {
@@ -447,6 +486,13 @@
   }
   :global(blockquote) {
     font-size: 1.15rem;
-    line-height: 1.25;
+    line-height: 1.3;
+    border-left: 1px solid #1f3834;
+    padding-left: 10px;
+  }
+  .credits.text {
+    border-top: none;
+    border-bottom: none;
+    margin-top: 100px;
   }
 </style>

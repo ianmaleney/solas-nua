@@ -970,6 +970,20 @@
   >
 </div>
 
+<div class="credits text">
+  <p>
+    <em>Getting The Electric</em>, written by Louise Hegarty, was first
+    published in
+    <em><a href="http://stingingfly.org">The Stinging Fly</a></em>.
+  </p>
+  <p>
+    Louise Hegarty has had work published in <em>Banshee</em>,
+    <em>The Tangerine</em>, and
+    <em>The Dublin Review</em>. Recently, she had a short story featured on BBC
+    Radio 4’s Short Works. She lives in Cork.
+  </p>
+</div>
+
 <!-- 
 
 

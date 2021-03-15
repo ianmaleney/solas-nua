@@ -1,8 +1,19 @@
 <script>
   import { blur } from "svelte/transition";
   import { linear } from "svelte/easing";
+  import { onMount } from "svelte";
   import AudioPlayer from "../../components/AudioPlayer.svelte";
   import ArticleHeader from "../../components/ArticleHeader.svelte";
+  import { move } from "../../moveBlob";
+
+  onMount(() => {
+    let blobs = document.querySelectorAll(".blob");
+    [...blobs].forEach((el) => move(el));
+    // themeColour.update((theme) => "#CED1CE");
+    // headerOpacity.update((o) => 0.5);
+    // blob1.update((c) => "#936b6766");
+    // blob2.update((c) => "#1f38348c");
+  });
 
   let audioActive = false;
 </script>
@@ -529,5 +540,15 @@
       will draw our line. We will make our border again and stake out our own
       land. We will close a door and seal it with a line and ward off the world.
     </p>
+    <p><br /></p>
+    <p style="text-align: center">&#x2059;</p>
   </div>
+</div>
+
+<div class="credits text">
+  <p>
+    <em>Butterfly</em>, written by Colm O'Shea, was first published in
+    <a href="http://gorse.ie">gorse</a>. Colm O'Shea is a writer living in
+    Dublin.
+  </p>
 </div>
