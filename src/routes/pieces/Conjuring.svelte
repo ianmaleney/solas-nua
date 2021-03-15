@@ -82,16 +82,15 @@
       on you, swift as a whipping<br />
       boy caught in a bind of rage
     </p>
-
+  </div>
+  <img src="assets/images/y5.jpg" class="poem-image y5" alt="Mountain" />
+  <div class="text t3">
     <p>
       how they trembled, the fury<br />
       filled sprites as you suffered<br />
       the life you were denied then<br />
       married to the envy of a bride
     </p>
-  </div>
-  <img src="assets/images/y5.jpg" class="poem-image y5" alt="Mountain" />
-  <div class="text t3">
     <p>
       how they’ll swear you loved<br />
       but one of us, singular, true:<br />
@@ -178,7 +177,12 @@
 </div>
 
 <div class="credits text">
-  <p><em>The Conjuring</em>, written by Nidhi Zak/Aria Eipe.</p>
+  <p>
+    <em>The Conjuring</em>, written by Nidhi Zak/Aria Eipe. Nidhi Zak/Aria Eipe
+    is a poet, pacifist and fabulist. <em>Auguries of a Minor God</em>, her
+    debut poetry collection, is forthcoming from Faber & Faber in July 2021.
+    There is little that she would not trade in for a horse.
+  </p>
   <p>
     <em>Dubh Sainglend to Liath Macha, on Cú Chulainn’s Death</em>, was written
     by Michael Dooley. Michael Dooley’s poems have appeared in

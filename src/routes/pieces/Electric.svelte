@@ -55,7 +55,7 @@
     and UCG, McLaughlin moved to Berlin in 1922 to work for the German
     electrical engineering company Siemens-Schuckert. He returned to Ireland in
     December 1923 where he became one of the key figures in the Shannon
-    hydroelectric scheme. He later became the executive director of the EBS.</span
+    hydroelectric scheme. He later became the executive director of the ESB.</span
   >
   <span class="el-sec g5 centred"
     >In Cavan there was a great fire,<br /> Judge McCarthy was sent to inquire,<br
@@ -874,38 +874,110 @@
     Henry to learn more about satanic groups that were… - Extract from blog
     entitled ‘The Disappearances 1948 - 49’</span
   >
-  <span class="el-sec"
-    >Discussion thread on Episode 6: What Did the Neighbours Know? C_A_Dupin The
-    problem the cops had was that they believed ‘everyone was at the switching
-    on’ so they never got a proper list of people together. And we all know of
-    course that Mrs Geary didn’t attend because she was feeling unwell and so
-    she went home by herself. And the O’Reillys didn’t attend either—were they
-    going to a wedding the next day or something… Like Dislike Comment Favourite
-    M4Murder But are we seriously suggesting that any of these people were
-    involved in the kidnapping of the first child? What’s the motive here? The
-    first child to me is the key becuase he was upstairs in his own bed. That’s
-    not a ‘by chance’ kidnapping. That was palnned. The switching on was the
-    opportunity they needed. Like Dislike Comment Favourite Hastings What about
-    the witness statement from Francis Byrne? She saw footsteps in her garden
-    but the police never took photos or imprints. Like Dislike Comment Favourite
-    ChndlerR1 [comment deleted] Like Dislike Comment Favourite C_A_Dupin
-    @ChndlerR1 This is a serious thread to discuss matters that arise in the
-    course of the podcast. That’s serious discussion only pertaining to the
-    facts of the case. If you want to speculate wildly there are plenty of other
-    forums for that. Like Dislike Comment Favourite M4Murder @Hastings Yeah, I
-    thought that was interesting too. Like, FB’s garden backed on to the victims
-    so someone could likely have escaped that way. They didn’t dwell on it on
-    the pod though so maybe they know more than they are letting on abot that
-    right now. Like Dislike Comment Favourite TruCrimFan Hi! new to the thread.
-    I’m just wondering what people feel about the parents. Am not talking shit I
-    just am genuinely wondering. It’s kind of like occam’s razor.a lot of the
-    neighbors seem to think that the house was a little dysfuntioncal. Maybe
-    they were abusing the kid or they killed him accidentally or something. The
-    other idnappings were a cover up. Again, please don’;t ban me. I really want
-    to know more. Like Dislike Comment Favourite C_A_Dupin @ TruCrimFan There
-    are threads about the parents. Check out the search bar. Like Dislike
-    Comment Favourite</span
-  >
+  <section class="el-sec forum">
+    <h1 class="forum-heading">
+      Discussion thread on Episode 6: What Did the Neighbours Know?
+    </h1>
+    <div class="post">
+      <div class="post-author">C_A_Dupin</div>
+      <div class="post-body">
+        The problem the cops had was that they believed ‘everyone was at the
+        switching on’ so they never got a proper list of people together. And we
+        all know of course that Mrs Geary didn’t attend because she was feeling
+        unwell and so she went home by herself. And the O’Reillys didn’t attend
+        either—were they going to a wedding the next day or something…
+      </div>
+      <div class="post-buttons">
+        <button>Like</button><button>Dislike</button><button>Comment</button
+        ><button>Favourite</button>
+      </div>
+    </div>
+    <div class="post">
+      <div class="post-author">M4Murder</div>
+      <div class="post-body">
+        But are we seriously suggesting that any of these people were involved
+        in the kidnapping of the first child? What’s the motive here? The first
+        child to me is the key becuase he was upstairs in his own bed. That’s
+        not a ‘by chance’ kidnapping. That was palnned. The switching on was the
+        opportunity they needed.
+      </div>
+      <div class="post-buttons">
+        <button>Like</button><button>Dislike</button><button>Comment</button
+        ><button>Favourite</button>
+      </div>
+    </div>
+    <div class="post">
+      <div class="post-author">Hastings</div>
+      <div class="post-body">
+        What about the witness statement from Francis Byrne? She saw footsteps
+        in her garden but the police never took photos or imprints.
+      </div>
+      <div class="post-buttons">
+        <button>Like</button><button>Dislike</button><button>Comment</button
+        ><button>Favourite</button>
+      </div>
+    </div>
+    <div class="post">
+      <div class="post-author">ChndlerR1</div>
+      <div class="post-body red">[comment deleted]</div>
+      <div class="post-buttons">
+        <button>Like</button><button>Dislike</button><button>Comment</button
+        ><button>Favourite</button>
+      </div>
+    </div>
+    <div class="post">
+      <div class="post-author">C_A_Dupin</div>
+      <div class="post-body">
+        @ChndlerR1 This is a serious thread to discuss matters that arise in the
+        course of the podcast. That’s serious discussion only pertaining to the
+        facts of the case. If you want to speculate wildly there are plenty of
+        other forums for that.
+      </div>
+      <div class="post-buttons">
+        <button>Like</button><button>Dislike</button><button>Comment</button
+        ><button>Favourite</button>
+      </div>
+    </div>
+    <div class="post">
+      <div class="post-author">M4Murder</div>
+      <div class="post-body">
+        @Hastings Yeah, I thought that was interesting too. Like, FB’s garden
+        backed on to the victims so someone could likely have escaped that way.
+        They didn’t dwell on it on the pod though so maybe they know more than
+        they are letting on abot that right now.
+      </div>
+      <div class="post-buttons">
+        <button>Like</button><button>Dislike</button><button>Comment</button
+        ><button>Favourite</button>
+      </div>
+    </div>
+    <div class="post">
+      <div class="post-author">TruCrimFan</div>
+      <div class="post-body">
+        Hi! new to the thread. I’m just wondering what people feel about the
+        parents. Am not talking shit I just am genuinely wondering. It’s kind of
+        like occam’s razor.a lot of the neighbors seem to think that the house
+        was a little dysfuntioncal. Maybe they were abusing the kid or they
+        killed him accidentally or something. The other idnappings were a cover
+        up. Again, please don’;t ban me. I really want to know more.
+      </div>
+      <div class="post-buttons">
+        <button>Like</button><button>Dislike</button><button>Comment</button
+        ><button>Favourite</button>
+      </div>
+    </div>
+    <div class="post">
+      <div class="post-author">C_A_Dupin</div>
+      <div class="post-body">
+        @TruCrimFan There are threads about the parents. Check out the search
+        bar.
+      </div>
+      <div class="post-buttons">
+        <button>Like</button><button>Dislike</button><button>Comment</button
+        ><button>Favourite</button>
+      </div>
+    </div>
+  </section>
   <span class="el-sec"
     >Reviewers have often suggested illusions in his music to PJ Harvey, Steely
     Dan and Captain Beefheart, but all of this was news to the young Sammy
@@ -1047,6 +1119,46 @@ forum
     }
     .r2 {
       grid-row: span 2;
+    }
+  }
+  .forum {
+    padding: 10px;
+    border: 1px solid #29140f;
+    background-color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.15;
+    .post {
+      display: grid;
+      grid-template-columns: 1fr 5fr;
+      margin: 20px 0;
+      border: 1px solid #3d5686;
+      .post-author {
+        grid-column: 1;
+        background-color: rgb(240, 240, 240);
+        padding: 8px 10px;
+        font-size: 1rem;
+      }
+      .post-body {
+        padding: 8px 10px;
+        grid-column: 2 / -1;
+        &.red {
+          color: red;
+        }
+      }
+      .post-buttons {
+        grid-column: 1 / -1;
+        display: flex;
+        background-color: #3d5686;
+        justify-content: flex-end;
+        padding: 5px 10px;
+        button {
+          margin: 0 12px;
+          padding: 3px 6px;
+          font-size: 0.5rem;
+        }
+      }
     }
   }
 </style>

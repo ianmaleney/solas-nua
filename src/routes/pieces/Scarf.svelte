@@ -67,6 +67,9 @@
     of my favourite scarf to my face, inhaling deeply. It smelled like home. I
     began to wear it all the time, taking it off only while I slept.
   </p>
+  <div class="window">
+    <div class="pane" />
+  </div>
   <p>
     An invitation to spend the Halloween midterm at a friend’s empty cottage in
     Mayo seemed too good to be true: a week of warm beds would be luxurious, not
@@ -494,5 +497,25 @@
     border-top: none;
     border-bottom: none;
     margin-top: 100px;
+  }
+  .window {
+    // border: 1px solid #1f3834;
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(90deg, transparent, #dbc282, transparent);
+    position: relative;
+    mix-blend-mode: soft-light;
+    opacity: 0.5;
+    .pane {
+      // filter: blur(1px);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom, transparent 90%, #29140f 10%),
+        linear-gradient(to right, transparent 90%, #29140f 10%);
+      background-size: 10px 10px, 10px 10px;
+    }
   }
 </style>
