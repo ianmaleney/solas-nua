@@ -15,6 +15,7 @@
     // headerOpacity.update((o) => 0.5);
     // blob1.update((c) => "#936b6766");
     blob2.update((c) => "#9F738566");
+    window.scrollTo(0, 0);
 
     // SVG Animation
     let dh = document.querySelector(".text").getBoundingClientRect().height;

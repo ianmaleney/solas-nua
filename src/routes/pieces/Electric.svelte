@@ -6,6 +6,7 @@
   import { onMount } from "svelte";
 
   onMount(() => {
+    window.scrollTo(0, 0);
     document.title = "View Source | 'Getting The Electric' – Louise Hegarty";
     [...document.querySelectorAll(".el-sec")].forEach((el) => {
       let rnd1 = Math.ceil(Math.random() * 9);

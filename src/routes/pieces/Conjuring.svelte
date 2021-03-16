@@ -18,6 +18,7 @@
     themeColour.update((theme) => "#fff");
     headerOpacity.update((o) => 0.5);
     blob1.update((c) => "#c16a7cb5");
+    window.scrollTo(0, 0);
   });
 
   import AudioPlayer from "../../components/AudioPlayer.svelte";

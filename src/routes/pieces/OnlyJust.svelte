@@ -5,6 +5,7 @@
   import { onMount } from "svelte";
 
   onMount(() => {
+    window.scrollTo(0, 0);
     themeColour.update((c) => "#222");
     headerOpacity.update((o) => 0.9);
     blob1.update((b) => "rgba(240,240,240,0.4)");
