@@ -19,13 +19,13 @@
 >
   <ul id="toc">
     <li>
-      <Link to="/getting-the-electric"
-        ><em>Getting The Electric</em>&nbsp;&middot;&nbsp;Louise Hegarty</Link
+      <Link to="/a-scarf"
+        ><em>A Scarf</em>&nbsp;&middot;&nbsp;Doireann Ní Ghríofa</Link
       >
     </li>
     <li>
-      <Link to="/a-scarf"
-        ><em>A Scarf</em>&nbsp;&middot;&nbsp;Doireann Ní Ghríofa</Link
+      <Link to="/getting-the-electric"
+        ><em>Getting The Electric</em>&nbsp;&middot;&nbsp;Louise Hegarty</Link
       >
     </li>
     <li>
@@ -34,14 +34,14 @@
       >
     </li>
     <li>
-      <Link to="/butterfly"
-        ><em>Butterfly</em>&nbsp;&middot;&nbsp;Colm O'Shea</Link
-      >
-    </li>
-    <li>
       <Link to="/only-just"
         ><em>I Know, But Only Just</em>&nbsp;&middot;&nbsp;Ruby Wallis
         <em>&</em> Claire-Louise Bennett</Link
+      >
+    </li>
+    <li>
+      <Link to="/butterfly"
+        ><em>Butterfly</em>&nbsp;&middot;&nbsp;Colm O'Shea</Link
       >
     </li>
     <li>
