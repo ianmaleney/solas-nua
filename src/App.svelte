@@ -68,14 +68,14 @@
     <a href="https://solasnua.org">
       <img
         class="footer-logo"
-        src="/assets/images/solas-nua-logo.svg"
+        src="assets/images/solas-nua-logo.svg"
         alt="Solas Nua Logo"
       /></a
     >
     <a href="https://fallowmedia.com"
       ><img
         class="footer-logo"
-        src="/assets/images/fallow-logo.png"
+        src="assets/images/fallow-logo.png"
         alt="Fallow Media Logo"
       /></a
     >

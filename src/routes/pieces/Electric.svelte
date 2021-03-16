@@ -7,6 +7,13 @@
 
   onMount(() => {
     document.title = "View Source | 'Getting The Electric' – Louise Hegarty";
+    [...document.querySelectorAll(".el-sec")].forEach((el) => {
+      let rnd1 = Math.ceil(Math.random() * 9);
+      let rnd2 = Math.floor(Math.random() * 100);
+      let rnd3 = Math.floor(Math.random() * 100);
+      el.style.background = `url("../assets/images/paper/p${rnd1}.jpg")`;
+      el.style.backgroundPosition = `${rnd2}% ${rnd3}%`;
+    });
   });
 
   let audioActive = false;
@@ -78,7 +85,17 @@
     ><br /> — James Larkin Jnr, TD, speaking during the Second Stage debate on the
     Electricity Supply (Amendment) Bill, 1944</span
   >
-  <p class="el-sec g7">
+  <span class="el-sec"
+    ><strong
+      >… I hope to see the day that when a girl gets a proposal from a farmer
+      she will inquire not so much about the number of cows, but rather
+      concerning the electrical appliances that she will require before she
+      gives her consent, including not merely electric light but a water heater,
+      an electric clothes boiler, a vacuum cleaner and even a refrigerator.</strong
+    ><br /> - Minister Seán Lemass speaking during the Second Stage debate on the
+    Electricity Supply (Amendment) Bill, 1944</span
+  >
+  <p class="el-sec g7 rs2">
     <span class="r90cc"
       ><strong>Customs-Free Airport Act, 1947</strong><br /> 2.—(1) The Minister,
       with the concurrence of the Minister for Finance, may by order declare that,
@@ -90,13 +107,13 @@
       which for the time being belongs to the State.</span
     >
   </p>
-  <span class="el-sec"
-    >The Rural Area Organiser was an important figure in developing the
-    relationship between the ESB and local people. The job involved encouraging
-    householders to sign up to the scheme as well as advising on the purchase of
-    electrical appliances.</span
+  <span class="el-sec bordered g5 centred"
+    ><strong
+      >What does rural electrification mean to you? How can you get it to your
+      house and farmyard?</strong
+    ></span
   >
-  <span class="el-sec"
+  <span class="el-sec g5 rs2"
     >AN ACT TO MAKE PROVISION FOR THE FORMATION AND REGISTRATION OF A COMPANY
     HAVING FOR ITS PRINCIPAL OBJECTS THE ACQUISITION, ERECTION, AND OPERATION OF
     SUGAR FACTORIES IN SAORSTÁT ÉIREANN, AND TO PROVIDE FOR THE ACQUISITION BY
@@ -106,36 +123,31 @@
     AND OPERATION OF TRANSPORT WORKS BY SUCH COMPANY, AND FOR OTHER MATTERS
     CONNECTED WITH THE MATTERS AFORESAID. [23rd August, 1933.]</span
   >
-  <span class="el-sec"
-    >Once upon a time there was a man and a woman who lived with their two
-    children—a girl and a boy—on a small farm. Beside their house was a fairy
-    fort. The woman was pregnant with a child and late one night she gave birth
-    to a little boy. They warned the two older children never to leave the
-    window to the bedroom open in case a fairy entered and took the baby, who
-    was vulnerable… - The Changeling transcribed by a member of our volunteer
-    transcription project, duchas.ie</span
+  <span class="el-sec g7"
+    >The Rural Area Organiser was an important figure in developing the
+    relationship between the ESB and local people. The job involved encouraging
+    householders to sign up to the scheme as well as advising on the purchase of
+    electrical appliances.</span
   >
   <span class="el-sec"
-    >… I hope to see the day that when a girl gets a proposal from a farmer she
-    will inquire not so much about the number of cows, but rather concerning the
-    electrical appliances that she will require before she gives her consent,
-    including not merely electric light but a water heater, an electric clothes
-    boiler, a vacuum cleaner and even a refrigerator. - Minister Seán Lemass
-    speaking during the Second Stage debate on the Electricity Supply
-    (Amendment) Bill, 1944</span
+    ><strong
+      >Once upon a time there was a man and a woman who lived with their two
+      children—a girl and a boy—on a small farm. Beside their house was a fairy
+      fort. The woman was pregnant with a child and late one night she gave
+      birth to a little boy. They warned the two older children never to leave
+      the window to the bedroom open in case a fairy entered and took the baby,
+      who was vulnerable…</strong
+    > <br />- <em>The Changeling</em> transcribed by a member of our volunteer transcription
+    project, duchas.ie</span
   >
-  <span class="el-sec"
-    >What does rural electrification mean to you? How can you get it to your
-    house and farmyard?</span
-  >
-  <span class="el-sec"
+  <span class="el-sec g6"
     >The switching on ceremony was an important part of the process and
     generally featured a dance, a dinner and speeches from local politicians,
-    members of the clergy and representatives of the ESB. - Switching on: A
-    History of Rural Electrification in Ireland by John Swanzy (Mweelrea Press,
-    2016)</span
+    members of the clergy and representatives of the ESB. - <em
+      >Switching on: A History of Rural Electrification in Ireland</em
+    > by John Swanzy (Mweelrea Press, 2016)</span
   >
-  <span class="el-sec"
+  <span class="el-sec g6"
     >Virginia O’Brien (1898 - 1988) was the longest serving chairwoman of the
     Irish Countrywomen’s Association. During her lifetime she witnessed
     significant changes in the lives of rural Irish people: the advent of
@@ -143,20 +155,24 @@
     She was married to Frank O’Brien until his death and they had five children
     together.</span
   >
-  <span class="el-sec"
+  <span class="el-sec g4"
     >This is the tenth issue of the staff magazine and we are now well into the
     swing of things. We have completed at least one area in each county with
     some counties already having completed two or three. Before the end of this
     year we will be adding another five construction crews to the ten already
     working in the field. Shortly, we will also be increasing the number and
-    variety of appliances available in our showroom - Editor’s Letter, REO News
+    variety of appliances available in our showroom - Editor’s Letter, <em
+      >REO News</em
+    >
     (vol. 10, September 1948, p1)</span
   >
-  <span class="el-sec"
-    >A backslider was a householder who had initially signed up for the
-    electricity scheme but who changed their minds once crews arrived.</span
-  >
-  <span class="el-sec"
+  <p class="el-sec g1">
+    <span class="r90cc" style="max-height: 300px;"
+      >A <strong>backslider</strong> was a householder who had initially signed up
+      for the electricity scheme but who changed their minds once crews arrived.</span
+    >
+  </p>
+  <span class="el-sec g7"
     >THE REPUBLIC OF IRELAND ACT, 1948 AN ACT TO REPEAL THE EXECUTIVE AUTHORITY
     (EXTERNAL RELATIONS) ACT 1936, TO DECLARE THAT THE DESCRIPTION F THE STATE
     SHALL BE THE REPUBLIC OF IRELAND, AND TO ENABLE THE PRESIDENT TO EXERCISE
@@ -164,53 +180,60 @@
     CONNECTION WITH ITS EXTERNAL RELATIONS. [21ST DECEMBER, 1948] BE IT ENACTED
     BY THE OIREACHTAS AS FOLLOWS:—
   </span>
-  <span class="el-sec"
+  <span class="el-sec g6"
     >Each area was canvassed in order to assess interest and need and to promote
     the benefits of electricity. A majority needed to sign up to the scheme in
     order for it to proceed. Showrooms were opened so that electrical appliances
     could be demonstrated to the public. Routes were surveyed, budgets were
     drawn up and then the erection of electricity poles began. - Swanzy, ibid.</span
   >
-  <span class="el-sec"
-    >The key-note of Electric Water- Heating is simplicity. There is no
+  <span class="el-sec g6 bordered"
+    >The key-note of Electric Water-Heating is simplicity. There is no
     complicated ritual of turning handles at the psychological moment – you just
     turn the hot water tap.</span
   >
   <span class="el-sec"
-    >‘They were young men. They looked like my grandsons. But they did the job
-    well. There was a lot of interest from everyone and we would all go out to
-    watch them erect poles and string cables. My wife would bring them cups of
-    tea and slices of warm brown bread.’</span
+    ><em
+      >‘They were young men. They looked like my grandsons. But they did the job
+      well. There was a lot of interest from everyone and we would all go out to
+      watch them erect poles and string cables. My wife would bring them cups of
+      tea and slices of warm brown bread.’</em
+    ></span
   >
-  <span class="el-sec"
+  <span class="el-sec g6 r2"
+    ><strong
+      >Transcript of recording made as part of a local history project:</strong
+    > Once it was dark and the speeches were over, we put out the paraffin lights
+    and candles and the local priest switched on the big metal switch and then everything
+    was bright. Myself and Davey ran out into the street and all the streetlights
+    were on and we could run around in the dark. And we could see the lights all
+    over, up the hills and far away. The fields twinkled. When we came back, we sneaked
+    a small bit of porter and danced and got shouted at because we trampled on the
+    marigolds.</span
+  >
+  <span class="el-sec g6"
+    >Supply will be given to whole areas. An ‘area’ should be about 25 sq.
+    miles. A parish or creamery district might conveniently form the basis of
+    such an area.</span
+  >
+  <p class="el-sec bordered g6">
+    <span
+      class="notice-heading"
+      style="background-color: black; color: white; text-align: center; width: 100%; padding: 12px 0; display: block;"
+      >PUBLIC NOTICE</span
+    >The switching on ceremony will take place from 8 o’clock on Tuesday night
+    the 14th of October in the parish hall. There will be a blessing from Father
+    Aherne and opening speeches from Mrs O’Brien of the ICA and Mr Geary of the
+    ESB. The switching on will happen at half past nine sharp. Following this
+    there will be a dance with music provided by the West Coast Showband.
+  </p>
+  <span class="el-sec g6 bordered"
     >You will want a light on in every room. Place it so as to give the best
     light where you need it most. In some cases you might want two or more
     lights. Make sure that your staircase light can be switched on or off from
     either the foot of the stairs or the landing.</span
   >
-  <span class="el-sec"
-    >The switching on ceremony will take place from 8 o’clock on Tuesday night
-    the 14th of October in the parish hall. There will be a blessing from Father
-    Aherne and opening speeches from Mrs O’Brien of the ICA and Mr Geary of the
-    ESB. The switching on will happen at half past nine sharp. Following this
-    there will be a dance with music provided by the West Coast Showband. PUBLIC
-    NOTICE</span
-  >
-  <span class="el-sec"
-    >Transcript of recording made as part of a local history project: Once it
-    was dark and the speeches were over, we put out the paraffin lights and
-    candles and the local priest switched on the big metal switch and then
-    everything was bright. Myself and Davey ran out into the street and all the
-    streetlights were on and we could run around in the dark. And we could see
-    the lights all over, up the hills and far away. The fields twinkled. When we
-    came back, we sneaked a small bit of porter and danced and got shouted at
-    because we trampled on the marigolds.</span
-  >
-  <span class="el-sec"
-    >Supply will be given to whole areas. An ‘area’ should be about 25 sq.
-    miles. A parish or creamery district might conveniently form the basis of
-    such an area.</span
-  >
+
   <span class="el-sec"
     >Statement of evidence of Garda ________ of An Garda Síochána made on the
     16th October 1948. I hereby declare this statement is true to the best of my
@@ -1077,6 +1100,15 @@ forum
     max-width: 960px;
     .el-sec {
       grid-column: 1 / -1;
+      padding: 10px;
+      box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
+      font-family: "Times New Roman", Times, serif;
+      font-size: 1rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      img {
+        mix-blend-mode: multiply;
+      }
     }
     .g1 {
       grid-column: span 1;
@@ -1095,6 +1127,12 @@ forum
     }
     .g8 {
       grid-column: span 8;
+    }
+    .rs2 {
+      grid-row: span 2;
+    }
+    .rs3 {
+      grid-row: span 3;
     }
     .r90cw {
       writing-mode: vertical-rl;
@@ -1117,6 +1155,7 @@ forum
     }
     .bordered {
       border: 1px solid black;
+      padding: 10px;
     }
     .grid-image {
       max-width: 100%;
@@ -1129,11 +1168,11 @@ forum
   .forum {
     padding: 10px;
     border: 1px solid #29140f;
-    background-color: #ffffff;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 0.8rem;
     line-height: 1.15;
+    background: #fff !important;
     .post {
       display: grid;
       grid-template-columns: 1fr 5fr;
