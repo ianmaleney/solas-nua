@@ -1243,12 +1243,11 @@
   </p>
   <p>
     Maija Sofia Makela is a musician, songwriter and artist who works between
-    the overlapping worlds of sound, performance and text. Across various forms,
-    her work explores language, shadowed histories, hauntings, diasporic
-    identity, feminism, mysticism and folklore. She is from rural Galway and is
-    of mixed Irish, Finnish and Turkish-Cypriot heritage. She is a recipient of
-    the Arts Council of Ireland’s Next Generation Award for music (2020), her
-    debut album, <a href="https://maijasofia.bandcamp.com/album/bath-time"
+    the overlapping worlds of sound, performance and text. She is from rural
+    Galway and is of mixed Irish, Finnish and Turkish-Cypriot heritage. She is a
+    recipient of the Arts Council of Ireland’s Next Generation Award for music
+    (2020), her debut album, <a
+      href="https://maijasofia.bandcamp.com/album/bath-time"
       ><em>Bath Time</em></a
     >, was shortlisted for the Choice Award album of year and she was
     artist-in-residence at Sirius Arts Centre for the duration of winter

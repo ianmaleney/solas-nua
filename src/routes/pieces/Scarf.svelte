@@ -487,16 +487,11 @@
     Vicky Langan is an artist whose practice operates across several often
     overlapping fields, chiefly sound, performance and film. Langan both
     embraces and projects vulnerability, offering an intimate territory loaded
-    with personal symbolism and unguarded emotion. With a focus on field
-    recordings and the amplified body coming into contact with simple raw
-    materials, she layers physical gestures and scraps of rough sound to create
-    intensely personal imaginary landscapes. Her decade-long filmmaking
+    with personal symbolism and unguarded emotion. Her decade-long filmmaking
     partnership with filmmaker and critic Maximilian Le Cain has resulted in
     screenings and retrospectives of their work having been shown throughout the
-    world. Langan/Le Cain are affiliated with Experimental Film Society, a
-    company dedicated to the creation of uncompromisingly personal, formally
-    challenging filmmaking. Langan is a recipient of the Arts Council of
-    Ireland's Next Generation Artists Award.
+    world. Langan is a recipient of the Arts Council of Ireland's Next
+    Generation Artists Award.
   </p>
 </div>
 
