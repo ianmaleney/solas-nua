@@ -53,8 +53,6 @@
 <style lang="scss">
   @keyframes playerIn {
     0% {
-      height: 0;
-      pointer-events: none;
       transform: translateY(-200px);
       opacity: 0;
     }
@@ -62,15 +60,12 @@
       opacity: 0;
     }
     75% {
-      height: 1;
       transform: translateY(0);
       opacity: 0.5;
     }
     100% {
-      height: auto;
       transform: translateY(0);
       opacity: 1;
-      pointer-events: auto;
     }
   }
   #audioPlayer {
@@ -79,11 +74,9 @@
     max-width: 740px;
     margin: 2rem auto;
     opacity: 0;
-    pointer-events: none;
     padding: 1rem 0;
     transform: translateY(-200px);
     transform-origin: top;
-    height: 0;
     &.active {
       animation: playerIn 0.6s linear;
       animation-fill-mode: forwards;
