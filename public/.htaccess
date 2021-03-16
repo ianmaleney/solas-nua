@@ -1,8 +1,6 @@
 # DISABLE CACHING
 <IfModule mod_headers.c>
-    Header set Cache-Control "no-cache, no-store, must-revalidate"
-    Header set Pragma "no-cache"
-    Header set Expires 0
+    Header set Cache-Control "max-age=0,no-store"
 </IfModule>
 
 <FilesMatch "\.(css|flv|gif|htm|html|ico|jpe|jpeg|jpg|js|mp3|mp4|png|pdf|swf|txt)$">
@@ -22,11 +20,13 @@
 </FilesMatch>
 
 # Allow mod_dir to serve index.html when requesting the directory
-# DirectoryIndex index.html
+DirectoryIndex index.html
 
-# RewriteEngine On
-
-# Front-controller (exclude static resources)
-# RewriteRule ^index\.html$ - [L]
-# RewriteCond %{REQUEST_URI} !^/(assets|css|img|js|modules|partials|vendor)/
-# RewriteRule . index.html [L]
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+</IfModule>
