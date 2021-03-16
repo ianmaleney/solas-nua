@@ -1,7 +1,15 @@
 <script>
-  export let audioActive, title, author, page;
+  export let audioActive, title, author, page, printFile;
   import { blur } from "svelte/transition";
   import { linear } from "svelte/easing";
+
+  const print = (file) => {
+    if (file) {
+      window.open(file, "_blank");
+    } else {
+      window.print();
+    }
+  };
 </script>
 
 <header
@@ -13,7 +21,7 @@
   {#if !page}
     <div class="text-options">
       <button on:click={() => (audioActive = !audioActive)}>Listen</button>
-      <button on:click={() => window.print()}>Print</button>
+      <button on:click={() => print(printFile)}>Print</button>
     </div>
   {/if}
 </header>

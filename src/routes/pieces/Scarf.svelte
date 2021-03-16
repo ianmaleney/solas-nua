@@ -24,10 +24,15 @@
   let audioActive = false;
 </script>
 
-<ArticleHeader title="A Scarf" author="Doireann Ní Ghríofa" bind:audioActive />
+<ArticleHeader
+  title="A Scarf"
+  author="Doireann Ní Ghríofa"
+  bind:audioActive
+  printFile="/assets/prints/a-scarf-print.pdf"
+/>
 
 <AudioPlayer
-  src="/assets/audio/electric.mp3"
+  src="/assets/audio/scarf.mp3"
   active={audioActive}
   credits={"Read by Vicky Langan."}
 />
@@ -470,6 +475,21 @@
     her writing include a Lannan Literary Fellowship (USA), the Ostana Prize
     (Italy), a Seamus Heaney Fellowship (Queen’s University), and the Rooney
     Prize for Irish Literature, among others.
+  </p>
+  <p>
+    Vicky Langan is an artist whose practice operates across several often
+    overlapping fields, chiefly sound, performance and film. Langan both
+    embraces and projects vulnerability, offering an intimate territory loaded
+    with personal symbolism and unguarded emotion. With a focus on field
+    recordings and the amplified body coming into contact with simple raw
+    materials, she layers physical gestures and scraps of rough sound to create
+    intensely personal imaginary landscapes. Her decade-long filmmaking
+    partnership with filmmaker and critic Maximilian Le Cain has resulted in
+    screenings and retrospectives of their work having been shown throughout the
+    world. Langan/Le Cain are affiliated with Experimental Film Society, a
+    company dedicated to the creation of uncompromisingly personal, formally
+    challenging filmmaking. Langan is a recipient of the Arts Council of
+    Ireland's Next Generation Artists Award.
   </p>
 </div>
 

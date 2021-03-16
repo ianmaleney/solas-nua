@@ -24,6 +24,7 @@
   title="Saint Sisters & The Sea"
   author="Méabh de Brún"
   bind:audioActive
+  printFile="/assets/prints/saint-sisters-print.pdf"
 />
 
 <AudioPlayer

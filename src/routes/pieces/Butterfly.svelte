@@ -48,7 +48,12 @@
   in:blur={{ delay: 50, duration: 600, amount: 8, easing: linear }}
   out:blur={{ delay: 0, duration: 400, amount: 8, easing: linear }}
 >
-  <ArticleHeader title="Butterfly" author="Colm O'Shea" bind:audioActive />
+  <ArticleHeader
+    title="Butterfly"
+    author="Colm O'Shea"
+    bind:audioActive
+    printFile="/assets/prints/butterfly-print.pdf"
+  />
 
   <AudioPlayer
     src="/assets/audio/butterfly.mp3"

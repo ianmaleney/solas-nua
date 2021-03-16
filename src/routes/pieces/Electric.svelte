@@ -23,6 +23,7 @@
   title="Getting The Electric"
   author="Louise Hegarty"
   bind:audioActive
+  printFile="/assets/prints/getting-the-electric-print.pdf"
 />
 
 <AudioPlayer
@@ -1239,6 +1240,19 @@
     <em>The Dublin Review</em>. Recently, she had a short story featured on BBC
     Radio 4’s Short Works. She lives in Cork.
   </p>
+  <p>
+    Maija Sofia Makela is a musician, songwriter and artist who works between
+    the overlapping worlds of sound, performance and text. Across various forms,
+    her work explores language, shadowed histories, hauntings, diasporic
+    identity, feminism, mysticism and folklore. She is from rural Galway and is
+    of mixed Irish, Finnish and Turkish-Cypriot heritage. She is a recipient of
+    the Arts Council of Ireland’s Next Generation Award for music (2020), her
+    debut album, <a href="https://maijasofia.bandcamp.com/album/bath-time"
+      ><em>Bath Time</em></a
+    >, was shortlisted for the Choice Award album of year and she was
+    artist-in-residence at Sirius Arts Centre for the duration of winter
+    2020-21.
+  </p>
 </div>
 
 <!-- 
@@ -1287,13 +1301,6 @@ forum
     }
     .rs2 {
       grid-row: span 2;
-    }
-    .rs3 {
-      grid-row: span 3;
-    }
-    .r90cw {
-      writing-mode: vertical-rl;
-      text-orientation: mixed;
     }
     .r90cc {
       direction: rtl;
