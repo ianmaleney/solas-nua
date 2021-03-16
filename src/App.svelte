@@ -60,7 +60,8 @@
     <p>
       View Source is a unique online publication, curated by Fallow Media and
       commissioned by Solas Nua, celebrating contemporary Irish literature at
-      its most adventurous.
+      its most adventurous.<br /><br />Kindly supported by Dennis Houlihan and
+      Mimi Conway.
     </p>
   </div>
   <div class="footer-item">

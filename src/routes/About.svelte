@@ -73,6 +73,7 @@
     finest writing blends with inventive audio and visual work to create a truly
     special literary experience.
   </p>
+  <p>Kindly supported by Dennis Houlihan and Mimi Conway.</p>
   <h3>About Fallow Media</h3>
   <p>
     With the belief that the internet offers us critical and conceptual
