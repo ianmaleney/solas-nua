@@ -15,7 +15,7 @@
 
 <div class="video-wrapper">
   <iframe
-    src="https://player.vimeo.com/video/523137788?autoplay=1&color=8a8a8a&title=0&byline=0&portrait=0&quality=4k"
+    src="https://player.vimeo.com/video/523137788?color=8a8a8a&title=0&byline=0&portrait=0&quality=4k"
     frameborder="0"
     allow="fullscreen; picture-in-picture"
     quality="4k"

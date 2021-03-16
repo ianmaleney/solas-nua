@@ -2357,11 +2357,11 @@ var app = (function () {
     			div0 = element("div");
     			t = space();
     			div1 = element("div");
-    			attr_dev(div0, "class", "blob svelte-dg8sis");
+    			attr_dev(div0, "class", "blob svelte-1wk7hlu");
     			attr_dev(div0, "id", "b1");
     			set_style(div0, "background-color", /*blobColours*/ ctx[0].bc1);
     			add_location(div0, file$1, 13, 2, 241);
-    			attr_dev(div1, "class", "blob svelte-dg8sis");
+    			attr_dev(div1, "class", "blob svelte-1wk7hlu");
     			attr_dev(div1, "id", "b2");
     			set_style(div1, "background-color", /*blobColours*/ ctx[0].bc2);
     			add_location(div1, file$1, 14, 2, 317);
@@ -5260,6 +5260,21 @@ var app = (function () {
     	let a;
     	let em1;
     	let t99;
+    	let t100;
+    	let p48;
+    	let t101;
+    	let em2;
+    	let t103;
+    	let em3;
+    	let t105;
+    	let em4;
+    	let t107;
+    	let em5;
+    	let t109;
+    	let em6;
+    	let t111;
+    	let em7;
+    	let t113;
     	let current;
 
     	function articleheader_audioActive_binding(value) {
@@ -5418,7 +5433,7 @@ var app = (function () {
     			p37.textContent = "The door is the line we draw between us and the rest. The door is the line\n      we draw to say we are here and everything else is excluded. The door is\n      the border we close. The door is our border, meaning we and only we make\n      the laws here, we decide what is right and what is wrong. We decide how we\n      should act and we decide to exclude everyone else who says otherwise.";
     			t78 = space();
     			p38 = element("p");
-    			p38.textContent = "I think about borders. I think about boundaries. I think about edges. I\n      think about the idea that things only come into existence when they come\n      into contact with another. I follow the nib moving over the page leaving\n      its mark and I see the mark as the only record of its existence. At one\n      point Tamasin Norwood describes taking a pen and marking a border around\n      the inside of a house she and her husband had just vacated because they\n      were moving somewhere else. I don’t know if she means to mention this\n      event as part of her talk or just chooses to include it as an anecdote\n      supporting her overall fascination with the point of contact between a nib\n      and a page. By drawing a line she is drawing a border. By drawing a border\n      around the interior of every room is she creating the room? By drawing a\n      border is she describing that this room, this house, is now different from\n      what is outside the border? By drawing this line, this border, is what is\n      inside this border something else? By drawing this border is she saying\n      that this house was not a house, it was a home? By drawing this border is\n      she saying that this house is now different from all the other houses\n      outside the border because they are just houses and this was a home?";
+    			p38.textContent = "I think about borders. I think about boundaries. I think about edges. I\n      think about the idea that things only come into existence when they come\n      into contact with another. I follow the nib moving over the page leaving\n      its mark and I see the mark as the only record of its existence. At one\n      point Tamarin Norwood describes taking a pen and marking a border around\n      the inside of a house she and her husband had just vacated because they\n      were moving somewhere else. I don’t know if she means to mention this\n      event as part of her talk or just chooses to include it as an anecdote\n      supporting her overall fascination with the point of contact between a nib\n      and a page. By drawing a line she is drawing a border. By drawing a border\n      around the interior of every room is she creating the room? By drawing a\n      border is she describing that this room, this house, is now different from\n      what is outside the border? By drawing this line, this border, is what is\n      inside this border something else? By drawing this border is she saying\n      that this house was not a house, it was a home? By drawing this border is\n      she saying that this house is now different from all the other houses\n      outside the border because they are just houses and this was a home?";
     			t80 = space();
     			p39 = element("p");
     			p39.textContent = "Checking herself when she crosses a border she files away anything she\n      won’t need, any stories she won’t need. Every spy operates in a cell of\n      their own. Every spy operates without wires. Every spy has a safehouse.\n      Knowing what to leave in a safehouse and what to leave elsewhere. Knowing\n      who to tell about the safehouse and who to never let know it even exists.\n      Looking at a face and deciding in an instant how much to tell them.\n      Looking at a face and deciding in an instant that they will learn nothing.\n      Taking a circuitous route back to the safehouse. Making it look like there\n      is no safehouse. Allowing me into the safehouse.";
@@ -5452,7 +5467,28 @@ var app = (function () {
     			a = element("a");
     			em1 = element("em");
     			em1.textContent = "gorse";
-    			t99 = text(". Colm O'Shea is a writer living\n    in Dublin.");
+    			t99 = text(".");
+    			t100 = space();
+    			p48 = element("p");
+    			t101 = text("His short fiction has appeared in ");
+    			em2 = element("em");
+    			em2.textContent = "gorse";
+    			t103 = text(", ");
+    			em3 = element("em");
+    			em3.textContent = "The Stinging Fly";
+    			t105 = text(",\n    ");
+    			em4 = element("em");
+    			em4.textContent = "3AM Magazine";
+    			t107 = text(", ");
+    			em5 = element("em");
+    			em5.textContent = "Hotel";
+    			t109 = text(", Fallow Media, Juxta Press,\n    ");
+    			em6 = element("em");
+    			em6.textContent = "The Bohemyth";
+    			t111 = text(", and ");
+    			em7 = element("em");
+    			em7.textContent = "Visual Verse";
+    			t113 = text(". He was one of the\n    inaugural winners of the Irish Writers’ Centre Novel Fair competition in\n    2012. He won The Aleph Writing Prize 2019. His short fiction has also been\n    performed on the Keywords show on RTE Radio 1 Extra. He currently lives in\n    Dublin where he works as a civil engineer.");
     			attr_dev(polyline, "points", "1423.5,31.5 1367.5,31.5 1367.5,64.5 1310.5,64.5 1310.5,55.5 1287.5,55.5 1287.5,39.5 1310.5,39.5 1310.5,30.5 1279.5,30.5 1279.5,66.5 1296.5,66.5 1296.5,74.5 1387.5,74.5 1387.5,115.5 1407.5,115.5 1407.5,136.5 1371.5,136.5 1371.5,160.5 1332.5,160.5 1332.5,254.5 1413.5,254.5 1413.5,266.5 1282.5,266.5 1282.5,207.5 1319.5,207.5 1319.5,142.5 1355.5,142.5 1355.5,89.5 1286.5,89.5 1286.5,80.5 1261.5,80.5 1261.5,51.5 1238.5,51.5 1238.5,92.5 1276.5,92.5 1276.5,124.5 1238.5,124.5 1238.5,151.5 1289.5,151.5 1289.5,98.5 1347.5,98.5 1347.5,124.5 1307.5,124.5 1307.5,192.5 1280.5,192.5 1280.5,158.5 1259.5,158.5 1259.5,283.5 1226.5,283.5 1226.5,224.5 1207.5,224.5 1207.5,277.5 1195.5,277.5 1195.5,182.5 1181.5,182.5 1181.5,297.5 1399.5,297.5 1399.5,625.5 1307.5,625.5 1307.5,688.5 1361.5,688.5 1361.5,763.5 1377.5,763.5 1377.5,704.5 1392.5,704.5 1392.5,773.5 1340.5,773.5 1340.5,709.5 1267.5,709.5 1267.5,675.5 1231.5,675.5 1231.5,760.5 1246.5,760.5 1246.5,712.5 1259.5,712.5 1259.5,760.5 1305.5,760.5 1305.5,736.5 1268.5,736.5 1268.5,719.5 1322.5,719.5 1322.5,770.5 1225.5,770.5 1225.5,666.5 1293.5,666.5 1293.5,654.5 1179.5,654.5 1179.5,751.5 1199.5,751.5 1199.5,700.5 1211.5,700.5 1211.5,766.5 1165.5,766.5 1165.5,622.5 1201.5,622.5 1201.5,634.5 1264.5,634.5 1264.5,622.5 1217.5,622.5 1217.5,545.5 1201.5,545.5 1201.5,609.5 1190.5,609.5 1190.5,542.5 1180.5,542.5 1180.5,609.5 1167.5,609.5 1167.5,525.5 1241.5,525.5 1241.5,609.5 1382.5,609.5 1382.5,592.5 1258.5,592.5 1258.5,510.5 1164.5,510.5 1164.5,489.5 1268.5,489.5 1268.5,573.5 1282.5,573.5 1282.5,473.5 1164.5,473.5 1164.5,401.5 1184.5,401.5 1184.5,460.5 1201.5,460.5 1201.5,400.5 1314.5,400.5 1314.5,445.5 1276.5,445.5 1276.5,413.5 1216.5,413.5 1216.5,460.5 1228.5,460.5 1228.5,422.5 1265.5,422.5 1265.5,443.5 1250.5,443.5 1250.5,430.5 1240.5,430.5 1240.5,455.5 1325.5,455.5 1325.5,385.5 1159.5,385.5 1159.5,342.5 1273.5,342.5 1273.5,366.5 1341.5,366.5 1341.5,466.5 1296.5,466.5 1296.5,576.5 1365.5,576.5 1365.5,542.5 1319.5,542.5 1319.5,480.5 1355.5,480.5 1355.5,355.5 1295.5,355.5 1295.5,340.5 1367.5,340.5 1367.5,510.5 1346.5,510.5 1346.5,497.5 1329.5,497.5 1329.5,525.5 1379.5,525.5 1379.5,319.5 1156.5,319.5 1156.5,173.5 1210.5,173.5 1210.5,209.5 1228.5,209.5 1228.5,157.5 1156.5,157.5 1156.5,83.5 1216.5,83.5 1216.5,95.5 1179.5,95.5 1179.5,142.5 1225.5,142.5 1225.5,48.5 1170.5,48.5 1170.5,74.5 1155.5,74.5 1155.5,49.5 1144.5,49.5 1144.5,655.5 1116.5,655.5 1116.5,552.5 1126.5,552.5 1126.5,470.5 1116.5,470.5 1116.5,540.5 1101.5,540.5 1101.5,667.5 1138.5,667.5 1138.5,767.5 1126.5,767.5 1126.5,683.5 1083.5,683.5 1083.5,479.5 1095.5,479.5 1095.5,522.5 1107.5,522.5 1107.5,464.5 1090.5,464.5 1090.5,413.5 1113.5,413.5 1113.5,454.5 1125.5,454.5 1125.5,404.5 1084.5,404.5 1084.5,448.5 1073.5,448.5 1073.5,695.5 1116.5,695.5 1116.5,712.5 1019.5,712.5 1019.5,758.5 1047.5,758.5 1047.5,718.5 1068.5,718.5 1068.5,754.5 1089.5,754.5 1089.5,743.5 1074.5,743.5 1074.5,728.5 1104.5,728.5 1104.5,769.5 1005.5,769.5 1005.5,692.5 1053.5,692.5 1053.5,615.5 1034.5,615.5 1034.5,678.5 955.5,678.5 955.5,739.5 974.5,739.5 974.5,719.5 992.5,719.5 992.5,749.5 938.5,749.5 938.5,660.5 1022.5,660.5 1022.5,595.5 1040.5,595.5 1040.5,573.5 1055.5,573.5 1055.5,412.5 1043.5,412.5 1043.5,457.5 1035.5,457.5 1035.5,403.5 1071.5,403.5 1071.5,418.5 1064.5,418.5 1064.5,430.5 1079.5,430.5 1079.5,392.5 1025.5,392.5 1025.5,575.5 1005.5,575.5 1005.5,373.5 1079.5,373.5 1079.5,339.5 1095.5,339.5 1095.5,386.5 1119.5,386.5 1119.5,324.5 1068.5,324.5 1068.5,361.5 1050.5,361.5 1050.5,307.5 1117.5,307.5 1117.5,270.5 1073.5,270.5 1073.5,255.5 1117.5,255.5 1117.5,227.5 1064.5,227.5 1064.5,282.5 1093.5,282.5 1093.5,292.5 1055.5,292.5 1055.5,212.5 1119.5,212.5 1119.5,131.5 1104.5,131.5 1104.5,191.5 1056.5,191.5 1056.5,58.5 1077.5,58.5 1077.5,152.5 1090.5,152.5 1090.5,45.5 1041.5,45.5 1041.5,149.5 971.5,149.5 971.5,121.5 995.5,121.5 995.5,95.5 958.5,95.5 958.5,164.5 1031.5,164.5 1031.5,361.5 995.5,361.5 995.5,591.5 1008.5,591.5 1008.5,637.5 925.5,637.5 925.5,667.5 908.5,667.5 908.5,622.5 995.5,622.5 995.5,610.5 887.5,610.5 887.5,769.5 907.5,769.5 907.5,682.5 922.5,682.5 922.5,785.5 708.5,785.5 708.5,749.5 658.5,749.5 658.5,760.5 361.5,760.5 361.5,700.5 129.5,700.5 129.5,685.5 372.5,685.5 372.5,745.5 640.5,745.5 640.5,733.5 720.5,733.5 720.5,761.5 734.5,761.5 734.5,746.5 843.5,746.5 843.5,725.5 619.5,725.5 619.5,733.5 383.5,733.5 383.5,672.5 113.5,672.5 113.5,686.5 75.5,686.5 75.5,627.5 37.5,627.5 37.5,609.5 86.5,609.5 86.5,673.5 105.5,673.5 105.5,658.5 396.5,658.5 396.5,719.5 598.5,719.5 598.5,704.5 408.5,704.5 408.5,655.5 431.5,655.5 431.5,689.5 614.5,689.5 614.5,710.5 844.5,710.5 844.5,695.5 786.5,695.5 786.5,643.5 832.5,643.5 832.5,664.5 807.5,664.5 807.5,675.5 841.5,675.5 841.5,631.5 783.5,631.5 783.5,610.5 855.5,610.5 855.5,773.5 873.5,773.5 873.5,591.5 978.5,591.5 978.5,345.5 1011.5,345.5 1011.5,325.5 965.5,325.5 965.5,385.5 940.5,385.5 940.5,307.5 1013.5,307.5 1013.5,179.5 943.5,179.5 943.5,82.5 1004.5,82.5 1004.5,125.5 1025.5,125.5 1025.5,70.5 929.5,70.5 929.5,191.5 998.5,191.5 998.5,207.5 928.5,207.5 928.5,282.5 987.5,282.5 987.5,271.5 950.5,271.5 950.5,255.5 987.5,255.5 987.5,230.5 973.5,230.5 973.5,246.5 958.5,246.5 958.5,218.5 998.5,218.5 998.5,295.5 928.5,295.5 928.5,337.5 911.5,337.5 911.5,45.5 896.5,45.5 896.5,351.5 917.5,351.5 917.5,397.5 959.5,397.5 959.5,572.5 856.5,572.5 856.5,594.5 765.5,594.5 765.5,695.5 646.5,695.5 646.5,621.5 623.5,621.5 623.5,675.5 449.5,675.5 449.5,642.5 101.5,642.5 101.5,612.5 293.5,612.5 293.5,634.5 356.5,634.5 356.5,624.5 305.5,624.5 305.5,613.5 446.5,613.5 446.5,604.5 101.5,604.5 101.5,224.5 199.5,224.5 199.5,167.5 166.5,167.5 166.5,131.5 126.5,131.5 126.5,124.5 175.5,124.5 175.5,160.5 211.5,160.5 211.5,233.5 110.5,233.5 110.5,589.5 462.5,589.5 462.5,661.5 613.5,661.5 613.5,610.5 656.5,610.5 656.5,685.5 668.5,685.5 668.5,610.5 734.5,610.5 734.5,640.5 681.5,640.5 681.5,669.5 750.5,669.5 750.5,580.5 843.5,580.5 843.5,557.5 947.5,557.5 947.5,418.5 878.5,418.5 878.5,400.5 905.5,400.5 905.5,366.5 868.5,366.5 868.5,473.5 834.5,473.5 834.5,248.5 770.5,248.5 770.5,204.5 831.5,204.5 831.5,100.5 758.5,100.5 758.5,257.5 783.5,257.5 783.5,282.5 747.5,282.5 747.5,83.5 847.5,83.5 847.5,454.5 862.5,454.5 862.5,355.5 886.5,355.5 886.5,68.5 734.5,68.5 734.5,295.5 816.5,295.5 816.5,492.5 875.5,492.5 875.5,428.5 932.5,428.5 932.5,503.5 805.5,503.5 805.5,379.5 743.5,379.5 743.5,343.5 807.5,343.5 807.5,306.5 732.5,306.5 732.5,388.5 798.5,388.5 798.5,534.5 780.5,534.5 780.5,498.5 735.5,498.5 735.5,545.5 811.5,545.5 811.5,518.5 935.5,518.5 935.5,539.5 823.5,539.5 823.5,558.5 731.5,558.5 731.5,598.5 599.5,598.5 599.5,645.5 501.5,645.5 501.5,621.5 475.5,621.5 475.5,588.5 513.5,588.5 513.5,636.5 586.5,636.5 586.5,615.5 522.5,615.5 522.5,583.5 719.5,583.5 719.5,64.5 711.5,64.5 711.5,570.5 132.5,570.5 132.5,469.5 278.5,469.5 278.5,527.5 526.5,527.5 534.5,527.5 534.5,416.5 625.5,416.5 625.5,536.5 293.5,536.5 293.5,551.5 643.5,551.5 643.5,260.5 699.5,260.5 699.5,152.5 374.5,152.5 374.5,167.5 686.5,167.5 686.5,242.5 629.5,242.5 629.5,400.5 596.5,400.5 596.5,312.5 525.5,312.5 525.5,480.5 322.5,480.5 322.5,410.5 459.5,410.5 459.5,398.5 313.5,398.5 313.5,488.5 389.5,488.5 389.5,506.5 295.5,506.5 295.5,384.5 473.5,384.5 473.5,470.5 516.5,470.5 516.5,303.5 603.5,303.5 603.5,391.5 617.5,391.5 617.5,232.5 675.5,232.5 675.5,212.5 542.5,212.5 542.5,288.5 516.5,288.5 516.5,200.5 667.5,200.5 667.5,179.5 501.5,179.5 501.5,369.5 338.5,369.5 338.5,323.5 283.5,323.5 283.5,456.5 147.5,456.5 147.5,247.5 307.5,247.5 307.5,238.5 226.5,238.5 226.5,212.5 316.5,212.5 316.5,257.5 157.5,257.5 157.5,312.5 348.5,312.5 348.5,353.5 398.5,353.5 398.5,325.5 364.5,325.5 364.5,313.5 410.5,313.5 410.5,359.5 467.5,359.5 467.5,347.5 435.5,347.5 435.5,319.5 479.5,319.5 479.5,201.5 341.5,201.5 341.5,295.5 458.5,295.5 458.5,210.5 470.5,210.5 470.5,304.5 175.5,304.5 175.5,266.5 317.5,266.5 317.5,278.5 182.5,278.5 182.5,291.5 329.5,291.5 329.5,169.5 342.5,169.5 342.5,185.5 361.5,185.5 361.5,157.5 251.5,157.5 251.5,176.5 322.5,176.5 322.5,201.5 236.5,201.5 236.5,125.5 208.5,125.5 208.5,148.5 186.5,148.5 186.5,95.5 176.5,95.5 176.5,114.5 125.5,114.5 125.5,81.5 100.5,81.5 100.5,57.5 45.5,57.5");
     			attr_dev(polyline, "fill", "none");
     			attr_dev(polyline, "stroke", "#9F7385");
@@ -5525,6 +5561,13 @@ var app = (function () {
     			attr_dev(a, "href", "http://gorse.ie");
     			add_location(a, file$9, 575, 4, 42490);
     			add_location(p47, file$9, 573, 2, 42411);
+    			add_location(em2, file$9, 578, 38, 42587);
+    			add_location(em3, file$9, 578, 54, 42603);
+    			add_location(em4, file$9, 579, 4, 42634);
+    			add_location(em5, file$9, 579, 27, 42657);
+    			add_location(em6, file$9, 580, 4, 42704);
+    			add_location(em7, file$9, 580, 31, 42731);
+    			add_location(p48, file$9, 577, 2, 42545);
     			attr_dev(div3, "class", "credits text svelte-4rx4lq");
     			add_location(div3, file$9, 572, 0, 42382);
     		},
@@ -5644,6 +5687,21 @@ var app = (function () {
     			append_dev(p47, a);
     			append_dev(a, em1);
     			append_dev(p47, t99);
+    			append_dev(div3, t100);
+    			append_dev(div3, p48);
+    			append_dev(p48, t101);
+    			append_dev(p48, em2);
+    			append_dev(p48, t103);
+    			append_dev(p48, em3);
+    			append_dev(p48, t105);
+    			append_dev(p48, em4);
+    			append_dev(p48, t107);
+    			append_dev(p48, em5);
+    			append_dev(p48, t109);
+    			append_dev(p48, em6);
+    			append_dev(p48, t111);
+    			append_dev(p48, em7);
+    			append_dev(p48, t113);
     			current = true;
     		},
     		p: function update(new_ctx, [dirty]) {
@@ -5852,7 +5910,7 @@ var app = (function () {
     			a = element("a");
     			a.textContent = "Winter Papers";
     			t14 = text(".");
-    			if (iframe.src !== (iframe_src_value = "https://player.vimeo.com/video/523137788?autoplay=1&color=8a8a8a&title=0&byline=0&portrait=0&quality=4k")) attr_dev(iframe, "src", iframe_src_value);
+    			if (iframe.src !== (iframe_src_value = "https://player.vimeo.com/video/523137788?color=8a8a8a&title=0&byline=0&portrait=0&quality=4k")) attr_dev(iframe, "src", iframe_src_value);
     			attr_dev(iframe, "frameborder", "0");
     			attr_dev(iframe, "allow", "fullscreen; picture-in-picture");
     			attr_dev(iframe, "quality", "4k");
@@ -5865,23 +5923,23 @@ var app = (function () {
     			attr_dev(div0, "class", "video-wrapper svelte-21s92i");
     			add_location(div0, file$a, 15, 0, 470);
     			attr_dev(h1, "class", "svelte-21s92i");
-    			add_location(h1, file$a, 33, 2, 964);
+    			add_location(h1, file$a, 33, 2, 953);
     			attr_dev(p0, "class", "svelte-21s92i");
-    			add_location(p0, file$a, 34, 2, 983);
+    			add_location(p0, file$a, 34, 2, 972);
     			attr_dev(p1, "class", "svelte-21s92i");
-    			add_location(p1, file$a, 35, 2, 994);
+    			add_location(p1, file$a, 35, 2, 983);
     			attr_dev(p2, "class", "svelte-21s92i");
-    			add_location(p2, file$a, 36, 2, 1028);
+    			add_location(p2, file$a, 36, 2, 1017);
     			attr_dev(p3, "class", "svelte-21s92i");
-    			add_location(p3, file$a, 38, 2, 1076);
+    			add_location(p3, file$a, 38, 2, 1065);
     			attr_dev(header, "class", "invert svelte-21s92i");
-    			add_location(header, file$a, 28, 0, 796);
-    			add_location(em, file$a, 45, 4, 1267);
+    			add_location(header, file$a, 28, 0, 785);
+    			add_location(em, file$a, 45, 4, 1256);
     			attr_dev(a, "href", "https://winterpapers.com/");
-    			add_location(a, file$a, 46, 4, 1325);
-    			add_location(p4, file$a, 44, 2, 1259);
+    			add_location(a, file$a, 46, 4, 1314);
+    			add_location(p4, file$a, 44, 2, 1248);
     			attr_dev(div1, "class", "credits text invert svelte-21s92i");
-    			add_location(div1, file$a, 43, 0, 1223);
+    			add_location(div1, file$a, 43, 0, 1212);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");

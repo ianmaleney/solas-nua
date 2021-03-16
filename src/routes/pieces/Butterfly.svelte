@@ -485,7 +485,7 @@
       think about the idea that things only come into existence when they come
       into contact with another. I follow the nib moving over the page leaving
       its mark and I see the mark as the only record of its existence. At one
-      point Tamasin Norwood describes taking a pen and marking a border around
+      point Tamarin Norwood describes taking a pen and marking a border around
       the inside of a house she and her husband had just vacated because they
       were moving somewhere else. I don’t know if she means to mention this
       event as part of her talk or just chooses to include it as an anecdote
@@ -573,8 +573,16 @@
 <div class="credits text">
   <p>
     <em>Butterfly</em>, written by Colm O'Shea, was first published in
-    <a href="http://gorse.ie"><em>gorse</em></a>. Colm O'Shea is a writer living
-    in Dublin.
+    <a href="http://gorse.ie"><em>gorse</em></a>.
+  </p>
+  <p>
+    His short fiction has appeared in <em>gorse</em>, <em>The Stinging Fly</em>,
+    <em>3AM Magazine</em>, <em>Hotel</em>, Fallow Media, Juxta Press,
+    <em>The Bohemyth</em>, and <em>Visual Verse</em>. He was one of the
+    inaugural winners of the Irish Writers’ Centre Novel Fair competition in
+    2012. He won The Aleph Writing Prize 2019. His short fiction has also been
+    performed on the Keywords show on RTE Radio 1 Extra. He currently lives in
+    Dublin where he works as a civil engineer.
   </p>
 </div>
 

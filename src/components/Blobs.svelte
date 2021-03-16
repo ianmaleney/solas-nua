@@ -25,6 +25,7 @@
     filter: blur(80px);
     will-change: transform;
     transition: all 3s linear;
+    opacity: 0.8;
   }
   #b1 {
     top: calc(100vh - 25vw);
