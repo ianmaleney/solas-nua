@@ -577,17 +577,24 @@
 
 <div class="credits text">
   <p>
-    <em>Butterfly</em>, written by Colm O'Shea, was first published in
+    <em>Butterfly</em>, written by , was first published in
     <a href="http://gorse.ie"><em>gorse</em></a>.
   </p>
   <p>
-    His short fiction has appeared in <em>gorse</em>, <em>The Stinging Fly</em>,
+    Colm O'Shea's short fiction has appeared in <em>gorse</em>,
+    <em>The Stinging Fly</em>,
     <em>3AM Magazine</em>, <em>Hotel</em>, Fallow Media, Juxta Press,
     <em>The Bohemyth</em>, and <em>Visual Verse</em>. He was one of the
     inaugural winners of the Irish Writers’ Centre Novel Fair competition in
     2012. He won The Aleph Writing Prize 2019. His short fiction has also been
     performed on the Keywords show on RTE Radio 1 Extra. He currently lives in
     Dublin where he works as a civil engineer.
+  </p>
+  <p>
+    Tom Roseingrave is an audio producer, writer and performer living in Dublin.
+    He has produced and presented radio documentaries for RTÉ and the BBC, and
+    has had essays published by Fallow Media. He is a member of new music group
+    Kirkos Ensemble and is currently writing short fiction.
   </p>
 </div>
 
