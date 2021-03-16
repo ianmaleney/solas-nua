@@ -10,6 +10,7 @@
   import { move } from "../../moveBlob";
 
   onMount(() => {
+    document.title = "View Source | 'Saint Sisters & The Sea' – Méabh de Brún";
     let blobs = document.querySelectorAll(".blob");
     [...blobs].forEach((el) => move(el));
     themeColour.update((theme) => "#f8fff1");

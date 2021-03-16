@@ -10,6 +10,7 @@
   import { move } from "../../moveBlob";
 
   onMount(() => {
+    document.title = "View Source | 'A Scarf' – Doireann Ní Ghríofa";
     let blobs = document.querySelectorAll(".blob");
     [...blobs].forEach((el) => move(el));
     themeColour.update((theme) => "#CED1CE");

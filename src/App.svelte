@@ -19,6 +19,7 @@
     let blobs = document.querySelectorAll(".blob");
     [...blobs].forEach((el) => move(el));
     navigate(window.location.pathname, { replace: true });
+    document.title = "View Source";
   });
 
   let bck, hc, ho;

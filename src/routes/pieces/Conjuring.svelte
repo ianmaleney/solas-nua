@@ -7,6 +7,8 @@
   import { move } from "../../moveBlob";
 
   onMount(() => {
+    document.title =
+      "View Source | 'The Conjuring' / 'Dubh Sainglend to Liath Macha, on Cú Chulainn’s Death'";
     let blobs = document.querySelectorAll(".blob");
     [...blobs].forEach((el) => move(el));
     themeColour.update((theme) => "#fff");

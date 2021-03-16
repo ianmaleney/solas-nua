@@ -8,6 +8,7 @@
   import { themeColour, blob2 } from "../../store";
 
   onMount(() => {
+    document.title = "View Source | 'Butterfly' – Colm O'Shea";
     let blobs = document.querySelectorAll(".blob");
     [...blobs].forEach((el) => move(el));
     themeColour.update((theme) => "#B4B5C0");

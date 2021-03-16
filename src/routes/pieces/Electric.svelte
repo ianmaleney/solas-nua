@@ -3,6 +3,11 @@
   import { linear } from "svelte/easing";
   import AudioPlayer from "../../components/AudioPlayer.svelte";
   import ArticleHeader from "../../components/ArticleHeader.svelte";
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    document.title = "View Source | 'Getting The Electric' – Louise Hegarty";
+  });
 
   let audioActive = false;
 </script>
