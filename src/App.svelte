@@ -142,7 +142,7 @@
     .footer-item {
       display: flex;
       justify-content: center;
-      padding: 2rem 0;
+      padding: 2rem 3vw;
       a {
         display: block;
         height: 80px;

@@ -55,7 +55,7 @@
   </ul>
 </nav>
 
-<style>
+<style lang="scss">
   #home-nav {
     max-width: 80vw;
     margin: 0 auto;
@@ -72,13 +72,26 @@
     border-bottom: 1px solid #4f4950;
     padding: 1rem 0;
     line-height: 1.4;
+    @media (max-width: 600px) {
+      font-size: 1.25rem;
+    }
   }
   #toc li:nth-child(1),
   #toc li:nth-child(6) {
-    margin-left: 8rem;
+    margin-left: 4rem;
   }
   #toc li:nth-child(2),
   #toc li:nth-child(5) {
-    margin-left: 4rem;
+    margin-left: 2rem;
+  }
+  @media (min-width: 600px) {
+    #toc li:nth-child(1),
+    #toc li:nth-child(6) {
+      margin-left: 8rem;
+    }
+    #toc li:nth-child(2),
+    #toc li:nth-child(5) {
+      margin-left: 4rem;
+    }
   }
 </style>
