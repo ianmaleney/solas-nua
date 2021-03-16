@@ -295,6 +295,9 @@
     honouring of a warrior, and none weep when a soldier sleeps when his fight
     is over.’
   </p>
+  <div class="window">
+    <div class="pane" />
+  </div>
   <p>
     After closing the folders and all the tabs on my phone, I couldn’t stop
     thinking about what I’d read. I woke that night thinking of how the young
@@ -398,6 +401,9 @@
     away. I found his email address. I told him that I wanted to know how this
     story had been told in his childhood.
   </p>
+  <div class="window">
+    <div class="pane" />
+  </div>
   <p>
     In the Buillín Blasta café in An Spidéal, Tadhg described his grandmother,
     Annie Kenny: a bright young woman who had been awarded a teacher-training
