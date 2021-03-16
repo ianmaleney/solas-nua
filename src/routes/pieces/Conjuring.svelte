@@ -6,6 +6,10 @@
   import { themeColour, headerOpacity, blob1 } from "../../store.js";
   import { move } from "../../moveBlob";
 
+  const print = () => {
+    window.open("/assets/prints/the-conjuring-print.pdf", "_blank");
+  };
+
   onMount(() => {
     document.title =
       "View Source | 'The Conjuring' / 'Dubh Sainglend to Liath Macha, on Cú Chulainn’s Death'";
@@ -108,6 +112,7 @@
     active={true}
     credits={"Read by Nidhi Zak/Aria Eipe & Michael Dooley."}
   />
+  <button class="print-button" on:click={print}> Print </button>
 </div>
 
 <div class="poem-wrapper mt">
@@ -202,6 +207,20 @@
 <style lang="scss">
   .player-wrapper {
     margin: 200px 0;
+  }
+  .print-button {
+    margin: 2rem auto;
+    display: block;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #4f4950;
+    color: #4f4950;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    &:hover {
+      background-color: #4f4950;
+      color: rgb(207, 207, 207);
+      cursor: pointer;
+    }
   }
   .poem-wrapper {
     max-width: 1260px;
