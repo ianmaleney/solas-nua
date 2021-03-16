@@ -1277,6 +1277,9 @@ forum
       font-size: 1rem;
       background-size: cover;
       background-repeat: no-repeat;
+      @media (max-width: 700px) {
+        grid-column: 1 / -1 !important;
+      }
       img {
         mix-blend-mode: multiply;
       }
